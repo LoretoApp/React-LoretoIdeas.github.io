@@ -1,0 +1,228 @@
+:root{
+    --color-principal: #B8226A;
+    --color-segundo: #F8E5DF;
+    --color-tercero: #FFA041;
+    --color-text:#4B102D;
+    --texto-h1: 48px;
+    --texto-h2: 30px;
+    --texto-h3:15px;
+    --texto-h4: 10px;
+    --texto-parrafos:18px;
+    --texto-btn:24px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; 
+    
+}
+
+
+h3{
+    color: var(--color-principal);
+}
+
+
+#Encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:var(--color-principal);
+    height: 46px; 
+   
+}
+
+
+.abrir-menu{
+
+    max-width: 4rem;
+}
+
+input{
+    width: 150px;
+    height: 25px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow:2px 3px 9px #666666;
+}
+
+
+.search-input {
+    
+    position: relative;
+    background-image: url('assets/icons/lupa.png'); /* Ruta de la imagen del icono */
+    background-repeat: no-repeat;
+    background-position: left center; /* Ajusta la posición del icono */
+    background-size: 20px 20px; /* Ajusta el tamaño del icono */
+}
+
+.search-input::placeholder {
+    position: relative;
+    left: 25px; /* Ajusta el valor según el ancho del icono y el padding */
+}
+
+
+.logo {
+    max-width: 1.8rem;
+}
+
+
+.div-con-linea {
+    height: 45px;
+    border-left: 1.9px dashed #F8E5DF80;
+    
+}
+
+
+.carrito {
+    max-width: 2.2rem;
+    
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    
+}
+
+
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+a{
+    top: 218px;
+    left: 34px;
+}
+
+li{
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+li:hover {
+    background-color:#F8E5DF;
+}
+
+
+
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+    
+    
+}
+
+@media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+        
+    }
+
+    .abrir-menu {
+        color: #F8E5DF;
+       
+    }
+
+    .cerrar-menu {
+        color: #B8226A;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* bottom: 0; */
+        background-color: white;
+        padding: 1.4rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        border-radius: 20px;
+       
+        
+        
+        
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    
+    
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: ;
+        
+        
+    }
+
+    .nav-list  {
+        color: black;
+        font-family: 'Italianno';
+        font-weight: 400;
+        size: 30px;
+        
+        
+    }
+    .nav__link--inside{
+        border-radius: 6px;
+        padding-left: 20px;
+    }
+    .list__item{
+        overflow: hidden;
+    }
+
+    .list__show{
+        list-style: none;
+        width: 130%;
+        margin-left: auto;
+        transition: height .2s;
+        height: 0;
+
+
+    }
+
+    .list__item--click{
+        cursor:pointer;
+        
+    }
+
+    .list__button{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+
+    .arrow .list__arrow{
+        transform: rotate(90deg);
+
+    }
+    
+    .list__arrow{
+        margin-left: auto;
+        transition: transform .3s;
+
+    }
+    
+    
+    
+}
+

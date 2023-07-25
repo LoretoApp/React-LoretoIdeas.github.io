@@ -1,15 +1,15 @@
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
+import Navbar from "./components/Navbar";
 import DarkVariantExample from "./components/Carrusel";
-import BasicExample from "./components/Navbar";
 import ShapeExample from "./components/pages/inicio";
 
 
 function App() {
   return (
 <div>
-
-<BasicExample/>
-
+<Navbar/>
 <ShapeExample/>
 <DarkVariantExample/>
 </div>
