@@ -1,17 +1,17 @@
 import "./App.css";
-import DarkVariantExample from "./components/Carrusel";
-import BasicExample from "./components/Navbar";
-import ShapeExample from "./components/pages/inicio";
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Productos from "./components/pages/Productos";
 
 
 function App() {
   return (
 <div>
+  <BrowserRouter>
+  <Routes>
+    <Route path="/productos" element={<Productos/>} exact></Route>
+  </Routes>
+  </BrowserRouter>
 
-<BasicExample/>
-
-<ShapeExample/>
-<DarkVariantExample/>
 </div>
   );
 }
