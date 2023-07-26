@@ -6,7 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function BasicExample() {
   return (
     
-  );
+  )
 }
 
 export default BasicExample;
