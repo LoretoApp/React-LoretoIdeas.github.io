@@ -168,7 +168,7 @@ li:hover {
     
     .nav-list {
         flex-direction: column;
-        align-items: ;
+        /* align-items: ; */
         
         
     }
@@ -225,4 +225,3 @@ li:hover {
     
     
 }
-
