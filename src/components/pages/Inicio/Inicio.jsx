@@ -2,10 +2,14 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
+import './Inicio.css'
+import DarkVariantExample from "../../Carrusel";
+
 
 function ShapeExample() {
   return (
-    <Container className="contenedor-principal-texto w100">
+    <>
+        <Container className="contenedor-principal-texto w100">
       <Image src="src\assets\img\principal-cuadricula.jfif" fluid />
       <Row>
         <Col xs={4} md={4}>
@@ -39,7 +43,10 @@ function ShapeExample() {
         maxime sunt!
       </p>
     </Container>
+    <DarkVariantExample/>
+    </>
   );
 }
 
 export default ShapeExample;
+

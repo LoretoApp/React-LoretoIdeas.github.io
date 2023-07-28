@@ -1,17 +1,14 @@
-import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
-import Navbar from "./components/Navbar";
-import DarkVariantExample from "./components/Carrusel";
-import ShapeExample from "./components/pages/inicio";
+import Navbar from './components/pages/navbar/Navbar';
+import ShapeExample from './components/pages/Inicio/Inicio';
 
 
 function App() {
   return (
 <div>
-<Navbar/>
-<ShapeExample/>
-<DarkVariantExample/>
+    <Navbar/>
+    <ShapeExample/>
 </div>
   );
 }
