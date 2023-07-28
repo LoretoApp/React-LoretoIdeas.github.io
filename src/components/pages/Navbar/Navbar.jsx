@@ -1,17 +1,48 @@
-import React from 'react';
+import { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import'./Navbar.css';
-import './Navbar.js';
 
 
 function Navbar() {
+
+ useEffect(() => {
+  const nav = document.querySelector("#nav");
+  const abrir = document.querySelector("#abrir");
+  const cerrar = document.querySelector("#cerrar");
+  
+  abrir.addEventListener("click", () => {
+       nav.classList.add("visible");
+   })
+  
+   cerrar.addEventListener("click", () => {
+       nav.classList.remove("visible");
+   })
+  
+  // Aperturas sub menus 
+  
+   let listElements = document.querySelectorAll('.list__button--click');
+   listElements.forEach(listElement =>{
+      listElement.addEventListener('click', ()=>{
+          listElement.classList.toggle('arrow');
+  
+          let height=0;
+          let menu= listElement.nextElementSibling;
+          if (menu.clientHeight == "0"){
+              height=menu.scrollHeight;
+          }
+  
+          menu.style.height = `${height}px`;
+      })
+   })
+ }, [])  
+
   return (
     //Encabezado
     <header id="encabezado">
       {/* Botón del menú */}
       <div className="d-flex"> 
 
-        <button id="abrir" className="abrir-menu me-auto"><i className="bi bi-list" style="font-size: 46px;"></i></button>
+        <button id="abrir" className="abrir-menu me-auto"><i className="bi bi-list" style={{fontSize: "46px"}}></i></button>
 
       </div>
 
