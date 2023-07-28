@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import'./Navbar.css';
+import { Outlet, Link } from "react-router-dom";
 
 
 function Navbar() {
@@ -38,6 +39,7 @@ function Navbar() {
 
   return (
     //Encabezado
+    <>
     <header id="encabezado">
       {/* Botón del menú */}
       <div className="d-flex"> 
@@ -80,19 +82,22 @@ function Navbar() {
         { /* Listado del menú*/ }
         <ul className="nav-list"> 
           <h3>!Bienvenidos!</h3>
-          <li><a href="#">Inicio</a></li>
-
+          
+          <li>
+            <Link to={"inicio"}>Inicio</Link>
+          </li>
+       
           {/* Botón que se despliega  */}
           <li className="list__item list__item--click">
             <div className="list__button list__button--click">
               <img src="" className="list__img"/>
-              <a href="#" className="nav__link">Productos</a>
-              <img src="src\assets\icons\right-arrow.png" className="list__arrow"/>
+              
+              <Link to={"productos"}>Productos</Link>
             </div>
 
             <ul className="list__show">
               <li className="list__inside">
-                <a href="#" className="nav__link nav__link--inside">Pastelería</a>
+                <a href="src/components/pages/Productos.jsx" className="nav__link nav__link--inside">Pastelería</a>
               </li>
 
               <li className="list__inside">
@@ -113,6 +118,9 @@ function Navbar() {
 
       </nav>
     </header>
+<Outlet/>
+    </>
+
   );
 }
 
