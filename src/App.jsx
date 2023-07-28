@@ -9,6 +9,8 @@ import Inicio from "./components/pages/Inicio/Inicio";
 function App() {
   return (
 <div>
+<Inicio/>
+
 <Routes>
 <Route path='/' element={<Navbar/>}>
   <Route path='/productos' element={<Productos/>}></Route>
