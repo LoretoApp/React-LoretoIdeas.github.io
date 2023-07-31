@@ -4,11 +4,14 @@ import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import './Inicio.css'
 import DarkVariantExample from "../../Carrusel";
+import NavBarPage from "../Navbar/NavBarPage";
+import Footer from "../Footer/Footer";
 
 
 function ShapeExample() {
   return (
     <>
+    <NavBarPage/>
         <Container className="contenedor-principal-texto w100">
       <Image src="src\assets\img\principal-cuadricula.jfif" fluid />
       <Row>
@@ -44,6 +47,7 @@ function ShapeExample() {
       </p>
     </Container>
     <DarkVariantExample/>
+    <Footer/>
     </>
   );
 }

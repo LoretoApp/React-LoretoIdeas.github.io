@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import'./Footer.css';
 
@@ -17,8 +16,8 @@ function Footer(){
                 </div>
                 {/* Elemento 2 de la izquierda que contiene los logos (responsivo) */}
                 <div className='iconos col-lg-6 col-md-6 col-sm-12 footer-elemento footer-elemento-sm'>
-                  <img class="whatsapp" src="./assets/icons/whatsapp.png" alt="whatsapp"/>
-                  <img class="sercotec" src="./assets/img/sercotec(2).jpg" alt="sercotec"/>
+                  <img className="whatsapp" src="./assets/icons/whatsapp.png" alt="whatsapp"/>
+                  <img className="sercotec" src="./assets/img/sercotec(2).jpg" alt="sercotec"/>
                 </div>
             </div>
             <div className='row'>
