@@ -10,7 +10,7 @@ function ShapeExample() {
   return (
     <>
         <Container className="contenedor-principal-texto w100">
-      <Image src="public\img\principal-cuadricula.jfif" fluid />
+      <Image src="src\assets\img\principal-cuadricula.jfif" fluid />
       <Row>
         <Col xs={4} md={4}>
           <Image
