@@ -16,8 +16,8 @@ function Footer(){
                 </div>
                 {/* Elemento 2 de la izquierda que contiene los logos (responsivo) */}
                 <div className='iconos col-lg-6 col-md-6 col-sm-12 footer-elemento footer-elemento-sm'>
-                  <img className="whatsapp" src="./assets/icons/whatsapp.png" alt="whatsapp"/>
-                  <img className="sercotec" src="./assets/img/sercotec(2).jpg" alt="sercotec"/>
+                  <img className="whatsapp" src="icons\whatsapp.png" alt="whatsapp"/>
+                  <img className="sercotec" src="icons\sercotec-fondos-640x339-removebg-preview.png" alt="sercotec"/>
                 </div>
             </div>
             <div className='row'>
