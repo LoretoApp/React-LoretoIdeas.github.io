@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./components/pages/Navbar/Navbar";
 import DarkVariantExample from "./components/Carrusel";
 import ShapeExample from "./components/pages/inicio";
+import Footer from './components/pages/Footer/Footer';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 <Navbar/>
 <ShapeExample/>
 <DarkVariantExample/>
+<Footer/>
 </div>
   );
 }
