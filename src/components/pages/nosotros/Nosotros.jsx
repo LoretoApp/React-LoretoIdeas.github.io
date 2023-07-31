@@ -1,6 +1,5 @@
 
 import './nosotros.css'
-import React from 'react';
 
 export default function Nosotros() {
   return (
