@@ -1,4 +1,4 @@
-import "../stylesheets/Productos.css"
+import "../productos/productos.css"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function BannerProductos() {

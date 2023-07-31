@@ -9,21 +9,20 @@ import Inicio from "./components/pages/Inicio/Inicio";
 function App() {
   return (
 <div>
-<Inicio/>
 
-<Routes>
-<Route path='/' element={<Navbar/>}>
-  <Route path='/productos' element={<Productos/>}></Route>
-  <Route path='/inicio' element={<Inicio/>}></Route>
 
-</Route>
 
-</Routes>
+<Routes >
+<Route path='/' element={<Navbar/>}> 
+  <Route path='/' element={<Inicio/>}>
+  <Route path='productos' element={<Productos/>}></Route>
 
+  </Route>
+
+</Route></Routes>
 </div>
   );
 }
-    {/* <Route path="/productos" element={<Productos/>} exact></Route> */}
 
 export default App;
 

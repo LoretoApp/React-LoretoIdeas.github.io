@@ -84,7 +84,7 @@ function Navbar() {
           <h3>!Bienvenidos!</h3>
           
           <li>
-            <Link to={"inicio"}>Inicio</Link>
+            <Link to={"/"}>Inicio</Link>
           </li>
        
           {/* Botón que se despliega  */}

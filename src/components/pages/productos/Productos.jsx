@@ -1,4 +1,4 @@
-import "../../stylesheets/productos.css"
+import "../productos/productos.css"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import BotonesProductos from "./BotonesProductos"
 import BannerProductos from "./BannerProductos"
