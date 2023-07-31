@@ -1,0 +1,79 @@
+.banner {
+    background-color: #f2f2f2;
+    justify-content: center;
+    background-size: auto;
+    background-image: url('assets/img/elegante-banner-lineas-rojas-digitales-brillantes_1017-23964.avif');
+  }
+  
+  
+  .circle {
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    align-items: flex-start;
+    background-size: contain ;
+  }
+  img{
+    width: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    align-items: flex-start;
+    background-size: contain ;
+
+
+  }
+  
+  .background {
+
+    background-size: cover;
+  
+  
+  }
+  
+  .text {
+    color: #4B102D;
+  
+  }
+  .text h3{
+  text-align: center;
+  font-size: 4.5vw;
+  color: #4B102D;
+  text-size-adjust: 100% ;
+  font-family: 'Hahmlet', serif;  
+  }
+  
+  .text h1{
+    text-align: center;
+    font-size: 7vw;
+    color: #4B102D;
+    text-size-adjust: 100% ;
+    font-family: 'Hahmlet', serif;
+  } 
+  /* Ajustes para la sección de división */
+.divider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ /* Ajustes para la imagen de la línea amarilla */
+ .divider-image {
+    width: 100%;
+    position: relative;
+ }
+ 
+ .divider-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+ }
+ 
