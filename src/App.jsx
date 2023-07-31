@@ -1,22 +1,22 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Navbar from "./components/pages/Navbar/Navbar";
-import DarkVariantExample from "./components/Carrusel";
-import ShapeExample from "./components/pages/inicio";
-import Footer from './components/pages/Footer/Footer';
+import { Routes, Route } from "react-router-dom";
+import Productos from "./components/pages/productos/Productos";
+import Inicio from "./components/pages/Inicio/Inicio";
+import NavBarPage from "./components/pages/NavBar/Navbar";
 
 
 function App() {
   return (
-<div>
-<Navbar/>
-<ShapeExample/>
-<DarkVariantExample/>
-<Footer/>
-</div>
+    <div>
+    <Routes>
+      <Route path="/" element={<NavBarPage />}>
+        <Route path="/" element={<Inicio />}></Route>
+        <Route path="productos" element={<Productos />}></Route>
+      </Route>
+    </Routes>
+  </div>
   );
 }
 
 export default App;
-
