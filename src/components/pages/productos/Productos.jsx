@@ -4,6 +4,7 @@ import BotonesProductos from "./BotonesProductos"
 import BannerProductos from "./BannerProductos"
 import ContenedorCardProductos from './ContenedorCardProductos'
 import NavBarPage from "../Navbar/NavBarPage"
+import Footer from "../Footer/Footer"
 
 
 function Productos () {
@@ -13,6 +14,7 @@ function Productos () {
   <BannerProductos/>
   <BotonesProductos/>
   <ContenedorCardProductos/>
+  <Footer/>
   </>
   )
 }
