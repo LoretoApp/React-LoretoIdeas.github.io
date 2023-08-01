@@ -7,8 +7,9 @@ import DarkVariantExample from "../../Carrusel";
 
 
 function ShapeExample() {
-  return (
+  return ( 
     <>
+      
         <Container className="contenedor-principal-texto w100">
       <Image src="public\img\principal-cuadricula.jfif" fluid />
       <Row>
