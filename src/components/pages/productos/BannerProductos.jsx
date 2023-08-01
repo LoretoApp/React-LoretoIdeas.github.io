@@ -10,7 +10,7 @@ export default function BannerProductos() {
           <h3>Productos</h3>
         </div>
         <div className="col-lg-4 col-md-4 col-sm-4 col-4 p-0 d-flex justify-content-end">
-          <img className="img-fluid" src="src\assets\img\img-sinFondo\torta-chocolate-principal.png" alt="Torta de chocolate decorada" />
+          <img className="img-fluid" src="img\img-sinFondo\torta-chocolate-principal.png" alt="Torta de chocolate decorada" />
         </div>
       </div> 
     </div>

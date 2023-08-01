@@ -8,7 +8,7 @@ export default function CardProductos() {
       <div className="card" >
         <div className="img-container m-3">
           <div className="m-3">
-            <img src='' className="card-img-top" alt="torta maracuya"/>
+            <img src='img\torta2.jpg' className="card-img-top" alt="torta maracuya"/>
           </div>
           <div className="btn-detalle mb-2">
             <button className="btn detalle card-text">+ Detalle</button>
