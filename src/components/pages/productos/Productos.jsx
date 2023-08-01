@@ -3,8 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import BotonesProductos from "./BotonesProductos"
 import BannerProductos from "./BannerProductos"
 import ContenedorCardProductos from './ContenedorCardProductos'
-import NavBarPage from "../Navbar/NavBarPage"
 import Footer from "../Footer/Footer"
+import NavBarPage from "../navbar/NavBarPage"
 
 
 function Productos () {
