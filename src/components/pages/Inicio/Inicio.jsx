@@ -9,7 +9,7 @@ import Footer from "../Footer/Footer";
 
 
 function ShapeExample() {
-  return (
+  return ( 
     <>
     <NavBarPage/>
         <Container className="contenedor-principal-texto w100">
