@@ -1,11 +1,13 @@
 import Footer from "../Footer/Footer"
 import NavBarPage from "../navbar/NavBarPage"
+import CarruselDesayunos from "./CarruselDesayunos"
 
 
 function Desayunos() {
   return (
     <>
     <NavBarPage/>
+    <CarruselDesayunos/>
     <section>
       <div className="container-fluid text-center1 fondo">
         <div className="container-fluid">
