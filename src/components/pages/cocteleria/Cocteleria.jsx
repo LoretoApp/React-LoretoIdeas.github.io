@@ -1,6 +1,5 @@
-import React from 'react'
 
-export default function Cocteleria() {
+function Cocteleria() {
   return (
     <section>
       <div className="container-fluid text-center1 fondo">
@@ -15,3 +14,4 @@ export default function Cocteleria() {
     </section>
   )
 }
+export default Cocteleria

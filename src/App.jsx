@@ -4,6 +4,8 @@ import { Routes, Route } from "react-router-dom";
 import Productos from "./components/pages/productos/Productos";
 import ShapeExample from "./components/pages/Inicio/Inicio";
 import Nosotros from "./components/pages/nosotros/Nosotros";
+import Cocteleria from "./components/pages/cocteleria/Cocteleria";
+import Desayunos from "./components/pages/Desayunos";
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
     <Routes>
         <Route path="/" element={<ShapeExample />}/>
         <Route path="productos" element={<Productos />}/>
+        <Route path="cocteleria" element={<Cocteleria />}/>
+        <Route path="desayunos" element={<Desayunos />}/>
         <Route path="nosotros" element={<Nosotros />}/>
      
     </Routes>
