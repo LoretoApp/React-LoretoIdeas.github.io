@@ -1,13 +1,13 @@
 import Carousel from 'react-bootstrap/Carousel';
 
 
-function DarkVariantExample() {
+function CarruselNosotros1() {
   return (
     <Carousel data-bs-theme="dark">
       <Carousel.Item>
         <img
           className="d-block w-100 carousel-image"
-          src="/"
+          src="img\foto-local.jpeg"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -18,7 +18,7 @@ function DarkVariantExample() {
       <Carousel.Item>
         <img
           className="d-block w-100 carousel-image"
-          src="src\assets\img\torta1.jpg"
+          src="img\torta1.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -29,7 +29,7 @@ function DarkVariantExample() {
       <Carousel.Item>
         <img
           className="d-block w-100 carousel-image"
-          src="src\assets\img\torta3.jpg"
+          src="img\torta3.jpg"
           alt="Third slide"
         />
         <Carousel.Caption>
@@ -43,4 +43,4 @@ function DarkVariantExample() {
   );
 }
 
-export default DarkVariantExample;
+export default CarruselNosotros1;

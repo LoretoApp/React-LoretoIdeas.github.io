@@ -2,20 +2,23 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Productos from "./components/pages/productos/Productos";
-import Inicio from "./components/pages/Inicio/Inicio";
-import NavBarPage from "./components/pages/Navbar/NavBarPage";
+import ShapeExample from "./components/pages/Inicio/Inicio";
+import Cocteleria from "./components/pages/cocteleria/Cocteleria";
+import Desayunos from "./components/pages/desayunos/Desayunos";
+import Nosotros from "./components/pages/nosotros/Nosotros";
 
 
 function App() {
   return (
     <div>
-    {/* <Routes>
-      <Route path="/" element={<NavBarPage />}>
-        <Route path="/" element={<Inicio />}></Route>
-        <Route path="productos" element={<Productos />}></Route>
-      </Route>
-    </Routes> */}
-    <Productos/>
+    <Routes>
+        <Route path="/" element={<ShapeExample />}/>
+        <Route path="productos" element={<Productos />}/>
+        <Route path="cocteleria" element={<Cocteleria />}/>
+        <Route path="desayunos" element={<Desayunos />}/>
+        <Route path="nosotros" element={<Nosotros />}/>
+     
+    </Routes>
   </div>
   );
 }

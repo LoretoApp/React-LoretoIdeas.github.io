@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    max-width: 20%;
+    max-height: 20%;
+    margin-right: 10%;
+}
+
+input {
+    flex: 1;
+    padding: 5px;
+}
+
+#Salir {
+    background-color: #b8226a; /* Color de fondo para el section "Salir X" */
+    padding: 1%; /* Agregamos un relleno para dar espacio al contenido */
+    text-align: center; /* Centramos el contenido dentro del section */
+    color: #fff; /* Color del texto dentro del section "Salir X" */
+    font-size: 2em;
+    text-size-adjust: 100% ;
+
+}
+
+#Administrador {
+    background-color: #b8226a; /* Color de fondo para el section "Administrador" */
+    padding: 1%; /* Agregamos un relleno para dar espacio al contenido */
+    text-align: center; /* Centramos el contenido dentro del section */
+    color: #ffffff; /* Color del texto dentro del section "Salir X" */
+    font-size: 2em;
+    text-size-adjust: 100% ;
+
+} 
+.text {
+    flex: 1 1 300px;
+    margin: 40px;
+    padding: 10px;
+    border: 5px dotted #c59898; /* Border punteado con color #c59898 */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.h1 {
+    font-size: 20em;
+
+}
