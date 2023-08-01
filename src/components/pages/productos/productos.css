@@ -75,6 +75,8 @@
   .col-producto {
     padding: 4px;
     border-radius: 8px;
+  }
+  #imagen-card {
+    height: 100px;
     width: 100%;
-    height: auto;
   }

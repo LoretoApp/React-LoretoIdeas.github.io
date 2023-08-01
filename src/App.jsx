@@ -9,12 +9,13 @@ import NavBarPage from "./components/pages/Navbar/NavBarPage";
 function App() {
   return (
     <div>
-    <Routes>
+    {/* <Routes>
       <Route path="/" element={<NavBarPage />}>
         <Route path="/" element={<Inicio />}></Route>
         <Route path="productos" element={<Productos />}></Route>
       </Route>
-    </Routes>
+    </Routes> */}
+    <Productos/>
   </div>
   );
 }
