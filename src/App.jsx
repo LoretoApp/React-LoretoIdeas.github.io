@@ -3,9 +3,9 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Productos from "./components/pages/productos/Productos";
 import ShapeExample from "./components/pages/Inicio/Inicio";
-import Nosotros from "./components/pages/nosotros/Nosotros";
 import Cocteleria from "./components/pages/cocteleria/Cocteleria";
-import Desayunos from "./components/pages/Desayunos";
+import Desayunos from "./components/pages/desayunos/Desayunos";
+import Nosotros from "./components/pages/nosotros/Nosotros";
 
 
 function App() {

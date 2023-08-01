@@ -1,6 +1,13 @@
+import Footer from '../Footer/Footer';
+import NavBarPage from '../navbar/NavBarPage';
+// import './cocteleria.css'
+
+
 
 function Cocteleria() {
   return (
+    <>
+    <NavBarPage/>
     <section>
       <div className="container-fluid text-center1 fondo">
         <div className="container-fluid">
@@ -12,6 +19,8 @@ function Cocteleria() {
           </div>
       </div>
     </section>
+    <Footer/>
+    </>
   )
 }
 export default Cocteleria

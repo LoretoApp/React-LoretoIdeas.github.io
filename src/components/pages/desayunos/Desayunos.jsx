@@ -1,6 +1,11 @@
+import Footer from "../Footer/Footer"
+import NavBarPage from "../navbar/NavBarPage"
+
 
 function Desayunos() {
   return (
+    <>
+    <NavBarPage/>
     <section>
       <div className="container-fluid text-center1 fondo">
         <div className="container-fluid">
@@ -12,6 +17,8 @@ function Desayunos() {
           </div>
       </div>
     </section>
+    <Footer/>
+    </>
   )
 }
 export default Desayunos
