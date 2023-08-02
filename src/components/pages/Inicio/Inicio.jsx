@@ -4,8 +4,8 @@ import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import './Inicio.css'
 import DarkVariantExample from "./Carrusel-inicio";
-import NavBarPage from "../Navbar/NavBarPage";
 import Footer from "../Footer/Footer";
+import NavBarPage from "../navbar/NavBarPage";
 
 
 function ShapeExample() {
