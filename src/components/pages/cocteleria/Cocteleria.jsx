@@ -1,5 +1,6 @@
 import Footer from '../Footer/Footer';
 import NavBarPage from '../navbar/NavBarPage';
+import CarruselCocteleria from './Carrusel-cocteleria';
 // import './cocteleria.css'
 
 
@@ -8,6 +9,7 @@ function Cocteleria() {
   return (
     <>
     <NavBarPage/>
+    <CarruselCocteleria/>
     <section>
       <div className="container-fluid text-center1 fondo">
         <div className="container-fluid">
