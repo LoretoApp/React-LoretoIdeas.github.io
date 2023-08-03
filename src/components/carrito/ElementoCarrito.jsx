@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./Stylecarrito.css/";
+
 
 function ElementoCarrito({ imagenSrc, titulo, precio }) {
   const [cantidad, setCantidad] = useState(1);
@@ -20,8 +20,8 @@ function ElementoCarrito({ imagenSrc, titulo, precio }) {
         <img src={imagenSrc} alt={titulo} />
       </div>
       <div className="item-details">
-        <div className="item-title">{titulo}</div>
-        <div className="item-price">${precio}</div>
+        <div className="item-title">Torta Manjar{titulo}</div>
+        <div className="item-price">$7.990{precio}</div>
       </div>
       <div className="item-quantity">
         <button className="quantity-button" onClick={disminuirCantidad}>-</button>

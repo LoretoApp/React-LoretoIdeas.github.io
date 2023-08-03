@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import "./Stylecarrito.css/";
 
 function PasosCarrito() {
   const [pasoActual, setPasoActual] = useState(1);
@@ -22,9 +21,9 @@ function PasosCarrito() {
       {/* Botones de paso */}
       <div className="d-flex justify-content-center mt-3 spaced-buttons">
         <div className="d-flex flex-column align-items-center">
-          <span className="btn-title justify-content-center">Pedido</span>
+          <span className="btn-title">Pedido</span>
           <button
-            className={`btn btn-primary rounded-circle${pasoActual === 1 ? '' : pasoActual}`}
+            className={`btn btn-primary rounded-circle1${pasoActual === 1 ? '' : pasoActual}`}
             onClick={() => cambiarPaso(1)}
           >
             1
@@ -42,7 +41,7 @@ function PasosCarrito() {
         <div className="d-flex flex-column align-items-center">
           <span className="btn-title">Enviado</span>
           <button
-            className={`btn btn-primary rounded-circle${pasoActual === 3 ? '' : pasoActual}`}
+            className={`btn btn-primary rounded-circle3${pasoActual === 3 ? '' : pasoActual}`}
             onClick={() => cambiarPaso(3)}
           >
             3
