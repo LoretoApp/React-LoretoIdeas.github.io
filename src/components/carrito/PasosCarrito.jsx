@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./Stylecarrito.css/";
 
 function PasosCarrito() {
   const [pasoActual, setPasoActual] = useState(1);

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import "./Stylecarrito.css/";
 
-const ElementoCarrito = ({ imagenSrc, titulo, precio }) => {
+function ElementoCarrito({ imagenSrc, titulo, precio }) {
   const [cantidad, setCantidad] = useState(1);
 
   const disminuirCantidad = () => {

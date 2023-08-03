@@ -1,6 +1,7 @@
 import React from 'react';
+import "./Stylecarrito.css/";
 
-const ResumenCarrito = ({ cantidadTotal, precioTotal }) => {
+function ResumenCarrito({ cantidadTotal, precioTotal }) {
   return (
     <div className="cart-summary">
       <div className="total-quantity">Cantidad total: <span className="quantity">{cantidadTotal}</span></div>
