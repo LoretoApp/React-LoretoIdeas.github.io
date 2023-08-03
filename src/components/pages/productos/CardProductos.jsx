@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
  
 export default function CardProductos(props) {
-  const src = '../../../../public/uploads/'
+  const src = 'img/'
   return (
     <div className="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 col-producto">
       <div className="card">
