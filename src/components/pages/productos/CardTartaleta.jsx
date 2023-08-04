@@ -7,7 +7,7 @@ export default function CardTartaleta(props) {
   const src = 'img/'
   return (
     <div className="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 col-producto">
-      <div className="card">
+      <div className="card m-0">
         <div className="img-container m-3">
           <div className="m-3">
             <img src={src+props.imagen} id="imagen-card" className="card-img-top img-fluid" alt={props.img_descripcion}/>

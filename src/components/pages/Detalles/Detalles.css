@@ -13,7 +13,7 @@
 
 
 
-body, html {
+/* body, html {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -23,7 +23,7 @@ body, html {
     background: linear-gradient(180deg, rgba(255,182,109,0.4738270308123249) 66%, rgba(255,160,65,1) 100%);
     color: var(--color-text);
     
-}
+} */
 
 @media (max-width: 768px) {
     body,html{
@@ -34,6 +34,10 @@ body, html {
     height: 50%;
     background-color:var(--color-segundo); /* Color para la mitad arriba */
     border-radius: 0 0 40px 40px;
+    }
+    .boton-flecha {
+        background-color:var(--color-segundo);
+        border: none;
     }
 
     
@@ -158,6 +162,7 @@ body, html {
         background-color:var(--color-segundo); /* Color para la mitad arriba */
         border-radius: 0 0 40px 40px;
     }
+
     
 
     img.flecha{
