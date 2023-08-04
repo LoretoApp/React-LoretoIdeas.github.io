@@ -10,15 +10,75 @@
     --texto-parrafos:18px;
     --texto-btn:24px
   }
+a.nav-link{
+  color: var(--color-segundo);
+}
+input.form{
+  width: 150px;
+  height: 25px;
+  position: relative;
+  border-radius: 15px;
+  box-shadow:2px 3px 9px #666666;
+}
 
+img.LoretoIdeas{
+  max-width: 3rem;
+}
+
+img.logo {
+  max-width: 2rem;
+}
+
+img.carrito{
+  max-width: 2.2rem;
+}
+span.navbar-toggler-icon{
+  color: var(--color-segundo);
+}
+
+.div-con-linea {
+  height: 45px;
+  border-left: 1.9px dashed #F8E5DF80;
+}
 
 
 /* NavBarPage.css */
 .Navbar {
     background-color: var(--color-principal); 
+    color: var(--color-segundo);
 }
 
-.bg-body-tertiary{
-    background-color: var(--color-principal);
+.navbar-toggler:focus{
+  box-shadow: none;
+}
 
+@media(min-width: 992px){
+  img.logo{
+    margin-left: 200px;
+    margin-right: 15px;
   }
+  img.carrito{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  input.form{
+    margin-left: 280px;
+    width: 200px;
+    height: 40px;
+    border-radius: 60px;
+  }
+}
+
+@media screen and (max-width: 550px){
+  img.carrito{
+    position:relative;
+  }
+  img.logo{
+    position: relative;
+  }
+  img.LoretoIdeas{
+    position: relative;
+    margin-right: 110px;
+  }
+  
+}

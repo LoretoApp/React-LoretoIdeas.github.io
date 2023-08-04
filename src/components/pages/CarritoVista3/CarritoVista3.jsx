@@ -1,8 +1,10 @@
 import './CarritoVista3.css'
-
+import NavBarPage from "../Navbar/NavBarPage";
+import Footer from "../Footer/Footer";
 
 function CarritoVista3() {
     return (
+    <>
      <div className='contenedorprincipal'>
        <div className='volver'>
         <img className='return' src="./src/icons/flecha naranja.png"
@@ -23,8 +25,9 @@ function CarritoVista3() {
 
         </div>
      </div>
+     </>
     )
-
+        
 
 
 
