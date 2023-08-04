@@ -19,7 +19,7 @@ function CarritoVista3() {
             <img class="check" src="./assets/icons/check.png"
             />
             <p class="gracias">
-            Gracias por tu compra !
+            Gracias <br></br>por tu compra !
             </p>
          </div>
 
