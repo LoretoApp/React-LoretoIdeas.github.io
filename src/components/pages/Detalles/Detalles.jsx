@@ -5,10 +5,9 @@ function Detalles() {
   return (
     <>
       <div className="mitad-arriba">
-        <a href="#">
+        <button href="#">
           <img className="flecha" src="icons/flecha naranja.png" alt="flecha" />
-        </a>
-
+        </button>
         <a href="#">
           <img
             className="kuchen"
@@ -16,7 +15,6 @@ function Detalles() {
             alt="kuchen"
           />
         </a>
-
         <div className="contenedor">
           <div className="izquierda">
             Medidas
