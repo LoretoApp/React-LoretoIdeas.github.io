@@ -3,7 +3,7 @@ import "../productos/productos.css"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
  
-export default function CardProductos(props) {
+export default function CardTortas(props) {
   const src = 'img/'
   return (
     <div className="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 col-producto">
