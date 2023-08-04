@@ -7,6 +7,7 @@ import Cocteleria from "./components/pages/cocteleria/Cocteleria";
 import Desayunos from "./components/pages/desayunos/Desayunos";
 import Nosotros from "./components/pages/nosotros/Nosotros";
 import Carrito from "./components/carrito/carrito";
+import AppLogin from "./components/login/AppLogin"
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="desayunos" element={<Desayunos />}/>
         <Route path="nosotros" element={<Nosotros />}/>
         <Route path="carrito" element={<Carrito />}/>
+        <Route path="Login" element={<AppLogin />}/>
      
     </Routes>
   </div>
