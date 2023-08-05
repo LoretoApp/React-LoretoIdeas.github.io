@@ -14,7 +14,7 @@
   }
   
   /* Clases para el carrito */
-  .container {
+  .contenedor-carrito{
     display: flex;
     justify-content: center; /* Centra horizontalmente el contenido */
     padding: 10px;

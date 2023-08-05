@@ -1,4 +1,3 @@
-import React from 'react';
 import "./Stylecarrito.css/";
 import PasosCarrito from './PasosCarrito';
 import ElementoCarrito from './ElementoCarrito';
@@ -9,11 +8,11 @@ function Carrito() {
     return (
         <>
         <PasosCarrito/>
-        <div className="container">
+        <div className="contenedor-carrito">
          <div className="cart-container">
-           <div class="cart-header">
-           <h2 class="title-left">Pedido</h2>
-           <button class="btn btn-transparent btn-delete">Eliminar todo</button>
+           <div className="cart-header">
+           <h2 className="title-left">Pedido</h2>
+           <button className="btn btn-transparent btn-delete">Eliminar todo</button>
         </div>
         <ElementoCarrito/>
         <ResumenCarrito/>
