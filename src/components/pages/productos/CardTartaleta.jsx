@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 export default function CardTartaleta(props) {
   const src = 'img/'
   return (
-    <div className="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 col-producto">
+    <div className="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-producto">
       <div className="card m-0">
         <div className="img-container m-3">
           <div className="m-3">
