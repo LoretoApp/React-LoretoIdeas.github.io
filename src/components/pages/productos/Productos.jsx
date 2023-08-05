@@ -8,12 +8,12 @@ import NavBarPage from "../navbar/NavBarPage"
 
 function Productos () {
   return (
-  <>
+  <div className="productos">
   <NavBarPage/>
   <BannerProductos/>
   <BotonesProductos/>
   <Footer/>
-  </>
+  </div>
   )
 }
 export default Productos

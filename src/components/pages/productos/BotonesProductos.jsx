@@ -39,7 +39,7 @@ export default function BotonesProductos() {
   </section>
   <section>
       <div className="container-fluid">
-        <div className="row mt-1 d-flex" id="contenedor-card">
+        <div className="row mt-1 d-flex " id="contenedor-card">
           
         {tortasList.map((torta) => (
             <CardProductos 
@@ -49,6 +49,7 @@ export default function BotonesProductos() {
             porciones={JSON.parse(torta.porciones)}
             imagen={torta.imagen}
             img_descripcion={torta.img_descripcion}
+            descripcion={torta.descripcion}
             />
           ))}
           {tartaletasList.map((tartaleta) => (
