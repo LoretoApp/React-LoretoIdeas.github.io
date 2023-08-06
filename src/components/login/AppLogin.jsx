@@ -1,58 +1,56 @@
- import React from "react";
- import * as Components from './Components';
+import React, { useState } from 'react';
+import '../login/styles.css';
 
- function AppLogin() {
-     const [signIn, toggle] = React.useState(true);
-      return(
-          <Components.Container>
-              <Components.SignUpContainer signinIn={signIn}>
-                  <Components.Form>
-                      <Components.Title>Crear Cuenta</Components.Title>
-                      <Components.Input type='text' placeholder='Nombre' />
-                      <Components.Input type='email' placeholder='Correo' />
-                      <Components.Input type='password' placeholder='Contraseña' />
-                      <Components.Button>Registrate</Components.Button>
-                  </Components.Form>
-              </Components.SignUpContainer>
-
-              <Components.SignInContainer signinIn={signIn}>
-                   <Components.Form>
-                       <Components.Title>Inicio Sesión</Components.Title>
-                       <Components.Input type='email' placeholder='Correo' />
-                       <Components.Input type='password' placeholder='Contraseña' />
-                       <Components.Anchor href='#'>¿Olvidaste tu contraseña?</Components.Anchor>
-                       <Components.Button>Iniciar Sesión</Components.Button>
-                   </Components.Form>
-              </Components.SignInContainer>
-
-              <Components.OverlayContainer signinIn={signIn}>
-                  <Components.Overlay signinIn={signIn}>
-
-                  <Components.LeftOverlayPanel signinIn={signIn}>
-                      <Components.Title>Nos alegra verte</Components.Title>
-                      <Components.Paragraph>
-                      Inicie sesión para que puedas ver tus productos favoritos
-                      </Components.Paragraph>
-                      <Components.GhostButton onClick={() => toggle(true)}>
-                          Entrar
-                      </Components.GhostButton>
-                      </Components.LeftOverlayPanel>
-
-                      <Components.RightOverlayPanel signinIn={signIn}>
-                        <Components.Title>Crear Cuenta</Components.Title>
-                        <Components.Paragraph>
-                            Crea una cuenta para que puedas guardar tus pedidos y disfrutar
-                        </Components.Paragraph>
-                            <Components.GhostButton onClick={() => toggle(false)}>
-                                Registrate
-                            </Components.GhostButton> 
-                      </Components.RightOverlayPanel>
+function AppLogin() {
+    const [view, setView] = useState('login');
   
-                  </Components.Overlay>
-              </Components.OverlayContainer>
+    const handleSignup = () => {
+      setView('signup');
+    };
+  
+    const handleLogin = () => {
+      setView('login');
+    };
+  
+    return (
+      <div className="superContainer">
+        <div className="container">
+          {view === 'login' ? (
+            <div className="sideA">
+              <h1>Inicio de Sesión</h1>
+              <input type="email" placeholder="Email" />
+              <input type="password" placeholder="Contraseña" />
+              <a href="#forgot-password">Recupera tu contraseña</a>
+              <button>Registrarse</button>
+            </div>
+          ) : (
+            <div className="sideA">
+              <h1>Nos alegra verte</h1>
+              <p>Inicia Sesión para que puedas ver tus productos favoritos.</p>
+              <button onClick={handleLogin}>Entrar</button>
+            </div>
+          )}
+          <div className="sideB">
+            {view === 'login' ? (
+              <div>
+                <h1>Crear cuenta</h1>
+                <p>Crea una cuenta para que puedas guardar tus pedidos y disfrutar.</p>
+                <button onClick={handleSignup}>Registrate</button>
+              </div>
+            ) : (
+              <div className="sideB--header">
+                <h1>Crear cuenta</h1>
+                <input type="text" placeholder="Nombre" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Contraseña" />
+                <button>Registrate</button>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  }
+  
 
-          </Components.Container>
-      )
- }
-
- export default AppLogin;
+export default AppLogin;
