@@ -14,11 +14,11 @@ export default function CardTortas(props) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <div className="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-producto">
+    <div className="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 col-producto">
       <div className="card m-0">
-        <div className="img-container m-3">
-          <div className="m-3">
-            <img src={src+props.imagen} id="imagen-card" className="card-img-top img-fluid" alt={props.img_descripcion}/>
+        <div className="img-container m-2">
+          <div className="m-3 imagen-producto">
+            <img src={src+props.imagen} id="imagen-card" className="card-img-top " alt={props.img_descripcion}/>
           </div>
           <div className="btn-detalle mb-2">
             <button className="btn detalle card-text" onClick={handleShow}>+ Detalle</button>
@@ -54,8 +54,14 @@ export default function CardTortas(props) {
         </a>
         <div className="contenedor">
           <div className="izquierda">
-            Porciones
-            <div className="medidas">S M L XL XXL</div>
+            <h5 className='m-0'>Porciones</h5>
+            <div className="medidas btn-group">
+              <button type="button" className="btn btn-medidas">S</button>
+              <button type="button" className="btn btn-medidas">M</button>
+              <button type="button" className="btn btn-medidas">L</button>
+              <button type="button" className="btn btn-medidas">XL</button>
+              <button type="button" className="btn btn-medidas">XXL</button>
+            </div>
           </div>
           <div className="derecha">
             <a href="#">
@@ -69,7 +75,7 @@ export default function CardTortas(props) {
 
       <div className="mitad-abajo">
         <p className="titulo"> {props.nombre} </p>
-        <p>{props.descripcion}</p>
+        <p className='descripcion'>{props.descripcion}</p>
         <div className="medidas-productos">
           <ul className='porciones'>
             <li>Medidas</li>
@@ -83,12 +89,9 @@ export default function CardTortas(props) {
         </div>
         <div className="agregar">
           <a>Agregar <img className="carrito" src="icons/carrito.png" alt="carrito" /></a>
-          
-          
         </div>
       </div>
         </Modal.Body>
-        
       </Modal>
     </div>
   )
