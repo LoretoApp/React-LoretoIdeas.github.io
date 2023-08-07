@@ -1,21 +1,22 @@
 .text {
-    color: #4B102D;
-  
+  color: #4B102D;
   }
-.parrafo{
+  .parrafoDesayuno{
   text-align: center;
   font-size: 3vh;
   text-size-adjust: 100% ;
   font-family: 'Hahmlet', serif;  
-  line-height: 21.7px;
+  line-height: 3vh;
+  color: #4B102D;
 }
-
-.titulo{
+    
+.desayunos{
   text-align: center;
   color: #4B102D;
   text-size-adjust: 100% ;
   font-family: 'Italianno' ;
   font-size: 9vh;
   line-height: 57.6px;
-  padding-top: 50px;
+  padding-top: 50px;    
 } 
+  /* Ajustes para la sección de división */
