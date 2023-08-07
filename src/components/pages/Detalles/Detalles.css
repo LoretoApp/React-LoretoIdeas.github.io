@@ -129,7 +129,7 @@
             font-size: 15px;
             padding-left: 40px;
         }
-        .agregar{
+        .btn-carrito{
             background-color: var(--color-principal);
             border-radius: 50px;
             width: 170px;
@@ -161,6 +161,7 @@
             
             
         }        
+        
 }
 
 @media (min-width: 768px){
@@ -278,10 +279,10 @@
         font-size: 20px;
     }
 
-    .agregar{
+    .btn-carrito{
         background-color: var(--color-principal);
         border-radius: 50px;
-        width: 200px;
+        width: 150px;
         height: 41px;
         color: white;
         font-family: 'Jockey One', sans-serif;
@@ -292,12 +293,11 @@
         align-items: center;
         flex-wrap: nowrap;
         margin: auto;
-
     }
     
     img.carrito{
         width:31px ;
-        position: absolute;
+        position: relative;
     }
 
     /* .medidas-productos{

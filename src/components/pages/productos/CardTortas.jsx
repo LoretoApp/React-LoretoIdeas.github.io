@@ -88,9 +88,9 @@ export default function CardTortas(props) {
           </ul>
           
         </div>
-        <div className="agregar">
-          <a>Agregar <img className="carrito" src="icons/carrito.png" alt="carrito" /></a>
-        </div>
+        
+          <a className='btn btn-carrito'>Agregar <img className="carrito" src="icons/carrito.png" alt="carrito" /></a>
+       
       </div>
         </Modal.Body>
       </Modal>
