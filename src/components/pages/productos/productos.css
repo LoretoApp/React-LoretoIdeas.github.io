@@ -27,6 +27,7 @@
       color: #4B102D;
       padding: 0;
       width: 100%;
+      height: fit-content;
     }
     .boton-agregar {
       background-color: #B8226A ;

@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 export default function CardTortas(props) {
   const src = 'img/'
   const [show, setShow] = useState(false);
+  const [price, setPrice] = useState(props.precio[0])
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -56,11 +57,11 @@ export default function CardTortas(props) {
           <div className="izquierda">
             <h5 className='m-0'>Porciones</h5>
             <div className="medidas btn-group">
-              <button type="button" className="btn btn-medidas">S</button>
-              <button type="button" className="btn btn-medidas">M</button>
-              <button type="button" className="btn btn-medidas">L</button>
-              <button type="button" className="btn btn-medidas">XL</button>
-              <button type="button" className="btn btn-medidas">XXL</button>
+              <button type="button" className="btn btn-medidas" onClick={()=> setPrice(props.precio[0])}>S</button>
+              <button type="button" className="btn btn-medidas" onClick={()=> setPrice(props.precio[1])}>M</button>
+              <button type="button" className="btn btn-medidas" onClick={()=> setPrice(props.precio[2])}>L</button>
+              <button type="button" className="btn btn-medidas" onClick={()=> setPrice(props.precio[3])}>XL</button>
+              <button type="button" className="btn btn-medidas" onClick={()=> setPrice(props.precio[4])}>XXL</button>
             </div>
           </div>
           <div className="derecha">
@@ -68,7 +69,7 @@ export default function CardTortas(props) {
               <img className="corazon" src="icons/Me-gusta.png" alt="corazon" />
             </a>
             <br></br>
-           $ {props.precio[2]}
+           $ {price}
           </div>
         </div>
       </div>
