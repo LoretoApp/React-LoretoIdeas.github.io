@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const getTortasList = async () => {
-  const url = "http://localhost:3000/mostrar";
+  const url = "https://backendloretoideas.onrender.com/mostrar";
   const response = await axios.get(url);
   return response.data
 }
