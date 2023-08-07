@@ -66,7 +66,7 @@ export default function CardTartaleta(props) {
 
       <div className="mitad-abajo">
         <p className="titulo"> {props.nombre} </p>
-        <p className='descripcion'>{props.descripcion}</p>
+        <p className='descripcion p-2 mb-3'>{props.descripcion}</p>
        
         
           <a className='btn btn-carrito'>Agregar <img className="carrito" src="icons/carrito.png" alt="carrito" /></a>

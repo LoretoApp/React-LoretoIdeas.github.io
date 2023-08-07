@@ -1,6 +1,21 @@
-
+import { useState, useEffect } from "react";
+import getTartaletasList from "../../../../controllers/getTartaletasList";
 
 export default function ModificarStatusTartaleta() {
+  /* Llamada de API */
+  const [tartaletasList, setTartaletasList] = useState([]);
+  const updateTartaletas = async () => {
+    const newTartaletasList = await getTartaletasList();
+    setTartaletasList(newTartaletasList);
+  };
+  useEffect(() => {
+    updateTartaletas();
+  }, []);
+  /* Selector de valor */
+  const [selectedValue, setSelectedValue] = useState("");
+  const selectValue = async (e) => {
+    setSelectedValue(e.target.value);
+  };
   return (
     <div className="container">
       <div className="row">
@@ -13,13 +28,22 @@ export default function ModificarStatusTartaleta() {
           <label htmlFor="selected-id" className="form-label">
             Nombre del producto a modificar
             </label>
-          <select
-            className="form-select"
-            id="select-id"
-            aria-label="Default select example">
-            <option selected> Nombre</option>
-            
-          </select>
+            <select
+          className="form-select"
+          id="select-id"
+          aria-label="Default select example"
+          value={selectedValue} 
+          onChange={selectValue} 
+        >
+          <option value={''}>
+            Seleccione producto para modificar
+          </option>
+          {tartaletasList.map((tartaleta) => (
+            <option key={tartaleta._id} value={tartaleta._id}>
+              {tartaleta.nombre} -Estado: {tartaleta.status}
+            </option>
+          ))}
+        </select>
           <label htmlFor="selected-id" className="form-label">
             Parametro a modificar
             </label>

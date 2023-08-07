@@ -56,7 +56,7 @@ export default function BotonesProductos() {
         </div>
         <div className="container-fluid">
           <div className="row mt-1 d-flex " id="contenedor-card">
-            {tortasList.map((torta) => (
+            {tortasList.filter(torta=> torta.status === 'ACTIVO').map((torta) => (
               <CardProductos
                 key={torta._id}
                 nombre={torta.nombre}
@@ -67,10 +67,11 @@ export default function BotonesProductos() {
                 descripcion={torta.descripcion}
               />
             ))}
-            {tartaletasList.map((tartaleta) => (
+            {tartaletasList.filter(tartaleta=> tartaleta.status === 'ACTIVO').map((tartaleta) => (
               <CardTartaleta
                 key={tartaleta._id}
                 nombre={tartaleta.nombre}
+                descripcion={tartaleta.descripcion}
                 precio={tartaleta.precio}
                 diametro={tartaleta.diametro}
                 imagen={tartaleta.imagen}
