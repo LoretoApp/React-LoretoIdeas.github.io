@@ -1,7 +1,15 @@
-import React from 'react'
+import Footer from '../Footer/Footer';
+import NavBarPage from '../navbar/NavBarPage';
+import CarruselCocteleria from './Carrusel-cocteleria';
+// import './cocteleria.css'
 
-export default function Cocteleria() {
+
+
+function Cocteleria() {
   return (
+    <>
+    <NavBarPage/>
+    <CarruselCocteleria/>
     <section>
       <div className="container-fluid text-center1 fondo">
         <div className="container-fluid">
@@ -13,5 +21,8 @@ export default function Cocteleria() {
           </div>
       </div>
     </section>
+    <Footer/>
+    </>
   )
 }
+export default Cocteleria

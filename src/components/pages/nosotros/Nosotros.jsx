@@ -1,12 +1,19 @@
 
+import CarruselNosotros1 from './CarruselNosotros1';
+import CarruselNosotros2 from './CarruselNosotros2';
+import Footer from '../Footer/Footer';
+import NavBarPage from '../navbar/NavBarPage';
 import './nosotros.css'
 
-export default function Nosotros() {
+ function Nosotros() {
   return (
+    <>
+    <NavBarPage/>
+    <CarruselNosotros1/>
     <section>
       <div className="background">
         <div className="circle">
-          <img src="src/assets/img/foto perfil.jpg" className="img-circle" alt="Imagen receptiva" />
+          <img src="img/foto perfil.jpg" className="img-nosotros" alt="Imagen receptiva" />
         </div>
       </div>
 
@@ -20,14 +27,18 @@ export default function Nosotros() {
 
       <section className="divider">
         <div className="divider-image">
-          <img src="src/assets/img/LINEA-AMARILLA.png" alt="Línea amarilla" />
+          {/* <img src="" alt="" /> */}
         </div>
       </section>
 
       <section className="text">
         <h1>Premios y actividades</h1>
-        {/* Aquí puedes agregar información sobre los premios y actividades */}
       </section>
     </section>
+    <CarruselNosotros2/>
+    <Footer/>
+    </>
   );
 }
+
+export default  Nosotros
