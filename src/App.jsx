@@ -6,7 +6,6 @@ import ShapeExample from "./components/pages/Inicio/Inicio";
 import Cocteleria from "./components/pages/cocteleria/Cocteleria";
 import Desayunos from "./components/pages/desayunos/Desayunos";
 import Nosotros from "./components/pages/nosotros/Nosotros";
-import MostrarTartaletas from "./components/pages/admin/Tartaletas/MostrarTartaletas";
 
 
 
@@ -20,7 +19,7 @@ function App() {
         <Route path="cocteleria" element={<Cocteleria />}/>
         <Route path="desayunos" element={<Desayunos />}/>
         <Route path="nosotros" element={<Nosotros />}/>
-        <Route path="modificar-status" element={<MostrarTartaletas />}/>
+        
 
     </Routes>
   </div>

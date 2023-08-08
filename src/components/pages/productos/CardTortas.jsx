@@ -55,7 +55,7 @@ export default function CardTortas(props) {
         </a>
         <div className="contenedor">
           <div className="izquierda">
-            <h5 className='m-0'>Porciones</h5>
+            <h5 className='m-0'>Medidas</h5>
             <div className="medidas btn-group">
               <button type="button" className="btn btn-medidas" onClick={()=> setPrice(props.precio[0])}>S</button>
               <button type="button" className="btn btn-medidas" onClick={()=> setPrice(props.precio[1])}>M</button>
