@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import getTartaletasList from "../../../../controllers/getTartaletasList";
+import axios from "axios";
 
 export default function ModificarStatusTartaleta() {
   /* Llamada de API */
@@ -13,9 +14,52 @@ export default function ModificarStatusTartaleta() {
   }, []);
   /* Selector de valor */
   const [selectedValue, setSelectedValue] = useState("");
-  const selectValue = async (e) => {
+  const selectValue = (e) => {
     setSelectedValue(e.target.value);
   };
+  const [statusValue, setStatusValue] = useState('')
+
+  const selectStatusValue = (e)=> {
+    setStatusValue(e.target.value)
+  }
+  const id = selectedValue
+
+  const enviarDatos = async ()=>{
+    const data = {
+      status: statusValue
+    }
+  
+        
+        try {
+          await axios.put('https://backendloretoideas.onrender.com/tartaleta/modificartartaleta/'+id, data, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }})
+        .then((response)=> {
+          console.log({
+            Origen: "Recibiendo respuesta de la API",
+            status: response.status,
+            statusText: response.statusText,
+            response: response.data,
+          });
+          if (response.status === 200) {
+          alert(`Producto modificado correctamente`);
+          } else {
+            alert("Error al modificar el producto");
+            console.log("no esta recibiendo el status 200")
+            response.status(400).json({msg: "error al modificar el producto"})
+          }
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+        } catch (error) {
+          console.log('algo salio mal',error)
+          
+        }
+      
+  }
+
   return (
     <div className="container">
       <div className="row">
@@ -43,30 +87,22 @@ export default function ModificarStatusTartaleta() {
               {tartaleta.nombre} -Estado: {tartaleta.status}
             </option>
           ))}
-        </select>
-          <label htmlFor="selected-id" className="form-label">
-            Parametro a modificar
-            </label>
-          <select
-            className="form-select"
-            id="modify"
-            aria-label="Default select example">
-            <option value="status" selected>Estado</option>
-          </select>
-          
+        </select>          
           <label htmlFor="modify-value" className="form-label">
             Ingrese el nuevo valor
           </label>
           <select
             className="form-select"
             id="modify-value"
-            aria-label="Default select example">
-            <option selected>Nuevo Valor</option>
+            aria-label="Default select example"
+            value={statusValue} 
+            onChange={selectStatusValue} >
+            <option value={''}>Nuevo Valor</option>
             <option value="ACTIVO">ACTIVO</option>
             <option value="INACTIVO">INACTIVO</option>
           </select>
 
-          <button type="button" className="btn btn-primary" >Modificar Producto</button>
+          <button type="button" className="btn btn-primary" onClick={()=> enviarDatos()}>Modificar Producto</button>
         </form>
         <p id="error"></p>
       </div>
