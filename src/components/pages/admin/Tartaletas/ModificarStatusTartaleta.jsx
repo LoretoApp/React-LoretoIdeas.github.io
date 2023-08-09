@@ -25,39 +25,29 @@ export default function ModificarStatusTartaleta() {
   const id = selectedValue
 
   const enviarDatos = async ()=>{
-    const data = {
-      status: statusValue
-    }
-  
-        
-        try {
-          await axios.put('https://backendloretoideas.onrender.com/tartaleta/modificartartaleta/'+id, data, {
-        headers: {
-          'Content-Type': 'multipart/form-data'
-        }})
-        .then((response)=> {
-          console.log({
-            Origen: "Recibiendo respuesta de la API",
-            status: response.status,
-            statusText: response.statusText,
-            response: response.data,
-          });
-          if (response.status === 200) {
+    try {
+      await axios.put('https://backendloretoideas.onrender.com/tartaleta/modificartartaleta/'+id, {status: statusValue})
+      .then((response)=> {
+        console.log({
+          Origen: "Recibiendo respuesta de la API",
+          status: response.status,
+          statusText: response.statusText,
+          response: response.data,
+      });
+        if (response.status === 200) {
           alert(`Producto modificado correctamente`);
-          } else {
-            alert("Error al modificar el producto");
-            console.log("no esta recibiendo el status 200")
-            response.status(400).json({msg: "error al modificar el producto"})
-          }
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-        } catch (error) {
-          console.log('algo salio mal',error)
-          
+        } else {
+          alert("Error al modificar el producto");
+          console.log("no esta recibiendo el status 200")
+          response.status(400).json({msg: "error al modificar el producto"})
         }
-      
+      })
+      .catch(function (error) {
+        console.log(error);
+        });} 
+    catch (error) {
+      console.log('algo salio mal',error)     
+    }  
   }
 
   return (

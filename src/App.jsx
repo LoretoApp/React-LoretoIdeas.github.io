@@ -10,6 +10,7 @@ import Nosotros from "./components/pages/nosotros/Nosotros";
 
 
 
+
 function App() {
   return (
     <div>
@@ -19,8 +20,6 @@ function App() {
         <Route path="cocteleria" element={<Cocteleria />}/>
         <Route path="desayunos" element={<Desayunos />}/>
         <Route path="nosotros" element={<Nosotros />}/>
-        
-
     </Routes>
   </div>
   );

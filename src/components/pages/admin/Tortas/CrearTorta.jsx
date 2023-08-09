@@ -81,10 +81,10 @@ export default function CrearTorta() {
         })
         .catch(function (error) {
           console.log(error);
-          alert('la respues no fue success')
+          alert('no fue posible conectarse a la base de datos')
         });
         } catch (error) {
-          alert('algo salio mal, no desesperes')
+          alert('algo salio mal.')
           console.log(error)
           
         }
