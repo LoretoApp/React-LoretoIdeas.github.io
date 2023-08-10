@@ -1,92 +1,191 @@
+
 :root{
-    --color-principal: #B8226A;
-    --color-segundo: #F8E5DF;
-    --color-tercero: #FFA041;
-    --color-text:#4B102D;
-    --texto-h1: 48px;
-    --texto-h2: 30px;
-    --texto-h3:15px;
-    --texto-h4: 10px;
-    --texto-parrafos:18px;
-    --texto-btn:24px
-  }
-  
-  
-  body{
-    line-height: 1.4;
-  }
-  /* Estilos CSS para el footer (estilos tipo*/
-  footer {
-    background-color: var(--color-principal);
-    color:var(--color-segundo);
-    font-size: 12px;
-    padding-top: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-family: 'Khand', sans-serif;
-  }
-  
-  /* Estilos para los elementos dentro del footer si se llegan a necesitar */
-  /* .footer-elemento { */
-    
-    
-  
-  
-  /* Estilos para los elementos 1 y 2 en pantallas pequeñas (mobile) */
-  .footer-elemento-sm {
-    text-align: left;
-  }
-  
-  .div.iconos{
+  --color-principal: #B8226A;
+  --color-segundo: #F8E5DF;
+  --color-tercero: #FFA041;
+  --color-text:#4B102D;
+  --texto-h1: 48px;
+  --texto-h2: 30px;
+  --texto-h3:15px;
+  --texto-h4: 10px;
+  --texto-parrafos:18px;
+  --texto-btn:24px
+}
+
+
+
+body{
+  line-height: 1.4;
+}
+
+footer {
+  background-color: var(--color-principal);
+  color:var(--color-segundo);
+  font-size: 12px;
+  padding-top: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Khand', sans-serif;
+}
+
+@media (min-width: 992px){
+
+  .row{
     align-items: center;
-  }
-  
-  @media (max-width: 767.98px) {
-    .footer-elemento-sm {
-      display: inline-block;
-      width: 50%;
-    }
-  
-    .footer-elemento-sm:first-child {
-        text-align:left;
-        
-      }
-    
-      /* Estilos para el segundo elemento en pantallas pequeñas (mobile) */
-    .footer-elemento-sm:last-child {
-        text-align: right;
-        margin-top: 10px;
-      }
-    
-      /* Ajuste adicional para ambos elementos en pantallas pequeñas */
-    .footer-elemento-sm {
-        display: inline-block;
-        width: 50%;
-       
-      }
-    img.whatsapp{
-        width: 44px;
-        height: 44px;
-        border-radius: 60px;
-    }
-    img.sercotec{
-        width: 67px;
-        height: 47px;
-        margin-left: 5px;
-        
-      }
-  }
-  
-  /* Estilos para el texto de derechos de autor */
-  .text-center {
-    font-size: 14px;
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 0rem;
+    margin: 0 auto;
+   
     
   }
+
+  .container{
+    align-items: center;
+    padding: 0px;
+    margin: 0 auto;
+    
+  
+  }
+
+  div.contacto{
+    padding-right: 30%;
+  }
+
+  div.iconos{
+    margin: 0 auto;
+    padding-left: 16%;
+  }
+
+  img.facebook{
+    max-width: 57px;
+    margin-left: 20px;
+
+  }
+
+  img.instagram{
+    max-width: 50px;
+    background-color: white;
+    border-radius: 60px;
+    margin-left: 20px;
+  }
+
+  img.sercotec{
+    max-width: 75px;
+    margin-left: 20px;
+  }
+
   p{
-    padding-bottom:10px ;
+    font-size: 14px;
   }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+  .row{
+    align-items: center;
+    margin: 0 auto;
+   
+   
+  }
+
+  .container{
+    margin: 10px;
+    align-items: center;
+    padding: 0px;
+    margin: 0 auto;
   
+  }
+
+  div.contacto{
+    padding-right: 17%;
+  }
+
+  div.iconos{
+    margin: 0 auto;
+    align-items: end;
+    padding-left: 20%;
+  }
+
+  img.facebook{
+    max-width: 57px;
+    margin-left: 10px;
+
+  }
+
+  img.instagram{
+    max-width: 50px;
+    background-color: white;
+    border-radius: 60px;
+    margin-left: 10px;
+  }
+
+  img.sercotec{
+    max-width: 75px;
+    margin-left: 10px;
+  }
+
+  p{
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 767px){
+  .row{
+    align-items: center;
+    margin: 0 auto;
+
+    
+  }
+
+  .container{
+    margin: 10px;
+    align-items: center;
+    padding: 0px;
+    margin: 0 auto;
+  
+  }
+
+  .contacto{
+    margin-left: 3%;
+
+  }
+
+  div.iconos{
+    margin: 0 auto;
+    align-items: end;
+    padding-left: 5.3%;
+  }
+
+  img.facebook{
+    display: none;
+  }
+
+  img.instagram{
+    width: 44px;
+    height: 44px;
+    border-radius: 60px;
+    background-color: white; 
+  }
+
+  img.sercotec{
+    width: 67px;
+    height: 47px;
+    margin-left: 6px;
+    
+  }
+
+  p{
+    font-size: 11px;
+  }
+}
+
+/* Estilos para el texto de derechos de autor */
+.text-center {
+  font-size: 10px;
+  text-align: center;
+  
+  
+}
+p{
+  margin-bottom: 10px;
+}

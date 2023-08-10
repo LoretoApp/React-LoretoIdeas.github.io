@@ -25,26 +25,26 @@ body{
 }
 
 .espacio{
-    height: 600px;
+    height: 520px;
     background: rgb(248,229,223);
     background: linear-gradient(173deg, rgba(248,229,223,1) 0%, rgba(255,255,255,1) 100%);
     border: dotted;
     border-color: #4B102D;
-    border-radius: 40px;
+    border-radius: 60px;
     border-width: 1.8px;
     align-items: center;
     text-align: center;
     justify-content: center;
 }
 .container{
-    height: 530px;
+    height: 460px;
     border: dotted ;
     border-color: #4B102D;
     margin: 20px;
     padding: 10px;
     background: rgb(248,229,223);
     background: linear-gradient(173deg, rgba(248,229,223,1) 0%, rgba(255,255,255,1) 100%);
-    border-radius: 40px;
+    border-radius: 60px;
     border-width: 1.8px;
     color: var(--color-text);
 }
@@ -60,4 +60,7 @@ p.gracias{
     color: var(--color-text);
 
 
+}
+.gracias{
+    margin: 15px;
 }
