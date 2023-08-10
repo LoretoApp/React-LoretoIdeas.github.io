@@ -8,6 +8,7 @@ import Desayunos from "./components/pages/desayunos/Desayunos";
 import Nosotros from "./components/pages/nosotros/Nosotros";
 import Carrito from "./components/carrito/carrito";
 import AppLogin from "./components/login/AppLogin";
+import CarritoP from "./components/carrito/CarritoPrincipal";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="nosotros" element={<Nosotros />}/>
         <Route path="carrito" element={<Carrito />}/>
         <Route path="login" element={<AppLogin />}/>
+        <Route path="carritop" element={<CarritoP />}/>
      
     </Routes>
   </div>

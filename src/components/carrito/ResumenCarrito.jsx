@@ -1,4 +1,3 @@
-
 function ResumenCarrito({ cantidadTotal, precioTotal}) {
   return (
     <div className="cart-summary">

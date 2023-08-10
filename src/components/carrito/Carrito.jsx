@@ -1,8 +1,8 @@
-import "./Stylecarrito.css/";
+import "./stylecarrito.css/";
 import PasosCarrito from './PasosCarrito';
 import ElementoCarrito from './ElementoCarrito';
 import ResumenCarrito from './ResumenCarrito';
-import Footer from '../pages/Footer/Footer';
+
 
 function Carrito() {
     return (
@@ -18,7 +18,6 @@ function Carrito() {
         <ResumenCarrito/>
          </div>
         </div>
-        <Footer/>
         </>
         )
 }
