@@ -113,15 +113,15 @@
 
   @media (min-width: 768px) {
     h3 {
-      font-family: 'Italianno', cursive;
-      font-size: 12vw;
+      font-family: 'Italianno';
+      font-size: 100px;
       font-weight: 500;
       color: #4B102D;
     }
     
     .imagen-principal{
-      height: 100%;
-      width: 50%;
+      height: 200px;
+      width: 200px;
     }
   
     .botones {
@@ -131,19 +131,33 @@
       background-color: #F8E5DF;
       font-family: 'Hahmlet';
       font-weight: 500;
-      font-size: 2vw;
+      font-size: 25px;
+      color: #4B102D;
+      padding: 0 0 10px 0;
+      margin-bottom: 10px;
+      height: 40px;
+      width: 100%;
+    }
+    .botones:hover {
+      border-top: 5px solid #B8226A;
+      border-radius: 30px;
+      background-color: #F8E5DF;
+      font-family: 'Hahmlet';
+      font-weight: 600;
+      font-size: 25px;
       color: #4B102D;
       padding: 0;
+      height: 43px;
       width: 100%;
     }
     .boton-agregar {
       background-color: #B8226A ;
       color: #F8E5DF;
-      font-weight: 600;
-      padding: 0;
+      font-weight: 500;
+      padding: 2px;
       display: flex;
       align-items: center;
-      height: fit-content;
+      height: 35px;
     }
     
     .card {
@@ -152,7 +166,7 @@
       text-align: justify;
       margin: 5px;
       color: #4B102D;
-      width: 90%;
+      width: 70%;
       border: 0;
     }
     .card-body {
@@ -162,6 +176,15 @@
     }
     .btn-detalle {
       display: flex;
+    }
+    .detalle:hover{
+      font-size: 17px;
+      font-weight: 900;
+      margin: 0 0 0 20px;
+      padding: 0 3px 0 3px;
+      width: fit-content;
+      background-color: #FFA041;
+      border-radius: 30px;
     }
     .detalle {
       font-size: 15px;
@@ -173,7 +196,7 @@
       border-radius: 30px;
     }
     .precio {
-      font-size: 2vw;
+      font-size: 25px;
       margin: 0;
       font-weight: 600;
     }

@@ -16,8 +16,8 @@ function Footer(){
                 </div>
                 {/* Elemento 2 de la izquierda que contiene los logos (responsivo) */}
                 <div className='iconos col'>
-                  <img class="instagram" src="icons\instagram.png" alt="instagram"/>
-                  <img class="facebook" src="icons\Facebook.png" alt="facebook"/>
+                  <img className="instagram" src="icons\instagram.png" alt="instagram"/>
+                  <img className="facebook" src="icons\Facebook.png" alt="facebook"/>
                   <img className="sercotec" src="icons\sercotec(2).jpg" alt="sercotec"/>
                 </div>
             </div>
