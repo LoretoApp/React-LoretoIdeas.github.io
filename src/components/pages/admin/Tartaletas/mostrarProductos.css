@@ -1,0 +1,43 @@
+@media (max-width: 768px){
+  .img-tabla{
+  height: 40px;
+  width: 40px;
+  }
+  th{
+    font-size: 10px;
+  }
+  td{
+  font-size: 10px;
+  }
+  ul{
+    padding: 0;
+  }
+  li {
+    font-size: 10px;
+    padding: 0;
+  }
+  .diametro{
+    text-align: center;
+  }
+  .table > :not(caption) > * > * {
+    padding: 0 5px 0 5px;
+    height: 20px;
+  }
+}
+@media (min-width: 768px){
+  .img-tabla{
+    height: 100px;
+    width: 100px;
+    }
+    th{
+      font-size: 30px;
+    }
+    td{
+    font-size: 20px;
+    }
+    .table > :not(caption) > * > * {
+      padding: 0; 
+      height: 20px;
+      padding: 0 10px 0 10px;
+    }
+}
