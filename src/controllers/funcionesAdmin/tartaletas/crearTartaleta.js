@@ -1,4 +1,4 @@
-const formulario = document.getElementById('formulario');
+
 function enviarDatos( ) {
 
   const error = document.getElementById('error-datos')
@@ -54,7 +54,6 @@ function enviarDatos( ) {
 
 }
 
-formulario.addEventListener('submit', (e)=>{
-  e.preventDefault();
-  enviarDatos()
-})
+
+
+export default enviarDatos

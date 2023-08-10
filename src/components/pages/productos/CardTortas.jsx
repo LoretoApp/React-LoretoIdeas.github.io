@@ -10,15 +10,16 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 export default function CardTortas(props) {
   const src = 'img/'
   const [show, setShow] = useState(false);
+  const [price, setPrice] = useState(props.precio[0])
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <div className="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-producto">
+    <div className="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 col-producto">
       <div className="card m-0">
-        <div className="img-container m-3">
-          <div className="m-3">
-            <img src={src+props.imagen} id="imagen-card" className="card-img-top img-fluid" alt={props.img_descripcion}/>
+        <div className="img-container m-2">
+          <div className="m-3 imagen-producto">
+            <img src={src+props.imagen} id="imagen-card" className="card-img-top " alt={props.img_descripcion}/>
           </div>
           <div className="btn-detalle mb-2">
             <button className="btn detalle card-text" onClick={handleShow}>+ Detalle</button>
@@ -54,22 +55,28 @@ export default function CardTortas(props) {
         </a>
         <div className="contenedor">
           <div className="izquierda">
-            Porciones
-            <div className="medidas">S M L XL XXL</div>
+            <h5 className='m-0'>Medidas</h5>
+            <div className="medidas btn-group">
+              <button type="button" className="btn btn-medidas" onClick={()=> setPrice(props.precio[0])}>S</button>
+              <button type="button" className="btn btn-medidas" onClick={()=> setPrice(props.precio[1])}>M</button>
+              <button type="button" className="btn btn-medidas" onClick={()=> setPrice(props.precio[2])}>L</button>
+              <button type="button" className="btn btn-medidas" onClick={()=> setPrice(props.precio[3])}>XL</button>
+              <button type="button" className="btn btn-medidas" onClick={()=> setPrice(props.precio[4])}>XXL</button>
+            </div>
           </div>
           <div className="derecha">
             <a href="#">
               <img className="corazon" src="icons/Me-gusta.png" alt="corazon" />
             </a>
             <br></br>
-           $ {props.precio[2]}
+           $ {price}
           </div>
         </div>
       </div>
 
       <div className="mitad-abajo">
         <p className="titulo"> {props.nombre} </p>
-        <p>{props.descripcion}</p>
+        <p className='descripcion'>{props.descripcion}</p>
         <div className="medidas-productos">
           <ul className='porciones'>
             <li>Medidas</li>
@@ -81,14 +88,11 @@ export default function CardTortas(props) {
           </ul>
           
         </div>
-        <div className="agregar">
-          <a>Agregar <img className="carrito" src="icons/carrito.png" alt="carrito" /></a>
-          
-          
-        </div>
+        
+          <a className='btn btn-carrito'>Agregar <img className="carrito" src="icons/carrito.png" alt="carrito" /></a>
+       
       </div>
         </Modal.Body>
-        
       </Modal>
     </div>
   )
