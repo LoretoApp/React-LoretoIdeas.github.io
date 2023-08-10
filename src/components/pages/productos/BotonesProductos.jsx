@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import CardProductos from "./CardTortas";
 import getTartaletasList from "../../../controllers/getTartaletasList";
 import CardTartaleta from "./CardTartaleta";
+import CarruselProducto from "./CarruselProducto"
 
 export default function BotonesProductos() {
   const [tortasList, setTortasList] = useState([]);
@@ -13,16 +14,26 @@ export default function BotonesProductos() {
   const updateTortas = async () => {
     const newTortasList = await getTortasList();
     setTortasList(newTortasList);
+    setCarrusel(false)
   };
   const updateTartaletas = async () => {
     const newTartaletasList = await getTartaletasList();
     setTartaletasList(newTartaletasList);
+    setCarrusel(false)
   };
+  const ocultarProductos = ()=>{
+    setTartaletasList([])
+    setTortasList([])
+    setCarrusel(true)
+  }
 
   useEffect(() => {
     updateTortas();
     updateTartaletas();
   }, []);
+  
+  const [carrusel, setCarrusel] = useState(false)
+  
 
   return (
     <>
@@ -44,11 +55,12 @@ export default function BotonesProductos() {
                 onClick={() => updateTartaletas() && setTortasList([])}
                 className="btn botones"
               >
-                Tartaletas
+                Kuchen & Tartas
               </button>
             </div>
             <div className="col-4 col-sm-4 col-md-4 col-lg-4 btn-ref">
-              <button href="#" className="btn botones">
+              <button href="#" className="btn botones"
+              onClick={() => ocultarProductos()}>
                 Extras
               </button>
             </div>
@@ -56,29 +68,33 @@ export default function BotonesProductos() {
         </div>
         <div className="container-fluid">
           <div className="row mt-1 d-flex " id="contenedor-card">
-            {tortasList.filter(torta=> torta.status === 'ACTIVO').map((torta) => (
-              <CardProductos
-                key={torta._id}
-                nombre={torta.nombre}
-                precio={JSON.parse(torta.precio)}
-                porciones={JSON.parse(torta.porciones)}
-                imagen={torta.imagen}
-                img_descripcion={torta.img_descripcion}
-                descripcion={torta.descripcion}
-              />
-            ))}
-            {tartaletasList.filter(tartaleta=> tartaleta.status === 'ACTIVO').map((tartaleta) => (
-              <CardTartaleta
-                key={tartaleta._id}
-                nombre={tartaleta.nombre}
-                descripcion={tartaleta.descripcion}
-                precio={tartaleta.precio}
-                diametro={tartaleta.diametro}
-                imagen={tartaleta.imagen}
-                img_descripcion={tartaleta.img_descripcion}
-                
-              />
-            ))}
+            {tortasList
+              .filter((torta) => torta.status === "ACTIVO")
+              .map((torta) => (
+                <CardProductos
+                  key={torta._id}
+                  nombre={torta.nombre}
+                  precio={JSON.parse(torta.precio)}
+                  porciones={JSON.parse(torta.porciones)}
+                  imagen={torta.imagen}
+                  img_descripcion={torta.img_descripcion}
+                  descripcion={torta.descripcion}
+                />
+              ))}
+            {tartaletasList
+              .filter((tartaleta) => tartaleta.status === "ACTIVO")
+              .map((tartaleta) => (
+                <CardTartaleta
+                  key={tartaleta._id}
+                  nombre={tartaleta.nombre}
+                  descripcion={tartaleta.descripcion}
+                  precio={tartaleta.precio}
+                  diametro={tartaleta.diametro}
+                  imagen={tartaleta.imagen}
+                  img_descripcion={tartaleta.img_descripcion}
+                />
+              ))}
+              {carrusel && <CarruselProducto/>}
           </div>
         </div>
       </section>
