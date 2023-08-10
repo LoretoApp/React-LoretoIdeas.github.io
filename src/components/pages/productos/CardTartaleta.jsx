@@ -1,12 +1,8 @@
 /* eslint-disable react/prop-types */
 import "../productos/productos.css"
 import 'bootstrap/dist/css/bootstrap.min.css'
-<<<<<<< HEAD
-import React from 'react';
-=======
 import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
->>>>>>> origin
 
  
 export default function CardTartaleta(props) {
