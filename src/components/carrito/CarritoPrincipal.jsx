@@ -4,15 +4,12 @@ import Carrito from './Carrito';
 import "./stylecarrito.css"
 
 
-function CarritoP({show, handleClose}) {
+function CarritoP({showCar, handleCar}) {
 
   return (
     <>
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={showCar} onHide={handleCar}>
       <Carrito />
-        <Modal.Header closeButton>
-        
-        </Modal.Header>
       </Modal>
     </>
   );
