@@ -6,8 +6,8 @@ import ShapeExample from "./components/pages/Inicio/Inicio";
 import Cocteleria from "./components/pages/cocteleria/Cocteleria";
 import Desayunos from "./components/pages/desayunos/Desayunos";
 import Nosotros from "./components/pages/nosotros/Nosotros";
-import CarritoP from "./components/carrito/CarritoPrincipal";
-import AppLogin from "./components/login/AppLogin";
+import CrearTartaleta from "./components/pages/admin/Tartaletas/CrearTartaleta";
+
 
 
 
@@ -22,9 +22,6 @@ function App() {
         <Route path="cocteleria" element={<Cocteleria />}/>
         <Route path="desayunos" element={<Desayunos />}/>
         <Route path="nosotros" element={<Nosotros />}/>
-        <Route path="carrito" element={<CarritoP />}/>
-        <Route path="Login" element={<AppLogin />}/>
-     
     </Routes>
   </div>
   );
