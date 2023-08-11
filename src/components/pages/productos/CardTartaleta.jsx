@@ -31,7 +31,7 @@ export default function CardTartaleta(props) {
            </div>
           <div className="d-flex text-center align-items-center justify-content-around mt-2 ">
             <p className="card-text precio">$ {props.precio}</p>
-            <a href="#" className="btn boton-agregar align-content-end mb-2">agregar</a>
+            <a href="#" className="btn boton-agregar-carrito align-content-end mb-2">agregar</a>
           </div>
         </div>
       </div>

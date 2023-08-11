@@ -34,7 +34,7 @@ export default function CardTortas(props) {
            </div>
           <div className="d-flex text-center align-items-center justify-content-around mt-2 ">
             <p className="card-text precio">$ {props.precio[0]}</p>
-            <a href="#" className="btn boton-agregar align-content-end mb-2">agregar</a>
+            <a href="#" className="btn boton-agregar-carrito align-content-end mb-2">agregar</a>
           </div>
         </div>
       </div>
@@ -79,12 +79,12 @@ export default function CardTortas(props) {
         <p className='descripcion'>{props.descripcion}</p>
         <div className="medidas-productos">
           <ul className='porciones'>
-            <li>Medidas</li>
-            <li>S= {props.porciones[0]} porciones</li>
-            <li>M= {props.porciones[1]} porciones</li>
-            <li>L= {props.porciones[2]} porciones</li>
-            <li>XL= {props.porciones[3]} porciones</li>
-            <li>XXL= {props.porciones[4]} porciones</li>
+            <li className='item-lista-titulo'>Medidas</li>
+            <li className='item-lista'>S= {props.porciones[0]} porciones</li>
+            <li className='item-lista'>M= {props.porciones[1]} porciones</li>
+            <li className='item-lista'>L= {props.porciones[2]} porciones</li>
+            <li className='item-lista'>XL= {props.porciones[3]} porciones</li>
+            <li className='item-lista'>XXL= {props.porciones[4]} porciones</li>
           </ul>
           
         </div>
