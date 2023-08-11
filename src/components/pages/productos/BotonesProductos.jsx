@@ -13,22 +13,25 @@ export default function BotonesProductos() {
   const [activarBoton, setActivarBoton] = useState('');
 
   const updateTortas = async (boton) => {
+    setActivarBoton(boton);
     const newTortasList = await getTortasList();
     setTortasList(newTortasList);
     setCarrusel(false)
-    setActivarBoton(boton);
+    
   };
   const updateTartaletas = async (boton) => {
+    setActivarBoton(boton);
     const newTartaletasList = await getTartaletasList();
     setTartaletasList(newTartaletasList);
     setCarrusel(false)
-    setActivarBoton(boton);
+   
   };
   const ocultarProductos = (boton)=>{
+    setActivarBoton(boton);
     setTartaletasList([])
     setTortasList([])
     setCarrusel(true)
-    setActivarBoton(boton);
+    
   }
   useEffect(() => {
     updateTortas();
