@@ -25,7 +25,7 @@ function AppLogin() {
             </div>
           ) : (
             <div className="sideA">
-              <h1>Nos alegra verte</h1>
+              <h1 className='loginTittle'>Nos alegra verte</h1>
               <p>Inicia Sesión para que puedas ver tus productos favoritos.</p>
               <button onClick={handleLogin}>Entrar</button>
             </div>
