@@ -1,10 +1,18 @@
+import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {Outlet,Link} from "react-router-dom"
 import './NavBarPage.css'
+import CarritoP from '../../carrito/CarritoPrincipal';
 
 function NavBarPage() {
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const ColorNav={
     backgroundColor: '#B8226A', 
   }
@@ -19,8 +27,8 @@ function NavBarPage() {
         <img className="logo" src="icons/Usuario.png" alt="Logo"/>
         </a>
         <div className="div-con-linea"></div>
-        <a href='/'>
-        <img className="carrito" src="icons/carrito.png" alt="carrito"/>
+        <a>
+        <img className="carrito" src="icons/carrito.png" alt="carrito" onClick={handleShow}/>
         </a>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -32,6 +40,7 @@ function NavBarPage() {
             <Link to="/nosotros">Nosotros</Link>
 
           </Nav>
+          <CarritoP show={show} handleClose={handleClose} />
         </Navbar.Collapse>
       </Container>
     </Navbar>
