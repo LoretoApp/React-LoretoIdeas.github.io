@@ -17,7 +17,12 @@ export default function MostrarTartaletas() {
   const url = 'img/'
 
   return (
-    <div className="container-fluid">
+    <>
+      <section className="administrador col-12 text-center">
+        <p>Administrador</p>
+     </section>
+
+    <div className="cuerpo-formulario container-fluid">
       <table className="table table-striped">
         <thead>
           <tr className="table-primary">
@@ -44,5 +49,9 @@ export default function MostrarTartaletas() {
         
       </table>
     </div>
+    <section className="salir col-12 text-center">
+        <p>Salir X</p>
+    </section>
+    </>
   )
 }

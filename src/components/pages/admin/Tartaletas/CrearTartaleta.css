@@ -1,0 +1,110 @@
+
+:root{
+    --color-principal: #B8226A;
+    --color-segundo: #F8E5DF;
+    --color-tercero: #FFA041;
+    --color-text:#4B102D;
+    --texto-h1: 48px;
+    --texto-h2: 30px;
+    --texto-h3:15px;
+    --texto-h4: 10px;
+    --texto-parrafos:18px;
+    --texto-btn:24px
+  }
+
+
+
+body{
+    background-color: #FFFFFF;
+    height: 100%;
+    
+    
+}
+
+.administrador{
+    background: rgb(160,0,77);
+    background: linear-gradient(180deg, rgba(160,0,77,0.8407738095238095) 60%, rgba(161,0,78,1) 100%); 
+    width: 100%;
+    max-height: 40%;
+    border-bottom: 1px solid transparent; /* Añade un borde inferior transparente para crear espacio para la sombra */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Agrega la sombra en el borde inferior */
+    padding-bottom: 10px; /* Opcional: Añade espacio para la sombra */
+ 
+  
+
+}
+
+.salir{
+    background: rgb(160,0,77);
+    background: linear-gradient(180deg, rgba(160,0,77,0.8407738095238095) 60%, rgba(161,0,78,1) 100%);
+    width: 100%;
+    border-top: 1px solid transparent; /* Añade un borde superior transparente para crear espacio para la sombra */
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2); /* Agrega la sombra en el borde superior */
+    padding-top: 10px; /* Opcional: Añade espacio para la sombra */
+
+  
+  
+}
+
+h3{
+
+    font-size: 54px;
+    overflow: hidden;
+}
+
+p{
+    font-family: 'Katibeh', cursive;
+    font-size: 3.2rem;
+}
+
+
+div.row{
+    width: 90%;
+    margin: 0 auto;
+}
+
+div.ingreso{
+    margin-top: 20px;
+    
+
+}
+
+#formulario{
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Katibeh', cursive;
+    font-size: larger;
+
+}
+
+input[type="submit"] {
+    background-color: var(--color-principal);
+    border-color: var(--color-principal);
+
+ }
+
+input-imagen{
+    background-color: var(--color-segundo);
+}
+
+.btn-primary{
+    border-color: var(--color-principal);
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#button{
+    display:block;
+    margin-bottom: 10%;
+    
+}
+
+.btn:hover{
+    border-color: palevioletred;
+}
+
+
+
+
+

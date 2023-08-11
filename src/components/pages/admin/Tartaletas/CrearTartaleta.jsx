@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import './CrearTartaleta.css';
 
 
 
@@ -68,17 +69,21 @@ const enviarDatos = async ()=>{
 
   return (
     <>
-    <div className="container">
+    <section className="administrador col-12 text-center">
+        <p>Administrador</p>
+      </section>
+
+    <div className="cuerpo-formulario container">
       <div className="row">
-        <div className="col-12 text-center">
-          <h1>Ingreso de producto</h1>
+        <div className="ingreso col-12 text-center">
+          <h3>Ingreso de producto</h3>
         </div>
       </div>
       <form className="row g-3" id="formulario" encType="multipart/form-data">
         <p id="error-datos" className="text-danger"></p>
         <div className="col-12">
           <label htmlFor="input-nombre" className="form-label">
-            Nombre
+            Nombre:
           </label>
           <input
             type="text"
@@ -91,7 +96,7 @@ const enviarDatos = async ()=>{
         </div>
         <div className="col-12">
           <label htmlFor="input-descripcion" className="form-label">
-            Descripcion
+            Descripcion:
           </label>
           <input
             type="text"
@@ -142,7 +147,7 @@ const enviarDatos = async ()=>{
         </div>
         <div className="col-12">
           <label htmlFor="input-descripcion-img" className="form-label">
-            Descripcion de imagen
+            Descripcion de imagen:
           </label>
           <input
             type="text"
@@ -159,7 +164,12 @@ const enviarDatos = async ()=>{
           </button>
         </div>
       </form>
+
     </div>
+    <section className="salir col-12 text-center">
+        <p>Salir X</p>
+    </section>
+
     </>
   );
 }

@@ -21,7 +21,12 @@ export default function MostrarTorta() {
 
   const url = 'img/'
   return (
-    <div className="container">
+    <>
+    <section className="administrador col-12 text-center">
+        <p>Administrador</p>
+     </section>
+
+    <div className="cuerpo-formulario container">
       <table className="table table-striped table-bordered">
         <thead>
           <tr className="table-primary">
@@ -54,5 +59,9 @@ export default function MostrarTorta() {
         
       </table>
     </div>
+    <section className="salir col-12 text-center">
+        <p>Salir X</p>
+    </section>
+    </>
   )
 }
