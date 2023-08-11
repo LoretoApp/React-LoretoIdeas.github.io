@@ -46,19 +46,19 @@ body{
   
 }
 
-h3{
+h3.titulo{
 
     font-size: 54px;
     overflow: hidden;
 }
 
-p{
+p.banner-administrador{
     font-family: 'Katibeh', cursive;
     font-size: 3.2rem;
 }
 
 
-div.row{
+div.titulo-admi{
     width: 90%;
     margin: 0 auto;
 }
@@ -69,7 +69,7 @@ div.ingreso{
 
 }
 
-#formulario{
+#formulario-admi{
     width: 90%;
     margin: 0 auto;
     font-family: 'Katibeh', cursive;
@@ -83,18 +83,16 @@ input[type="submit"] {
 
  }
 
-input-imagen{
-    background-color: var(--color-segundo);
-}
 
-.btn-primary{
+
+.boton-agregar{
     border-color: var(--color-principal);
     width: 50%;
     margin: 0 auto;
     text-align: center;
 }
 
-#button{
+#agregar{
     display:block;
     margin-bottom: 10%;
     

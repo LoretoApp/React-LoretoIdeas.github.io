@@ -54,18 +54,18 @@ export default function ModificarStatusTartaleta() {
   return (
     <>
     <section className="administrador col-12 text-center">
-        <p>Administrador</p>
+        <p className="banner-administrador">Administrador</p>
      </section>
 
     <div className="cuerpo-formulario container">
 
-      <div className="row">
+      <div className="titulo-admi row">
         <div className="ingreso col-12 text-center">
-          <h3>Modificar Estatus Producto</h3>
+          <h3 className="titulo">Modificar Estatus Producto</h3>
         </div>
       </div>
       <div className="col">
-        <form action=""id="formulario" >
+        <form action=""id="formulario-admi" >
           <label htmlFor="selected-id" className="form-label">
             Nombre del producto a modificar:
             </label>
@@ -99,14 +99,14 @@ export default function ModificarStatusTartaleta() {
             <option value="INACTIVO">INACTIVO</option>
           </select>
 
-          <button type="button" id="button" className="btn btn-primary" onClick={()=> enviarDatos()}>Modificar Producto</button>
+          <button type="button" id="agregar" className="boton-agregar btn btn-primary" onClick={()=> enviarDatos()}>Modificar Producto</button>
         </form>
         <p id="error"></p>
       </div>
     </div>
 
     <section className="salir col-12 text-center">
-        <p>Salir X</p>
+        <p className="banner-administrador">Salir X</p>
     </section>
     </>
   )

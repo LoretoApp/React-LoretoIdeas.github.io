@@ -23,7 +23,7 @@ export default function MostrarTorta() {
   return (
     <>
     <section className="administrador col-12 text-center">
-        <p>Administrador</p>
+        <p className="banner-administrador">Administrador</p>
      </section>
 
     <div className="cuerpo-formulario container">
@@ -60,7 +60,7 @@ export default function MostrarTorta() {
       </table>
     </div>
     <section className="salir col-12 text-center">
-        <p>Salir X</p>
+        <p className="banner-administrador">Salir X</p>
     </section>
     </>
   )

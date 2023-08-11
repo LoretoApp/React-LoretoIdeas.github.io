@@ -84,17 +84,17 @@ export default function ModificarFullTartaleta() {
   return (
     <>
     <section className="administrador col-12 text-center">
-        <p>Administrador</p>
+        <p className="banner-administrador">Administrador</p>
      </section>
 
     <div className="cuerpo-formulario container">
 
-      <div className="row">
+      <div className="titulo-admi row">
         <div className="ingreso col-12 text-center">
-          <h3>Modificar Producto</h3>
+          <h3 className="titulo">Modificar Producto</h3>
         </div>
       </div>
-      <form className="row g-3" id="formulario" encType="multipart/form-data">
+      <form className="row titulo-admi g-3" id="formulario-admi" encType="multipart/form-data">
         <p id="error-datos" className="text-danger"></p>
         <label htmlFor="selected-id" className="form-label">
           Nombre del producto a modificar:
@@ -193,7 +193,7 @@ export default function ModificarFullTartaleta() {
           />
         </div>
         <div className="col-12">
-          <button type="button" id="button" className="btn btn-primary" onClick={()=> enviarDatos()}>
+          <button type="button" id="agregar" className="boton-agrgar btn btn-primary" onClick={()=> enviarDatos()}>
             Agregar Producto
           </button>
         </div>
@@ -201,7 +201,7 @@ export default function ModificarFullTartaleta() {
     </div>
 
     <section className="salir col-12 text-center">
-        <p>Salir X</p>
+        <p className="banner-administrador">Salir X</p>
     </section>
     </>
   );

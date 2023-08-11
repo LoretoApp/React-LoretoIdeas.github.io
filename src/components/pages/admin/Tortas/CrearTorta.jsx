@@ -95,17 +95,17 @@ export default function CrearTorta() {
   return (
     <>
     <section className="administrador col-12 text-center">
-        <p>Administrador</p>
+        <p className="banner-administrador">Administrador</p>
      </section>
 
     <div className="cuerpo-formulario container">
 
-      <div className="row">
+      <div className="titulo-admi row">
         <div className="ingreso col-12 text-center">
-          <h3>Ingreso de producto</h3>
+          <h3 className="titulo">Ingreso de producto</h3>
         </div>
       </div>
-      <form className="row g-3" id="formulario" encType="multipart/form-data">
+      <form className="titulo-admi row g-3" id="formulario-admi" encType="multipart/form-data">
         <p id="error-datos" className="text-danger"></p>
         <div className="col-12">
           <label htmlFor="input-nombre" className="form-label">
@@ -292,14 +292,14 @@ export default function CrearTorta() {
           />
         </div>
         <div className="col-12">
-          <button type="button" id="button" className="btn btn-primary" onClick={()=> enviarDatos()}>
+          <button type="button" id="agregar" className="boton-agregar btn btn-primary" onClick={()=> enviarDatos()}>
             Agregar Producto
           </button>
         </div>
       </form>
     </div>
     <section className="salir col-12 text-center">
-        <p>Salir X</p>
+        <p className="banner-administrador">Salir X</p>
     </section>
     </>
   );
