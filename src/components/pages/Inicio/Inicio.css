@@ -73,21 +73,14 @@
     display: none;
     visibility: hidden;
   }
-  
-}
-
-@media (min-width: 768px) {
-  .carrusel-inicio {
-    height: 300px;
-    object-fit: cover;
-  }
   .caja-texto{
     color:#4B102D ;
-    margin: 20px;
+    padding: 0 20px 20px 20px;
+    margin: 10px 0 30px 0;
     text-align: center;
     font-family: 'Hahmlet', serif;
-    font-size: 20px;
-    height: 100px;
+    font-size: 18px;
+    height: 60px;
   }
   .navbar{
     background-color:#B8226A ;
@@ -96,43 +89,43 @@
     padding: 0;
   }
   .img-cuadricula{
-    height: 300px;
-    min-width: 100%;
-    object-fit: cover;
+    height: 200px;
+    width: 100%;
   }
   .botones-inicio{
-    height: 150px;
-    margin: 33px 0 5px 0;
+    height: 60px;
+    margin: 10px 0 5px 0;
+    width: 100%;
   }
   .contendor-boton{
     display: flex;
     justify-content: center;
-    border-radius: 80px;
+    border-radius: 50px;
     box-shadow: 0px 6px 4px rgba(199, 48, 111, 0.705);
     box-shadow: #B8226A;
-    height: 150px;
-    width: 150px;
+    height: 70px;
+    width: 70px;
     margin: auto;
     background-color: #B8226A;
     align-items: center;
   }
   .boton-inicio-img{
-    height: 140px;
-    width: 140px;
+    height: 50px;
+    width: 50px;
     justify-content: center;
     border: 3px dotted #FFA041;
     background-color: #B8226A;
-    border-radius: 80px;
+    border-radius: 50px;
     box-shadow: 0px 4px 4px #B8226A(0, 0, 0, 0.3);
   }
   .texto-botones-inicio{
     margin: auto;
   }
   .titulo-boton{
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     font-family: 'Italianno';
-    font-weight: 600;
+    font-weight: 500;
     color: #4B102D;
     margin: 0;
     text-decoration: none;
@@ -141,7 +134,7 @@
     color: #FFA041;
   }
   .contenedor-texto{
-    height: 60px;
+    height: 45px;
     text-align: center;
   }
   .carousel-control-prev,
@@ -149,4 +142,15 @@
     display: none;
     visibility: hidden;
   }
+  
+  body{
+    object-fit: cover;
+  }
+  .caja-texto{
+    color:#4B102D ;
+}
+
+.navbar{
+  background-color:#B8226A ;
+}
 }
