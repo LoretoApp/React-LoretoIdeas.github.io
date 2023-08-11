@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 
-.container {
+.container-admin {
     flex-wrap: wrap;
 }
 
@@ -17,16 +17,13 @@ body {
     align-items: center;
 }
 
-img {
+.img-admin {
     max-width: 20%;
     max-height: 20%;
     margin-right: 10%;
 }
 
-input {
-    flex: 1;
-    padding: 5px;
-}
+
 
 #Salir {
     background-color: #b8226a; /* Color de fondo para el section "Salir X" */
@@ -47,7 +44,7 @@ input {
     text-size-adjust: 100% ;
 
 } 
-.text {
+.texto-admin {
     flex: 1 1 300px;
     margin: 40px;
     padding: 10px;
@@ -57,7 +54,7 @@ input {
     align-items: center;
 
 }
-.h1 {
+.titulo-admin {
     font-size: 20em;
 
 }

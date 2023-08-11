@@ -13,7 +13,7 @@ function PasosCarrito() {
           <span className="fas fa-arrow-left"></span>
         </button>
       )}
-      <h1 className="text-center">Mi Carrito</h1>
+      <h1 className="text-center texto-centrado">Mi Carrito</h1>
       {/* Botones de paso */}
       <div className="d-flex justify-content-center mt-3 spaced-buttons">
         <div className="d-flex flex-column align-items-center">

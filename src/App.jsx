@@ -15,6 +15,7 @@ import CrearTorta from "./components/pages/admin/Tortas/CrearTorta";
 import ModificarFullTorta from "./components/pages/admin/Tortas/ModificarFullTorta";
 import ModificarStatusTorta from "./components/pages/admin/Tortas/ModificarStatusTorta";
 import MostrarTorta from "./components/pages/admin/Tortas/MostrarTorta";
+import Admin from "./components/pages/admin/Admin"
 
 
 
@@ -39,6 +40,9 @@ function App() {
         <Route path="administrador6" element={<ModificarFullTorta />}/>
         <Route path="administrador7" element= {<ModificarStatusTorta/>}/>
         <Route path="administrador8" element={<MostrarTorta />}/>
+        
+
+
         
         {/* Falta solo dar estilos a la ruta administrados 4 y 8 que tienen tablas, y muestran productos todas las demas listas */}
     
