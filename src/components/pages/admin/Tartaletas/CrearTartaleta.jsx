@@ -1,6 +1,5 @@
 import { useState } from "react";
 import axios from "axios";
-import './CrearTartaleta.css';
 
 
 
@@ -69,10 +68,6 @@ const enviarDatos = async ()=>{
 
   return (
     <>
-    <section id="Administrador">
-      <p>Administrador</p>
-    </section>
-
     <div className="container">
       <div className="row">
         <div className="col-12 text-center">
@@ -165,10 +160,6 @@ const enviarDatos = async ()=>{
         </div>
       </form>
     </div>
-
-    <section id="Salir">
-      <p>Salir X</p>
-    </section>
     </>
   );
 }
