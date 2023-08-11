@@ -10,26 +10,30 @@ import CarruselProducto from "./CarruselProducto"
 export default function BotonesProductos() {
   const [tortasList, setTortasList] = useState([]);
   const [tartaletasList, setTartaletasList] = useState([]);
+  const [activarBoton, setActivarBoton] = useState('');
 
-  const updateTortas = async () => {
+  const updateTortas = async (boton) => {
     const newTortasList = await getTortasList();
     setTortasList(newTortasList);
     setCarrusel(false)
+    setActivarBoton(boton);
   };
-  const updateTartaletas = async () => {
+  const updateTartaletas = async (boton) => {
     const newTartaletasList = await getTartaletasList();
     setTartaletasList(newTartaletasList);
     setCarrusel(false)
+    setActivarBoton(boton);
   };
-  const ocultarProductos = ()=>{
+  const ocultarProductos = (boton)=>{
     setTartaletasList([])
     setTortasList([])
     setCarrusel(true)
+    setActivarBoton(boton);
   }
-
   useEffect(() => {
     updateTortas();
     updateTartaletas();
+
   }, []);
   
   const [carrusel, setCarrusel] = useState(false)
@@ -42,25 +46,24 @@ export default function BotonesProductos() {
           <div className="row d-flex align-content-center ">
             <div className="col-4 col-sm-4 col-md-4 col-lg-4 btn-ref">
               <button
-                href="#"
-                onClick={() => updateTortas() && setTartaletasList([])}
-                className="btn botones"
+                onClick={() => updateTortas(1) && setTartaletasList([])}
+                className={activarBoton === 1 ? 'boton-activo' : 'btn botones'}
               >
                 Tortas
               </button>
             </div>
             <div className="col-4 col-sm-4 col-md-4 col-lg-4 btn-ref">
               <button
-                href="#"
-                onClick={() => updateTartaletas() && setTortasList([])}
-                className="btn botones"
+                onClick={() => updateTartaletas(2) && setTortasList([])}
+                className={activarBoton === 2 ? 'boton-activo' : 'btn botones'}
               >
                 Kuchen & Tartas
               </button>
             </div>
             <div className="col-4 col-sm-4 col-md-4 col-lg-4 btn-ref">
-              <button href="#" className="btn botones"
-              onClick={() => ocultarProductos()}>
+              <button 
+              className={activarBoton === 3 ? 'boton-activo' : 'btn botones'}
+              onClick={() => ocultarProductos(3)}>
                 Extras
               </button>
             </div>
