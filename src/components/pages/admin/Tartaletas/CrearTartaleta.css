@@ -8,6 +8,11 @@ body {
     position: relative;
 }
 
+#form{
+    width: auto;
+    margin: 3rem;
+}
+
 #Administrador {
     background-color: #b8226a; /* Color de fondo para el section "Administrador" */
     padding: 1%; /* Agregamos un relleno para dar espacio al contenido */
