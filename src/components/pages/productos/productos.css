@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
  
-
+  body{
+    width: 100%;
+    height: 100%;
+  }
   @media (max-width: 768px) {
-    h3 {
+    .titulo-productos {
       font-family: 'Italianno';
       font-size: 50px;
       font-weight: 500;
@@ -20,9 +23,9 @@
       padding: 0;
     }
     .botones {
-      border-top: 5px solid #B8226A;
+      border-top: 6px solid #B8226A;
       border-radius: 30px;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
       background-color: #F8E5DF;
       font-family: 'Hahmlet';
       font-weight: 500;
@@ -30,29 +33,34 @@
       color: #4B102D;
       padding: 0;
       width: 100%;
-      height: 25px;
+      height: 30px;
     }
     .boton-activo{
-        border-top: 5px solid #B8226A;
-        border-radius: 30px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-        background-color: #F8E5DF;
-        font-family: 'Hahmlet';
-        font-weight: 500;
-        font-size: 13px;
-        color: #4B102D;
-        padding: 0;
-        width: 100%;
-        height: 25px;
+      border: 0;
+      border-top: 4px solid #B8226A;
+      border-radius: 30px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+      background-color: #F8E5DF;
+      font-family: 'Hahmlet';
+      font-weight: 600;
+      font-size: 12px;
+      color: #4B102D;
+      padding: 0;
+      width: 100%;
+      height: 30px;
     }
-    .boton-agregar {
+    .boton-agregar-carrito{
       background-color: #B8226A ;
       color: #F8E5DF;
       font-weight: 600;
-      padding: 0;
+      padding: 2px;
       display: flex;
       align-items: center;
-      height: fit-content;
+      height: 25px;
+      font-size: 15px;
+      border-radius: 30px;
+      margin: 0;
+      
     }
     
     .card {
@@ -76,7 +84,7 @@
       border-radius: 30px;
     }
     .precio {
-      font-size: 12px;
+      font-size: 18px;
       margin: 0;
       font-weight: 600;
     }
@@ -99,10 +107,7 @@
     .card {
       border-radius: 10px;
     }
-    .boton-agregar{
-      font-size: 15px;
-      border-radius: 30px;
-    }
+    
     .col-producto {
       padding: 2px;
       border-radius: 8px;
@@ -121,7 +126,7 @@
   }
 
   @media (min-width: 768px) {
-    h3 {
+    .titulo-productos {
       font-family: 'Italianno';
       font-size: 100px;
       font-weight: 500;
@@ -134,9 +139,9 @@
     }
   
     .botones {
-      border-top: 5px solid #B8226A;
+      border-top: 6px solid #B8226A;
       border-radius: 30px;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
       background-color: #F8E5DF;
       font-family: 'Hahmlet';
       font-weight: 500;
@@ -147,19 +152,35 @@
       height: 40px;
       width: 100%;
     }
-    .botones:hover {
-      border-top: 5px solid #B8226A;
+    .boton-activo{
+      border: 0;
+      border-top: 3px solid #B8226A;
       border-radius: 30px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
       background-color: #F8E5DF;
       font-family: 'Hahmlet';
       font-weight: 600;
       font-size: 25px;
       color: #4B102D;
       padding: 0;
-      height: 43px;
       width: 100%;
+      height: 40px;
     }
-    .boton-agregar {
+    .botones:hover{
+      border: 0;
+      border-top: 3px solid #B8226A;
+      border-radius: 30px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+      background-color: #F8E5DF;
+      font-family: 'Hahmlet';
+      font-weight: 500;
+      font-size: 25px;
+      color: #4B102D;
+      padding: 0;
+      width: 100%;
+      height: 40px;
+    }
+    .boton-agregar-carrito {
       background-color: #B8226A ;
       color: #F8E5DF;
       font-weight: 500;
@@ -167,8 +188,9 @@
       display: flex;
       align-items: center;
       height: 35px;
-    }
-    
+      font-size: 1.5vw;
+      border-radius: 30px;
+    }    
     .card {
       border-radius: 10px;
       font-family: 'Poppins', sans-serif;
@@ -214,7 +236,7 @@
       font-size: 1.3vw;
     }
     .card-title {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: bold;
       margin: 0;
       padding: 0 0 5px 20px;
@@ -226,13 +248,8 @@
       border: 2px solid white;
       display: flex;
       flex-direction: column;
-      
     }
     
-    .boton-agregar{
-      font-size: 1.5vw;
-      border-radius: 30px;
-    }
     .col-producto {
       padding: 2px;
       border-radius: 8px;
@@ -240,14 +257,20 @@
       justify-content: center;
       padding-bottom: 20px;
     }
-    .img-fluid {
-      height: 150px;
-      min-width: 100%;
+    .carrusel-contenedor, .carrusel-producto {
+      height: 600px;
+      width: 1200px;
+      border-radius: 40px;
+      justify-content: center;
+      margin: auto;
     }
     .card-img-top {
       background-color: white;
       height: 187.5px;
       width: 100%;
+    }
+    #contenedor-card{
+      margin-bottom: 20px;
     }
     
 

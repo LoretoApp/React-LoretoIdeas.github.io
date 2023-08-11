@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import getTartaletasList from "../../../../controllers/getTartaletasList";
 import axios from "axios";
+import './ModificarStatusTartaleta.css';
 
 export default function ModificarStatusTartaleta() {
   /* Llamada de API */
@@ -51,16 +52,22 @@ export default function ModificarStatusTartaleta() {
   }
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-12 text-center">
-          <h1>Modificar Producto</h1>
+    <>
+    <section className="administrador col-12 text-center">
+        <p className="banner-administrador">Administrador</p>
+     </section>
+
+    <div className="cuerpo-formulario container">
+
+      <div className="titulo-admi row">
+        <div className="ingreso col-12 text-center">
+          <h3 className="titulo">Modificar Estatus Producto</h3>
         </div>
       </div>
       <div className="col">
-        <form action="">
+        <form action=""id="formulario-admi" >
           <label htmlFor="selected-id" className="form-label">
-            Nombre del producto a modificar
+            Nombre del producto a modificar:
             </label>
             <select
           className="form-select"
@@ -70,7 +77,7 @@ export default function ModificarStatusTartaleta() {
           onChange={selectValue} 
         >
           <option value={''}>
-            Seleccione producto para modificar
+            Seleccione producto para modificar:
           </option>
           {tartaletasList.map((tartaleta) => (
             <option key={tartaleta._id} value={tartaleta._id}>
@@ -79,7 +86,7 @@ export default function ModificarStatusTartaleta() {
           ))}
         </select>          
           <label htmlFor="modify-value" className="form-label">
-            Ingrese el nuevo valor
+            Ingrese el nuevo valor:
           </label>
           <select
             className="form-select"
@@ -92,10 +99,15 @@ export default function ModificarStatusTartaleta() {
             <option value="INACTIVO">INACTIVO</option>
           </select>
 
-          <button type="button" className="btn btn-primary" onClick={()=> enviarDatos()}>Modificar Producto</button>
+          <button type="button" id="agregar" className="boton-agregar btn btn-primary" onClick={()=> enviarDatos()}>Modificar Producto</button>
         </form>
         <p id="error"></p>
       </div>
     </div>
+
+    <section className="salir col-12 text-center">
+        <p className="banner-administrador">Salir X</p>
+    </section>
+    </>
   )
 }

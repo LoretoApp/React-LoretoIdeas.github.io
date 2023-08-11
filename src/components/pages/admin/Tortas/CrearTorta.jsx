@@ -93,17 +93,23 @@ export default function CrearTorta() {
 
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-12 text-center">
-          <h1>Ingreso de producto</h1>
+    <>
+    <section className="administrador col-12 text-center">
+        <p className="banner-administrador">Administrador</p>
+     </section>
+
+    <div className="cuerpo-formulario container">
+
+      <div className="titulo-admi row">
+        <div className="ingreso col-12 text-center">
+          <h3 className="titulo">Ingreso de producto</h3>
         </div>
       </div>
-      <form className="row g-3" id="formulario" encType="multipart/form-data">
+      <form className="titulo-admi row g-3" id="formulario-admi" encType="multipart/form-data">
         <p id="error-datos" className="text-danger"></p>
         <div className="col-12">
           <label htmlFor="input-nombre" className="form-label">
-            Nombre
+            Nombre:
           </label>
           <input
             type="text"
@@ -116,7 +122,7 @@ export default function CrearTorta() {
         </div>
         <div className="col-12">
           <label htmlFor="input-descripcion" className="form-label">
-            Descripcion
+            Descripción:
           </label>
           <input
             type="text"
@@ -131,7 +137,7 @@ export default function CrearTorta() {
         <div className="row d-flex">
           <div className="col-6">
             <label htmlFor="input-porcion1" className="form-label">
-              Porcion 1:
+              Porción 1:
             </label>
             <input
               type="text"
@@ -157,7 +163,7 @@ export default function CrearTorta() {
           </div>
           <div className="col-6">
             <label htmlFor="input-porcion2" className="form-label">
-              Porcion 2:
+              Porción 2:
             </label>
             <input
               type="text"
@@ -183,7 +189,7 @@ export default function CrearTorta() {
           </div>
           <div className="col-6">
             <label htmlFor="input-porcion3" className="form-label">
-              Porcion 3:
+              Porción 3:
             </label>
             <input
               type="text"
@@ -209,7 +215,7 @@ export default function CrearTorta() {
           </div>
           <div className="col-6">
             <label htmlFor="input-porcion4" className="form-label">
-              Porcion 4:
+              Porción 4:
             </label>
             <input
               type="text"
@@ -235,7 +241,7 @@ export default function CrearTorta() {
           </div>
           <div className="col-6">
             <label htmlFor="input-porcion5" className="form-label">
-              Porcion 5:
+              Porción 5:
             </label>
             <input
               type="text"
@@ -262,7 +268,7 @@ export default function CrearTorta() {
         </div>
         <div className="col-12">
           <label htmlFor="input-imagen" className="form-label">
-            Imagen
+            Imagen:
           </label>
           <input
             type="file"
@@ -274,7 +280,7 @@ export default function CrearTorta() {
         </div>
         <div className="col-12">
           <label htmlFor="input-descripcion-img" className="form-label">
-            Descripcion de imagen
+            Descripcion de imagen:
           </label>
           <input
             type="text"
@@ -286,11 +292,15 @@ export default function CrearTorta() {
           />
         </div>
         <div className="col-12">
-          <button type="button" id="button" className="btn btn-primary" onClick={()=> enviarDatos()}>
+          <button type="button" id="agregar" className="boton-agregar btn btn-primary" onClick={()=> enviarDatos()}>
             Agregar Producto
           </button>
         </div>
       </form>
     </div>
+    <section className="salir col-12 text-center">
+        <p className="banner-administrador">Salir X</p>
+    </section>
+    </>
   );
 }

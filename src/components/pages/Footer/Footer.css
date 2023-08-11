@@ -27,18 +27,24 @@ footer {
   bottom: 0;
   width: 100%;
   font-family: 'Khand', sans-serif;
+  overflow: hidden;
+}
+
+p.datos-contacto{
+  margin-top: 10px;
+  margin-left: 10%;
 }
 
 @media (min-width: 992px){
 
-  .row{
+  .alineacion{
     align-items: center;
-    margin: 0 auto;
+   
    
     
   }
 
-  .container{
+  .cuerpo-footer{
     align-items: center;
     padding: 0px;
     margin: 0 auto;
@@ -73,26 +79,29 @@ footer {
     margin-left: 20px;
   }
 
-  p{
+  p.datos-contacto{
     font-size: 14px;
+    font-family: 'Khand', sans-serif;
+    text-align: left;
   }
 
 }
 
 
 @media (min-width: 768px) and (max-width: 991px){
-  .row{
+  .alineacion{
     align-items: center;
     margin: 0 auto;
    
    
   }
 
-  .container{
+  .cuerpo-footer{
     margin: 10px;
     align-items: center;
     padding: 0px;
     margin: 0 auto;
+    max-width: 800px;
   
   }
 
@@ -124,20 +133,22 @@ footer {
     margin-left: 10px;
   }
 
-  p{
+  p.datos-contacto{
     font-size: 13px;
+    font-family: 'Khand', sans-serif;
+    text-align: left;
   }
 }
 
 @media (max-width: 767px){
-  .row{
+  .alineacion{
     align-items: center;
-    margin: 0 auto;
+   
 
     
   }
 
-  .container{
+  .cuerpo-footer{
     margin: 10px;
     align-items: center;
     padding: 0px;
@@ -150,10 +161,14 @@ footer {
 
   }
 
+  div.contacto.col{
+    padding: 0px;
+  }
+
   div.iconos{
     margin: 0 auto;
     align-items: end;
-    padding-left: 5.3%;
+    padding-left: 18%;
   }
 
   img.facebook{
@@ -174,8 +189,10 @@ footer {
     
   }
 
-  p{
+  p.datos-contacto{
     font-size: 11px;
+    font-family: 'Khand', sans-serif;
+    text-align: left;
   }
 }
 
@@ -186,6 +203,8 @@ footer {
   
   
 }
-p{
+p.derechos{
   margin-bottom: 10px;
+  font-size: 12px;
+  font-family: 'Khand', sans-serif;
 }
