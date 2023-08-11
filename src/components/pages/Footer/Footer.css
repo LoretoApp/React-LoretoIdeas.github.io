@@ -31,7 +31,8 @@ footer {
 }
 
 p.datos-contacto{
-  padding-top: 5px;
+  margin-top: 10px;
+  margin-left: 10%;
 }
 
 @media (min-width: 992px){
