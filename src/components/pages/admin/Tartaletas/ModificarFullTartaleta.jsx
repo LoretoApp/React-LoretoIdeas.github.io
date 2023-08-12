@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import getTartaletasList from "../../../../controllers/getTartaletasList";
+import tartaletaController from "../../../../controllers/getTartaletasList";
 import axios from "axios";
 
 export default function ModificarFullTartaleta() {
   /* Llamada de API */
   const [tartaletasList, setTartaletasList] = useState([]);
   const updateTartaletas = async () => {
-    const newTartaletasList = await getTartaletasList();
+    const newTartaletasList = await tartaletaController.getTartaletasList();
     setTartaletasList(newTartaletasList);
   };
   useEffect(() => {
@@ -14,9 +14,9 @@ export default function ModificarFullTartaleta() {
   }, []);
   /* Selector de valor */
   const [selectedValue, setSelectedValue] = useState("");
-  const selectValue = async (e) => {
+  const selectValue = (e) => {
     setSelectedValue(e.target.value);
-    /* crear controlador para buscar uno y poder completar los datos en el formulario */
+    buscarTartaleta(e.target.value)
   };
   /* recoleccion de datos */
   const [nombre, setNombre] = useState("");
@@ -25,7 +25,18 @@ export default function ModificarFullTartaleta() {
   const [precio, setPrecio] = useState("");
   const [img_descripcion, setImg_descripcion] = useState("");
   const id = selectedValue
-  
+  /* busca el objeto en la base de datos segun su id */
+  const buscarTartaleta = async (id)=> {
+    const findTartaleta = await tartaletaController.getTartaleta(id)
+    setTimeout( ()=> {
+    setNombre(findTartaleta.nombre);
+    setDescripcion(findTartaleta.descripcion);
+    setDiametro(findTartaleta.diametro)
+    setPrecio(findTartaleta.precio)
+    setImg_descripcion(findTartaleta.img_descripcion);
+    },500)
+    
+  }
 
   const enviarDatos = async ()=>{
   

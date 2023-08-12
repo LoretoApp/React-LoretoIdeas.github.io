@@ -14,14 +14,14 @@ export default function BotonesProductos() {
 
   const updateTortas = async (boton) => {
     setActivarBoton(boton);
-    const newTortasList = await getTortasList();
+    const newTortasList = await getTortasList.getTortasList();
     setTortasList(newTortasList);
     setCarrusel(false)
     
   };
   const updateTartaletas = async (boton) => {
     setActivarBoton(boton);
-    const newTartaletasList = await getTartaletasList();
+    const newTartaletasList = await getTartaletasList.getTartaletasList();
     setTartaletasList(newTartaletasList);
     setCarrusel(false)
    
