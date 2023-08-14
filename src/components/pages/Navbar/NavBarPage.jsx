@@ -21,15 +21,15 @@ function NavBarPage() {
   return (
     <>
     <Navbar expand="lg"  style={ColorNav}>
-      <Container>
-        <a href='/'>
+      <Container className='contenedor'>
+        <a className='link' href='/'>
         <img className="LoretoIdeas" src="icons/Logo-loretoideas.png" alt="LoretoIdeas"/>
         </a>
-        <a>
+        <a className='link'>
         <img className="logo" src="icons/Usuario.png" alt="Logo" onClick={handleLogin}/>
         </a>
         <div className="div-con-linea"></div>
-        <a>
+        <a className='link'>
         <img className="carrito" src="icons/carrito.png" alt="carrito" onClick={handleCar}/>
         </a>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

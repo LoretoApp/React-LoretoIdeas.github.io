@@ -60,9 +60,19 @@
       font-size: 12px;
       border-radius: 30px;
       margin: 0;
-      
     }
-    
+    .boton-agregar-carrito:hover{
+      background-color: #B8226A ;
+      color: #F8E5DF;
+      font-weight: 900;
+      padding: 2px;
+      display: flex;
+      align-items: center;
+      height: 25px;
+      font-size: 12px;
+      border-radius: 30px;
+      margin: 0;
+    }
     .card {
       font-family: 'Poppins', sans-serif;
       text-align: justify;
@@ -74,14 +84,25 @@
     .btn-detalle {
       display: flex;
     }
-    .detalle {
-      font-size: 2.5vw;
+    .btn.detalle{
+      font-size: 15px;
+      font-weight: 600;
+      margin: 0 0 0 10px;
+      padding: 0 3px 0 3px;
+      width: fit-content;
+      background-color: #FFA041;
+      border-radius: 30px;
+      border: 0;
+    }
+    .btn.detalle:hover {
+      font-size: 15px;
       font-weight: 900;
       margin: 0 0 0 10px;
       padding: 0 3px 0 3px;
       width: fit-content;
       background-color: #FFA041;
       border-radius: 30px;
+      border: 0;
     }
     .precio {
       font-size: 18px;
@@ -93,7 +114,7 @@
       font-size: 13px;
     }
     .card-title {
-      font-size: 3vw;
+      font-size: 15px;
       font-weight: bold;
       margin: 0;
       padding: 0 0 5px 20px;
@@ -132,12 +153,10 @@
       font-weight: 500;
       color: #4B102D;
     }
-    
     .imagen-principal{
       height: 200px;
       width: 200px;
     }
-  
     .botones {
       border-top: 6px solid #B8226A;
       border-radius: 30px;
@@ -188,9 +207,20 @@
       display: flex;
       align-items: center;
       height: 35px;
-      font-size: 1.5vw;
+      font-size: 15px;
       border-radius: 30px;
-    }    
+    }
+    .boton-agregar-carrito:hover {
+      background-color: #B8226A ;
+      color: #F8E5DF;
+      font-weight: 600;
+      padding: 2px;
+      display: flex;
+      align-items: center;
+      height: 35px;
+      font-size: 15px;
+      border-radius: 30px;
+    }
     .card {
       border-radius: 10px;
       font-family: 'Poppins', sans-serif;
@@ -208,18 +238,18 @@
     .btn-detalle {
       display: flex;
     }
-    .detalle:hover{
-      font-size: 17px;
-      font-weight: 900;
+    .btn.detalle {
+      font-size: 15px;
+      font-weight: 600;
       margin: 0 0 0 20px;
       padding: 0 3px 0 3px;
       width: fit-content;
       background-color: #FFA041;
       border-radius: 30px;
     }
-    .detalle {
+    .btn.detalle:hover {
       font-size: 15px;
-      font-weight: 900;
+      font-weight: 600;
       margin: 0 0 0 20px;
       padding: 0 3px 0 3px;
       width: fit-content;
@@ -249,7 +279,6 @@
       display: flex;
       flex-direction: column;
     }
-    
     .col-producto {
       padding: 2px;
       border-radius: 8px;
