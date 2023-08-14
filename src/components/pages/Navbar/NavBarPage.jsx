@@ -35,11 +35,11 @@ function NavBarPage() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link to="/">Inicio</Link>
-            <Link to="/productos">Productos</Link>
-            <Link to="/cocteleria">Coctelería</Link>
-            <Link to="/desayunos">Desayunos</Link>
-            <Link to="/nosotros">Nosotros</Link>
+            <Link className='link' to="/">Inicio</Link>
+            <Link className='link' to="/productos">Productos</Link>
+            <Link className='link'to="/cocteleria">Coctelería</Link>
+            <Link className='link' to="/desayunos">Desayunos</Link>
+            <Link className='link' to="/nosotros">Nosotros</Link>
           </Nav>
           <LoginModal show={showLogin} onHide={handleLogin}/>
           <CarritoP show={showCar} onHide={handleCar} />
