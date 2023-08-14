@@ -12,13 +12,13 @@ function CarritoVista3() {
        </div>
 
         <div className='espacio'>
-         <div className='container'>
-          <p class="inicio">Tu pedido se ha enviado con exito, nos pondremos en contacto
+         <div className='container admin-container'>
+          <p className="inicio">Tu pedido se ha enviado con exito, nos pondremos en contacto
             para coordinar la entrega de tus productos.
             </p>
-            <img class="check" src="./assets/icons/check.png"
+            <img className="check" src="./assets/icons/check.png"
             />
-            <p class="gracias">
+            <p className="gracias">
             Gracias <br></br>por tu compra !
             </p>
          </div>

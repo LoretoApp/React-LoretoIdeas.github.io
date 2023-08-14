@@ -52,16 +52,22 @@ export default function ModificarStatusTorta() {
   }
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-12 text-center">
-          <h1>Modificar Estatus Producto</h1>
+    <>
+    <section className="administrador col-12 text-center">
+        <p className="banner-administrador">Administrador</p>
+     </section>
+
+    <div className="cuerpo-formulario container">
+
+      <div className="titulo-admi row">
+        <div className="ingreso col-12 text-center">
+          <h3 className="titulo">Modificar Estatus Producto</h3>
         </div>
       </div>
       <div className="col">
-        <form action="">
+        <form action="" id="formulario-admi">
           <label htmlFor="selected-id" className="form-label">
-            Nombre del producto a modificar
+            Nombre del producto a modificar:
           </label>
           <select
             className="form-select"
@@ -70,7 +76,7 @@ export default function ModificarStatusTorta() {
             value={selectedValue}
             onChange={selectValue}
           >
-            <option value={""}> Seleccione producto para modificar</option>
+            <option value={""}> Seleccione producto para modificar:</option>
             {tortasList.map((torta) => (
               <option key={torta._id} value={torta._id}>
                 {torta.nombre} -Estado: {torta.status}
@@ -78,7 +84,7 @@ export default function ModificarStatusTorta() {
             ))}
           </select>
           <label htmlFor="modify-value" className="form-label">
-            Ingrese el nuevo valor
+            Ingrese el nuevo valor:
           </label>
           <select
             className="form-select"
@@ -91,12 +97,16 @@ export default function ModificarStatusTorta() {
             <option value="INACTIVO">INACTIVO</option>
           </select>
 
-          <button type="button" className="btn btn-primary" onClick={()=> enviarDatos()}>
+          <button type="button" id="agregar" className="boton-agregar btn btn-primary" onClick={()=> enviarDatos()}>
             Modificar Producto
           </button>
         </form>
         <p id="error"></p>
       </div>
     </div>
+    <section className="salir col-12 text-center">
+        <p className="banner-administrador">Salir X</p>
+    </section>
+    </>
   );
 }

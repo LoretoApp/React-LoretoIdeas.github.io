@@ -11,9 +11,9 @@ const Administrador = () => {
 const Box = ({ imgSrc, altText, title }) => {
   return (
     <div className="box">
-      <img src={imgSrc} alt={altText} />
-      <section className="text">
-        <h1>{title}</h1>
+      <img className='img-admin' src={imgSrc} alt={altText} />
+      <section className="texto-admin">
+        <h3 className='titulo-admin'>{title}</h3>
       </section>
     </div>
   );
@@ -21,9 +21,9 @@ const Box = ({ imgSrc, altText, title }) => {
 
 const Container = () => {
   return (
-    <div className="container">
-      <div className="container">
-        <Box
+    <div className="container container-admin">
+      <div className="container container-admin">
+        <Box 
           imgSrc="assets/img/6372973_list_menu_navigation_option_setting_icon (1).png"
           altText="Imagen 2"
           title="Ver Todo"

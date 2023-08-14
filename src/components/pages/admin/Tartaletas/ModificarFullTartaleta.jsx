@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import getTartaletasList from "../../../../controllers/getTartaletasList";
+import tartaletaController from "../../../../controllers/getTartaletasList";
 import axios from "axios";
 
 export default function ModificarFullTartaleta() {
   /* Llamada de API */
   const [tartaletasList, setTartaletasList] = useState([]);
   const updateTartaletas = async () => {
-    const newTartaletasList = await getTartaletasList();
+    const newTartaletasList = await tartaletaController.getTartaletasList();
     setTartaletasList(newTartaletasList);
   };
   useEffect(() => {
@@ -14,9 +14,9 @@ export default function ModificarFullTartaleta() {
   }, []);
   /* Selector de valor */
   const [selectedValue, setSelectedValue] = useState("");
-  const selectValue = async (e) => {
+  const selectValue = (e) => {
     setSelectedValue(e.target.value);
-    /* crear controlador para buscar uno y poder completar los datos en el formulario */
+    buscarTartaleta(e.target.value)
   };
   /* recoleccion de datos */
   const [nombre, setNombre] = useState("");
@@ -25,7 +25,18 @@ export default function ModificarFullTartaleta() {
   const [precio, setPrecio] = useState("");
   const [img_descripcion, setImg_descripcion] = useState("");
   const id = selectedValue
-  
+  /* busca el objeto en la base de datos segun su id */
+  const buscarTartaleta = async (id)=> {
+    const findTartaleta = await tartaletaController.getTartaleta(id)
+    setTimeout( ()=> {
+    setNombre(findTartaleta.nombre);
+    setDescripcion(findTartaleta.descripcion);
+    setDiametro(findTartaleta.diametro)
+    setPrecio(findTartaleta.precio)
+    setImg_descripcion(findTartaleta.img_descripcion);
+    },500)
+    
+  }
 
   const enviarDatos = async ()=>{
   
@@ -82,16 +93,22 @@ export default function ModificarFullTartaleta() {
   }
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-12 text-center">
-          <h1>Modificar Producto</h1>
+    <>
+    <section className="administrador col-12 text-center">
+        <p className="banner-administrador">Administrador</p>
+     </section>
+
+    <div className="cuerpo-formulario container">
+
+      <div className="titulo-admi row">
+        <div className="ingreso col-12 text-center">
+          <h3 className="titulo">Modificar Producto</h3>
         </div>
       </div>
-      <form className="row g-3" id="formulario" encType="multipart/form-data">
+      <form className="row titulo-admi g-3" id="formulario-admi" encType="multipart/form-data">
         <p id="error-datos" className="text-danger"></p>
         <label htmlFor="selected-id" className="form-label">
-          Nombre del producto a modificar
+          Nombre del producto a modificar:
         </label>
         <select
           className="form-select"
@@ -101,7 +118,7 @@ export default function ModificarFullTartaleta() {
           onChange={selectValue} 
         >
           <option value={''}>
-            Seleccione producto para modificar
+            Seleccione producto para modificar:
           </option>
           {tartaletasList.map((tartaleta) => (
             <option key={tartaleta._id} value={tartaleta._id}>
@@ -111,7 +128,7 @@ export default function ModificarFullTartaleta() {
         </select>
         <div className="col-12">
           <label htmlFor="input-nombre" className="form-label">
-            Nombre
+            Nombre:
           </label>
           <input
             type="text"
@@ -124,7 +141,7 @@ export default function ModificarFullTartaleta() {
         </div>
         <div className="col-12">
           <label htmlFor="input-descripcion" className="form-label">
-            Descripcion
+            Descripcion:
           </label>
           <input
             type="text"
@@ -163,7 +180,7 @@ export default function ModificarFullTartaleta() {
         </div>
         <div className="col-12">
           <label htmlFor="input-imagen" className="form-label">
-            Imagen
+            Imagen:
           </label>
           <input
             type="file"
@@ -175,7 +192,7 @@ export default function ModificarFullTartaleta() {
         </div>
         <div className="col-12">
           <label htmlFor="input-descripcion-img" className="form-label">
-            Descripcion de imagen
+            Descripcion de imagen:
           </label>
           <input
             type="text"
@@ -187,11 +204,16 @@ export default function ModificarFullTartaleta() {
           />
         </div>
         <div className="col-12">
-          <button type="button" id="button" className="btn btn-primary" onClick={()=> enviarDatos()}>
+          <button type="button" id="agregar" className="boton-agrgar btn btn-primary" onClick={()=> enviarDatos()}>
             Agregar Producto
           </button>
         </div>
       </form>
     </div>
+
+    <section className="salir col-12 text-center">
+        <p className="banner-administrador">Salir X</p>
+    </section>
+    </>
   );
 }

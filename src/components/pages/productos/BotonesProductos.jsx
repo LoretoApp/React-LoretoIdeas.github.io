@@ -13,22 +13,25 @@ export default function BotonesProductos() {
   const [activarBoton, setActivarBoton] = useState('');
 
   const updateTortas = async (boton) => {
-    const newTortasList = await getTortasList();
+    setActivarBoton(boton);
+    const newTortasList = await getTortasList.getTortasList();
     setTortasList(newTortasList);
     setCarrusel(false)
-    setActivarBoton(boton);
+    
   };
   const updateTartaletas = async (boton) => {
-    const newTartaletasList = await getTartaletasList();
+    setActivarBoton(boton);
+    const newTartaletasList = await getTartaletasList.getTartaletasList();
     setTartaletasList(newTartaletasList);
     setCarrusel(false)
-    setActivarBoton(boton);
+   
   };
   const ocultarProductos = (boton)=>{
+    setActivarBoton(boton);
     setTartaletasList([])
     setTortasList([])
     setCarrusel(true)
-    setActivarBoton(boton);
+    
   }
   useEffect(() => {
     updateTortas();
@@ -47,7 +50,7 @@ export default function BotonesProductos() {
             <div className="col-4 col-sm-4 col-md-4 col-lg-4 btn-ref">
               <button
                 onClick={() => updateTortas(1) && setTartaletasList([])}
-                className={activarBoton === 1 ? 'boton-activo' : 'btn botones'}
+                className={activarBoton === 1 ? 'btn boton-activo' : 'btn botones'}
               >
                 Tortas
               </button>
@@ -55,14 +58,14 @@ export default function BotonesProductos() {
             <div className="col-4 col-sm-4 col-md-4 col-lg-4 btn-ref">
               <button
                 onClick={() => updateTartaletas(2) && setTortasList([])}
-                className={activarBoton === 2 ? 'boton-activo' : 'btn botones'}
+                className={activarBoton === 2 ? 'btn boton-activo' : 'btn botones'}
               >
                 Kuchen & Tartas
               </button>
             </div>
             <div className="col-4 col-sm-4 col-md-4 col-lg-4 btn-ref">
               <button 
-              className={activarBoton === 3 ? 'boton-activo' : 'btn botones'}
+              className={activarBoton === 3 ? 'btn boton-activo' : 'btn botones'}
               onClick={() => ocultarProductos(3)}>
                 Extras
               </button>

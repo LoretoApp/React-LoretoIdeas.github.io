@@ -7,10 +7,10 @@ function Footer(){
     //    Footer
     <footer id="Footer" >
         {/* Contenedor de los elementos flex 1 y 2 */}
-        <div className='container'>
-            <div className='row'>
+        <div className='cuerpo-footer container-fluid'>
+            <div className='alineacion row'>
                 <div className='contacto col'>
-                  <p>CONTACTO: <br></br>
+                  <p className='datos-contacto'>CONTACTO: <br></br>
                     Fono: +56 932939888 <br></br>
                     E-mail: loreto.ideas.reposteria@gmail.com</p>
                 </div>
