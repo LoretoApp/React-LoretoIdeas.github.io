@@ -13,10 +13,10 @@ function NavBarPage() {
     <Navbar expand="lg"  style={ColorNav}>
       <Container>
         <a href='/'>
-        <img className="LoretoIdeas" src="icons/Logo-loretoideas.png" alt="LoretoIdeas"/>
+        <img className="LoretoIdeas" src="icons/Logo-loretoideas.png" alt="LoretoIdeas" />
         </a>
         <a href='/'>
-        <img className="logo" src="icons/Usuario.png" alt="Logo"/>
+        <img className="logo" src="icons/Usuario.png" alt="Logo" href="./"/>
         </a>
         <div className="div-con-linea"></div>
         <a href='/'>

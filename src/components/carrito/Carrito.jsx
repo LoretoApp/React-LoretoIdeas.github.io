@@ -9,7 +9,7 @@ function Carrito() {
         <>
         <PasosCarrito/>
         <div className="contenedor-carrito">
-         <div className="cart-container">
+         <div className="cart-contenedor">
            <div className="cart-header">
            <h2 className="title-left">Pedido</h2>
            <button className="btn btn-transparent btn-delete">Eliminar todo</button>
