@@ -56,7 +56,7 @@ const Salir = () => {
   );
 };
 
-const App = () => {
+const VistaAdministrador = () => {
   return (
     <div>
       <Administrador />
@@ -66,4 +66,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default VistaAdministrador;

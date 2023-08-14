@@ -19,7 +19,7 @@ function AppLogin() {
   const navigate= useNavigate()
 
 useEffect(()=>{
-if (isAuthenticated) navigate("/")
+if (isAuthenticated) navigate("/administrador")
 }, [isAuthenticated])
 
   const onSubmit = handleSubmit(async (values) => {
