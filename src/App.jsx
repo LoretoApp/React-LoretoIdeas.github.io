@@ -20,8 +20,7 @@ function App() {
           <Route path="cocteleria" element={<Cocteleria />} />
           <Route path="desayunos" element={<Desayunos />} />
           <Route path="nosotros" element={<Nosotros />} />
-
-          <Route path="administrador" element={<VistaAdministrador/>} />
+          <Route path="administrador" element={<VistaAdministrador/>}/>
           <Route path="login" element={<AppLogin />} />
         </Routes>
       </AuthProvider>

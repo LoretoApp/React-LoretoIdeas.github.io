@@ -10,7 +10,6 @@ body {
 
 .box {
     flex: 1 1 300px;
-    margin: 10px;
     padding: 10px;
     border-radius: 10px;
     display: flex;
@@ -18,9 +17,9 @@ body {
 }
 
 .img-admin {
-    max-width: 20%;
-    max-height: 20%;
-    margin-right: 10%;
+    max-width: 15%;
+    max-height: 15%;
+    margin-right: 5%;
 }
 
 
@@ -46,15 +45,32 @@ body {
 } 
 .texto-admin {
     flex: 1 1 300px;
-    margin: 40px;
+    margin: 10px;
     padding: 10px;
     border: 5px dotted #c59898; /* Border punteado con color #c59898 */
     border-radius: 10px;
     display: flex;
     align-items: center;
+    max-width: 100%;
+    max-height: 15%;
 
 }
 .titulo-admin {
-    font-size: 2em;
+    font-size: 1.4em;
+    margin: auto;
 
+}
+.boton-admin{
+    border: 0;
+}
+.boton-admin:hover{
+
+    .titulo-admin{
+        font-size: 1.5em;
+        margin: 0;
+    }
+    .img-admin {
+        max-width: 17%;
+        max-height: 17%;
+    }
 }

@@ -10,26 +10,26 @@ const Administrador = () => {
 
 const Box = ( {imgSrc, altText, title} ) => {
   return (
-    <div className="box">
-      <img className='img-admin' src={imgSrc} alt={altText} />
-      <section className="texto-admin">
-        <h3 className='titulo-admin'>{title}</h3>
-      </section>
-    </div>
+    <button className='boton-admin'>
+      <div className="box">
+        <img className='img-admin' src={imgSrc} alt={altText} />
+        <section className="texto-admin">
+          <h3 className='titulo-admin'>{title}</h3>
+        </section>
+      </div>
+    </button>
   );
 };
 
 const Container = () => {
   return (
     <div className="container container-admin">
-      <div className="container container-admin">
-        <Box 
-          
-          imgSrc="icons/6372973_list_menu_navigation_option_setting_icon (1).png"
-          altText="Imagen 2"
-          title="Ver Todo"
-        />
-      </div>
+      
+      <Box     
+        imgSrc="icons/6372973_list_menu_navigation_option_setting_icon (1).png"
+        altText="Imagen 2"
+        title="Ver Todo"
+      />
       <Box
         imgSrc="icons/add-product.png"
         altText="Imagen 2"
