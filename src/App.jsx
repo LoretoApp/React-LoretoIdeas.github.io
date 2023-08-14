@@ -8,28 +8,24 @@ import Desayunos from "./components/pages/desayunos/Desayunos";
 import Nosotros from "./components/pages/nosotros/Nosotros";
 import CrearTartaleta from "./components/pages/admin/Tartaletas/CrearTartaleta";
 import AppLogin from "./components/login/AppLogin";
-
-
-
-
-
-
+import { AuthProvider } from "./controllers/Atentificacion/context/AuthContext";
 
 function App() {
   return (
     <div>
-    <Routes>
-        <Route path="/" element={<ShapeExample />}/>
-        <Route path="productos" element={<Productos />}/>
-        <Route path="cocteleria" element={<Cocteleria />}/>
-        <Route path="desayunos" element={<Desayunos />}/>
-        <Route path="nosotros" element={<Nosotros />}/> 
-        <Route path="administrador" element={<CrearTartaleta />}/>
-        <Route path="login" element={<AppLogin />}/>
-        
-    
-    </Routes>
-  </div>
+      <AuthProvider>
+        <Routes>
+          <Route path="/" element={<ShapeExample />} />
+          <Route path="productos" element={<Productos />} />
+          <Route path="cocteleria" element={<Cocteleria />} />
+          <Route path="desayunos" element={<Desayunos />} />
+          <Route path="nosotros" element={<Nosotros />} />
+
+          <Route path="administrador" element={<CrearTartaleta />} />
+          <Route path="login" element={<AppLogin />} />
+        </Routes>
+      </AuthProvider>
+    </div>
   );
 }
 
