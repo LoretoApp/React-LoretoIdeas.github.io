@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useAuth } from "../../controllers/Atentificacion/context/AuthContext";
-import "../login/styles.css";
+import "../login/stylesLogin.css";
 import { useNavigate } from "react-router-dom";
 
 function AppLogin() {
@@ -14,17 +14,20 @@ function AppLogin() {
   const handleLogin = () => {
     setView("login");
   };
-  const { register, handleSubmit , formState:{errors}} = useForm();
-  const{signup, isAuthenticated }= useAuth()
-  const navigate= useNavigate()
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const { signup, isAuthenticated, errors: RegisterErrors } = useAuth();
+  const navigate = useNavigate();
 
-useEffect(()=>{
-if (isAuthenticated) navigate("/administrador")
-}, [isAuthenticated])
+  useEffect(() => {
+    if (isAuthenticated) navigate("/administrador");
+  }, [isAuthenticated]);
 
   const onSubmit = handleSubmit(async (values) => {
     signup(values);
-    
   });
 
   return (
@@ -75,6 +78,12 @@ if (isAuthenticated) navigate("/administrador")
             </div>
           ) : (
             <div className="sideB--header">
+
+              {RegisterErrors.map((error, i)=> (
+                <div className="error.bg">
+                  { error}
+                </div>
+              ))}
               <form onSubmit={onSubmit}>
                 <input
                   type="text"
@@ -82,14 +91,18 @@ if (isAuthenticated) navigate("/administrador")
                   className="input-buton input-login"
                   {...register("username", { require: true })}
                 />
-                {errors.username && ( <p className="text-warning"> El nombre es requerido</p> )}
+                {errors.username && (
+                  <p className="text-requerido"> El nombre es requerido</p>
+                )}
                 <input
                   type="email"
                   placeholder="Email"
                   className="input-buton input-login"
                   {...register("email", { require: true })}
                 />
-                                {errors.email && ( <p className="text-warning"> El email es requerido</p> )}
+                {errors.email && (
+                  <p className="text-requerido"> El email es requerido</p>
+                )}
 
                 <input
                   type="password"
@@ -97,7 +110,9 @@ if (isAuthenticated) navigate("/administrador")
                   className="input-buton input-login"
                   {...register("password", { require: true })}
                 />
-                                {errors.password && ( <p className="text-warning"> La contraseña es requerida</p> )}
+                {errors.password && (
+                  <p className="text-requerido"> La contraseña es requerida</p>
+                )}
 
                 <button type="submit" className="input-buton button-login">
                   {" "}
