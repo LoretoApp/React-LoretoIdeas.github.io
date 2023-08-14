@@ -3,12 +3,11 @@ import "../login/styles.css"
 import AppLogin from './AppLogin';
 
 
-function LoginModal({showLogin, HandleLogin}) {
-
+function LoginModal({ show, onHide }) {
   return (
     <>
-      <Modal show={showLogin} onHide={HandleLogin}>
-      <AppLogin />
+      <Modal show={show} onHide={onHide}>
+        <AppLogin />
       </Modal>
     </>
   );

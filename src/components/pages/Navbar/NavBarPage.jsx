@@ -9,11 +9,23 @@ import LoginModal from '../../login/LoginModal';
 
 function NavBarPage() {
 
-  const [showLogin, setShowLogin] = useState(false);
-  const [showCar, setShowCar] = useState(false);
+  const [show, setShow] = useState(false);
+  const handleClose= ()=> {
+    setShow(false)
+  } 
 
-  const handleLogin = () => showLogin ? setShowLogin(false) : setShowLogin(true);
-  const handleCar = () => showCar ? setShowCar(false) : setShowCar(true);
+  const handleShow= ()=> {
+    setShow(true)
+  } 
+
+  const [show2, setShow2] = useState(false);
+  const handleClose2= ()=> {
+    setShow2(false)
+  } 
+
+  const handleShow2= ()=> {
+    setShow2(true)
+  } 
 
   const ColorNav={
     backgroundColor: '#B8226A', 
@@ -26,11 +38,11 @@ function NavBarPage() {
         <img className="LoretoIdeas" src="icons/Logo-loretoideas.png" alt="LoretoIdeas"/>
         </a>
         <a>
-        <img className="logo" src="icons/Usuario.png" alt="Logo" onClick={handleLogin}/>
+        <img className="logo" src="icons/Usuario.png" alt="Logo" onClick={handleShow}/>
         </a>
         <div className="div-con-linea"></div>
         <a>
-        <img className="carrito" src="icons/carrito.png" alt="carrito" onClick={handleCar}/>
+        <img className="carrito" src="icons/carrito.png" alt="carrito" onClick={handleShow2}/>
         </a>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -41,8 +53,8 @@ function NavBarPage() {
             <Link to="/desayunos">Desayunos</Link>
             <Link to="/nosotros">Nosotros</Link>
           </Nav>
-          <LoginModal show={showLogin} onHide={handleLogin}/>
-          <CarritoP show={showCar} onHide={handleCar} />
+          <LoginModal show={show} onHide={handleClose}/>
+          <CarritoP show2={show2} onHide2={handleClose2} />
         </Navbar.Collapse>
       </Container>
     </Navbar>

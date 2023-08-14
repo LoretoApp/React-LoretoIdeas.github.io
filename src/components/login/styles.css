@@ -40,7 +40,7 @@
   .sideB {
     flex: 1;
     padding: 30px;
-    
+    height: 300px;
   }
   
   .sideA {
