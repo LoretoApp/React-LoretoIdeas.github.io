@@ -10,26 +10,33 @@ import CarruselProducto from "./CarruselProducto"
 export default function BotonesProductos() {
   const [tortasList, setTortasList] = useState([]);
   const [tartaletasList, setTartaletasList] = useState([]);
+  const [activarBoton, setActivarBoton] = useState('');
 
-  const updateTortas = async () => {
-    const newTortasList = await getTortasList();
+  const updateTortas = async (boton) => {
+    setActivarBoton(boton);
+    const newTortasList = await getTortasList.getTortasList();
     setTortasList(newTortasList);
     setCarrusel(false)
+    
   };
-  const updateTartaletas = async () => {
-    const newTartaletasList = await getTartaletasList();
+  const updateTartaletas = async (boton) => {
+    setActivarBoton(boton);
+    const newTartaletasList = await getTartaletasList.getTartaletasList();
     setTartaletasList(newTartaletasList);
     setCarrusel(false)
+   
   };
-  const ocultarProductos = ()=>{
+  const ocultarProductos = (boton)=>{
+    setActivarBoton(boton);
     setTartaletasList([])
     setTortasList([])
     setCarrusel(true)
+    
   }
-
   useEffect(() => {
     updateTortas();
     updateTartaletas();
+
   }, []);
   
   const [carrusel, setCarrusel] = useState(false)
@@ -42,25 +49,24 @@ export default function BotonesProductos() {
           <div className="row d-flex align-content-center ">
             <div className="col-4 col-sm-4 col-md-4 col-lg-4 btn-ref">
               <button
-                href="#"
-                onClick={() => updateTortas() && setTartaletasList([])}
-                className="btn botones"
+                onClick={() => updateTortas(1) && setTartaletasList([])}
+                className={activarBoton === 1 ? 'btn boton-activo' : 'btn botones'}
               >
                 Tortas
               </button>
             </div>
             <div className="col-4 col-sm-4 col-md-4 col-lg-4 btn-ref">
               <button
-                href="#"
-                onClick={() => updateTartaletas() && setTortasList([])}
-                className="btn botones"
+                onClick={() => updateTartaletas(2) && setTortasList([])}
+                className={activarBoton === 2 ? 'btn boton-activo' : 'btn botones'}
               >
                 Kuchen & Tartas
               </button>
             </div>
             <div className="col-4 col-sm-4 col-md-4 col-lg-4 btn-ref">
-              <button href="#" className="btn botones"
-              onClick={() => ocultarProductos()}>
+              <button 
+              className={activarBoton === 3 ? 'btn boton-activo' : 'btn botones'}
+              onClick={() => ocultarProductos(3)}>
                 Extras
               </button>
             </div>

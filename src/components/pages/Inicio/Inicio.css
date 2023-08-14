@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno');
 
 @media (max-width: 768px) {
-  .carousel-image {
-    height: 183px; 
-    max-height: 500px;
-    object-fit: cover;
+  .carrusel-inicio {
+    max-height: 200px; 
   }
   .caja-texto{
     color:#4B102D ;
@@ -79,8 +77,9 @@
 }
 
 @media (min-width: 768px) {
-  .carousel-image {
-    height: 200px;
+  .carrusel-inicio {
+    height: 300px;
+    object-fit: cover;
   }
   .caja-texto{
     color:#4B102D ;
@@ -97,42 +96,43 @@
     padding: 0;
   }
   .img-cuadricula{
-    height: 400px;
-    width: 100%;
+    height: 300px;
+    min-width: 100%;
+    object-fit: cover;
   }
   .botones-inicio{
-    height: 90px;
+    height: 150px;
     margin: 33px 0 5px 0;
   }
   .contendor-boton{
     display: flex;
     justify-content: center;
-    border-radius: 50px;
+    border-radius: 80px;
     box-shadow: 0px 6px 4px rgba(199, 48, 111, 0.705);
     box-shadow: #B8226A;
-    height: 95px;
-    width: 95px;
+    height: 150px;
+    width: 150px;
     margin: auto;
     background-color: #B8226A;
     align-items: center;
   }
   .boton-inicio-img{
-    height: 90px;
-    width: 90px;
+    height: 140px;
+    width: 140px;
     justify-content: center;
     border: 3px dotted #FFA041;
     background-color: #B8226A;
-    border-radius: 50px;
+    border-radius: 80px;
     box-shadow: 0px 4px 4px #B8226A(0, 0, 0, 0.3);
   }
   .texto-botones-inicio{
     margin: auto;
   }
   .titulo-boton{
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     font-family: 'Italianno';
-    font-weight: 500;
+    font-weight: 600;
     color: #4B102D;
     margin: 0;
     text-decoration: none;

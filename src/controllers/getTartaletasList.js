@@ -6,4 +6,12 @@ const getTartaletasList = async () => {
   return response.data
 }
 
-export default getTartaletasList
+const getTartaleta = async (id) => {
+  try {
+  const response = await axios.get("https://backendloretoideas.onrender.com/tartaleta/mostraruno/" + id)
+  return response.data
+  } catch (error) {
+    console.log("error en la solicitud",error)
+  }
+}
+export default {getTartaletasList, getTartaleta}

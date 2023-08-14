@@ -292,7 +292,7 @@
     color: var(--color-segundo);
   }
   
-  .text-center{
+  .texto-centrado{
     font-size: var(--texto-h1);
     color: var(--color-text);
     font-family: 'Italianno', cursive;

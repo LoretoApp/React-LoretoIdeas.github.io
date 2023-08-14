@@ -35,11 +35,11 @@ function Detalles() {
         <p className="titulo"> Kuchen Mora </p>
         Masa de migas con fruta de mora y mermeladas.
         <div className="medidas-productos">
-          <ul>
-            <li>Medidas</li>
-            <li>S= 8 personas.</li>
-            <li>M= 10 personas.</li>
-            <li>L= 12 personas.</li>
+          <ul className="lista-productos">
+            <li className="item-lista">Medidas</li>
+            <li className="item-lista">S= 8 personas.</li>
+            <li className="item-lista">M= 10 personas.</li>
+            <li className="item-lista"> L= 12 personas.</li>
           </ul>
         </div>
         <div className="agregar">

@@ -6,21 +6,21 @@ function DarkVariantExample() {
     <Carousel data-bs-theme="light">
       <Carousel.Item>
         <img
-          className="d-block w-100 carousel-image"
+          className="d-block w-100 carrusel-inicio"
           src="img\torta4.jpg"
           alt="First slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100 carousel-image"
+          className="d-block w-100 carrusel-inicio"
           src="img\torta1.jpg"
           alt="Second slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100 carousel-image"
+          className="d-block w-100 carrusel-inicio"
           src="img\torta3.jpg"
           alt="Third slide"
         />

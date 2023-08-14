@@ -7,6 +7,8 @@ import Cocteleria from "./components/pages/cocteleria/Cocteleria";
 import Desayunos from "./components/pages/desayunos/Desayunos";
 import Nosotros from "./components/pages/nosotros/Nosotros";
 import CrearTartaleta from "./components/pages/admin/Tartaletas/CrearTartaleta";
+import AppLogin from "./components/login/AppLogin";
+
 
 
 
@@ -23,6 +25,7 @@ function App() {
         <Route path="desayunos" element={<Desayunos />}/>
         <Route path="nosotros" element={<Nosotros />}/> 
         <Route path="administrador" element={<CrearTartaleta />}/>
+        <Route path="login" element={<AppLogin />}/>
         
     
     </Routes>

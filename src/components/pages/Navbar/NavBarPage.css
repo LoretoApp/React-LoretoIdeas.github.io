@@ -68,17 +68,16 @@ span.navbar-toggler-icon{
     height: 40px;
     border-radius: 60px;
   }
-  a{
+  .link{
     color: white;
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
   }
-  a :hover{
+  .link :hover{
     color: blue;
   }
-  .container{
-    margin-left: 0px;
+  .contenedor{
     justify-content: space-evenly;
   }
    
@@ -99,13 +98,13 @@ span.navbar-toggler-icon{
 
     
   }
-  a{
+  .link{
     color: white;
     text-decoration: none;
     margin-top: 0px;
   }
 
-  .container{
+  .contenedor{
     justify-content: space-evenly;
     margin-left: 20px;
     margin-right: 20px;
@@ -125,13 +124,13 @@ span.navbar-toggler-icon{
     margin-right: 110px;
     
   }
-  a{
+  .link{
     color: white;
     text-decoration: none;
     margin-left: 3%;
   }
 
-  .container{
+  .contenedor{
     justify-content: space-evenly;
   }
   
