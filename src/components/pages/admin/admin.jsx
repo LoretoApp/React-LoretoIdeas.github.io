@@ -8,7 +8,7 @@ const Administrador = () => {
   );
 };
 
-const Box = ({ imgSrc, altText, title }) => {
+const Box = ( imgSrc, altText, title ) => {
   return (
     <div className="box">
       <img className='img-admin' src={imgSrc} alt={altText} />
@@ -56,7 +56,7 @@ const Salir = () => {
   );
 };
 
-const App = () => {
+const VistaAdmin = () => {
   return (
     <div>
       <Administrador />
@@ -66,4 +66,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default VistaAdmin;
