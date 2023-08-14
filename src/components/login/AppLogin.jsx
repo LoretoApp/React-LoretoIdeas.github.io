@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useAuth } from "../../controllers/Atentificacion/context/AuthContext";
 import "../login/styles.css";
+import { useNavigate } from "react-router-dom";
 
 function AppLogin() {
   const [view, setView] = useState("login");
@@ -13,9 +14,13 @@ function AppLogin() {
   const handleLogin = () => {
     setView("login");
   };
-  const { register, handleSubmit } = useForm();
-  const{signup, user}= useAuth()
-  console.log(user)
+  const { register, handleSubmit , formState:{errors}} = useForm();
+  const{signup, isAuthenticated }= useAuth()
+  const navigate= useNavigate()
+
+useEffect(()=>{
+if (isAuthenticated) navigate("/administrador")
+}, [isAuthenticated])
 
   const onSubmit = handleSubmit(async (values) => {
     signup(values);
@@ -77,18 +82,23 @@ function AppLogin() {
                   className="input-buton input-login"
                   {...register("username", { require: true })}
                 />
+                {errors.username && ( <p className="text-warning"> El nombre es requerido</p> )}
                 <input
                   type="email"
                   placeholder="Email"
                   className="input-buton input-login"
                   {...register("email", { require: true })}
                 />
+                                {errors.email && ( <p className="text-warning"> El email es requerido</p> )}
+
                 <input
                   type="password"
                   placeholder="Contraseña"
                   className="input-buton input-login"
                   {...register("password", { require: true })}
                 />
+                                {errors.password && ( <p className="text-warning"> La contraseña es requerida</p> )}
+
                 <button type="submit" className="input-buton button-login">
                   {" "}
                   Registrarse nuevo
