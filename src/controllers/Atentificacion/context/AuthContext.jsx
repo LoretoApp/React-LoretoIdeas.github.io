@@ -25,7 +25,7 @@ const signup= async (user)=>{
         signup,
         user,
     }}>
-      
+      {children}
     </AuthContext.Provider>
   )
 }
