@@ -33,18 +33,7 @@ function App() {
         <Route path="nosotros" element={<Nosotros />}/> 
         <Route path="administrador" element={<CrearTartaleta />}/>
         <Route path="login" element={<AppLogin />}/>
-        <Route path="administrador2" element={<ModificarFullTartaleta />}/>
-        <Route path="administrador3" element={<ModificarStatusTartaleta />}/>
-        <Route path="administrador4" element={<MostrarTartaletas />}/>
-        <Route path="administrador5" element={<CrearTorta />}/>
-        <Route path="administrador6" element={<ModificarFullTorta />}/>
-        <Route path="administrador7" element= {<ModificarStatusTorta/>}/>
-        <Route path="administrador8" element={<MostrarTorta />}/>
         
-
-
-        
-        {/* Falta solo dar estilos a la ruta administrados 4 y 8 que tienen tablas, y muestran productos todas las demas listas */}
     
     </Routes>
   </div>
