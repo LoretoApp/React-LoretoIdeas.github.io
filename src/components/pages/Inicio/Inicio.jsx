@@ -48,7 +48,7 @@ function ShapeExample() {
 
 
       <p className="caja-texto">
-      Trabajamos con los mejores ingredientes del país para entregar la mejor calidad a nuestros clientes
+      Trabajamos con los mejores ingredientes del país para entregar la mejor calidad a nuestros clientes, porque todos los productos son creados con amor y se nota en el sabor.
       </p>
     </div>
     <DarkVariantExample/>

@@ -2,16 +2,17 @@
 
 @media (max-width: 768px) {
   .carrusel-inicio {
-    max-height: 200px; 
+    max-height: 150px;
+    background-size: contain;
   }
   .caja-texto{
     color:#4B102D ;
-    padding: 0 20px 20px 20px;
-    margin: 10px 0 30px 0;
+    padding: 0 20px 0px 20px;
+    margin-bottom: 10px;
     text-align: center;
     font-family: 'Hahmlet', serif;
-    font-size: 18px;
-    height: 60px;
+    font-size: 15px;
+    height: 50px;
   }
   .navbar{
     background-color:#B8226A ;
@@ -20,7 +21,7 @@
     padding: 0;
   }
   .img-cuadricula{
-    height: 200px;
+    height: 150px;
     width: 100%;
   }
   .botones-inicio{
@@ -34,15 +35,15 @@
     border-radius: 50px;
     box-shadow: 0px 6px 4px rgba(199, 48, 111, 0.705);
     box-shadow: #B8226A;
-    height: 70px;
-    width: 70px;
+    height: 55px;
+    width: 55px;
     margin: auto;
     background-color: #B8226A;
     align-items: center;
   }
   .boton-inicio-img{
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     justify-content: center;
     border: 3px dotted #FFA041;
     background-color: #B8226A;
@@ -83,7 +84,7 @@
   }
   .caja-texto{
     color:#4B102D ;
-    margin: 20px;
+    margin: 5px;
     text-align: center;
     font-family: 'Hahmlet', serif;
     font-size: 20px;
@@ -94,15 +95,16 @@
   }
   .contenedor-principal-texto{
     padding: 0;
+    display: flex;
+    flex-direction: column;
   }
   .img-cuadricula{
-    height: 300px;
-    min-width: 100%;
-    object-fit: cover;
+    display: none;
+    visibility: hidden;
   }
   .botones-inicio{
-    height: 150px;
-    margin: 33px 0 5px 0;
+    height: 100px;
+    margin: 150px 0 20px 0;
   }
   .contendor-boton{
     display: flex;
@@ -110,26 +112,23 @@
     border-radius: 80px;
     box-shadow: 0px 6px 4px rgba(199, 48, 111, 0.705);
     box-shadow: #B8226A;
-    height: 150px;
-    width: 150px;
+    height: 110px;
+    width: 110px;
     margin: auto;
     background-color: #B8226A;
     align-items: center;
   }
   .boton-inicio-img{
-    height: 140px;
-    width: 140px;
+    height: 100px;
+    width: 100px;
     justify-content: center;
     border: 3px dotted #FFA041;
     background-color: #B8226A;
     border-radius: 80px;
     box-shadow: 0px 4px 4px #B8226A(0, 0, 0, 0.3);
   }
-  .texto-botones-inicio{
-    margin: auto;
-  }
   .titulo-boton{
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     font-family: 'Italianno';
     font-weight: 600;
@@ -143,6 +142,9 @@
   .contenedor-texto{
     height: 60px;
     text-align: center;
+  }
+  .fondo-pasteles-inicio{
+    background-image: url("img/fondo-pasteles.jfif");
   }
   .carousel-control-prev,
   .carousel-control-next {
