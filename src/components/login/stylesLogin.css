@@ -112,7 +112,7 @@
   color: var(--color-tercero);
 }
 
-.error.bg{
+.error_bg{
   background-color: red;
 }
 

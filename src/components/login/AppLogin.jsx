@@ -19,7 +19,7 @@ function AppLogin() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const { signup, isAuthenticated, errors: RegisterErrors } = useAuth();
+  const { signup, isAuthenticated, errors: registerErrors } = useAuth();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -46,10 +46,10 @@ function AppLogin() {
               type="password"
               placeholder="Contraseña"
             />
-            <a className="link-login" href="#forgot-password">
+            {/* <a className="link-login" href="#forgot-password">
               Recupera tu contraseña
-            </a>
-            <button className="input-buton button-login">Registrarse</button>
+            </a> */}
+            <button className="input-buton button-login">Entrar</button>
           </div>
         ) : (
           <div className="sideA">
@@ -73,16 +73,13 @@ function AppLogin() {
                 className="input-buton button-login"
                 onClick={handleSignup}
               >
-                Registrate
+               Registrarse
               </button>
             </div>
           ) : (
             <div className="sideB--header">
-
-              {RegisterErrors.map((error, i)=> (
-                <div className="error.bg">
-                  { error}
-                </div>
+              {registerErrors.map((error, i) => (
+                <div className="error_bg" key={i}>{error}</div>
               ))}
               <form onSubmit={onSubmit}>
                 <input
@@ -116,7 +113,7 @@ function AppLogin() {
 
                 <button type="submit" className="input-buton button-login">
                   {" "}
-                  Registrarse nuevo
+                  Registrar
                 </button>
               </form>
             </div>

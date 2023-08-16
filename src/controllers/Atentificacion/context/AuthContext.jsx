@@ -23,7 +23,7 @@ const signup= async (user)=>{
     setUser(res.data);
     setIsAuthenticated(true);
  } catch (error) {
-    console.log(error.response)
+   console.log(error.response)
    setErrors(error.response.data)
  }
 }
