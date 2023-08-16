@@ -9,6 +9,7 @@ import Nosotros from "./components/pages/nosotros/Nosotros";
 import { AuthProvider } from "./controllers/Atentificacion/context/AuthContext";
 import VistaAdministrador from "./components/pages/admin/admin";
 import AppRegister from "./components/login/AppRegister";
+import CrearTartaleta from "./components/pages/admin/Tartaletas/CrearTartaleta";
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
           <Route path="nosotros" element={<Nosotros />} />
           <Route path="administrador" element={<VistaAdministrador />} />
           <Route path="login" element={<AppRegister />} />
+          <Route path="administrador" element={<VistaAdministrador/>}/>
+          <Route path="login" element={<AppLogin />} />
+          <Route path="administrador1" element={<CrearTartaleta/>}/>
+          
         </Routes>
       </AuthProvider>
     </div>
