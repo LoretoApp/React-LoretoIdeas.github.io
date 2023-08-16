@@ -9,7 +9,7 @@ function AppRegister() {
   const [view, setView] = useState("login");
 
   const handleSignup = () => {
-    setView("signup");
+    view=== "login" ? setView ("signup") : setView("login")
   };
 
 
@@ -36,7 +36,7 @@ function AppRegister() {
   return (
     //  SECCION DE LOGIN
     <div className="superContainer">
-      <AppLogin/>
+      <AppLogin handleSignup= {handleSignup} view={view}/>
       
          {/* SECCION DE REGISTRO NUEVO USUARIO */}
         <div className="sideB">

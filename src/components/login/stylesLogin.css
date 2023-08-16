@@ -113,9 +113,11 @@
 }
 
 .error_bg{
-  background: linear-gradient(180deg, rgba(248, 229, 223, 1) 0%, rgba(255, 160, 65, 1) 100%);
+  background: linear-gradient(180deg, rgb(252, 57, 135) 0%, rgb(78, 42, 57) 120%);
   border-radius: 0.2rem;
   padding: 3%;
+  color: #f0f0f0;
+  font-size: 1.1rem;
 }
 
 /* Nuevos estilos para la vista responsive */
