@@ -1,6 +1,6 @@
 import Modal from "react-bootstrap/Modal";
 import "../login/stylesLogin.css";
-import AppLogin from "./AppLogin";
+import AppLogin from "./AppRegister";
 
 function LoginModal({ showLogin, HandleLogin }) {
   return (
