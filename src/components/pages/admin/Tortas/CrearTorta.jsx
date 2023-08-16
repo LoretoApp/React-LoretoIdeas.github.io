@@ -102,7 +102,7 @@ export default function CrearTorta() {
 
       <div className="titulo-admi row">
         <div className="ingreso col-12 text-center">
-          <h3 className="titulo">Ingreso de producto</h3>
+          <h3 className="titulo">Crear Torta</h3>
         </div>
       </div>
       <form className="titulo-admi row g-3" id="formulario-admi" encType="multipart/form-data">
