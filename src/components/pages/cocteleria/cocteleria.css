@@ -22,9 +22,14 @@
   width: 50%;
   height: auto;
 }
+.carruselCocteleria{
+  height: 500px;
+
+}
 
 /* Agrega reglas de medios para hacerlo responsivo */
 @media (max-width: 768px) {
+  
   .whatsapp-float {
     bottom: 15px;
     right: 15px;
@@ -70,6 +75,11 @@
 
 
   }
+  .carruselCocteleria{
+    height: 200px;
+
+  }
+  
   
 }
 @media (min-width: 768px) {
@@ -114,7 +124,7 @@
     font-family: 'Italianno' ;
     font-size: 10vh;
     padding-top: 70px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 
   } 
   .fondo{
@@ -164,6 +174,10 @@
   .fondo { 
     height: 1290px;
 
+
+  }
+  .carruselCocteleria{
+    height: 800px;
 
   }
   

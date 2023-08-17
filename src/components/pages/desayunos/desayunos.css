@@ -24,6 +24,10 @@
   width: 50%;
   height: auto;
 }
+.carruselDesayuno{
+  height: 500px;
+
+}
 
 /* Agrega reglas de medios para hacerlo responsivo */
 @media (max-width: 768px) {
@@ -70,6 +74,10 @@
   .fondo { 
     height: 400px;
 
+
+  }
+  .carruselDesayuno{
+    height: 200px;
 
   }
   
@@ -166,6 +174,10 @@
   .fondo { 
     height: 1290px;
 
+
+  }
+  .carruselDesayuno{
+    height: 800px;
 
   }
   
