@@ -24,6 +24,10 @@
   width: 50%;
   height: auto;
 }
+.carruselDesayuno{
+  height: 500px;
+
+}
 
 /* Agrega reglas de medios para hacerlo responsivo */
 @media (max-width: 768px) {
@@ -67,9 +71,13 @@
     line-height: 57.6px;
     padding-top: 50px;    
   } 
-  .fondo { 
+  .fondo{
+    background-image: url('img/fondo-pasteles.jfif'); 
     height: 400px;
 
+  }
+  .carruselDesayuno{
+    height: 200px;
 
   }
   
@@ -120,7 +128,12 @@
 
   } 
   .fondo{
-    height: 725px;
+    background-image: url('img/fondo-pasteles.jfif');
+    height: 700px; 
+  }
+  .carruselDesayuno{
+    height: 500px;
+
   }
 }
 @media (min-width: 2560px) {
@@ -163,9 +176,12 @@
     font-size: 200px;
     padding-top: 50px;    
   } 
-  .fondo { 
-    height: 1290px;
-
+  .fondo{
+    background-image: url('img/fondo-pasteles.jfif');
+    height: 1200px;
+  }
+  .carruselDesayuno{
+    height: 800px;
 
   }
   
