@@ -83,9 +83,21 @@
         margin: 0;
         padding: 0;
     }
+    .Contenedor-admin-general{
+        display: flex;
+        flex-direction: row;
+    }
+    .funcionesAdmin{
+        height: 100%;
+        width: 100%;
+    }
     
     .container-admin {
+        display: flex;
         flex-wrap: wrap;
+        min-height: 69vh;
+        width: 400px;
+        margin: 50px 0 50px 0;
     }
     
     .box {
@@ -97,8 +109,8 @@
     }
     
     .img-admin {
-        max-width: 5%;
-        max-height: 5%;
+        max-width: 10%;
+        max-height: 10%;
         margin-right: 1%;
     }
     
@@ -137,6 +149,7 @@
     }
     .titulo-admin {
         font-size: 14px;
+        font-weight: 600;
         margin: auto;
     
     }
@@ -150,8 +163,8 @@
             margin: auto;
         }
         .img-admin {
-            max-width: 7%;
-            max-height: 7%;
+            max-width: 15%;
+            max-height: 15%;
         }
     }
 }
