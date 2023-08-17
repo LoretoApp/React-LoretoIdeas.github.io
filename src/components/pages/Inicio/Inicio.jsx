@@ -10,7 +10,7 @@ import NavBarPage from "../navbar/NavBarPage";
 
 function ShapeExample() {
   return ( 
-    <div className="viewport">
+    <div className="viewport inicio-fondo">
     <NavBarPage/>
         <div className=" container-fluid contenedor-principal-texto w100">
       <Image src="img/principal-cuadricula.jfif" className="p-0 img-cuadricula" />
@@ -45,22 +45,16 @@ function ShapeExample() {
         <a href="/cocteleria" className="titulo-boton">Coctelería</a>
         </div>
       </Row>
-
-
-      <p className="caja-texto">
+      <p className="caja-texto-mobile">
       ¡Bienvenidos a Loreto Ideas! Nuestra pasión por la calidad nos lleva a
           trabajar exclusivamente con los ingredientes más frescos y de mayor
           calidad. Nuestra pastelera se esfuerza por transformar estos
           ingredientes de primera en obras de arte comestibles que deleitarán
-          tus sentidos. Ya sea que busques el pastel perfecto para una ocasión
-          especial o simplemente desees un capricho, nuestra pagina web te
-          invita a explorar una variedad de opciones que reflejan nuestra
-          dedicación a la excelencia. Te invitamos a descubrir cómo la pasión
-          por los ingredientes y la atención a los detalles se fusionan para
-          crear momentos dulcemente inolvidables. Sumérgete en un mundo de
-          sabores auténticos y texturas exquisitas mientras celebramos juntos el
-          arte de la pastelería. !Te estamos esperando para endulzar tu día!
+          tus sentidos.  !Te estamos esperando para endulzar tu día!
+      </p>
 
+      <p className="caja-texto">
+      Trabajamos con los mejores ingredientes del país para entregar la mejor calidad a nuestros clientes, porque todos los productos son creados con amor y se nota en el sabor.
       </p>
     </div>
     <DarkVariantExample/>
@@ -70,4 +64,3 @@ function ShapeExample() {
 }
 
 export default ShapeExample;
-
