@@ -95,6 +95,7 @@ input[type="submit"] {
     width: 50%;
     margin: 0 auto;
     text-align: center;
+    margin-top: 1.5rem;
     
 }
 
@@ -109,6 +110,8 @@ input[type="submit"] {
 .btn:hover{
     border-color: palevioletred;
 }
+
+
 
 
 

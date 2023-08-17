@@ -27,17 +27,18 @@ export default function MostrarTorta() {
      </section>
 
     <div className="cuerpo-formulario container">
+      <div className="table-responsive">
       <table className="table table-striped table-bordered">
         <thead>
           <tr className="table-primary">
-            <th className="table-primary">Nombre</th>
-            <th className="table-primary">Descripcion</th>
-            <th className="table-primary">Porcion y precio</th>
-            <th className="table-primary">estado</th>
-            <th className="table-primary">imagen</th>
+            <th className="item">Nombre</th>
+            <th className="item">Descripcion</th>
+            <th className="item">Porcion y precio</th>
+            <th className="item">Estado</th>
+            <th className="item">Imagen</th>
           </tr>
         </thead>
-        <tbody className="table-group-divider" id="contenedor">
+        <tbody className="table-group-divider" id="contenedor-tabla">
         {tortasList.map((torta) => (
             <tr key={torta._id}>
               <td className="align-middle">{torta.nombre}</td>
@@ -58,6 +59,7 @@ export default function MostrarTorta() {
         </tbody>
         
       </table>
+      </div>
     </div>
     <section className="salir col-12 text-center">
         <p className="banner-administrador">Salir X</p>

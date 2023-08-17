@@ -23,18 +23,19 @@ export default function MostrarTartaletas() {
      </section>
 
     <div className="cuerpo-formulario container-fluid">
-      <table className="table table-striped">
+      <div className="table-responsive">
+      <table className="table table-striped table-bordered">
         <thead>
           <tr className="table-primary">
-            <th className="table-primary">Nombre</th>
-            <th className="table-primary">Descripcion</th>
-            <th className="table-primary">Diametro</th>
-            <th className="table-primary">Precio</th>
-            <th className="table-primary">estado</th>
-            <th className="table-primary">imagen</th>
+            <th className="item">Nombre</th>
+            <th className="item">Descripcion</th>
+            <th className="item">Diametro</th>
+            <th className="item">Precio</th>
+            <th className="item">Estado</th>
+            <th className="item">Imagen</th>
           </tr>
         </thead>
-        <tbody className="table-group-divider" id="contenedor">
+        <tbody className="table-group-divider" id="contenedor-tabla">
         {tartaletasList.map((tartaleta) => (
             <tr key={tartaleta._id}>
               <td className="align-middle">{tartaleta.nombre}</td>
@@ -48,6 +49,7 @@ export default function MostrarTartaletas() {
         </tbody>
         
       </table>
+      </div>
     </div>
     <section className="salir col-12 text-center">
         <p className="banner-administrador">Salir X</p>

@@ -204,7 +204,7 @@ export default function ModificarFullTartaleta() {
           />
         </div>
         <div className="col-12">
-          <button type="button" id="agregar" className="boton-agrgar btn btn-primary" onClick={()=> enviarDatos()}>
+          <button type="button" id="agregar" className="boton-agregar btn btn-primary" onClick={()=> enviarDatos()}>
             Agregar Producto
           </button>
         </div>
