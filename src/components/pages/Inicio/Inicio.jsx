@@ -46,15 +46,16 @@ function ShapeExample() {
         </div>
       </Row>
       <p className="caja-texto-mobile">
+      Trabajamos con los mejores ingredientes del país para entregar la mejor calidad a nuestros clientes, porque todos los productos son creados con amor y se nota en el sabor.
+      </p>
+
+      <p className="caja-texto">
+      
       ¡Bienvenidos a Loreto Ideas! Nuestra pasión por la calidad nos lleva a
           trabajar exclusivamente con los ingredientes más frescos y de mayor
           calidad. Nuestra pastelera se esfuerza por transformar estos
           ingredientes de primera en obras de arte comestibles que deleitarán
           tus sentidos.  !Te estamos esperando para endulzar tu día!
-      </p>
-
-      <p className="caja-texto">
-      Trabajamos con los mejores ingredientes del país para entregar la mejor calidad a nuestros clientes, porque todos los productos son creados con amor y se nota en el sabor.
       </p>
     </div>
     <DarkVariantExample/>
