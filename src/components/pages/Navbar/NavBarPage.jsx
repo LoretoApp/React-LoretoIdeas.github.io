@@ -25,11 +25,11 @@ function NavBarPage() {
         <a className='link' href='/'>
         <img className="LoretoIdeas" src="icons/Logo-loretoideas.png" alt="LoretoIdeas"/>
         </a>
-        <a className='link'>
+        <a className='link' href='http://localhost:5173/login'>
         <img className="logo" src="icons/Usuario.png" alt="Logo" onClick={handleLogin}/>
         </a>
         <div className="div-con-linea"></div>
-        <a className='link'>
+        <a className='link' href='/'>
         <img className="carrito" src="icons/carrito.png" alt="carrito" onClick={handleCar}/>
         </a>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

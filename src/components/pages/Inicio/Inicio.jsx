@@ -48,7 +48,19 @@ function ShapeExample() {
 
 
       <p className="caja-texto">
-      Trabajamos con los mejores ingredientes del país para entregar la mejor calidad a nuestros clientes
+      ¡Bienvenidos a Loreto Ideas! Nuestra pasión por la calidad nos lleva a
+          trabajar exclusivamente con los ingredientes más frescos y de mayor
+          calidad. Nuestra pastelera se esfuerza por transformar estos
+          ingredientes de primera en obras de arte comestibles que deleitarán
+          tus sentidos. Ya sea que busques el pastel perfecto para una ocasión
+          especial o simplemente desees un capricho, nuestra pagina web te
+          invita a explorar una variedad de opciones que reflejan nuestra
+          dedicación a la excelencia. Te invitamos a descubrir cómo la pasión
+          por los ingredientes y la atención a los detalles se fusionan para
+          crear momentos dulcemente inolvidables. Sumérgete en un mundo de
+          sabores auténticos y texturas exquisitas mientras celebramos juntos el
+          arte de la pastelería. !Te estamos esperando para endulzar tu día!
+
       </p>
     </div>
     <DarkVariantExample/>

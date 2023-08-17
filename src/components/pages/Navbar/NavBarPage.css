@@ -38,6 +38,7 @@ span.navbar-toggler-icon{
 }
 
 
+
 /* NavBarPage.css */
 .Navbar {
     background-color: var(--color-principal); 
@@ -47,6 +48,7 @@ span.navbar-toggler-icon{
 .navbar-toggler:focus{
   box-shadow: none;
 }
+
 
 @media(min-width: 992px){
   img.LoretoIdeas{
@@ -75,11 +77,14 @@ span.navbar-toggler-icon{
     margin-right: 10px;
   }
   .link :hover{
-    color: blue;
+    color:pink;
   }
   .contenedor{
     justify-content: space-evenly;
+    
   }
+  
+  
    
   
 }
