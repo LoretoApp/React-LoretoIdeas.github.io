@@ -188,7 +188,7 @@ export default function AdminView() {
       {verTortaDesactivar && <ModificarStatusTorta/>}
       {verTartaletaDesactivar && <ModificarStatusTartaleta/>}
       {verTortaAgregar && <CrearTorta/>}
-      {verTartaletaAgregar && <CrearTartaleta/>}     
+      {verTartaletaAgregar && <CrearTartaleta/>}      
       
     </div>
 
