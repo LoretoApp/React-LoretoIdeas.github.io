@@ -11,7 +11,7 @@ function Cocteleria() {
     <NavBarPage/>
     <CarruselCocteleria/>
     <section>
-      <div className="container-fluid text-center1 fondo">
+      <div className="container-fluid fondo">
         <div className="container-fluid">
           <p className='cocteleria'>Cocteleria</p>
           <p className='parrafoCocteleria'>Damos servicios de banquetería para distintos eventos privados o familiares.<br/>

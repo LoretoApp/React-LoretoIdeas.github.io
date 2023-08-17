@@ -71,9 +71,9 @@
     line-height: 57.6px;
     padding-top: 50px;    
   } 
-  .fondo { 
+  .fondo{
+    background-image: url('img/fondo-pasteles.jfif'); 
     height: 400px;
-
 
   }
   .carruselDesayuno{
@@ -128,7 +128,12 @@
 
   } 
   .fondo{
-    height: 725px;
+    background-image: url('img/fondo-pasteles.jfif');
+    height: 700px; 
+  }
+  .carruselDesayuno{
+    height: 500px;
+
   }
 }
 @media (min-width: 2560px) {
@@ -171,10 +176,9 @@
     font-size: 200px;
     padding-top: 50px;    
   } 
-  .fondo { 
-    height: 1290px;
-
-
+  .fondo{
+    background-image: url('img/fondo-pasteles.jfif');
+    height: 1200px;
   }
   .carruselDesayuno{
     height: 800px;
