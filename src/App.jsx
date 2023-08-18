@@ -22,11 +22,9 @@ function App() {
           <Route path="cocteleria" element={<Cocteleria />} />
           <Route path="desayunos" element={<Desayunos />} />
           <Route path="nosotros" element={<Nosotros />} />
-          <Route path="administrador" element={<VistaAdministrador />} />
           <Route path="login" element={<AppRegister />} />
-          <Route path="formulario" element={<ModificarStatusTartaleta />} />
-          <Route path="admin" element={<AdminView />} />
-
+          <Route path="administrador" element={<VistaAdministrador/>}/>
+          
         </Routes>
       </AuthProvider>
     </div>

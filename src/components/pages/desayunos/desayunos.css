@@ -72,7 +72,7 @@
     padding-top: 50px;    
   } 
   .fondo{
-    background-image: url('img/fondo-pasteles.jfif'); 
+    background-image: url('img/fondo-cupcakes.jfif');
     height: 400px;
 
   }
@@ -128,7 +128,7 @@
 
   } 
   .fondo{
-    background-image: url('img/fondo-pasteles.jfif');
+    background-image: url('img/fondo-cupcakes.jfif');
     height: 700px; 
   }
   .carruselDesayuno{
@@ -177,7 +177,7 @@
     padding-top: 50px;    
   } 
   .fondo{
-    background-image: url('img/fondo-pasteles.jfif');
+    background-image: url('img/fondo-cupcakes.jfif');
     height: 1200px;
   }
   .carruselDesayuno{

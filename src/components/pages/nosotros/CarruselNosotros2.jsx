@@ -7,7 +7,7 @@ function CarruselNosotros2() {
       <Carousel.Item>
         <img
           className="carruselNosotros2 d-block w-100 carousel-image"
-          src="img\premio1.jpeg"
+          src="img\etasi.png"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -16,7 +16,7 @@ function CarruselNosotros2() {
       <Carousel.Item>
         <img
           className="carruselNosotros2 d-block w-100 carousel-image"
-          src="img\premio2.jpeg"
+          src="img\etasi2.png"
           alt="Second slide"
         />
         <Carousel.Caption>
