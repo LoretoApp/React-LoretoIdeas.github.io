@@ -53,9 +53,7 @@ export default function ModificarStatusTartaleta() {
 
   return (
     <>
-    <section className="administrador col-12 text-center">
-        <p className="banner-administrador">Administrador</p>
-     </section>
+    
 
     <div className="cuerpo-formulario container">
 

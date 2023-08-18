@@ -22,9 +22,7 @@ export default function MostrarTorta() {
   const url = 'img/'
   return (
     <>
-    <section className="administrador col-12 text-center">
-        <p className="banner-administrador">Administrador</p>
-     </section>
+    
 
     <div className="cuerpo-formulario container">
       <table className="table table-striped table-bordered">

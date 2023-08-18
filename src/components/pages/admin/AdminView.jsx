@@ -48,35 +48,107 @@ export default function AdminView() {
   const handleShow4 = () => setShow4(true);
     /* Modal5 */
   const [show5, setShow5] = useState(true);
-  const handleClose5 = () => setShow5(false);
+  const handleClose5 = () => {
+    setShow5(false)
+    setShow6(true)
+    setShow7(true)
+    setShow8(true)
+    setShow9(true)
+    setShow10(true)
+    setShow11(true)
+    setShow12(true)
+  };
 
     /* Modal6 */
   const [show6, setShow6] = useState(true);
-  const handleClose6 = () => setShow6(false);
+  const handleClose6 = () => {
+    setShow5(true)
+    setShow6(false)
+    setShow7(true)
+    setShow8(true)
+    setShow9(true)
+    setShow10(true)
+    setShow11(true)
+    setShow12(true)
+  };
   
   /* Modal7 */
   const [show7, setShow7] = useState(true);
-  const handleClose7 = () => setShow7(false);
+  const handleClose7 = () => {
+    setShow5(true)
+    setShow6(true)
+    setShow7(false)
+    setShow8(true)
+    setShow9(true)
+    setShow10(true)
+    setShow11(true)
+    setShow12(true)
+  };
   
   /* Modal8 */
   const [show8, setShow8] = useState(true);
-  const handleClose8 = () => setShow8(false);
+  const handleClose8 = () => {
+    setShow5(true)
+    setShow6(true)
+    setShow7(true)
+    setShow8(false)
+    setShow9(true)
+    setShow10(true)
+    setShow11(true)
+    setShow12(true)
+  };
   
   /* Modal9 */
   const [show9, setShow9] = useState(true);
-  const handleClose9 = () => setShow9(false);
+  const handleClose9 = () => {
+    setShow5(true)
+    setShow6(true)
+    setShow7(true)
+    setShow8(true)
+    setShow9(false)
+    setShow10(true)
+    setShow11(true)
+    setShow12(true)
+  };
   
   /* Modal10 */
   const [show10, setShow10] = useState(true);
-  const handleClose10 = () => setShow10(false);
+  const handleClose10 = () => {
+    setShow5(true)
+    setShow6(true)
+    setShow7(true)
+    setShow8(true)
+    setShow9(true)
+    setShow10(false)
+    setShow11(true)
+    setShow12(true)
+  };
   
     /* Modal11 */
   const [show11, setShow11] = useState(true);
-  const handleClose11 = () => setShow11(false);
+  const handleClose11 = () => {
+    setShow5(true)
+    setShow6(true)
+    setShow7(true)
+    setShow8(true)
+    setShow9(true)
+    setShow10(true)
+    setShow11(false)
+    setShow12(true)
+  };
   
     /* Modal12 */
   const [show12, setShow12] = useState(true);
-  const handleClose12 = () => setShow12(false);
+  const handleClose12 = () => {
+    setShow5(true)
+    setShow6(true)
+    setShow7(true)
+    setShow8(true)
+    setShow9(true)
+    setShow10(true)
+    setShow11(true)
+    setShow12(false)
+  };
   
 
   const mostrarTartaleta = ()=>{
@@ -186,79 +258,83 @@ export default function AdminView() {
 
 
   return (
-    <section className='Contenedor-admin-general'>
-      {/* Izquierda */}
-      <div className="container-fluid container-admin p-0">
-        <section id="Administrador">
-          <p>Administrador</p>
-        </section>
-        {/* Boton 1 */}
-        <button className='boton-admin' onClick={handleShow}>
-        <div className="box">
-          <img className='img-admin' src="icons/6372973_list_menu_navigation_option_setting_icon (1).png" alt="Imagen 1" />
-          <section className="texto-admin">
-            <h3 className='titulo-admin'>Ver Producto</h3>
-          </section>
-        </div>
-        </button>
-        <AdminModal show={show} handleClose={handleClose} accion={'Ver Producto'} funcion1={mostrarTorta} funcion2={mostrarTartaleta}/>
-        {/* Boton 2 */}
-        <button className='boton-admin' onClick={handleShow2}>
-        <div className="box">
-          <img className='img-admin' src="icons/add-product.png" alt="Imagen 2" />
-          <section className="texto-admin">
-            <h3 className='titulo-admin'>Agregar Producto</h3>
-          </section>
-        </div>
-        </button>
-        <AdminModal show={show2} handleClose={handleClose2} accion={'Agregar Producto'} funcion1={agregarTorta} funcion2={agregarTartaleta}/>
-        {/* Boton 3 */}
-        <button className='boton-admin' onClick={handleShow3}>
-        <div className="box">
-          <img className='img-admin' src="icons/edit-product.png" alt="Imagen 3" />
-          <section className="texto-admin">
-            <h3 className='titulo-admin'>Editar Producto</h3>
-          </section>
-        </div>
-        </button>
-        <AdminModal show={show3} handleClose={handleClose3} accion={'Editar Producto'} funcion1={editarTorta} funcion2={editarTartaleta}/>
-        {/* Boton 4 */}
-        <button className='boton-admin' onClick={handleShow4}>
-        <div className="box">
-          <img className='img-admin' src="icons/delete-product.png" alt="Imagen 4" />
-          <section className="texto-admin">
-            <h3 className='titulo-admin'>Desactivar Producto</h3>
-          </section>
-        </div>
-        </button>
-        <AdminModal show={show4} handleClose={handleClose4} accion={'Desactivar Producto'} funcion1={desactivarTorta} funcion2={desactivarTartaleta}/>
-
-        <div className="contenedorModalAdmin">
-          {screenWidth < 768 && verTorta && (<ModalMostrarTortas show={show5} handleClose={handleClose5}/>)}
-          {screenWidth < 768 && verTartaleta && (<ModalMostrarTartaletas show={show6} handleClose={handleClose6}/>)}
-          {screenWidth < 768 && verTortaModificar && <ModalModificarTorta show={show7} handleClose={handleClose7}/>}
-          {screenWidth < 768 && verTartaletaModificar && <ModalModificarTartaleta show={show8} handleClose={handleClose8}/>}
-          {screenWidth < 768 && verTortaDesactivar && <ModalDesactivarTorta show={show9} handleClose={handleClose9}/>}
-          {screenWidth < 768 && verTartaletaDesactivar && <ModalDesactivarTartaleta show={show10} handleClose={handleClose10}/>}
-          {screenWidth < 768 && verTortaAgregar && <ModalCrearTorta show={show11} handleClose={handleClose11}/>}
-          {screenWidth < 768 && verTartaletaAgregar && <ModalCrearTartaleta show={show12} handleClose={handleClose12}/>}     
-        </div>
-
-      
+    <section>
+      <div className="administrador col-12 text-center">
+        <p className="banner-administrador">Administrador</p>
       </div>
-      {/* Derecha */}
-      <div className="funcionesAdmin" id='funcionesAdmin'>
-      {screenWidth > 768 && verTorta && <MostrarTorta/>}
-      {screenWidth > 768 && verTartaleta && <MostrarTartaletas/>}
-      {screenWidth > 768 && verTortaModificar && <ModificarFullTorta/>}
-      {screenWidth > 768 && verTartaletaModificar && <ModificarFullTartaleta/>}
-      {screenWidth > 768 && verTortaDesactivar && <ModificarStatusTorta/>}
-      {screenWidth > 768 && verTartaletaDesactivar && <ModificarStatusTartaleta/>}
-      {screenWidth > 768 && verTortaAgregar && <CrearTorta/>}
-      {screenWidth > 768 && verTartaletaAgregar && <CrearTartaleta/>}     
-      
-    </div>
 
+      <div className='Contenedor-admin-general'>
+        
+        {/* Izquierda */}
+        <div className="container-fluid container-admin p-0">
+          {/* Boton 1 */}
+          <button className='boton-admin' onClick={handleShow}>
+          <div className="box">
+            <img className='img-admin' src="icons/6372973_list_menu_navigation_option_setting_icon (1).png" alt="Imagen 1" />
+            <section className="texto-admin">
+              <h3 className='titulo-admin'>Ver Producto</h3>
+            </section>
+          </div>
+          </button>
+          <AdminModal show={show} handleClose={handleClose} accion={'Ver Producto'} funcion1={mostrarTorta} funcion2={mostrarTartaleta}/>
+          {/* Boton 2 */}
+          <button className='boton-admin' onClick={handleShow2}>
+          <div className="box">
+            <img className='img-admin' src="icons/add-product.png" alt="Imagen 2" />
+            <section className="texto-admin">
+              <h3 className='titulo-admin'>Agregar Producto</h3>
+            </section>
+          </div>
+          </button>
+          <AdminModal show={show2} handleClose={handleClose2} accion={'Agregar Producto'} funcion1={agregarTorta} funcion2={agregarTartaleta}/>
+          {/* Boton 3 */}
+          <button className='boton-admin' onClick={handleShow3}>
+          <div className="box">
+            <img className='img-admin' src="icons/edit-product.png" alt="Imagen 3" />
+            <section className="texto-admin">
+              <h3 className='titulo-admin'>Editar Producto</h3>
+            </section>
+          </div>
+          </button>
+          <AdminModal show={show3} handleClose={handleClose3} accion={'Editar Producto'} funcion1={editarTorta} funcion2={editarTartaleta}/>
+          {/* Boton 4 */}
+          <button className='boton-admin' onClick={handleShow4}>
+          <div className="box">
+            <img className='img-admin' src="icons/delete-product.png" alt="Imagen 4" />
+            <section className="texto-admin">
+              <h3 className='titulo-admin'>Desactivar Producto</h3>
+            </section>
+          </div>
+          </button>
+          <AdminModal show={show4} handleClose={handleClose4} accion={'Desactivar Producto'} funcion1={desactivarTorta} funcion2={desactivarTartaleta}/>
+
+          <div className="contenedorModalAdmin">
+            {screenWidth < 768 && verTorta && (<ModalMostrarTortas show={show5} handleClose={handleClose5}/>)}
+            {screenWidth < 768 && verTartaleta && (<ModalMostrarTartaletas show={show6} handleClose={handleClose6}/>)}
+            {screenWidth < 768 && verTortaModificar && <ModalModificarTorta show={show7} handleClose={handleClose7}/>}
+            {screenWidth < 768 && verTartaletaModificar && <ModalModificarTartaleta show={show8} handleClose={handleClose8}/>}
+            {screenWidth < 768 && verTortaDesactivar && <ModalDesactivarTorta show={show9} handleClose={handleClose9}/>}
+            {screenWidth < 768 && verTartaletaDesactivar && <ModalDesactivarTartaleta show={show10} handleClose={handleClose10}/>}
+            {screenWidth < 768 && verTortaAgregar && <ModalCrearTorta show={show11} handleClose={handleClose11}/>}
+            {screenWidth < 768 && verTartaletaAgregar && <ModalCrearTartaleta show={show12} handleClose={handleClose12}/>}     
+          </div>
+
+        
+        </div>
+        {/* Derecha */}
+        <div className="funcionesAdmin" id='funcionesAdmin'>
+        {screenWidth > 768 && verTorta && <MostrarTorta/>}
+        {screenWidth > 768 && verTartaleta && <MostrarTartaletas/>}
+        {screenWidth > 768 && verTortaModificar && <ModificarFullTorta/>}
+        {screenWidth > 768 && verTartaletaModificar && <ModificarFullTartaleta/>}
+        {screenWidth > 768 && verTortaDesactivar && <ModificarStatusTorta/>}
+        {screenWidth > 768 && verTartaletaDesactivar && <ModificarStatusTartaleta/>}
+        {screenWidth > 768 && verTortaAgregar && <CrearTorta/>}
+        {screenWidth > 768 && verTartaletaAgregar && <CrearTartaleta/>}     
+        
+      </div>
+
+      </div>
     </section>
     
   )

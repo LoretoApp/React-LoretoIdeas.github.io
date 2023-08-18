@@ -18,9 +18,7 @@ export default function MostrarTartaletas() {
 
   return (
     <>
-      <section className="administrador col-12 text-center">
-        <p className="banner-administrador">Administrador</p>
-     </section>
+      
 
     <div className="cuerpo-formulario container-fluid">
       <table className="table table-striped">
