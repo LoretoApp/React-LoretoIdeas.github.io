@@ -149,9 +149,7 @@ export default function ModificarFullTorta() {
 
   return (
     <>
-      <section className="administrador col-12 text-center">
-        <p className="banner-administrador">Administrador</p>
-      </section>
+      
 
       <div className="cuerpo-formulario container">
         <div className="titulo-admi row">
@@ -378,9 +376,7 @@ export default function ModificarFullTorta() {
           </div>
         </form>
       </div>
-      <section className="salir col-12 text-center">
-        <p className="banner-administrador">Salir X</p>
-      </section>
+      
     </>
   );
 }

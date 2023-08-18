@@ -94,9 +94,7 @@ export default function ModificarFullTartaleta() {
 
   return (
     <>
-    <section className="administrador col-12 text-center">
-        <p className="banner-administrador">Administrador</p>
-     </section>
+    
 
     <div className="cuerpo-formulario container">
 
@@ -210,10 +208,6 @@ export default function ModificarFullTartaleta() {
         </div>
       </form>
     </div>
-
-    <section className="salir col-12 text-center">
-        <p className="banner-administrador">Salir X</p>
-    </section>
     </>
   );
 }

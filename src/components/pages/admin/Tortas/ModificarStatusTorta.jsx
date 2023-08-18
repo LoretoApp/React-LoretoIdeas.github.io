@@ -53,9 +53,7 @@ export default function ModificarStatusTorta() {
 
   return (
     <>
-    <section className="administrador col-12 text-center">
-        <p className="banner-administrador">Administrador</p>
-     </section>
+   
 
     <div className="cuerpo-formulario container">
 
@@ -104,9 +102,7 @@ export default function ModificarStatusTorta() {
         <p id="error"></p>
       </div>
     </div>
-    <section className="salir col-12 text-center">
-        <p className="banner-administrador">Salir X</p>
-    </section>
+    
     </>
   );
 }
