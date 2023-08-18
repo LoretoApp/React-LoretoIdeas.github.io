@@ -10,8 +10,10 @@ import { AuthProvider } from "./controllers/Atentificacion/context/AuthContext";
 import VistaAdministrador from "./components/pages/admin/admin";
 import AppRegister from "./components/login/AppRegister";
 import CrearTartaleta from "./components/pages/admin/Tartaletas/CrearTartaleta";
+import CarritoP from "./components/carrito/CarritoPrincipal";
 
 function App() {
+
   return (
     <div>
       <AuthProvider>
@@ -25,6 +27,7 @@ function App() {
           <Route path="login" element={<AppRegister />} />
           <Route path="administrador" element={<VistaAdministrador/>}/>
           <Route path="administrador1" element={<CrearTartaleta/>}/>
+          <Route path="carrito" element={<CarritoP/>}/>
           
         </Routes>
       </AuthProvider>
