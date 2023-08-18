@@ -6,37 +6,32 @@ import ShapeExample from "./components/pages/Inicio/Inicio";
 import Cocteleria from "./components/pages/cocteleria/Cocteleria";
 import Desayunos from "./components/pages/desayunos/Desayunos";
 import Nosotros from "./components/pages/nosotros/Nosotros";
+import { AuthProvider } from "./controllers/Atentificacion/context/AuthContext";
+import VistaAdministrador from "./components/pages/admin/admin";
+import AppRegister from "./components/login/AppRegister";
 import CrearTartaleta from "./components/pages/admin/Tartaletas/CrearTartaleta";
-import AppLogin from "./components/login/AppLogin";
-import ModificarFullTartaleta from "./components/pages/admin/Tartaletas/ModificarFullTartaleta";
-import ModificarStatusTartaleta from "./components/pages/admin/Tartaletas/ModificarStatusTartaleta";
-import MostrarTartaletas from "./components/pages/admin/Tartaletas/MostrarTartaletas";
-import CrearTorta from "./components/pages/admin/Tortas/CrearTorta";
-import ModificarFullTorta from "./components/pages/admin/Tortas/ModificarFullTorta";
-import ModificarStatusTorta from "./components/pages/admin/Tortas/ModificarStatusTorta";
-import MostrarTorta from "./components/pages/admin/Tortas/MostrarTorta";
-import Admin from "./components/pages/admin/Admin"
-
-
-
-
-
+import CarritoP from "./components/carrito/CarritoPrincipal";
 
 function App() {
+
   return (
     <div>
-    <Routes>
-        <Route path="/" element={<ShapeExample />}/>
-        <Route path="productos" element={<Productos />}/>
-        <Route path="cocteleria" element={<Cocteleria />}/>
-        <Route path="desayunos" element={<Desayunos />}/>
-        <Route path="nosotros" element={<Nosotros />}/> 
-        <Route path="administrador" element={<CrearTartaleta />}/>
-        <Route path="login" element={<AppLogin />}/>
-        
-    
-    </Routes>
-  </div>
+      <AuthProvider>
+        <Routes>
+          <Route path="/" element={<ShapeExample />} />
+          <Route path="productos" element={<Productos />} />
+          <Route path="cocteleria" element={<Cocteleria />} />
+          <Route path="desayunos" element={<Desayunos />} />
+          <Route path="nosotros" element={<Nosotros />} />
+          <Route path="administrador" element={<VistaAdministrador />} />
+          <Route path="login" element={<AppRegister />} />
+          <Route path="administrador" element={<VistaAdministrador/>}/>
+          <Route path="administrador1" element={<CrearTartaleta/>}/>
+          <Route path="carrito" element={<CarritoP/>}/>
+          
+        </Routes>
+      </AuthProvider>
+    </div>
   );
 }
 

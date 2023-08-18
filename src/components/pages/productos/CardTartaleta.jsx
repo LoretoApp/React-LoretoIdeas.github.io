@@ -31,7 +31,7 @@ export default function CardTartaleta(props) {
            </div>
           <div className="d-flex text-center align-items-center justify-content-around mt-2 ">
             <p className="card-text precio">$ {props.precio}</p>
-            <a href="#" className="btn boton-agregar-carrito align-content-end mb-2">agregar</a>
+            <a href="#" className="btn boton-agregar-carrito align-content-end">Agregar</a>
           </div>
         </div>
       </div>
@@ -69,7 +69,8 @@ export default function CardTartaleta(props) {
         <p className='descripcion p-2 mb-3'>{props.descripcion}</p>
        
         
-          <a className='btn btn-carrito'>Agregar <img className="carrito" src="icons/carrito.png" alt="carrito" /></a>
+        <a className='btn btn-carrito' onClick={() => agregarAlCarrito(props)}>Agregar <img className="carrito" src="icons/carrito.png" alt="carrito" /></a>
+
         
       </div>
         </Modal.Body>

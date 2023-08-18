@@ -1,56 +1,70 @@
-import { useState } from 'react';
-import '../login/styles.css';
+import { useForm } from "react-hook-form";
+import { useAuth } from "../../controllers/Atentificacion/context/AuthContext";
+import "../login/stylesLogin.css";
 
-function AppLogin() {
-    const [view, setView] = useState('login');
-  
-    const handleSignup = () => {
-      setView('signup');
-    };
-  
-    const handleLogin = () => {
-      setView('login');
-    };
-  
-    return (
-      <div className="superContainer">
-        <div className="container containerLogin">
-          {view === 'login' ? (
-            <div className="sideA">
-              <h3 className='titulo-sideA titulos-login'>Inicio de Sesión</h3>
-              <input className='input-buton input-login' type="email" placeholder="Email" />
-              <input className='input-buton input-login' type="password" placeholder="Contraseña" />
-              <a className='link-login' href="#forgot-password">Recupera tu contraseña</a>
-              <button className='input-buton button-login'>Registrarse</button>
-            </div>
-          ) : (
-            <div className="sideA">
-              <h3 className='titulos-login titulo-sideA' >Nos alegra verte</h3>
-              <p className='parrafos-login'>Inicia Sesión para que puedas ver tus productos favoritos.</p>
-              <button className='input-buton button-login' onClick={handleLogin}>Entrar</button>
-            </div>
-          )}
-          <div className="sideB">
-            {view === 'login' ? (
-              <div>
-                <p className='parrafos-login'>Crear cuenta</p>
-                <p className='parrafos-login'>Crea una cuenta para que puedas guardar tus pedidos y disfrutar.</p>
-                <button className='input-buton button-login' onClick={handleSignup}>Registrate</button>
-              </div>
-            ) : (
-              <div className="sideB--header">
-                <h3 className='titulo-sideA titulos-login' >Crear cuenta</h3>
-                <input className='input-buton input-login' type="text" placeholder="Nombre" />
-                <input className='input-buton input-login' type="email" placeholder="Email" />
-                <input className='input-buton input-login' type="password" placeholder="Contraseña" />
-                <button className='input-buton button-login'>Registrate</button>
-              </div>
-            )}
+export const AppLogin = ({view, handleSignup}) => {
+
+
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+      } = useForm();
+      const { signin, errors: SigninErrors, } = useAuth();
+
+      const onSubmit = handleSubmit(async (data) => {
+        signin(data);
+      });
+    
+
+  return (
+    
+    <div className="container containerLogin">
+                {view === "login" ? (
+          <div className="sideA">
+           {SigninErrors.map((error, i) => (
+                <div className="error_bg" key={i}>
+                  {error}
+                </div>
+              ))}
+            <h3 className="titulo-sideA titulos-login">Inicio de Sesión</h3>
+            <form onSubmit={onSubmit}>
+            <input
+              className="input-buton input-login"
+              type="email"
+              placeholder="Email"
+              {...register("email", { require: true })}
+            />
+              {errors.username && (
+                  <p className="text-requerido"> El email es requerido</p>
+                )}
+            <input
+              className="input-buton input-login"
+              type="password"
+              placeholder="Contraseña"
+              {...register("password", { require: true })}
+            />
+              {errors.password && (
+                  <p className="text-requerido"> La contraseña es requerida</p>
+                )}
+            {/* <a className="link-login" href="#forgot-password">
+              Recupera tu contraseña
+            </a> */}
+            <button className="input-buton button-login">Entrar</button>
+            </form>
           </div>
-        </div>
-      </div>
-    );
-  }
-  
-
-export default AppLogin;
+        ) : (
+          <div className="sideA">
+            <h3 className="titulos-login titulo-sideA">Nos alegra verte</h3>
+            <p className="parrafos-login">
+              Inicia Sesión para que puedas ver tus productos favoritos.
+            </p>
+            <button className="input-buton button-login" onClick={handleSignup}>
+              Entrar
+            </button>
+          </div>
+        )};
+ </div>
+    
+  )
+}

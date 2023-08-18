@@ -48,13 +48,16 @@ body{
 
 h3.titulo{
 
-    font-size: 54px;
+    font-size: 3.7rem;
     overflow: hidden;
+    font-family: 'Italianno', cursive;
+    color: var(--color-text);
 }
 
 p.banner-administrador{
     font-family: 'Katibeh', cursive;
     font-size: 3.2rem;
+    color:white;
 }
 
 
@@ -74,6 +77,8 @@ div.ingreso{
     margin: 0 auto;
     font-family: 'Katibeh', cursive;
     font-size: larger;
+    font-size: 1.7rem;
+    color:var(--color-text);
 
 }
 
@@ -90,11 +95,14 @@ input[type="submit"] {
     width: 50%;
     margin: 0 auto;
     text-align: center;
+    
 }
+
 
 #agregar{
     display:block;
     margin-bottom: 10%;
+    background-color: #B8226A;
     
 }
 

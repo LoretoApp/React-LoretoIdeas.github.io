@@ -7,7 +7,7 @@ export default function ModificarStatusTartaleta() {
   /* Llamada de API */
   const [tartaletasList, setTartaletasList] = useState([]);
   const updateTartaletas = async () => {
-    const newTartaletasList = await getTartaletasList();
+    const newTartaletasList = await getTartaletasList.getTartaletasList();
     setTartaletasList(newTartaletasList);
   };
   useEffect(() => {

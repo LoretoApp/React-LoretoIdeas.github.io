@@ -38,6 +38,7 @@ span.navbar-toggler-icon{
 }
 
 
+
 /* NavBarPage.css */
 .Navbar {
     background-color: var(--color-principal); 
@@ -47,6 +48,7 @@ span.navbar-toggler-icon{
 .navbar-toggler:focus{
   box-shadow: none;
 }
+
 
 @media(min-width: 992px){
   img.LoretoIdeas{
@@ -68,18 +70,21 @@ span.navbar-toggler-icon{
     height: 40px;
     border-radius: 60px;
   }
-  a{
+  .link{
     color: white;
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
   }
-  a :hover{
-    color: blue;
+  .link :hover{
+    color:pink;
   }
-  .container{
+  .contenedor{
     justify-content: space-evenly;
+    
   }
+  
+  
    
   
 }
@@ -98,13 +103,13 @@ span.navbar-toggler-icon{
 
     
   }
-  a{
+  .link{
     color: white;
     text-decoration: none;
     margin-top: 0px;
   }
 
-  .container{
+  .contenedor{
     justify-content: space-evenly;
     margin-left: 20px;
     margin-right: 20px;
@@ -124,13 +129,13 @@ span.navbar-toggler-icon{
     margin-right: 110px;
     
   }
-  a{
+  .link{
     color: white;
     text-decoration: none;
     margin-left: 3%;
   }
 
-  .container{
+  .contenedor{
     justify-content: space-evenly;
   }
   
