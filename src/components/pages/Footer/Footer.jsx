@@ -5,9 +5,9 @@ import'./Footer.css';
 function Footer(){
     return(
     //    Footer
-    <footer id="Footer" >
+    <footer id="Footer" className='container-fluid' >
         {/* Contenedor de los elementos flex 1 y 2 */}
-        <div className='cuerpo-footer container-fluid'>
+        <div className='cuerpo-footer'>
             <div className='alineacion row'>
                 <div className='contacto col'>
                   <p className='datos-contacto'>CONTACTO: <br></br>

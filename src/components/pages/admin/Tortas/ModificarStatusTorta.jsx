@@ -6,7 +6,7 @@ export default function ModificarStatusTorta() {
   /* Llamada de API */
   const [tortasList, setTortasList] = useState([]);
   const updateTortas = async () => {
-    const newTortasList = await getTortasList();
+    const newTortasList = await getTortasList.getTortasList();
     setTortasList(newTortasList);
   };
   useEffect(() => {
@@ -53,15 +53,13 @@ export default function ModificarStatusTorta() {
 
   return (
     <>
-    <section className="administrador col-12 text-center">
-        <p className="banner-administrador">Administrador</p>
-     </section>
+   
 
     <div className="cuerpo-formulario container">
 
       <div className="titulo-admi row">
         <div className="ingreso col-12 text-center">
-          <h3 className="titulo">Modificar Estatus Producto</h3>
+          <h3 className="titulo">Modificar Estatus de Torta</h3>
         </div>
       </div>
       <div className="col">
@@ -104,9 +102,7 @@ export default function ModificarStatusTorta() {
         <p id="error"></p>
       </div>
     </div>
-    <section className="salir col-12 text-center">
-        <p className="banner-administrador">Salir X</p>
-    </section>
+    
     </>
   );
 }
