@@ -81,8 +81,9 @@
     .medidas{
     background-color: var(--color-tercero);
     border-radius: 40px;
-    width: 100px;
-    height: 28px;  
+    padding: 4px;
+    width: 120px;
+    height: 32px;  
     color: white;
     font-family: 'Kenia', cursive;
     text-align: center;
@@ -147,7 +148,22 @@
             display: flex;        
             align-items: center;
             flex-wrap: nowrap;
-            
+        }
+        .btn-carrito:hover{
+            background-color: var(--color-principal);
+            border-radius: 50px;
+            width: 170px;
+            height: 41px;
+            color: white;
+            font-family: 'Jockey One', sans-serif;
+            font-size: 24px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align:left;
+            justify-content: center;
+            display: flex;        
+            align-items: center;
+            flex-wrap: nowrap;
         }
         .porciones{
             display: flex;
@@ -281,6 +297,21 @@
     }
 
     .btn-carrito{
+        background-color: var(--color-principal);
+        border-radius: 50px;
+        width: 150px;
+        height: 41px;
+        color: white;
+        font-family: 'Jockey One', sans-serif;
+        font-size: 14px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin: auto;
+    }
+    .btn-carrito:hover{
         background-color: var(--color-principal);
         border-radius: 50px;
         width: 150px;
