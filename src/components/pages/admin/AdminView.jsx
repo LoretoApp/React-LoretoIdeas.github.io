@@ -7,8 +7,16 @@ import ModificarFullTorta from "./Tortas/ModificarFullTorta";
 import ModificarStatusTorta from "./Tortas/ModificarStatusTorta";
 import MostrarTorta from "./Tortas/MostrarTorta";
 import AdminModal from "./AdminModal";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import './admin.css'
+import ModalCrearTartaleta from "./Tartaletas/ModalCrearTartaleta";
+import ModalDesactivarTartaleta from "./Tartaletas/ModalDesactivarTartaleta";
+import ModalModificarTartaleta from "./Tartaletas/ModalModificarTartaleta";
+import ModalMostrarTartaletas from "./Tartaletas/ModalMostrarTartaletas";
+import ModalCrearTorta from "./Tortas/ModalCrearTorta";
+import ModalDesactivarTorta from "./Tortas/ModalDesactivarTorta";
+import ModalModificarTorta from "./Tortas/ModalModificarTorta";
+import ModalMostrarTortas from "./Tortas/ModalMostrarTortas";
 
 
 export default function AdminView() {
@@ -20,7 +28,6 @@ export default function AdminView() {
   const [verTartaletaDesactivar, setVerTartaletaDesactivar] = useState(false)
   const [verTortaAgregar, setVerTortaAgregar] = useState(false)
   const [verTartaletaAgregar, setVerTartaletaAgregar] = useState(false)
-
   
 
   /* Modal1 */
@@ -39,6 +46,38 @@ export default function AdminView() {
   const [show4, setShow4] = useState(false);
   const handleClose4 = () => setShow4(false);
   const handleShow4 = () => setShow4(true);
+    /* Modal5 */
+  const [show5, setShow5] = useState(false);
+  const handleClose5 = () => setShow5(false);
+  
+    /* Modal6 */
+  const [show6, setShow6] = useState(false);
+  const handleClose6 = () => setShow6(false);
+  
+  /* Modal7 */
+  const [show7, setShow7] = useState(false);
+  const handleClose7 = () => setShow7(false);
+  
+  /* Modal8 */
+  const [show8, setShow8] = useState(false);
+  const handleClose8 = () => setShow8(false);
+  
+  /* Modal9 */
+  const [show9, setShow9] = useState(false);
+  const handleClose9 = () => setShow9(false);
+  
+  /* Modal10 */
+  const [show10, setShow10] = useState(false);
+  const handleClose10 = () => setShow10(false);
+  
+    /* Modal11 */
+  const [show11, setShow11] = useState(false);
+  const handleClose11 = () => setShow11(false);
+  
+    /* Modal12 */
+  const [show12, setShow12] = useState(false);
+  const handleClose12 = () => setShow12(false);
+  
 
   const mostrarTartaleta = ()=>{
     setVerTartaleta(true)
@@ -71,7 +110,7 @@ export default function AdminView() {
     setVerTartaletaDesactivar(false)
     setVerTortaAgregar(false)
     setVerTartaletaAgregar(true)
-    handleClose()
+    handleClose2()
   }
   const agregarTorta = ()=>{
     setVerTartaleta(false)
@@ -82,7 +121,7 @@ export default function AdminView() {
     setVerTartaletaDesactivar(false)
     setVerTortaAgregar(true)
     setVerTartaletaAgregar(false)
-    handleClose()
+    handleClose2()
   }
   const editarTartaleta = ()=>{
     setVerTartaleta(false)
@@ -93,7 +132,7 @@ export default function AdminView() {
     setVerTartaletaDesactivar(false)
     setVerTortaAgregar(false)
     setVerTartaletaAgregar(false)
-    handleClose()
+    handleClose3()
   }
   const editarTorta = ()=>{
     setVerTartaleta(false)
@@ -104,7 +143,7 @@ export default function AdminView() {
     setVerTartaletaDesactivar(false)
     setVerTortaAgregar(false)
     setVerTartaletaAgregar(false)
-    handleClose()
+    handleClose3()
   }
   const desactivarTartaleta = ()=>{
     setVerTartaleta(false)
@@ -115,7 +154,7 @@ export default function AdminView() {
     setVerTartaletaDesactivar(true)
     setVerTortaAgregar(false)
     setVerTartaletaAgregar(false)
-    handleClose()
+    handleClose4()
   }
   const desactivarTorta = ()=>{
     setVerTartaleta(false)
@@ -126,8 +165,22 @@ export default function AdminView() {
     setVerTartaletaDesactivar(false)
     setVerTortaAgregar(false)
     setVerTartaletaAgregar(false)
-    handleClose()
+    handleClose4()
   }
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
 
 
@@ -177,18 +230,29 @@ export default function AdminView() {
         </button>
         <AdminModal show={show4} handleClose={handleClose4} accion={'Desactivar Producto'} funcion1={desactivarTorta} funcion2={desactivarTartaleta}/>
 
+        <div className="contenedorModalAdmin">
+          {screenWidth < 768 && verTorta && <ModalMostrarTortas show={show5} handleClose={handleClose5}/>}
+          {screenWidth < 768 && verTartaleta && <ModalMostrarTartaletas show={show6} handleClose={handleClose6}/>}
+          {screenWidth < 768 && verTortaModificar && <ModalModificarTorta show={show7} handleClose={handleClose7}/>}
+          {screenWidth < 768 && verTartaletaModificar && <ModalModificarTartaleta show={show8} handleClose={handleClose8}/>}
+          {screenWidth < 768 && verTortaDesactivar && <ModalDesactivarTorta show={show9} handleClose={handleClose9}/>}
+          {screenWidth < 768 && verTartaletaDesactivar && <ModalDesactivarTartaleta show={show10} handleClose={handleClose10}/>}
+          {screenWidth < 768 && verTortaAgregar && <ModalCrearTorta show={show11} handleClose={handleClose11}/>}
+          {screenWidth < 768 && verTartaletaAgregar && <ModalCrearTartaleta show={show12} handleClose={handleClose12}/>}     
+        </div>
 
+      
       </div>
       {/* Derecha */}
       <div className="funcionesAdmin" id='funcionesAdmin'>
-      {verTorta && <MostrarTorta/>}
-      {verTartaleta && <MostrarTartaletas/>}
-      {verTortaModificar && <ModificarFullTorta/>}
-      {verTartaletaModificar && <ModificarFullTartaleta/>}
-      {verTortaDesactivar && <ModificarStatusTorta/>}
-      {verTartaletaDesactivar && <ModificarStatusTartaleta/>}
-      {verTortaAgregar && <CrearTorta/>}
-      {verTartaletaAgregar && <CrearTartaleta/>}      
+      {screenWidth > 768 && verTorta && <MostrarTorta/>}
+      {screenWidth > 768 && verTartaleta && <MostrarTartaletas/>}
+      {screenWidth > 768 && verTortaModificar && <ModificarFullTorta/>}
+      {screenWidth > 768 && verTartaletaModificar && <ModificarFullTartaleta/>}
+      {screenWidth > 768 && verTortaDesactivar && <ModificarStatusTorta/>}
+      {screenWidth > 768 && verTartaletaDesactivar && <ModificarStatusTartaleta/>}
+      {screenWidth > 768 && verTortaAgregar && <CrearTorta/>}
+      {screenWidth > 768 && verTartaletaAgregar && <CrearTartaleta/>}     
       
     </div>
 
