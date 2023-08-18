@@ -24,7 +24,6 @@ function App() {
           <Route path="nosotros" element={<Nosotros />} />
           <Route path="login" element={<AppRegister />} />
           <Route path="administrador" element={<VistaAdministrador/>}/>
-          <Route path="administrador1" element={<CrearTartaleta/>}/>
           
         </Routes>
       </AuthProvider>
