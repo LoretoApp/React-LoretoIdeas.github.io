@@ -102,7 +102,7 @@ export default function ModificarFullTartaleta() {
 
       <div className="titulo-admi row">
         <div className="ingreso col-12 text-center">
-          <h3 className="titulo">Modificar Producto</h3>
+          <h3 className="titulo">Modificar Tartaleta</h3>
         </div>
       </div>
       <form className="row titulo-admi g-3" id="formulario-admi" encType="multipart/form-data">

@@ -1,0 +1,39 @@
+.contenedor-boton-admin{
+  display: flex;
+  justify-content: space-around;
+}
+.titulo-modal-admin{
+  margin: 20px 0 20px 0;
+  display: block; 
+}
+
+.boton-torta-modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+    .titulo-boton-modal{
+      text-align: center
+    }
+    .img-modal-admin{
+      height: 100px;
+      width: 100px;
+      border-radius: 50px;
+    }
+}
+.boton-tartaleta-modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+ 
+    .titulo-boton-modal{
+      text-align: center
+    }
+    .img-modal-admin{
+      height: 100px;
+      width: 100px;
+      border-radius: 50px;
+    }
+}

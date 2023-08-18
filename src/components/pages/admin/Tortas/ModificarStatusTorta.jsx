@@ -61,7 +61,7 @@ export default function ModificarStatusTorta() {
 
       <div className="titulo-admi row">
         <div className="ingreso col-12 text-center">
-          <h3 className="titulo">Modificar Estatus Producto</h3>
+          <h3 className="titulo">Modificar Estatus de Torta</h3>
         </div>
       </div>
       <div className="col">

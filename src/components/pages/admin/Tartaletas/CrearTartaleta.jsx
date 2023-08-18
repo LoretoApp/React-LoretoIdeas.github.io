@@ -76,7 +76,7 @@ const enviarDatos = async ()=>{
     <div className="cuerpo-formulario container">
       <div className="titulo-admi row">
         <div className="ingreso col-12 text-center">
-          <h3 className="titulo">Ingreso de producto</h3>
+          <h3 className="titulo">Crear Tartaleta</h3>
         </div>
       </div>
       <form className="titulo-admi row g-3" id="formulario-admi" encType="multipart/form-data">
