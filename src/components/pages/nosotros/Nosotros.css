@@ -18,7 +18,7 @@
     
   }
   .pasteles{
-    background-image: url('');
+    background-image: url('img/fondo-cupcakes.jfif');
   }
   
   .img-nosotros{
@@ -142,10 +142,10 @@ color: #4B102D;
 
 @media (min-width: 1024px) {
   .carruselNosotros{
-    height: 400px;
+    height: 500px;
   }
   .carruselNosotros2{
-    height: 400px;
+    height: 500px;
   }
   .abajo{
     padding-top: 40px;

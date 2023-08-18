@@ -7,7 +7,7 @@ function CarruselCocteleria() {
       <Carousel.Item>
         <img
           className="carruselCocteleria d-block w-100 carousel-image"
-          src="img\torta4.jpg"
+          src="img\testin2.jpg"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -16,7 +16,7 @@ function CarruselCocteleria() {
       <Carousel.Item>
         <img
           className="carruselCocteleria d-block w-100 carousel-image"
-          src="img\torta1.jpg"
+          src="img\testin.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -25,7 +25,7 @@ function CarruselCocteleria() {
       <Carousel.Item>
         <img
           className="carruselCocteleria d-block w-100 carousel-image"
-          src="img\torta3.jpg"
+          src="img\testin4.jpg"
           alt="Third slide"
         />
         <Carousel.Caption>

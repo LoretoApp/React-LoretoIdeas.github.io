@@ -27,7 +27,7 @@
 
 }
 .fondo{
-  background-image: url('img/fondo-pasteles.jfif');
+  background-image: url('img/fondo-cupcakes.jfif');
   
 }
 
@@ -77,7 +77,7 @@
     padding-top: 50px;    
   } 
   .fondo{
-    background-image: url('img/fondo-pasteles.jfif'); 
+    background-image: url('img/fondo-cupcakes.jfif');
     height: 400px;
 
   }
@@ -138,7 +138,7 @@
 
   } 
   .fondo{
-    background-image: url('img/fondo-pasteles.jfif');
+    background-image: url('img/fondo-cupcakes.jfif');
     height: 700px; 
   }
 }
@@ -167,7 +167,7 @@
     }
     .parrafoCocteleria{
     text-align: center;
-    font-size: 100px;
+    font-size: 5rem;
     text-size-adjust: 100% ;
     font-family: 'Hahmlet', serif;  
     line-height: 5vh;
@@ -179,11 +179,11 @@
     color: #4B102D;
     text-size-adjust: 100% ;
     font-family: 'Italianno' ;
-    font-size: 200px;
+    font-size: 15rem;
     padding-top: 50px;    
   } 
   .fondo{
-    background-image: url('img/fondo-pasteles.jfif');
+    background-image: url('img/fondo-cupcakes.jfif');
     height: 1200px;
   }
   .carruselCocteleria{
