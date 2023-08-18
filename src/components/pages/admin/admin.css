@@ -8,6 +8,10 @@
     .container-admin {
         flex-wrap: wrap;
     }
+    .funcionesAdmin{
+        display: none;
+        visibility: hidden;
+    }
     
     .box {
         flex: 1 1 300px;
@@ -91,6 +95,10 @@
         height: 100%;
         width: 100%;
     }
+    .contenedorModalAdmin{
+        display: none;
+        visibility: hidden;
+    }
     
     .container-admin {
         display: flex;
@@ -113,9 +121,6 @@
         max-height: 10%;
         margin-right: 1%;
     }
-    
-    
-    
     #Salir {
         background-color: #b8226a; /* Color de fondo para el section "Salir X" */
         padding: 1%; /* Agregamos un relleno para dar espacio al contenido */
