@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 
+
 function ElementoCarrito({ imagenSrc, titulo, precio }) {
   const [cantidad, setCantidad] = useState(1);
 

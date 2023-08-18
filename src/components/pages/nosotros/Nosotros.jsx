@@ -10,7 +10,7 @@ import './nosotros.css'
     <>
     <NavBarPage/>
     <CarruselNosotros1/>
-    <section>
+    <section className='pasteles'>
       <div className="background">
         <div className="circle borde">
           <img src="img/foto perfil.jpg" className="img-nosotros" alt="Imagen receptiva" />
@@ -26,7 +26,7 @@ import './nosotros.css'
         </p>
       </section>
 
-      <div className="separator"></div>
+      <div className="separator"></div> 
 
       <p className='abajo'>Premios y Actividades</p>
 

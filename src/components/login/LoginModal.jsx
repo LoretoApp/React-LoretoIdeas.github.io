@@ -1,15 +1,16 @@
 import Modal from "react-bootstrap/Modal";
 import "../login/stylesLogin.css";
-import AppLogin from "./AppRegister";
+import AppRegister from "./AppRegister";
 
-function LoginModal({ showLogin, HandleLogin }) {
+function LoginModal({ show, onHide }) {
   return (
     <>
-      <Modal show={showLogin} onHide={HandleLogin}>
-        <AppLogin />
+      <Modal show={show} onHide={onHide}>
+        <AppRegister />
       </Modal>
     </>
   );
 }
 
 export default LoginModal;
+

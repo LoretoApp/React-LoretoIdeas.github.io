@@ -94,15 +94,13 @@ export default function CrearTorta() {
 
   return (
     <>
-    <section className="administrador col-12 text-center">
-        <p className="banner-administrador">Administrador</p>
-     </section>
+    
 
     <div className="cuerpo-formulario container">
 
       <div className="titulo-admi row">
         <div className="ingreso col-12 text-center">
-          <h3 className="titulo">Ingreso de producto</h3>
+          <h3 className="titulo">Crear Torta</h3>
         </div>
       </div>
       <form className="titulo-admi row g-3" id="formulario-admi" encType="multipart/form-data">
@@ -298,9 +296,7 @@ export default function CrearTorta() {
         </div>
       </form>
     </div>
-    <section className="salir col-12 text-center">
-        <p className="banner-administrador">Salir X</p>
-    </section>
+    
     </>
   );
 }

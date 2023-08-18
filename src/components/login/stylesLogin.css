@@ -124,7 +124,7 @@
 @media (max-width: 550px) {
   .containerLogin {
     flex-direction: column;
-    height: 700px;
+    height: 250px;
     border-top: 10p;
   }
   .sideA {
