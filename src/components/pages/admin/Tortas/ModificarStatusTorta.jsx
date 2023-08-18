@@ -6,7 +6,7 @@ export default function ModificarStatusTorta() {
   /* Llamada de API */
   const [tortasList, setTortasList] = useState([]);
   const updateTortas = async () => {
-    const newTortasList = await getTortasList();
+    const newTortasList = await getTortasList.getTortasList();
     setTortasList(newTortasList);
   };
   useEffect(() => {
