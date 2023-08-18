@@ -59,9 +59,7 @@ export default function MostrarTorta() {
         
       </table>
     </div>
-    <section className="salir col-12 text-center">
-        <p className="banner-administrador">Salir X</p>
-    </section>
+    
     </>
   )
 }

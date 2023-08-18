@@ -9,7 +9,6 @@ import Nosotros from "./components/pages/nosotros/Nosotros";
 import { AuthProvider } from "./controllers/Atentificacion/context/AuthContext";
 import VistaAdministrador from "./components/pages/admin/admin";
 import AppRegister from "./components/login/AppRegister";
-import ModificarStatusTartaleta from "./components/pages/admin/Tartaletas/ModificarStatusTartaleta"
 import AdminView from "./components/pages/admin/AdminView";
 
 function App() {
@@ -24,9 +23,7 @@ function App() {
           <Route path="nosotros" element={<Nosotros />} />
           <Route path="administrador" element={<VistaAdministrador />} />
           <Route path="login" element={<AppRegister />} />
-          <Route path="formulario" element={<ModificarStatusTartaleta />} />
           <Route path="admin" element={<AdminView />} />
-
         </Routes>
       </AuthProvider>
     </div>
