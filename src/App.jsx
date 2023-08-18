@@ -13,6 +13,7 @@ import ModificarStatusTartaleta from "./components/pages/admin/Tartaletas/Modifi
 import AdminView from "./components/pages/admin/AdminView";
 
 function App() {
+
   return (
     <div>
       <AuthProvider>

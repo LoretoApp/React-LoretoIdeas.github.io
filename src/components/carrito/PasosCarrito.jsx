@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 
 function PasosCarrito() {
   const [pasoActual, setPasoActual] = useState(1);

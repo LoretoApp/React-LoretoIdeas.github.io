@@ -4,12 +4,11 @@ import Carrito from './Carrito';
 import "./stylecarrito.css"
 
 
-function CarritoP({showCar, handleCar}) {
-
+function CarritoP({ show2, onHide2 }) {
   return (
     <>
-      <Modal show={showCar} onHide={handleCar}>
-      <Carrito />
+      <Modal show={show2} onHide={onHide2}>
+        <Carrito />
       </Modal>
     </>
   );
