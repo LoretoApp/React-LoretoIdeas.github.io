@@ -143,7 +143,12 @@
     .card-img-top{
       background-color: white;
     }
-    
+    .precio-agregar{
+      margin: 0 20px 0 20px;
+    }
+    .productos-fondo{
+      background-image: url('img/fondo-cupcakes.jfif');
+    }
   }
 
   @media (min-width: 768px) {
@@ -301,7 +306,12 @@
     #contenedor-card{
       margin-bottom: 20px;
     }
-    
+    .productos-fondo{
+      background-image: url('img/fondo-cupcakes.jfif');
+    }
+    .precio-agregar{
+      margin: 0 20px 0 20px;
+    }
 
    
   }

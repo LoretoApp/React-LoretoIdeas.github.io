@@ -258,7 +258,7 @@ export default function AdminView() {
 
 
   return (
-    <section>
+    <section className="fondo-admin">
       <div className="administrador col-12 text-center">
         <p className="banner-administrador">Administrador</p>
       </div>

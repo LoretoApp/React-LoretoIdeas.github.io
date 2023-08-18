@@ -29,7 +29,7 @@ export default function CardTartaleta(props) {
           <div className="d-inline">
             <p className="card-text porciones">{props.diametro}</p>
            </div>
-          <div className="d-flex text-center align-items-center justify-content-around mt-2 ">
+          <div className="d-flex text-center align-items-center justify-content-between mt-2 precio-agregar">
             <p className="card-text precio">$ {props.precio}</p>
             <a href="#" className="btn boton-agregar-carrito align-content-end">Agregar</a>
           </div>

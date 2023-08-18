@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno');
 
 @media (max-width: 768px) {
+  
   .carrusel-inicio {
-    max-height: 150px; 
+    max-height: 200px; 
   }
   .caja-texto-mobile{
     color:#4B102D ;
@@ -24,7 +25,7 @@
     padding: 0;
   }
   .img-cuadricula{
-    height: 150px;
+    height: 200px;
     width: 100%;
   }
   .botones-inicio{
@@ -77,7 +78,9 @@
     display: none;
     visibility: hidden;
   }
-  
+  .inicio-fondo{
+    background-image: url('img/fondo-cupcakes.jfif');
+  }
 }
 
 @media (min-width: 768px) {
@@ -167,7 +170,7 @@
     display: none;
     visibility: hidden;
   }
-  /* .inicio-fondo{
-    background-image: url('img/fondo-pasteles.jfif');
-  } */
+  .inicio-fondo{
+    background-image: url('img/fondo-cupcakes.jfif');
+  }
 }
