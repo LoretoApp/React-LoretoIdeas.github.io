@@ -9,19 +9,19 @@ import LoginModal from '../../login/LoginModal';
 
 function NavBarPage() {
   const [showLogin, setShowLogin] = useState(false);
-  const [ShowCar, setShowCar] = useState(false);
+  const [showCarrito, setShowCarrito] = useState(false);
   const [carrito, setCarrito] = useState([]); // Estado del carrito
 
   const handleLogin = () => showLogin ? setShowLogin(false) : setShowLogin(true);
-  const handleCar = () => showCar ? setShowCar(false) : setShowCar(true);
+  const handleCarrito = () => showCarrito ? setShowCarrito(false) : setShowCarrito(true);
 
   const ColorNav = {
     backgroundColor: '#B8226A',
   };
 
-  const agregarAlCarrito = (producto) => {
+/*   const agregarAlCarrito = (producto) => {
     setCarrito([...carrito, producto]); // Agregar producto al carrito
-  };
+  }; */
 
   return (
     <>
@@ -35,7 +35,7 @@ function NavBarPage() {
         </a>
         <div className="div-con-linea"></div>
         <a>
-        <img className="carrito" src="icons/carrito.png" alt="carrito" onClick={handleCar}/>
+        <img className="carrito" src="icons/carrito.png" alt="carrito" onClick={handleCarrito}/>
         </a>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -47,7 +47,7 @@ function NavBarPage() {
             <Link to="/nosotros">Nosotros</Link>
           </Nav>
           <LoginModal show={showLogin} onHide={handleLogin}/>
-{/*           <CarritoP show={showCar} onHide={handleCar} /> */}
+          <CarritoP show2={showCarrito} onHide2={handleCarrito} />
         </Navbar.Collapse>
       </Container>
     </Navbar>
