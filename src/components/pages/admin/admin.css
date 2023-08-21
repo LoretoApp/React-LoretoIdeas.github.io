@@ -48,7 +48,6 @@
     
     #Administrador {
         background-color: #b8226a; /* Color de fondo para el section "Administrador" */
-        padding: 1%; /* Agregamos un relleno para dar espacio al contenido */
         text-align: center; /* Centramos el contenido dentro del section */
         color: #ffffff; /* Color del texto dentro del section "Salir X" */
         font-size: 2em;
@@ -108,6 +107,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         height: 450px;
+        background-color: transparent;
     }
     .funcionesAdmin{
         height: 100%;

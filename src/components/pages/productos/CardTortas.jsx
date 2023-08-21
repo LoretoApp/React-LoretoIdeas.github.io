@@ -41,7 +41,7 @@ export default function CardTortas(props) {
       
       <Modal show={show} onHide={handleClose}>
        
-        <Modal.Body>
+        <Modal.Body className="modal-body-detalles">
         <div className="mitad-arriba">
         <button className='boton-flecha p-0 ' onClick={handleClose}>
           <img className="flecha" src="icons/flecha naranja.png" alt="flecha" />

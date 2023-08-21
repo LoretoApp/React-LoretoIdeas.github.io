@@ -6,9 +6,9 @@ import "./adminModal.css"
 export default function AdminModal({accion, show, handleClose, funcion1,funcion2}) {
 
   return (
-    <Modal show={show} onHide={handleClose} >
+    <Modal  show={show} onHide={handleClose} >
        
-      <Modal.Body>
+      <Modal.Body className='modal-admin-view'>
         <div className='modal-admin text-center'>
           <h3 className='titulo-modal-admin'>{accion}</h3>
           <div className="contenedor-boton-admin">

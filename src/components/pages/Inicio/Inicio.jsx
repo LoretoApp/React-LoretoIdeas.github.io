@@ -5,6 +5,7 @@ import './Inicio.css'
 import DarkVariantExample from "./Carrusel-inicio";
 import Footer from "../Footer/Footer";
 import NavBarPage from "../navbar/NavBarPage";
+import { Link } from "react-router-dom";
 
 
 
@@ -36,13 +37,19 @@ function ShapeExample() {
       </Row>
       <Row className="texto-botones-inicio">
         <div className="col-4 col-md-4 contenedor-texto">
-          <a href="/productos" className="titulo-boton">Productos</a>
+        <Link className="titulo-boton" to="/productos">
+          Productos
+        </Link>
         </div>
         <div className="col-4 col-md-4 contenedor-texto">
-        <a href="/desayunos" className="titulo-boton">Desayunos</a>
+        <Link className="titulo-boton" to="/desayunos">
+          Desayunos
+        </Link>
         </div>
         <div className="col-4 col-md-4 contenedor-texto">
-        <a href="/cocteleria" className="titulo-boton">Coctelería</a>
+        <Link className="titulo-boton" to="/concteleria">
+          Coctelería
+        </Link>
         </div>
       </Row>
       <p className="caja-texto-mobile">
