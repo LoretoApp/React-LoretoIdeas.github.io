@@ -91,7 +91,8 @@ color: #4B102D;
 }
 @media (max-width: 768px) {
   .carruselNosotros{
-    height: 200px;
+    height: 70vh;
+    width: auto;
   }
   .carruselNosotros2{
     height: 200px;
@@ -115,7 +116,8 @@ color: #4B102D;
 
 @media (min-width: 768px) {
   .carruselNosotros{
-    height: 300px;
+    height: 50vh;
+    width: auto;
   }
   .carruselNosotros2{
     height: 300px;
