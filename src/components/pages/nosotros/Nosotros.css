@@ -85,6 +85,7 @@ color: #4B102D;
   padding-top: 50px;
   
 } 
+
  
 .separator {
   border: 3px dotted #FFA041; /* Puedes ajustar el grosor y el color de la línea según tus preferencias */
@@ -172,4 +173,5 @@ color: #4B102D;
     width: 40%;
     margin-top: 10px;
   }
+
 }

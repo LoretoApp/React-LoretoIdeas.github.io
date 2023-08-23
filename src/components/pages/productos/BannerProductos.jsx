@@ -3,6 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function BannerProductos() {
   return (
+    <>
+        <img
+          className="delivery"
+          src="public/img/delivery.png"
+          alt="banner delivery"
+        />
   <section className="mt-1 imagen-fondo">
     <div className="container-fluid">
       <div className="row" >
@@ -15,5 +21,6 @@ export default function BannerProductos() {
       </div> 
     </div>
   </section>
+  </>
   )
 }
