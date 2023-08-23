@@ -62,10 +62,12 @@ export default function ModificarStatusTorta() {
           <h3 className="titulo">Modificar Estatus de Torta</h3>
         </div>
       </div>
-      <div className="col">
+      
         <form action="" id="formulario-admi">
-          <label htmlFor="selected-id" className="form-label">
-            Nombre del producto a modificar:
+          <div className="col-12 columna-grande">
+
+          <label htmlFor="selected-id" className="form-label etiqueta-grande">
+            Producto a modificar:
           </label>
           <select
             className="form-select"
@@ -81,7 +83,10 @@ export default function ModificarStatusTorta() {
               </option>
             ))}
           </select>
-          <label htmlFor="modify-value" className="form-label">
+          </div>
+          <div className="col-12 columna-grande">
+
+          <label htmlFor="modify-value" className="form-label etiqueta-grande">
             Ingrese el nuevo valor:
           </label>
           <select
@@ -94,13 +99,16 @@ export default function ModificarStatusTorta() {
             <option value="ACTIVO">ACTIVO</option>
             <option value="INACTIVO">INACTIVO</option>
           </select>
+          </div>
 
-          <button type="button" id="agregar" className="boton-agregar btn btn-primary" onClick={()=> enviarDatos()}>
-            Modificar Producto
-          </button>
+          <div className="col-12 div-boton-accion">
+              <button type="button" id="agregar" className="boton-agregar btn btn-primary" onClick={()=> enviarDatos()}>
+                Agregar Producto
+              </button>
+            </div>
         </form>
-        <p id="error"></p>
-      </div>
+        
+      
     </div>
     
     </>

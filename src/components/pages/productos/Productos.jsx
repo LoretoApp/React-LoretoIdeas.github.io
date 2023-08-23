@@ -8,7 +8,7 @@ import NavBarPage from "../navbar/NavBarPage"
 
 function Productos () {
   return (
-  <div className="productos">
+  <div className="productos productos-fondo">
   <NavBarPage/>
   <BannerProductos/>
   <BotonesProductos/>
