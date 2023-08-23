@@ -5,6 +5,7 @@ import './Inicio.css'
 import DarkVariantExample from "./Carrusel-inicio";
 import Footer from "../Footer/Footer";
 import NavBarPage from "../navbar/NavBarPage";
+import { Link } from "react-router-dom";
 
 
 
@@ -12,6 +13,7 @@ function ShapeExample() {
   return ( 
     <div className="viewport inicio-fondo">
     <NavBarPage/>
+    
         <div className=" container-fluid contenedor-principal-texto w100">
       <Image src="img/principal-cuadricula.jfif" className="p-0 img-cuadricula" />
       <Row className="botones-inicio">
@@ -36,13 +38,19 @@ function ShapeExample() {
       </Row>
       <Row className="texto-botones-inicio">
         <div className="col-4 col-md-4 contenedor-texto">
-          <a href="/productos" className="titulo-boton">Productos</a>
+        <Link className="titulo-boton" to="/productos">
+          Productos
+        </Link>
         </div>
         <div className="col-4 col-md-4 contenedor-texto">
-        <a href="/desayunos" className="titulo-boton">Desayunos</a>
+        <Link className="titulo-boton" to="/desayunos">
+          Desayunos
+        </Link>
         </div>
         <div className="col-4 col-md-4 contenedor-texto">
-        <a href="/cocteleria" className="titulo-boton">Coctelería</a>
+        <Link className="titulo-boton" to="/concteleria">
+          Coctelería
+        </Link>
         </div>
       </Row>
       <p className="caja-texto-mobile">
@@ -58,9 +66,13 @@ function ShapeExample() {
           tus sentidos.  !Te estamos esperando para endulzar tu día!
       </p>
     </div>
+     <Link className="whatsapp-float" to="https://api.whatsapp.com/send?phone=56975688406&text=Hola%21%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20de%20Loreto%20Ideas" target="_blank" rel="noopener noreferrer">
+    <img className="whatsapp" src="icons\wspp.png" alt="whatsapp"/>
+  </Link>
     <DarkVariantExample/>
     <Footer/>
     </div>
+    
   );
 }
 
