@@ -13,6 +13,7 @@ function ShapeExample() {
   return ( 
     <div className="viewport inicio-fondo">
     <NavBarPage/>
+    
         <div className=" container-fluid contenedor-principal-texto w100">
       <Image src="img/principal-cuadricula.jfif" className="p-0 img-cuadricula" />
       <Row className="botones-inicio">

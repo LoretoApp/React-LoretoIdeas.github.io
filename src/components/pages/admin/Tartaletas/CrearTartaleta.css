@@ -47,18 +47,19 @@ body{
 }
 
 h3.titulo{
-
+    margin: 10px auto;
     font-size: 3rem;
     overflow: hidden;
     font-family: 'Italianno', cursive;
     color: var(--color-text);
 }
 
-p.banner-administrador{
+.banner-administrador{
     font-family: 'Katibeh', cursive;
     height: 60px;
     font-size: 2rem;
     color:white;
+    text-decoration: none;    
 }
 
 
@@ -67,11 +68,7 @@ div.titulo-admi{
     margin: 0 auto;
 }
 
-div.ingreso{
-    margin-top: 20px;
-    
 
-}
 
 #formulario-admi{
     width: 90%;
@@ -88,30 +85,157 @@ input[type="submit"] {
     border-color: var(--color-principal);
 
  }
-
-
-
-.boton-agregar{
+ .boton-agregar{
+    display: flex;
+    align-items: center;
     border-color: var(--color-principal);
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-    
-}
-
-
-#agregar{
-    display:block;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    height: 50px;
+    margin: 20px auto ;
     background-color: #B8226A;
+    font-size: 3vh;
+    border-radius: 30px;
     
 }
-
-.btn:hover{
-    border-color: palevioletred;
+.boton-agregar:hover{
+    display: flex;
+    align-items: center;
+    border-color: var(--color-principal);
+    height: 50px;
+    margin: 20px auto ;
+    background-color: #B8226A;
+    font-size: 3vh;
+}
+ @media (min-width: 768px) {
+.boton-agregar{
+    display: flex;
+    align-items: center;
+    border-color: var(--color-principal);
+    height: 50px;
+    margin: 0 auto ;
+    background-color: #B8226A;
+    font-size: 25px;
+    border-radius: 30px;
+    
+}
+.boton-agregar:hover{
+    display: flex;
+    align-items: center;
+    border-color: var(--color-principal);
+    height: 50px;
+    margin: 0 auto ;
+    background-color: #B8226A;
+    margin: 20px 0 20px 0;
+    font-size: 25px;
 }
 
+.div-boton-accion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86px;
+    margin: 0 auto;
+}
+.columna-grande {
+    display: flex;
+    margin-top: 0;
+    height: 66px;
+}
+.titulo-admi .col-6 {
+    height: 66px;
+    display: flex;
+    padding: 0 0 0 8px;
+}
+
+
+#input-nombre{
+    height: 50px;
+    width: 750px;
+    font-size: 20px;
+    margin-top: 16px;
+}
+#input-descripcion{
+    height: 50px;
+    width: 750px;
+    font-size: 20px;
+    margin-top: 16px;
+}
+#input-porcion1, 
+#input-porcion2, 
+#input-porcion3,
+#input-porcion4,
+#input-porcion5{
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+    margin: 16px 0 0 0;
+}
+#input-precio1,
+#input-precio2,
+#input-precio3,
+#input-precio4,
+#input-precio5{
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+    margin-top: 16px;
+}
+#input-diametro {
+    height: 50px;
+    width: 285px;
+    padding: 6px 0 6px 12px;
+    font-size: 20px;
+    margin: 16px 0 0 0;
+}
+#input-precio{
+    height: 50px;
+    width: 285px;
+    font-size: 20px;
+    margin-top: 16px;
+}
+#input-imagen{
+    height: 50px;
+    font-size: 20px;
+    width: 750px;
+    margin-top: 16px;
+}
+#input-descripcion-img{
+    height: 50px;
+    width: 750px;
+    font-size: 20px;
+    margin-top: 16px;
+}
+#select-id{
+    height: 50px;
+    width: 750px;
+    font-size: 20px;
+    margin-top: 16px;
+}
+#modify-value{
+    height: 50px;
+    width: 750px;
+    font-size: 20px;
+    margin-top: 16px;
+}
+#selected-id{
+    height: 50px;
+    width: 750px;
+    font-size: 20px;
+    margin-top: 16px;
+}
+.etiqueta-grande{
+    margin: 0 20px 0 0;
+    width: 200px;
+    height: 50px;
+    margin-top: 16px;
+    font-size: 24px;
+}
+.etiqueta-pequeña{
+    width: 100px;
+    height: 50px;
+    margin-top: 16px;
+    font-size: 24px;
+}
+ }
 
 
 

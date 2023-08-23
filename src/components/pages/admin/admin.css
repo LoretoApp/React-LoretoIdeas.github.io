@@ -1,3 +1,15 @@
+:root{
+    --color-principal: #B8226A;
+    --color-segundo: #F8E5DF;
+    --color-tercero: #FFA041;
+    --color-text:#4B102D;
+    --texto-h1: 48px;
+    --texto-h2: 30px;
+    --texto-h3:15px;
+    --texto-h4: 10px;
+    --texto-parrafos:18px;
+    --texto-btn:24px
+  }
 @media (max-width: 768px) {
     body {
         font-family: Arial, sans-serif;
@@ -13,11 +25,12 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height: 450px;
+        height: 84vh;
     }
     .funcionesAdmin{
         display: none;
         visibility: hidden;
+        height: 800px;
     }
     
     .box {
@@ -101,30 +114,32 @@
     .Contenedor-admin-general{
         display: flex;
         flex-direction: row;
+        max-height: 823px;
+        min-height: 823px;
     }
     .container-admin {
+        margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height: 450px;
+        width: 400px;
+        max-height: 1000px;
         background-color: transparent;
+        background: linear-gradient(180deg, rgba(255,182,109,0.4) 100%, rgba(255,160,65,1) 100%);
+        border-right: 6px dotted #b8226a;
     }
+    
     .funcionesAdmin{
-        height: 100%;
+        max-height: 1000px;
         width: 100%;
+        background: linear-gradient(180deg, rgba(255,182,109,0.4) 100%, rgba(255,160,65,1) 100%);
     }
     .contenedorModalAdmin{
         display: none;
         visibility: hidden;
     }
     
-    .container-admin {
-        display: flex;
-        flex-wrap: wrap;
-        min-height: 69vh;
-        width: 400px;
-        margin: 50px 0 50px 0;
-    }
+   
     
     .box {
         flex: 1 1 300px;
@@ -132,6 +147,7 @@
         border-radius: 10px;
         display: flex;
         align-items: center;
+        background-color: transparent;
     }
     
     .img-admin {
@@ -174,10 +190,12 @@
         font-size: 14px;
         font-weight: 600;
         margin: auto;
+        color: var(--color-text);
     
     }
     .boton-admin{
         border: 0;
+        background-color: transparent;
     }
     .boton-admin:hover{
     
@@ -190,4 +208,5 @@
             max-height: 15%;
         }
     }
+    
 }
