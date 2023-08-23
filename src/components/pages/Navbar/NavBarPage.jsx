@@ -27,13 +27,16 @@ function NavBarPage() {
     <>
       <Navbar expand="lg" style={ColorNav}>
         <Container className="contenedor">
-          <a className="link" href="/admin">
+        <Link className="link" to="/admin">
+                
             <img
               className="LoretoIdeas"
               src="icons/Logo-loretoideas.png"
               alt="LoretoIdeas"
             />
-          </a>
+        </Link>
+          {/* <a className="link" href="/admin">
+          </a> */}
           <a>   {/* className="link" href="http://localhost:5173/login" */}
             <img
               className="logo"

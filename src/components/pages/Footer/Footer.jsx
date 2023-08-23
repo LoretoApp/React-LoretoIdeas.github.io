@@ -22,7 +22,7 @@ function Footer(){
                     <img className="instagram" src="icons/instagram.png" alt="instagram" />
                 </Link>
                 <Link to="https://web.facebook.com/profile.php?id=100063544153621" target="_blank" rel="noopener noreferrer">
-                    <img className="instagram" src="icons/Facebook.png" alt="facebook" />
+                    <img className="facebook" src="icons/Facebook.png" alt="facebook" />
                 </Link>                  
                 <Link to="https://www.sercotec.cl/" target="_blank" rel="noopener noreferrer">
                     <img className="sercotec" src="icons\sercotec(2).jpg" alt="sercotec"/>
