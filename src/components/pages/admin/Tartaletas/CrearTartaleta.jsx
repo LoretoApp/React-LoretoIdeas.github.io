@@ -78,9 +78,9 @@ const enviarDatos = async ()=>{
         </div>
       </div>
       <form className="titulo-admi row g-3" id="formulario-admi" encType="multipart/form-data">
-        <p id="error-datos" className="text-danger"></p>
-        <div className="col-12">
-          <label htmlFor="input-nombre" className="form-label">
+        
+        <div className="col-12 columna-grande">
+          <label htmlFor="input-nombre" className="form-label etiqueta-grande">
             Nombre:
           </label>
           <input
@@ -92,8 +92,8 @@ const enviarDatos = async ()=>{
             onChange={(e)=> setNombre(e.target.value)}
           />
         </div>
-        <div className="col-12">
-          <label htmlFor="input-descripcion" className="form-label">
+        <div className="col-12 columna-grande">
+          <label htmlFor="input-descripcion" className="form-label etiqueta-grande">
             Descripcion:
           </label>
           <input
@@ -106,20 +106,20 @@ const enviarDatos = async ()=>{
           />
         </div>
         <div className="col-6">
-          <label htmlFor="input-diametro" className="form-label">
+          <label htmlFor="input-diametro" className="form-label etiqueta-grande">
             Diametro:
           </label>
           <input
             type="text"
             className="form-control"
-            placeholder="Ingrese diametro del producto. 22 centimetros..."
+            placeholder="Ingrese diametro del producto."
             id="input-diametro"
             value={diametro}
             onChange={(e)=> setDiametro(e.target.value)}
           />
         </div>
         <div className="col-6">
-          <label htmlFor="input-precio" className="form-label">
+          <label htmlFor="input-precio" className="form-label etiqueta-pequeña">
             Precio:
           </label>
           <input
@@ -131,8 +131,8 @@ const enviarDatos = async ()=>{
             onChange={(e)=> setPrecio(e.target.value)}
           />
         </div>
-        <div className="col-12">
-          <label htmlFor="input-imagen" className="form-label">
+        <div className="col-12 columna-grande">
+          <label htmlFor="input-imagen" className="form-label etiqueta-grande">
             Imagen:
           </label>
           <input
@@ -143,8 +143,8 @@ const enviarDatos = async ()=>{
             name="imagen"
           />
         </div>
-        <div className="col-12">
-          <label htmlFor="input-descripcion-img" className="form-label">
+        <div className="col-12 columna-grande">
+          <label htmlFor="input-descripcion-img" className="form-label etiqueta-grande">
             Descripcion de imagen:
           </label>
           <input
@@ -156,7 +156,7 @@ const enviarDatos = async ()=>{
             onChange={(e)=> setImg_descripcion(e.target.value)}
           />
         </div>
-        <div className="col-12">
+        <div className="col-12 div-boton-accion">
           <button type="button" id="agregar" className="boton-agregar btn btn-primary" onClick={()=> enviarDatos()}>
             Agregar Producto
           </button>

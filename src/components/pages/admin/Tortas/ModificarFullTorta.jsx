@@ -158,30 +158,33 @@ export default function ModificarFullTorta() {
           </div>
         </div>
         <form
-          className="titulo-admi row g-3"
+          className="titulo-admi row g-3 etiqueta-grande"
           id="formulario-admi"
           encType="multipart/form-data"
         >
-          <p id="error-datos" className="text-danger"></p>
-          <label htmlFor="selected-id" className="form-label">
-            Nombre del producto a modificar:
-          </label>
-          <select
-            className="form-select"
-            id="select-id"
-            aria-label="Default select example"
-            value={selectedValue}
-            onChange={selectValue}
-          >
-            <option value={""}> Seleccione producto para modificar</option>
-            {tortasList.map((torta) => (
-              <option key={torta._id} value={torta._id}>
-                {torta.nombre} -Estado: {torta.status}
-              </option>
-            ))}
-          </select>
-          <div className="col-12">
-            <label htmlFor="input-nombre" className="form-label">
+          <div className="col-12 columna-grande">
+
+            <label htmlFor="selected-id" className="form-label etiqueta-grande">
+              Producto a modificar:
+            </label>
+            <select
+              className="form-select"
+              id="select-id"
+              aria-label="Default select example"
+              value={selectedValue}
+              onChange={selectValue}
+            >
+              <option value={""}> Seleccione producto para modificar</option>
+              {tortasList.map((torta) => (
+                <option key={torta._id} value={torta._id}>
+                  {torta.nombre} -Estado: {torta.status}
+                </option>
+              ))}
+            </select>
+          </div>
+          
+          <div className="col-12 columna-grande">
+            <label htmlFor="input-nombre" className="form-label etiqueta-grande">
               Nombre:
             </label>
             <input
@@ -193,8 +196,8 @@ export default function ModificarFullTorta() {
               onChange={(e) => setNombre(e.target.value)}
             />
           </div>
-          <div className="col-12">
-            <label htmlFor="input-descripcion" className="form-label">
+          <div className="col-12 columna-grande">
+            <label htmlFor="input-descripcion" className="form-label etiqueta-grande">
               Descripcion:
             </label>
             <input
@@ -209,7 +212,7 @@ export default function ModificarFullTorta() {
 
           <div className="row d-flex">
             <div className="col-6">
-              <label htmlFor="input-porcion1" className="form-label">
+              <label htmlFor="input-porcion1" className="form-label etiqueta-grande">
                 Porción 1:
               </label>
               <input
@@ -222,7 +225,7 @@ export default function ModificarFullTorta() {
               />
             </div>
             <div className="col-6">
-              <label htmlFor="input-precio1" className="form-label">
+              <label htmlFor="input-precio1" className="form-label etiqueta-pequeña">
                 Precio 1:
               </label>
               <input
@@ -235,7 +238,7 @@ export default function ModificarFullTorta() {
               />
             </div>
             <div className="col-6">
-              <label htmlFor="input-porcion2" className="form-label">
+              <label htmlFor="input-porcion2" className="form-label etiqueta-grande">
                 Porción 2:
               </label>
               <input
@@ -248,7 +251,7 @@ export default function ModificarFullTorta() {
               />
             </div>
             <div className="col-6">
-              <label htmlFor="input-precio2" className="form-label">
+              <label htmlFor="input-precio2" className="form-label etiqueta-pequeña">
                 Precio 2:
               </label>
               <input
@@ -261,7 +264,7 @@ export default function ModificarFullTorta() {
               />
             </div>
             <div className="col-6">
-              <label htmlFor="input-porcion3" className="form-label">
+              <label htmlFor="input-porcion3" className="form-label etiqueta-grande">
                 Porción 3:
               </label>
               <input
@@ -274,7 +277,7 @@ export default function ModificarFullTorta() {
               />
             </div>
             <div className="col-6">
-              <label htmlFor="input-precio3" className="form-label">
+              <label htmlFor="input-precio3" className="form-label etiqueta-pequeña">
                 Precio 3:
               </label>
               <input
@@ -287,7 +290,7 @@ export default function ModificarFullTorta() {
               />
             </div>
             <div className="col-6">
-              <label htmlFor="input-porcion4" className="form-label">
+              <label htmlFor="input-porcion4" className="form-label etiqueta-grande">
                 Porción 4:
               </label>
               <input
@@ -300,7 +303,7 @@ export default function ModificarFullTorta() {
               />
             </div>
             <div className="col-6">
-              <label htmlFor="input-precio4" className="form-label">
+              <label htmlFor="input-precio4" className="form-label etiqueta-pequeña">
                 Precio 4:
               </label>
               <input
@@ -313,7 +316,7 @@ export default function ModificarFullTorta() {
               />
             </div>
             <div className="col-6">
-              <label htmlFor="input-porcion5" className="form-label">
+              <label htmlFor="input-porcion5" className="form-label etiqueta-grande">
                 Porción 5:
               </label>
               <input
@@ -326,7 +329,7 @@ export default function ModificarFullTorta() {
               />
             </div>
             <div className="col-6">
-              <label htmlFor="input-precio5" className="form-label">
+              <label htmlFor="input-precio5" className="form-label etiqueta-pequeña">
                 Precio 5:
               </label>
               <input
@@ -339,8 +342,8 @@ export default function ModificarFullTorta() {
               />
             </div>
           </div>
-          <div className="col-12">
-            <label htmlFor="input-imagen" className="form-label">
+          <div className="col-12 columna-grande">
+            <label htmlFor="input-imagen" className="form-label etiqueta-grande">
               Imagen:
             </label>
             <input
@@ -351,8 +354,8 @@ export default function ModificarFullTorta() {
               name="imagen"
             />
           </div>
-          <div className="col-12">
-            <label htmlFor="input-descripcion-img" className="form-label">
+          <div className="col-12 columna-grande">
+            <label htmlFor="input-descripcion-img" className="form-label etiqueta-grande">
               Descripción de imagen:
             </label>
             <input
@@ -364,7 +367,7 @@ export default function ModificarFullTorta() {
               onChange={(e) => setImg_descripcion(e.target.value)}
             />
           </div>
-          <div className="col-12">
+          <div className="col-12 div-boton-accion">
             <button
               type="button"
               id="agregar"

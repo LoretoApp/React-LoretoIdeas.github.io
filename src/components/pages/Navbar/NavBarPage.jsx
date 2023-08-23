@@ -27,7 +27,7 @@ function NavBarPage() {
     <>
       <Navbar expand="lg" style={ColorNav}>
         <Container className="contenedor">
-          <a className="link" href="/">
+          <a className="link" href="/admin">
             <img
               className="LoretoIdeas"
               src="icons/Logo-loretoideas.png"

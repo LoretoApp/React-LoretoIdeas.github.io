@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno');
 
 @media (max-width: 768px) {
+  
   .carrusel-inicio {
-    max-height: 150px; 
+    max-height: 200px; 
   }
   .caja-texto-mobile{
     color:#4B102D ;
     padding: 0 20px 0 20px;
-    margin: 10px 0 10px 0;
+    margin: 20px 0 20px 0;
     text-align: center;
     font-family: 'Hahmlet', serif;
     font-size: 4vw;
@@ -24,7 +25,7 @@
     padding: 0;
   }
   .img-cuadricula{
-    height: 150px;
+    height: 200px;
     width: 100%;
   }
   .botones-inicio{
@@ -77,7 +78,9 @@
     display: none;
     visibility: hidden;
   }
-  
+  .inicio-fondo{
+    background-image: url('img/fondo-cupcakes.jfif');
+  }
 }
 
 @media (min-width: 768px) {
@@ -128,15 +131,15 @@
     border-radius: 80px;
     box-shadow: 0px 6px 4px rgba(199, 48, 111, 0.705);
     box-shadow: #B8226A;
-    height: 80px;
-    width: 80px;
-    margin: auto;
+    height: 125px;
+    width: 125px;
+    margin: 10px auto;
     background-color: #B8226A;
     align-items: center;
   }
   .boton-inicio-img{
-    height: 70px;
-    width: 70px;
+    height: 110px;
+    width: 110px;
     justify-content: center;
     border: 3px dotted #FFA041;
     background-color: #B8226A;
@@ -152,7 +155,6 @@
     font-family: 'Italianno';
     font-weight: 600;
     color: #4B102D;
-    margin: 0;
     text-decoration: none;
   }
   .titulo-boton:hover{
@@ -161,14 +163,14 @@
   .contenedor-texto{
     height: 60px;
     text-align: center;
+    margin: 30px 0 0 0;
   }
   .carousel-control-prev,
   .carousel-control-next {
     display: none;
     visibility: hidden;
   }
-  
-  /* .inicio-fondo{
-    background-image: url('img/fondo-pasteles.jfif');
-  } */
+  .inicio-fondo{
+    background-image: url('img/fondo-cupcakes.jfif');
+  }
 }

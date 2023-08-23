@@ -104,9 +104,9 @@ export default function CrearTorta() {
         </div>
       </div>
       <form className="titulo-admi row g-3" id="formulario-admi" encType="multipart/form-data">
-        <p id="error-datos" className="text-danger"></p>
-        <div className="col-12">
-          <label htmlFor="input-nombre" className="form-label">
+        
+        <div className="col-12 columna-grande">
+          <label htmlFor="input-nombre" className="form-label etiqueta-grande">
             Nombre:
           </label>
           <input
@@ -118,8 +118,8 @@ export default function CrearTorta() {
             onChange={(e)=>setNombre(e.target.value)}
           />
         </div>
-        <div className="col-12">
-          <label htmlFor="input-descripcion" className="form-label">
+        <div className="col-12 columna-grande">
+          <label htmlFor="input-descripcion" className="form-label etiqueta-grande">
             Descripción:
           </label>
           <input
@@ -134,138 +134,138 @@ export default function CrearTorta() {
 
         <div className="row d-flex">
           <div className="col-6">
-            <label htmlFor="input-porcion1" className="form-label">
+            <label htmlFor="input-porcion1" className="form-label etiqueta-grande">
               Porción 1:
             </label>
             <input
               type="text"
               className="form-control"
-              placeholder="Ingrese diametro del producto"
+              placeholder="Ingrese porcion 1"
               id="input-porcion1"
               value={porcion1}
               onChange={(e)=>setPorcion1(e.target.value)}
             />
           </div>
           <div className="col-6">
-            <label htmlFor="input-precio1" className="form-label">
+            <label htmlFor="input-precio1" className="form-label etiqueta-pequeña">
               Precio 1:
             </label>
             <input
               type="text"
               className="form-control"
-              placeholder="Ingrese precio del producto"
+              placeholder="Ingrese precio 1"
               id="input-precio1"
               value={precio1}
               onChange={(e)=>setPrecio1(e.target.value)}
             />
           </div>
           <div className="col-6">
-            <label htmlFor="input-porcion2" className="form-label">
+            <label htmlFor="input-porcion2" className="form-label etiqueta-grande">
               Porción 2:
             </label>
             <input
               type="text"
               className="form-control"
-              placeholder="Ingrese diametro del producto"
+              placeholder="Ingrese porcion 2"
               id="input-porcion2"
               value={porcion2}
               onChange={(e)=>setPorcion2(e.target.value)}
             />
           </div>
           <div className="col-6">
-            <label htmlFor="input-precio2" className="form-label">
+            <label htmlFor="input-precio2" className="form-label etiqueta-pequeña">
               Precio 2:
             </label>
             <input
               type="text"
               className="form-control"
-              placeholder="Ingrese precio del producto"
+              placeholder="Ingrese precio 2"
               id="input-precio2"
               value={precio2}
               onChange={(e)=>setPrecio2(e.target.value)}
             />
           </div>
           <div className="col-6">
-            <label htmlFor="input-porcion3" className="form-label">
+            <label htmlFor="input-porcion3" className="form-label etiqueta-grande">
               Porción 3:
             </label>
             <input
               type="text"
               className="form-control"
-              placeholder="Ingrese diametro del producto"
+              placeholder="Ingrese porcion 3"
               id="input-porcion3"
               value={porcion3}
               onChange={(e)=>setPorcion3(e.target.value)}
             />
           </div>
           <div className="col-6">
-            <label htmlFor="input-precio3" className="form-label">
+            <label htmlFor="input-precio3" className="form-label etiqueta-pequeña">
               Precio 3:
             </label>
             <input
               type="text"
               className="form-control"
-              placeholder="Ingrese precio del producto"
+              placeholder="Ingrese precio 3"
               id="input-precio3"
               value={precio3}
               onChange={(e)=>setPrecio3(e.target.value)}
             />
           </div>
           <div className="col-6">
-            <label htmlFor="input-porcion4" className="form-label">
+            <label htmlFor="input-porcion4" className="form-label etiqueta-grande">
               Porción 4:
             </label>
             <input
               type="text"
               className="form-control"
-              placeholder="Ingrese diametro del producto"
+              placeholder="Ingrese porcion 4"
               id="input-porcion4"
               value={porcion4}
               onChange={(e)=>setPorcion4(e.target.value)}
             />
           </div>
           <div className="col-6">
-            <label htmlFor="input-precio4" className="form-label">
+            <label htmlFor="input-precio4" className="form-label etiqueta-pequeña">
               Precio 4:
             </label>
             <input
               type="text"
               className="form-control"
-              placeholder="Ingrese precio del producto"
+              placeholder="Ingrese precio 4"
               id="input-precio4"
               value={precio4}
               onChange={(e)=>setPrecio4(e.target.value)}
             />
           </div>
           <div className="col-6">
-            <label htmlFor="input-porcion5" className="form-label">
+            <label htmlFor="input-porcion5" className="form-label etiqueta-grande">
               Porción 5:
             </label>
             <input
               type="text"
               className="form-control"
-              placeholder="Ingrese diametro del producto"
+              placeholder="Ingrese porcion 5"
               id="input-porcion5"
               value={porcion5}
               onChange={(e)=>setPorcion5(e.target.value)}
             />
           </div>
           <div className="col-6">
-            <label htmlFor="input-precio5" className="form-label">
+            <label htmlFor="input-precio5" className="form-label etiqueta-pequeña">
               Precio 5:
             </label>
             <input
               type="text"
               className="form-control"
-              placeholder="Ingrese precio del producto"
+              placeholder="Ingrese precio 5"
               id="input-precio5"
               value={precio5}
               onChange={(e)=>setPrecio5(e.target.value)}
             />
           </div>
         </div>
-        <div className="col-12">
-          <label htmlFor="input-imagen" className="form-label">
+        <div className="col-12 columna-grande">
+          <label htmlFor="input-imagen" className="form-label etiqueta-grande">
             Imagen:
           </label>
           <input
@@ -276,8 +276,8 @@ export default function CrearTorta() {
             name="imagen"
           />
         </div>
-        <div className="col-12">
-          <label htmlFor="input-descripcion-img" className="form-label">
+        <div className="col-12 columna-grande">
+          <label htmlFor="input-descripcion-img" className="form-label etiqueta-grande">
             Descripcion de imagen:
           </label>
           <input
@@ -289,7 +289,7 @@ export default function CrearTorta() {
             onChange={(e)=>setImg_descripcion(e.target.value)}
           />
         </div>
-        <div className="col-12">
+        <div className="col-12 div-boton-accion">
           <button type="button" id="agregar" className="boton-agregar btn btn-primary" onClick={()=> enviarDatos()}>
             Agregar Producto
           </button>
