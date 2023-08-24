@@ -8,7 +8,8 @@
 @media (max-width: 768px) {
   
   .carrusel-inicio {
-    max-height: 200px; 
+    width: 100vw;
+    height: auto;
   }
   .caja-texto-mobile{
     color:#4B102D ;
@@ -37,6 +38,8 @@
     height: 55px;
     margin: 10px 0 5px 0;
     width: 100%;
+    padding-top: 30px;
+
   }
   .contendor-boton{
     display: flex;
@@ -77,6 +80,7 @@
   .contenedor-texto{
     height: 45px;
     text-align: center;
+    padding-top: 22px;
   }
   .carousel-control-prev,
   .carousel-control-next {
@@ -98,7 +102,7 @@
     padding: 0;
 }
   .carrusel-inicio {
-    height: 300px;
+    height: auto;
     width: 100%;
     object-fit: cover;
   }
@@ -120,14 +124,15 @@
     background-color:#B8226A ;
   }
   .contenedor-principal-texto{
+    
     padding: 0;
   }
   .img-cuadricula{
     height: auto;
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover;
     display: none;
-    visibility: hidden;
+    visibility: hidden; */
   }
   .botones-inicio{
     height: 100px;

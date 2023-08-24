@@ -22,12 +22,16 @@ footer {
   background: rgb(184,34,106);
   background: linear-gradient(94deg, rgba(184,34,106,1) 13%, rgba(237,67,168,1) 38%);  color:var(--color-segundo);
   font-size: 12px;
-  padding-top: 10px;
+  padding-top: 3px;
   position: relative;
   bottom: 0;
   width: 100%;
+  height: 20vh;
   font-family: 'Khand', sans-serif;
   overflow: hidden;
+
+
+
 }
 
 p.datos-contacto{
@@ -88,6 +92,7 @@ p.datos-contacto{
 
 
 @media (min-width: 768px) and (max-width: 991px){
+
   .alineacion{
     align-items: center;
     margin: 0 auto;
@@ -140,6 +145,11 @@ p.datos-contacto{
 }
 
 @media (max-width: 767px){
+  footer{
+      height: 20vh;
+
+  }
+
   .alineacion{
     align-items: center;
    width: 100%;
@@ -203,7 +213,7 @@ p.datos-contacto{
   
 }
 p.derechos{
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 12px;
   font-family: 'Khand', sans-serif;
 }
