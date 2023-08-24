@@ -13,10 +13,10 @@ function ShapeExample() {
   return ( 
   <>
     <NavBarPage/>
-      <Image src="public/img/bannerPrincipal.png" className="p-0 img-cuadricula" />
+      <Image src="/img/bannerPrincipal.png" className="p-0 img-cuadricula" />
       <img
           className="delivery"
-          src="public/img/delivery.png"
+          src="/img/delivery.png"
           alt="banner delivery"
         />
         <div className="viewport inicio-fondo">
