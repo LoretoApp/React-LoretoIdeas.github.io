@@ -22,7 +22,8 @@ function App() {
           <Route path="desayunos" element={<Desayunos />} />
           <Route path="nosotros" element={<Nosotros />} />
           <Route path="login" element={<AppRegister />} />
-          <Route path="admin" element={<AdminView />} />
+          <Route path="admin" element={<AdminView/>}/>
+          
         </Routes>
       </AuthProvider>
     </div>

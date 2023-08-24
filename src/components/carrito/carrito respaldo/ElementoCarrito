@@ -1,5 +1,5 @@
 import React from 'react';
-//import CardTartaleta from '../pages/productos/CardTartaleta.jsx';
+import producto from '../pages/productos/CardTartaleta';
 
 function ElementoCarrito({ imagenSrc, titulo, precio, cantidad, disminuirCantidad, aumentarCantidad, eliminar }) {
   return (

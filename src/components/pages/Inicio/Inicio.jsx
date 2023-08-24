@@ -13,10 +13,10 @@ function ShapeExample() {
   return ( 
   <>
     <NavBarPage/>
-      <Image src="public/img/bannerPrincipal.png" className="p-0 img-cuadricula" />
+      <Image src="/img/bannerPrincipal.png" className="p-0 img-cuadricula" />
       <img
           className="delivery"
-          src="public/img/delivery.png"
+          src="/img/delivery.png"
           alt="banner delivery"
         />
         <div className="viewport inicio-fondo">
@@ -26,19 +26,19 @@ function ShapeExample() {
       <Row className="botones-inicio">
         <Col xs={4} md={4} className="contendor-boton">
           <Image
-            src="img\img-sinFondo\19366477-1931725413735242-5368396916610058380-n_8_119462-removebg-preview.png"
+            src="img\img-sinFondo\producto-inicio.png"
             className="boton-inicio-img"
           />
         </Col>
         <Col xs={4} md={4} className="contendor-boton">
           <Image
-            src="img\img-sinFondo\279960008_545667353754430_5340991199334030012_n-removebg-preview (1).png"
+            src="img\img-sinFondo\desayuno-inicio.png"
             className="boton-inicio-img"
           />
         </Col>
         <Col xs={4} md={4}className="contendor-boton">
           <Image
-            src="img\img-sinFondo\351156320_623672149785377_582990706240363725_n-removebg-preview (1).png"
+            src="img\img-sinFondo\cocteleria-inicio.png"
             className="boton-inicio-img"
           />
         </Col>
