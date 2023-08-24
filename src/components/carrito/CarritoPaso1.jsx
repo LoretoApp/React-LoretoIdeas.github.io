@@ -3,11 +3,11 @@ import PasosCarrito from './PasosCarrito';
 import ElementoCarrito from './ElementoCarrito';
 import ResumenCarrito from './ResumenCarrito';
 
-function Carrito() {
+function CarritoP1() {
   const [carrito, setCarrito] = useState([]);
 
   const agregarAlCarrito = (producto) => {
-    setCarrito([...carrito, { ...producto, cantidad: 1 }]); // Agregamos el producto al carrito con cantidad 1
+    setCarrito([...carrito, producto]);
   };
 
   const eliminarDelCarrito = (indice) => {
@@ -20,8 +20,6 @@ function Carrito() {
 
   return (
     <>
-      <h2 className="title-car">Mi Carrito</h2>
-      <PasosCarrito>
       <div className="contenedor-carrito">
         <div className="cart-contenedor">
           <div className="cart-header">
@@ -43,9 +41,8 @@ function Carrito() {
             </button>
         </div>
       </div>
-      </PasosCarrito>
     </>
   );
 }
 
-export default Carrito;
+export default CarritoP1;
