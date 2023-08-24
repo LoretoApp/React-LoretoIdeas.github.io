@@ -146,6 +146,15 @@ input[type="submit"] {
     padding: 0 0 0 8px;
 }
 
+@media (min-width: 768px){
+    .img-tabla{
+        height: 80px;
+        width: 80px;
+        margin: 15px;
+    }
+}
+
+
 
 #input-nombre{
     height: 50px;
@@ -236,6 +245,8 @@ input[type="submit"] {
     font-size: 24px;
 }
  }
+
+
 
 
 
