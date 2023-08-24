@@ -374,7 +374,7 @@ export default function ModificarFullTorta() {
               className="boton-agregar btn btn-primary"
               onClick={() => enviarDatos()}
             >
-              Agregar Producto
+              Modificar Producto
             </button>
           </div>
         </form>
