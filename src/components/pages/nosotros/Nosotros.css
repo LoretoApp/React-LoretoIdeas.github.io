@@ -70,7 +70,7 @@
     display: block;
 
 }
-.descripcion{
+.descripcionNosotros{
 text-align: center;
 font-family: 'Hahmlet', serif;  
 line-height: 3vh;
@@ -85,13 +85,15 @@ color: #4B102D;
   padding-top: 50px;
   
 } 
+
  
 .separator {
   border: 3px dotted #FFA041; /* Puedes ajustar el grosor y el color de la línea según tus preferencias */
 }
 @media (max-width: 768px) {
   .carruselNosotros{
-    height: 200px;
+    height: 70vh;
+    width: auto;
   }
   .carruselNosotros2{
     height: 200px;
@@ -100,7 +102,7 @@ color: #4B102D;
     padding-top: 15px;
     font-size: 4rem;
   }
-  .descripcion{
+  .descripcionNosotros{
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
@@ -115,7 +117,8 @@ color: #4B102D;
 
 @media (min-width: 768px) {
   .carruselNosotros{
-    height: 300px;
+    height: 50vh;
+    width: auto;
   }
   .carruselNosotros2{
     height: 300px;
@@ -124,7 +127,7 @@ color: #4B102D;
     padding-top: 20px;
     font-size: 5rem;
   }
-  .descripcion{
+  .descripcionNosotros{
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
@@ -152,13 +155,16 @@ color: #4B102D;
     padding-bottom: 40px;
     font-size: 8rem;
   }
-  .descripcion{
+  .descripcionNosotros{
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 5rem;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 3rem;
+    line-height: 57.6px;
+
   }
+  
   .repostera{
     padding-top: 5px;
     font-size: 8rem ;
@@ -167,4 +173,5 @@ color: #4B102D;
     width: 40%;
     margin-top: 10px;
   }
+
 }

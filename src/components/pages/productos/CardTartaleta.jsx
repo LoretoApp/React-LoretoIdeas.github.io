@@ -43,7 +43,7 @@ export default function CardTartaleta(props) {
           <div className="d-inline">
             <p className="card-text porciones">{props.diametro}</p>
            </div>
-          <div className="d-flex text-center align-items-center justify-content-around mt-2 ">
+          <div className="d-flex text-center align-items-center justify-content-between mt-2 precio-agregar">
             <p className="card-text precio">$ {props.precio}</p>
             <a href="#" className="btn boton-agregar-carrito align-content-end" onClick={agregarAlCarrito}>Agregar</a>
           </div>
@@ -51,7 +51,7 @@ export default function CardTartaleta(props) {
       </div>
       <Modal show={show} onHide={handleClose}>
        
-        <Modal.Body>
+        <Modal.Body className="modal-body-detalles">
         <div className="mitad-arriba">
         <button className='boton-flecha p-0 ' onClick={handleClose}>
           <img className="flecha" src="icons/flecha naranja.png" alt="flecha" />

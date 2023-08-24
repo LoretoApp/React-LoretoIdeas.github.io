@@ -1,22 +1,41 @@
+:root{
+    --color-principal: #B8226A;
+    --color-segundo: #F8E5DF;
+    --color-tercero: #FFA041;
+    --color-text:#4B102D;
+    --texto-h1: 48px;
+    --texto-h2: 30px;
+    --texto-h3:15px;
+    --texto-h4: 10px;
+    --texto-parrafos:18px;
+    --texto-btn:24px
+  }
 @media (max-width: 768px) {
     body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        background-image: url('img/fondo-cupcakes.jfif');
+    }
+    .fondo-admin{
+        background-image: url('img/fondo-cupcakes.jfif');
     }
     
     .container-admin {
-        flex-wrap: wrap;
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 84vh;
     }
     .funcionesAdmin{
         display: none;
         visibility: hidden;
+        height: 800px;
     }
     
     .box {
         flex: 1 1 300px;
-        padding: 10px;
+        
         border-radius: 10px;
         display: flex;
         align-items: center;
@@ -42,7 +61,6 @@
     
     #Administrador {
         background-color: #b8226a; /* Color de fondo para el section "Administrador" */
-        padding: 1%; /* Agregamos un relleno para dar espacio al contenido */
         text-align: center; /* Centramos el contenido dentro del section */
         color: #ffffff; /* Color del texto dentro del section "Salir X" */
         font-size: 2em;
@@ -68,7 +86,7 @@
     }
     .boton-admin{
         border: 0;
-        padding: 25px 0 25px 0;
+        
         
     }
     .boton-admin:hover{
@@ -90,26 +108,38 @@
         margin: 0;
         padding: 0;
     }
+    .fondo-admin{
+        background-image: url('img/fondo-cupcakes.jfif');
+    }
     .Contenedor-admin-general{
         display: flex;
         flex-direction: row;
+        max-height: 823px;
+        min-height: 823px;
     }
+    .container-admin {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 400px;
+        max-height: 1000px;
+        background-color: transparent;
+        background: linear-gradient(180deg, rgba(255,182,109,0.4) 100%, rgba(255,160,65,1) 100%);
+        border-right: 6px dotted #b8226a;
+    }
+    
     .funcionesAdmin{
-        height: 100%;
+        max-height: 1000px;
         width: 100%;
+        background: linear-gradient(180deg, rgba(255,182,109,0.4) 100%, rgba(255,160,65,1) 100%);
     }
     .contenedorModalAdmin{
         display: none;
         visibility: hidden;
     }
     
-    .container-admin {
-        display: flex;
-        flex-wrap: wrap;
-        min-height: 69vh;
-        width: 400px;
-        margin: 50px 0 50px 0;
-    }
+   
     
     .box {
         flex: 1 1 300px;
@@ -117,6 +147,7 @@
         border-radius: 10px;
         display: flex;
         align-items: center;
+        background-color: transparent;
     }
     
     .img-admin {
@@ -159,10 +190,12 @@
         font-size: 14px;
         font-weight: 600;
         margin: auto;
+        color: var(--color-text);
     
     }
     .boton-admin{
         border: 0;
+        background-color: transparent;
     }
     .boton-admin:hover{
     
@@ -175,4 +208,5 @@
             max-height: 15%;
         }
     }
+    
 }

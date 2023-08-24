@@ -5,7 +5,7 @@ import CrearTorta from './CrearTorta';
 export default function ModalCrearTorta({show, handleClose}) {
   return (
     <Modal show={show} onHide={handleClose} className='contenedorModalAdmin'>
-      <Modal.Body>
+      <Modal.Body className='modal-body-detalles'>
       <section className="administrador col-12 text-center">
         <p className="banner-administrador">Administrador</p>
       </section>
