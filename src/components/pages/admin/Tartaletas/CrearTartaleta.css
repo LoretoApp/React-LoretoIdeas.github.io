@@ -111,6 +111,15 @@ input[type="submit"] {
     border-color: palevioletred;
 }
 
+@media (min-width: 768px){
+    .img-tabla{
+        height: 80px;
+        width: 80px;
+        margin: 15px;
+    }
+}
+
+
 
 
 
