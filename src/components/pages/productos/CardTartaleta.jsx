@@ -11,6 +11,20 @@ export default function CardTartaleta(props) {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const agregarAlCarrito = () => {
+    const productoAgregado = {
+      imagenSrc: src + props.imagen,
+      titulo: props.nombre,
+      precio: props.precio,
+      cantidad: 1,
+    };
+    props.agregarAlCarrito(productoAgregado);
+    handleClose();
+  };
+
+  console.log(agregarAlCarrito);
+
   return (
     <div className="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 col-producto">
       <div className="card m-0">
@@ -29,15 +43,15 @@ export default function CardTartaleta(props) {
           <div className="d-inline">
             <p className="card-text porciones">{props.diametro}</p>
            </div>
-          <div className="d-flex text-center align-items-center justify-content-around mt-2 ">
+          <div className="d-flex text-center align-items-center justify-content-between mt-2 precio-agregar">
             <p className="card-text precio">$ {props.precio}</p>
-            <a href="#" className="btn boton-agregar-carrito align-content-end">Agregar</a>
+            <a href="#" className="btn boton-agregar-carrito align-content-end" onClick={agregarAlCarrito}>Agregar</a>
           </div>
         </div>
       </div>
       <Modal show={show} onHide={handleClose}>
        
-        <Modal.Body>
+        <Modal.Body className="modal-body-detalles">
         <div className="mitad-arriba">
         <button className='boton-flecha p-0 ' onClick={handleClose}>
           <img className="flecha" src="icons/flecha naranja.png" alt="flecha" />

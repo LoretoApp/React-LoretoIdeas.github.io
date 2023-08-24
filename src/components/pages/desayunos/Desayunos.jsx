@@ -3,6 +3,8 @@ import Footer from '../Footer/Footer';
 import NavBarPage from '../navbar/NavBarPage';
 import CarruselDesayunos from './CarruselDesayunos';
 import './desayunos.css';
+import { Link } from "react-router-dom"
+
 
 function Desayunos() {
   return (
@@ -24,9 +26,9 @@ function Desayunos() {
       </section>
 
       {/* Botón flotante de WhatsApp con mensaje predeterminado */}
-      <a className="whatsapp-float" href="https://api.whatsapp.com/send?phone=56975688406&text=Hola%21%20Quisiera%20cotizar%20el%20servicio%20de%20desayuno" target="_blank" rel="noopener noreferrer">
-        <img className="whatsapp" src="icons\whatsapp.png" alt="whatsapp"/>
-      </a>
+      <Link className="whatsapp-float" to="https://api.whatsapp.com/send?phone=56975688406&text=Hola%21%20Quisiera%20cotizar%20el%20servicio%20de%20desayuno" target="_blank" rel="noopener noreferrer">
+        <img className="whatsapp" src="icons\wspp.png" alt="whatsapp"/>
+      </Link>
 
       <Footer />
     </>

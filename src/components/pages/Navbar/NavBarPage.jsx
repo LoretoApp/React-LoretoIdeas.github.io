@@ -12,28 +12,31 @@ function NavBarPage() {
   const [showCarrito, setShowCarrito] = useState(false);
   const [carrito, setCarrito] = useState([]); // Estado del carrito
 
-  const handleLogin = () => setShowLogin(!showLogin);
-  const handleCarrito = () => setShowCarrito(!showCarrito);
+  const handleLogin = () => showLogin ? setShowLogin(false) : setShowLogin(true);
+  const handleCarrito = () => showCarrito ? setShowCarrito(false) : setShowCarrito(true);
 
-  const ColorNav = {
-    backgroundColor: '#B8226A',
-  };
+  // const ColorNav = {
+  //   backgroundColor: '#B8226A',
+  // };
 
-  const agregarAlCarrito = (producto) => {
+const agregarAlCarrito = (producto) => {
     setCarrito([...carrito, producto]); // Agregar producto al carrito
   };
 
   return (
     <>
-      <Navbar expand="lg" style={ColorNav}>
+      <Navbar expand="lg"  className='bg-navbar'>
         <Container className="contenedor">
-          <a className="link" href="/">
+        <Link className="link" to="/admin">
+                
             <img
               className="LoretoIdeas"
               src="icons/Logo-loretoideas.png"
               alt="LoretoIdeas"
             />
-          </a>
+        </Link>
+          {/* <a className="link" href="/admin">
+          </a> */}
           <a>   {/* className="link" href="http://localhost:5173/login" */}
             <img
               className="logo"

@@ -1,5 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import'./Footer.css';
+import { Link } from "react-router-dom"
+
 
 
 function Footer(){
@@ -16,9 +18,15 @@ function Footer(){
                 </div>
                 {/* Elemento 2 de la izquierda que contiene los logos (responsivo) */}
                 <div className='iconos col'>
-                  <img className="instagram" src="icons\instagram.png" alt="instagram"/>
-                  <img className="facebook" src="icons\Facebook.png" alt="facebook"/>
-                  <img className="sercotec" src="icons\sercotec(2).jpg" alt="sercotec"/>
+                <Link to="https://www.instagram.com/loreto_ideas/?hl=es-la" target="_blank" rel="noopener noreferrer">
+                    <img className="instagram" src="icons/instagram.png" alt="instagram" />
+                </Link>
+                <Link to="https://web.facebook.com/profile.php?id=100063544153621" target="_blank" rel="noopener noreferrer">
+                    <img className="facebook" src="icons/Facebook.png" alt="facebook" />
+                </Link>                  
+                <Link to="https://www.sercotec.cl/" target="_blank" rel="noopener noreferrer">
+                    <img className="sercotec" src="icons\sercotec(2).jpg" alt="sercotec"/>
+                </Link>    
                 </div>
             </div>
             <div className='row'>

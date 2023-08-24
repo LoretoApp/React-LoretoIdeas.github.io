@@ -10,7 +10,7 @@
   height: 60px;
   background-color: #25d366;
   border-radius: 50%;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.534);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -51,7 +51,7 @@
     height: 60px;
     background-color: #25d366;
     border-radius: 50%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.534);
     transition: transform 0.3s ease-in-out;
   }
   .text {
@@ -105,7 +105,7 @@
     height: 100px;
     background-color: #25d366;
     border-radius: 50%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.534);
     transition: transform 0.3s ease-in-out;
   }
   .text {
@@ -159,7 +159,7 @@
     height: 150px;
     background-color: #25d366;
     border-radius: 50%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.534);
     transition: transform 0.3s ease-in-out;
   }
   .text {

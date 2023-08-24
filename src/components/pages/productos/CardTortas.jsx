@@ -8,12 +8,18 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
  
 export default function CardTortas(props) {
+
   const src = 'img/'
   const [show, setShow] = useState(false);
   const [price, setPrice] = useState(props.precio[0])
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const agregarAlCarrito = () => {
+    // Lógica para agregar el producto al carrito
+  };
+
   return (
     <div className="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 col-producto">
       <div className="card m-0">
@@ -32,7 +38,7 @@ export default function CardTortas(props) {
           <div className="d-inline">
             <p className="card-text porciones">{props.porciones[0]} porciones</p>
            </div>
-          <div className="d-flex text-center align-items-center justify-content-around mt-2 ">
+          <div className="d-flex text-center align-items-center justify-content-between mt-2 precio-agregar ">
             <p className="card-text precio">$ {props.precio[0]}</p>
             <a href="#" className="btn boton-agregar-carrito align-content-end">Agregar</a>
           </div>
@@ -41,7 +47,7 @@ export default function CardTortas(props) {
       
       <Modal show={show} onHide={handleClose}>
        
-        <Modal.Body>
+        <Modal.Body className="modal-body-detalles">
         <div className="mitad-arriba">
         <button className='boton-flecha p-0 ' onClick={handleClose}>
           <img className="flecha" src="icons/flecha naranja.png" alt="flecha" />
@@ -97,4 +103,5 @@ export default function CardTortas(props) {
     </div>
   )
 }
+
 

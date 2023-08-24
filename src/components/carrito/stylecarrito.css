@@ -1,3 +1,5 @@
+
+
 :root {
     /* Variables de colores */
     --color-principal: #B8226A;
@@ -19,12 +21,21 @@
     justify-content: center; /* Centra horizontalmente el contenido */
     padding: 10px;
    /*  align-items: center; */ /* Centra verticalmente el contenido */
-    height: 100vh; /* Establece la altura del contenedor principal al 100% del viewport */
+    height: 70vh; /* Establece la altura del contenedor principal al 100% del viewport */
+  }
+
+  .contenedor-carrito2{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    padding: 10px;
+    align-items: center; /* Centra verticalmente el contenido */
+    height: 70vh; /* Establece la altura del contenedor principal al 100% del viewport */
+    margin: 100;
   }
   
   .cart-contenedor {
     width: 100%; /* Ajusta el ancho del carrito al 100% */
-    height: 75%;
+    height: 100%;
     max-width: 500px;
     padding: 0px;  /* 20px normal */
     border: 0px solid #ddd;
@@ -36,6 +47,7 @@
     border-bottom-left-radius: 80px;
     border-bottom-right-radius: 80px;
     overflow: auto; /* Agregamos la propiedad overflow */
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
   }
   
   .cart-item {
@@ -94,7 +106,7 @@
     cursor: pointer;
   }
   
-  .btn-submit {
+  .btn-primary {
     margin-top: 10px; /* Espacio superior */
     background-color: var(--color-principal); /* Color de fondo  */
     color: white; /* Color de texto */
@@ -212,6 +224,26 @@
     color: var(--color-text);
     font-family: 'Hahmlet', serif;
   }
+
+  .title-car{
+    text-align: center;
+    font-family: 'Italianno', cursive;
+    font-size: 60px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .cart-header .t2{
+    text-align: center;
+    font-family: 'Italianno', cursive;
+    font-size: 60px;
+    margin-bottom: 0px;
+    margin-top: 00px;
+    margin-left: 00px;
+    margin-right: 0px;
+  }
   
   .btn-transparent {
     background: transparent;
@@ -298,4 +330,34 @@
     font-family: 'Italianno', cursive;
   }
   
-  
+/*paso 3 carrito*/
+
+  .check{
+    margin-top:50px;
+    margin-left: 28%;
+    
+       
+}
+  p.inicio{
+    font-family: 'Hahmlet', serif;
+    margin-top:20px;
+    
+}
+  .gracias{
+    font-family: 'Italianno', cursive;
+    font-size: 48px;
+    color: var(--color-text);
+    
+}
+.gracias{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/*paso 2 carrito*/
+.t2{
+  justify-content: center;
+  font-family: 'Hahmlet', serif;
+
+}
