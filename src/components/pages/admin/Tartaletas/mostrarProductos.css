@@ -58,7 +58,13 @@
 }
 @media (min-width: 768px){
   .cuerpo-formulario{
-    height: 30vh;
+    height: 100%;
+    overflow: auto;
+    
+  }
+  .cuerpo-formulario::-webkit-scrollbar {
+    visibility: hidden;
+    display: none;
   }
   .img-tabla{
     height: 50px;

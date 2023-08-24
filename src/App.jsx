@@ -8,7 +8,7 @@ import Desayunos from "./components/pages/desayunos/Desayunos";
 import Nosotros from "./components/pages/nosotros/Nosotros";
 import { AuthProvider } from "./controllers/Atentificacion/context/AuthContext";
 import AppRegister from "./components/login/AppRegister";
-import MostrarTartaletas from "./components/pages/admin/Tartaletas/MostrarTartaletas";
+import AdminView from "./components/pages/admin/AdminView";
 
 function App() {
 
@@ -22,7 +22,7 @@ function App() {
           <Route path="desayunos" element={<Desayunos />} />
           <Route path="nosotros" element={<Nosotros />} />
           <Route path="login" element={<AppRegister />} />
-          <Route path="administrador1" element={<MostrarTartaletas/>}/>
+          <Route path="admin" element={<AdminView/>}/>
           
         </Routes>
       </AuthProvider>
