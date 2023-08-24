@@ -15,9 +15,9 @@ function NavBarPage() {
   const handleLogin = () => setShowLogin(!showLogin);
   const handleCarrito = () => setShowCarrito(!showCarrito);
 
-  const ColorNav = {
-    backgroundColor: '#B8226A',
-  };
+  // const ColorNav = {
+  //   backgroundColor: '#B8226A',
+  // };
 
   const agregarAlCarrito = (producto) => {
     setCarrito([...carrito, producto]); // Agregar producto al carrito
@@ -25,7 +25,7 @@ function NavBarPage() {
 
   return (
     <>
-      <Navbar expand="lg" style={ColorNav}>
+      <Navbar expand="lg"  className='bg-navbar'>
         <Container className="contenedor">
         <Link className="link" to="/admin">
                 

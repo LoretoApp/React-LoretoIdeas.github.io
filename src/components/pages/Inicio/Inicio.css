@@ -30,8 +30,8 @@
     padding: 0;
   }
   .img-cuadricula{
-    height: 200px;
-    width: 100%;
+    height: auto;
+    width: 100vw;
   }
   .botones-inicio{
     height: 55px;

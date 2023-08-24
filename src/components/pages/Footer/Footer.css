@@ -19,8 +19,8 @@ body{
 }
 
 footer {
-  background-color: var(--color-principal);
-  color:var(--color-segundo);
+  background: rgb(184,34,106);
+  background: linear-gradient(94deg, rgba(184,34,106,1) 13%, rgba(237,67,168,1) 38%);  color:var(--color-segundo);
   font-size: 12px;
   padding-top: 10px;
   position: relative;
