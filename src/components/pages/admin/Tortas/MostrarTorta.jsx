@@ -6,7 +6,7 @@ export default function MostrarTorta() {
   /* Llamada de API */
   const [tortasList, setTortasList] = useState([]);
   const updateTortas = async () => {
-    const newTortasList = await getTortasList();
+    const newTortasList = await getTortasList.getTortasList();
     setTortasList(newTortasList);
   };
   useEffect(() => {
@@ -22,9 +22,7 @@ export default function MostrarTorta() {
   const url = 'img/'
   return (
     <>
-    <section className="administrador col-12 text-center">
-        <p className="banner-administrador">Administrador</p>
-     </section>
+    
 
     <div className="cuerpo-formulario container">
       <div className="table-responsive">
@@ -61,9 +59,7 @@ export default function MostrarTorta() {
       </table>
       </div>
     </div>
-    <section className="salir col-12 text-center">
-        <p className="banner-administrador">Salir X</p>
-    </section>
+    
     </>
   )
 }

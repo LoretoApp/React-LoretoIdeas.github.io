@@ -6,7 +6,7 @@ export default function ModificarStatusTorta() {
   /* Llamada de API */
   const [tortasList, setTortasList] = useState([]);
   const updateTortas = async () => {
-    const newTortasList = await getTortasList();
+    const newTortasList = await getTortasList.getTortasList();
     setTortasList(newTortasList);
   };
   useEffect(() => {
@@ -53,21 +53,21 @@ export default function ModificarStatusTorta() {
 
   return (
     <>
-    <section className="administrador col-12 text-center">
-        <p className="banner-administrador">Administrador</p>
-     </section>
+   
 
     <div className="cuerpo-formulario container">
 
       <div className="titulo-admi row">
         <div className="ingreso col-12 text-center">
-          <h3 className="titulo">Modificar Estatus Producto</h3>
+          <h3 className="titulo">Modificar Estatus de Torta</h3>
         </div>
       </div>
-      <div className="col">
+      
         <form action="" id="formulario-admi">
-          <label htmlFor="selected-id" className="form-label">
-            Nombre del producto a modificar:
+          <div className="col-12 columna-grande">
+
+          <label htmlFor="selected-id" className="form-label etiqueta-grande">
+            Producto a modificar:
           </label>
           <select
             className="form-select"
@@ -83,7 +83,10 @@ export default function ModificarStatusTorta() {
               </option>
             ))}
           </select>
-          <label htmlFor="modify-value" className="form-label">
+          </div>
+          <div className="col-12 columna-grande">
+
+          <label htmlFor="modify-value" className="form-label etiqueta-grande">
             Ingrese el nuevo valor:
           </label>
           <select
@@ -96,17 +99,18 @@ export default function ModificarStatusTorta() {
             <option value="ACTIVO">ACTIVO</option>
             <option value="INACTIVO">INACTIVO</option>
           </select>
+          </div>
 
-          <button type="button" id="agregar" className="boton-agregar btn btn-primary" onClick={()=> enviarDatos()}>
-            Modificar Producto
-          </button>
+          <div className="col-12 div-boton-accion">
+              <button type="button" id="agregar" className="boton-agregar btn btn-primary" onClick={()=> enviarDatos()}>
+                Agregar Producto
+              </button>
+            </div>
         </form>
-        <p id="error"></p>
-      </div>
+        
+      
     </div>
-    <section className="salir col-12 text-center">
-        <p className="banner-administrador">Salir X</p>
-    </section>
+    
     </>
   );
 }

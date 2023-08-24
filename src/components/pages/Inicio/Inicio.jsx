@@ -5,15 +5,24 @@ import './Inicio.css'
 import DarkVariantExample from "./Carrusel-inicio";
 import Footer from "../Footer/Footer";
 import NavBarPage from "../navbar/NavBarPage";
+import { Link } from "react-router-dom";
 
 
 
 function ShapeExample() {
   return ( 
-    <div className="viewport">
+  <>
     <NavBarPage/>
+      <Image src="public/img/bannerPrincipal.png" className="p-0 img-cuadricula" />
+      <img
+          className="delivery"
+          src="public/img/delivery.png"
+          alt="banner delivery"
+        />
+        <div className="viewport inicio-fondo">
+
         <div className=" container-fluid contenedor-principal-texto w100">
-      <Image src="img/principal-cuadricula.jfif" className="p-0 img-cuadricula" />
+
       <Row className="botones-inicio">
         <Col xs={4} md={4} className="contendor-boton">
           <Image
@@ -36,38 +45,42 @@ function ShapeExample() {
       </Row>
       <Row className="texto-botones-inicio">
         <div className="col-4 col-md-4 contenedor-texto">
-          <a href="/productos" className="titulo-boton">Productos</a>
+        <Link className="titulo-boton" to="/productos">
+          Productos
+        </Link>
         </div>
         <div className="col-4 col-md-4 contenedor-texto">
-        <a href="/desayunos" className="titulo-boton">Desayunos</a>
+        <Link className="titulo-boton" to="/desayunos">
+          Desayunos
+        </Link>
         </div>
         <div className="col-4 col-md-4 contenedor-texto">
-        <a href="/cocteleria" className="titulo-boton">Coctelería</a>
+        <Link className="titulo-boton" to="/concteleria">
+          Coctelería
+        </Link>
         </div>
       </Row>
-
+      <p className="caja-texto-mobile">
+      Trabajamos con los mejores ingredientes del país para entregar la mejor calidad a nuestros clientes, porque todos los productos son creados con amor y se nota en el sabor.
+      </p>
 
       <p className="caja-texto">
+      
       ¡Bienvenidos a Loreto Ideas! Nuestra pasión por la calidad nos lleva a
           trabajar exclusivamente con los ingredientes más frescos y de mayor
           calidad. Nuestra pastelera se esfuerza por transformar estos
           ingredientes de primera en obras de arte comestibles que deleitarán
-          tus sentidos. Ya sea que busques el pastel perfecto para una ocasión
-          especial o simplemente desees un capricho, nuestra pagina web te
-          invita a explorar una variedad de opciones que reflejan nuestra
-          dedicación a la excelencia. Te invitamos a descubrir cómo la pasión
-          por los ingredientes y la atención a los detalles se fusionan para
-          crear momentos dulcemente inolvidables. Sumérgete en un mundo de
-          sabores auténticos y texturas exquisitas mientras celebramos juntos el
-          arte de la pastelería. !Te estamos esperando para endulzar tu día!
-
+          tus sentidos.  !Te estamos esperando para endulzar tu día!
       </p>
     </div>
+     <Link className="whatsapp-float" to="https://api.whatsapp.com/send?phone=56975688406&text=Hola%21%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20de%20Loreto%20Ideas" target="_blank" rel="noopener noreferrer">
+    <img className="whatsapp" src="icons\wspp.png" alt="whatsapp"/>
+  </Link>
     <DarkVariantExample/>
     <Footer/>
     </div>
+    </>
   );
 }
 
 export default ShapeExample;
-

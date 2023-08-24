@@ -1,24 +1,31 @@
+import React, { useState } from 'react';
+import CarritoP2 from './CarritoPaso2'; // Importa el componente CarritoP2
+import CarritoP3 from './CarritoPaso3'; // Importa el componente CarritoP3
+import CarritoP1 from './CarritoPaso1'; // Importa el componente CarritoP1
 
 function PasosCarrito() {
-  const [pasoActual, setPasoActual] = useState(1);
+  const [pasoActual, setPasoActual] = useState(0);
+  const [mostrarVista3, setMostrarVista3] = useState(false);
+
   const cambiarPaso = (paso) => {
     setPasoActual(paso);
+
+    if (paso === 3) {
+      setMostrarVista3(true);
+    } else {
+      setMostrarVista3(false);
+    }
   };
+
   return (
+
     <div className="container-cart">
-      {/* Botón de regreso */}
-      {pasoActual !== 1 && (
-        <button className="btn btn-custom" onClick={() => cambiarPaso(pasoActual - 1)}>
-          <span className="fas fa-arrow-left"></span>
-        </button>
-      )}
-      <h1 className="text-center texto-centrado">Mi Carrito</h1>
       {/* Botones de paso */}
       <div className="d-flex justify-content-center mt-3 spaced-buttons">
         <div className="d-flex flex-column align-items-center">
           <span className="btn-title">Pedido</span>
           <button
-            className={`btn btn-primary rounded-circle1${pasoActual === 1 ? '' : pasoActual}`}
+            className={`btn btn-primary rounded-circle${pasoActual === 1 ? '' : pasoActual}`}
             onClick={() => cambiarPaso(1)}
           >
             1
@@ -36,14 +43,26 @@ function PasosCarrito() {
         <div className="d-flex flex-column align-items-center">
           <span className="btn-title">Enviado</span>
           <button
-            className={`btn btn-primary rounded-circle3${pasoActual === 3 ? '' : pasoActual}`}
+            className={`btn btn-primary rounded-circle${pasoActual === 3 ? '' : pasoActual}`}
             onClick={() => cambiarPaso(3)}
           >
             3
           </button>
         </div>
       </div>
+
+      {/* Renderiza el formulario del paso 2 si el paso actual es 2 */}
+      {pasoActual === 1 && <CarritoP1 />}
+    
+
+      {/* Renderiza el formulario del paso 2 si el paso actual es 2 */}
+      {pasoActual === 2 && <CarritoP2 />}
+
+      {/* Mostrar el componente CarritoP3 si mostrarVista3 es true */}
+      {mostrarVista3 && <CarritoP3 />}
+
     </div>
   );
-};
+}
+
 export default PasosCarrito;

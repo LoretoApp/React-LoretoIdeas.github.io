@@ -10,7 +10,7 @@
   height: 60px;
   background-color: #25d366;
   border-radius: 50%;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.534);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -22,9 +22,19 @@
   width: 50%;
   height: auto;
 }
+.carruselCocteleria{
+  height: 500px;
+
+}
+.fondo{
+  background-image: url('img/fondo-cupcakes.jfif');
+  
+}
+
 
 /* Agrega reglas de medios para hacerlo responsivo */
 @media (max-width: 768px) {
+  
   .whatsapp-float {
     bottom: 15px;
     right: 15px;
@@ -41,7 +51,7 @@
     height: 60px;
     background-color: #25d366;
     border-radius: 50%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.534);
     transition: transform 0.3s ease-in-out;
   }
   .text {
@@ -49,11 +59,12 @@
     }
     .parrafoCocteleria{
     text-align: center;
-    font-size: 20px;
+    font-size: 2.5vh;
     text-size-adjust: 100% ;
     font-family: 'Hahmlet', serif;  
     line-height: 3vh;
     color: #4B102D;
+    margin-bottom: 0px;
   }
       
   .cocteleria{
@@ -65,11 +76,16 @@
     line-height: 57.6px;
     padding-top: 50px;    
   } 
-  .fondo { 
+  .fondo{
+    background-image: url('img/fondo-cupcakes.jfif');
     height: 400px;
 
+  }
+  .carruselCocteleria{
+    height: 200px;
 
   }
+  
   
 }
 @media (min-width: 768px) {
@@ -89,7 +105,7 @@
     height: 100px;
     background-color: #25d366;
     border-radius: 50%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.534);
     transition: transform 0.3s ease-in-out;
   }
   .text {
@@ -106,6 +122,10 @@
     line-height: 57.6px;
 
   }
+  .carruselCocteleria{
+    height: 500px;
+
+  }
       
   .cocteleria{
     text-align: center;
@@ -114,11 +134,12 @@
     font-family: 'Italianno' ;
     font-size: 10vh;
     padding-top: 70px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 
   } 
   .fondo{
-    height: 725px;
+    background-image: url('img/fondo-cupcakes.jfif');
+    height: 700px; 
   }
 }
 @media (min-width: 2560px) {
@@ -138,7 +159,7 @@
     height: 150px;
     background-color: #25d366;
     border-radius: 50%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.534);
     transition: transform 0.3s ease-in-out;
   }
   .text {
@@ -146,7 +167,7 @@
     }
     .parrafoCocteleria{
     text-align: center;
-    font-size: 100px;
+    font-size: 5rem;
     text-size-adjust: 100% ;
     font-family: 'Hahmlet', serif;  
     line-height: 5vh;
@@ -158,12 +179,15 @@
     color: #4B102D;
     text-size-adjust: 100% ;
     font-family: 'Italianno' ;
-    font-size: 200px;
+    font-size: 15rem;
     padding-top: 50px;    
   } 
-  .fondo { 
-    height: 1290px;
-
+  .fondo{
+    background-image: url('img/fondo-cupcakes.jfif');
+    height: 1200px;
+  }
+  .carruselCocteleria{
+    height: 800px;
 
   }
   

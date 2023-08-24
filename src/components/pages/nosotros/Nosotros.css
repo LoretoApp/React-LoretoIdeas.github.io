@@ -1,11 +1,3 @@
-.banner {
-    background-color: #f2f2f2;
-    justify-content: center;
-    background-size: auto;
-    background-image: url('assets/img/elegante-banner-lineas-rojas-digitales-brillantes_1017-23964.avif');
-  }
-  
-  
   .circle {
     width: 100%;
     border-radius: 50%;
@@ -24,6 +16,9 @@
 
     
     
+  }
+  .pasteles{
+    background-image: url('img/fondo-cupcakes.jfif');
   }
   
   .img-nosotros{
@@ -50,9 +45,7 @@
   .abajo {
     text-align: center;
     color: #4B102D;
-    text-size-adjust: 100% ;
     font-family: 'Italianno' ;
-    font-size: 9vh;
     line-height: 57.6px;
     padding-top: 50px;
     
@@ -77,10 +70,8 @@
     display: block;
 
 }
-.descripcion{
+.descripcionNosotros{
 text-align: center;
-font-size: 3vh;
-text-size-adjust: 100% ;
 font-family: 'Hahmlet', serif;  
 line-height: 3vh;
 color: #4B102D;
@@ -89,14 +80,98 @@ color: #4B102D;
 .repostera{
   text-align: center;
   color: #4B102D;
-  text-size-adjust: 100% ;
   font-family: 'Italianno' ;
-  font-size: 9vh;
   line-height: 57.6px;
   padding-top: 50px;
   
 } 
+
  
 .separator {
   border: 3px dotted #FFA041; /* Puedes ajustar el grosor y el color de la línea según tus preferencias */
+}
+@media (max-width: 768px) {
+  .carruselNosotros{
+    height: 70vh;
+    width: auto;
+  }
+  .carruselNosotros2{
+    height: 200px;
+  }
+  .abajo{
+    padding-top: 15px;
+    font-size: 4rem;
+  }
+  .descripcionNosotros{
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.5rem;
+  }
+  .repostera{
+    padding-top: 5px;
+    font-size: 4rem ;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .carruselNosotros{
+    height: 50vh;
+    width: auto;
+  }
+  .carruselNosotros2{
+    height: 300px;
+  }
+  .abajo{
+    padding-top: 20px;
+    font-size: 5rem;
+  }
+  .descripcionNosotros{
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.5rem;
+  }
+  .repostera{
+    padding-top: 5px;
+    font-size: 4rem ;
+  }
+  .circle{
+    width: 75%;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .carruselNosotros{
+    height: 500px;
+  }
+  .carruselNosotros2{
+    height: 500px;
+  }
+  .abajo{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 8rem;
+  }
+  .descripcionNosotros{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 3rem;
+    line-height: 57.6px;
+
+  }
+  
+  .repostera{
+    padding-top: 5px;
+    font-size: 8rem ;
+  }
+  .circle{
+    width: 40%;
+    margin-top: 10px;
+  }
+
 }

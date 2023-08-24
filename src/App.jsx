@@ -7,14 +7,11 @@ import Cocteleria from "./components/pages/cocteleria/Cocteleria";
 import Desayunos from "./components/pages/desayunos/Desayunos";
 import Nosotros from "./components/pages/nosotros/Nosotros";
 import { AuthProvider } from "./controllers/Atentificacion/context/AuthContext";
-import VistaAdministrador from "./components/pages/admin/admin";
 import AppRegister from "./components/login/AppRegister";
-import CrearTartaleta from "./components/pages/admin/Tartaletas/CrearTartaleta";
-import ModificarFullTartaleta from "./components/pages/admin/Tartaletas/ModificarFullTartaleta";
-
-
+import AdminView from "./components/pages/admin/AdminView";
 
 function App() {
+
   return (
     <div>
       <AuthProvider>
@@ -24,12 +21,9 @@ function App() {
           <Route path="cocteleria" element={<Cocteleria />} />
           <Route path="desayunos" element={<Desayunos />} />
           <Route path="nosotros" element={<Nosotros />} />
-          <Route path="administrador" element={<VistaAdministrador />} />
           <Route path="login" element={<AppRegister />} />
           <Route path="administrador" element={<VistaAdministrador/>}/>
           <Route path="administrador1" element={<CrearTartaleta/>}/>
-          <Route path="administrador2" element={<ModificarFullTartaleta/>}/>
-          
           
         </Routes>
       </AuthProvider>

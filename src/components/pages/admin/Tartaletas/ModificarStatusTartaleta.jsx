@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import getTartaletasList from "../../../../controllers/getTartaletasList";
 import axios from "axios";
-import './ModificarStatusTartaleta.css';
+import './CrearTartaleta.css';
 
 export default function ModificarStatusTartaleta() {
   /* Llamada de API */
@@ -53,61 +53,60 @@ export default function ModificarStatusTartaleta() {
 
   return (
     <>
-    <section className="administrador col-12 text-center">
-        <p className="banner-administrador">Administrador</p>
-     </section>
-
-    <div className="cuerpo-formulario container">
-
-      <div className="titulo-admi row">
-        <div className="ingreso col-12 text-center">
-          <h3 className="titulo">Modificar Estatus Producto</h3>
+      <div className="cuerpo-formulario container">
+        <div className="titulo-admi row">
+          <div className="ingreso col-12 text-center">
+            <h3 className="titulo">Modificar Estado Tartaleta</h3>
+          </div>
         </div>
-      </div>
-      <div className="col">
-        <form action=""id="formulario-admi" >
-          <label htmlFor="selected-id" className="form-label">
-            Nombre del producto a modificar:
+        
+          <form action=""id="formulario-admi" >
+          <div className="col-12 columna-grande">
+          
+            <label htmlFor="select-id" className="form-label etiqueta-grande">
+              Producto a modificar:
+              </label>
+              <select
+            className="form-select"
+            id="select-id"
+            aria-label="Default select example"
+            value={selectedValue} 
+            onChange={selectValue} 
+          >
+            <option value={''}>
+              Seleccione producto para modificar:
+            </option>
+            {tartaletasList.map((tartaleta) => (
+              <option key={tartaleta._id} value={tartaleta._id}>
+                {tartaleta.nombre} -Estado: {tartaleta.status}
+              </option>
+            ))}
+          </select>
+          </div>
+          <div className="col-12 columna-grande">
+            <label htmlFor="modify-value" className="form-label etiqueta-grande">
+              Ingrese el nuevo valor:
             </label>
             <select
-          className="form-select"
-          id="select-id"
-          aria-label="Default select example"
-          value={selectedValue} 
-          onChange={selectValue} 
-        >
-          <option value={''}>
-            Seleccione producto para modificar:
-          </option>
-          {tartaletasList.map((tartaleta) => (
-            <option key={tartaleta._id} value={tartaleta._id}>
-              {tartaleta.nombre} -Estado: {tartaleta.status}
-            </option>
-          ))}
-        </select>          
-          <label htmlFor="modify-value" className="form-label">
-            Ingrese el nuevo valor:
-          </label>
-          <select
-            className="form-select"
-            id="modify-value"
-            aria-label="Default select example"
-            value={statusValue} 
-            onChange={selectStatusValue} >
-            <option value={''}>Nuevo Valor</option>
-            <option value="ACTIVO">ACTIVO</option>
-            <option value="INACTIVO">INACTIVO</option>
-          </select>
-
-          <button type="button" id="agregar" className="boton-agregar btn btn-primary" onClick={()=> enviarDatos()}>Modificar Producto</button>
-        </form>
-        <p id="error"></p>
+              className="form-select "
+              id="modify-value"
+              aria-label="Default select example"
+              value={statusValue} 
+              onChange={selectStatusValue} >
+              <option value={''}>Nuevo Valor</option>
+              <option value="ACTIVO">ACTIVO</option>
+              <option value="INACTIVO">INACTIVO</option>
+            </select>
+            </div>          
+            <div className="col-12 div-boton-accion">
+              <button type="button" id="agregar" className="boton-agregar btn btn-primary" onClick={()=> enviarDatos()}>
+                Agregar Producto
+              </button>
+            </div>
+          </form>
       </div>
-    </div>
 
-    <section className="salir col-12 text-center">
-        <p className="banner-administrador">Salir X</p>
-    </section>
+    
     </>
   )
 }

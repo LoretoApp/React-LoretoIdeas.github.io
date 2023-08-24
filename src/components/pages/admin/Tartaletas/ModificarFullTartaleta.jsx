@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import tartaletaController from "../../../../controllers/getTartaletasList";
 import axios from "axios";
+import './CrearTartaleta.css';
 
 export default function ModificarFullTartaleta() {
   /* Llamada de API */
@@ -94,21 +95,20 @@ export default function ModificarFullTartaleta() {
 
   return (
     <>
-    <section className="administrador col-12 text-center">
-        <p className="banner-administrador">Administrador</p>
-     </section>
+    
 
     <div className="cuerpo-formulario container">
 
       <div className="titulo-admi row">
         <div className="ingreso col-12 text-center">
-          <h3 className="titulo">Modificar Producto</h3>
+          <h3 className="titulo">Modificar Tartaleta</h3>
         </div>
       </div>
       <form className="row titulo-admi g-3" id="formulario-admi" encType="multipart/form-data">
-        <p id="error-datos" className="text-danger"></p>
-        <label htmlFor="selected-id" className="form-label">
-          Nombre del producto a modificar:
+        <div className="col-12 columna-grande">
+
+        <label htmlFor="selected-id" className="form-label etiqueta-grande">
+          Producto a modificar:
         </label>
         <select
           className="form-select"
@@ -126,8 +126,9 @@ export default function ModificarFullTartaleta() {
             </option>
           ))}
         </select>
-        <div className="col-12">
-          <label htmlFor="input-nombre" className="form-label">
+        </div>
+        <div className="col-12 columna-grande">
+          <label htmlFor="input-nombre" className="form-label etiqueta-grande">
             Nombre:
           </label>
           <input
@@ -139,8 +140,8 @@ export default function ModificarFullTartaleta() {
             onChange={(e)=> setNombre(e.target.value)}
           />
         </div>
-        <div className="col-12">
-          <label htmlFor="input-descripcion" className="form-label">
+        <div className="col-12 columna-grande">
+          <label htmlFor="input-descripcion" className="form-label etiqueta-grande">
             Descripcion:
           </label>
           <input
@@ -152,8 +153,8 @@ export default function ModificarFullTartaleta() {
             onChange={(e)=> setDescripcion(e.target.value)}
           />
         </div>
-        <div className="col-6">
-          <label htmlFor="input-diametro" className="form-label">
+        <div className="col-6 m-0">
+          <label htmlFor="input-diametro" className="form-label etiqueta-grande">
             Diametro:
           </label>
           <input
@@ -165,8 +166,8 @@ export default function ModificarFullTartaleta() {
             onChange={(e)=> setDiametro(e.target.value)}
           />
         </div>
-        <div className="col-6">
-          <label htmlFor="input-precio" className="form-label">
+        <div className="col-6 m-0">
+          <label htmlFor="input-precio" className="form-label etiqueta-pequeña">
             Precio:
           </label>
           <input
@@ -178,8 +179,8 @@ export default function ModificarFullTartaleta() {
             onChange={(e)=> setPrecio(e.target.value)}
           />
         </div>
-        <div className="col-12">
-          <label htmlFor="input-imagen" className="form-label">
+        <div className="col-12 columna-grande">
+          <label htmlFor="input-imagen" className="form-label etiqueta-grande">
             Imagen:
           </label>
           <input
@@ -190,8 +191,8 @@ export default function ModificarFullTartaleta() {
             name="imagen"
           />
         </div>
-        <div className="col-12">
-          <label htmlFor="input-descripcion-img" className="form-label">
+        <div className="col-12 columna-grande">
+          <label htmlFor="input-descripcion-img" className="form-label etiqueta-grande">
             Descripcion de imagen:
           </label>
           <input
@@ -203,17 +204,13 @@ export default function ModificarFullTartaleta() {
             onChange={(e)=> setImg_descripcion(e.target.value)}
           />
         </div>
-        <div className="col-12">
+        <div className="col-12 div-boton-accion">
           <button type="button" id="agregar" className="boton-agregar btn btn-primary" onClick={()=> enviarDatos()}>
             Agregar Producto
           </button>
         </div>
       </form>
     </div>
-
-    <section className="salir col-12 text-center">
-        <p className="banner-administrador">Salir X</p>
-    </section>
     </>
   );
 }
