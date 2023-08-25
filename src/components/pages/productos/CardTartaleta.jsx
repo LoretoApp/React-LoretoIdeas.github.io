@@ -16,7 +16,7 @@ export default function CardTartaleta(props) {
       <div className="card m-0">
         <div className="img-container m-2">
           <div className="m-3">
-            <img src={src+props.imagen} id="imagen-card" className="card-img-top img-tarta" alt={props.img_descripcion}/>
+            <img src={src+props.imagen} id="imagen-card2" className="card-img-top img-tarta" alt={props.img_descripcion}/>
           </div>
           <div className="btn-detalle mb-2">
             <button className="btn detalle card-text" onClick={handleShow}>+ Detalle</button>
@@ -45,7 +45,7 @@ export default function CardTartaleta(props) {
         <a href="#">
           <img
             className="kuchen"
-            src={src+props.imagen}
+            src={src + props.imagen}
             alt={props.img_descripcion}
           />
         </a>
