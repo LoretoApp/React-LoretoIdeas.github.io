@@ -22,7 +22,6 @@ function App() {
           <Route path="desayunos" element={<Desayunos />} />
           <Route path="nosotros" element={<Nosotros />} />
           <Route path="login" element={<AppRegister />} />
-          <Route path="administrador" element={<VistaAdministrador/>}/>
           <Route path="administrador1" element={<MostrarTartaletas/>}/>
           
         </Routes>
