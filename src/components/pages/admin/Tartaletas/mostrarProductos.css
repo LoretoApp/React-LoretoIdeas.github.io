@@ -71,10 +71,10 @@
     width: 100px;
     }
     th{
-      font-size: 3vh;
+      font-size: 4vh;
     }
     td{
-    font-size: 2vh;
+    font-size: 3vh;
     }
     .table > :not(caption) > * > * {
       padding: 0; 
