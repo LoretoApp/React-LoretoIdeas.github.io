@@ -22,7 +22,7 @@ function AppRegister() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (isAuthenticated) navigate("/administrador");
+    if (isAuthenticated) navigate("/admin");
   }, [isAuthenticated]);
 
   const onSubmit = handleSubmit(async (values) => {

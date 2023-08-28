@@ -149,8 +149,8 @@
     justify-content: center;
     width: 150px;
     height: 150px;
-    background: rgb(70,226,111);
-    background: linear-gradient(94deg, rgba(70,226,111,1) 0%, rgba(158,209,89,1) 65%);    border-radius: 50%;
+background: rgb(70,226,111);
+background: linear-gradient(94deg, rgba(70,226,111,1) 0%, rgba(158,209,89,1) 65%);    border-radius: 50%;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.534);
     transition: transform 0.3s ease-in-out;
   }

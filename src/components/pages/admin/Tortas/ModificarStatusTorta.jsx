@@ -103,7 +103,7 @@ export default function ModificarStatusTorta() {
 
           <div className="col-12 div-boton-accion">
               <button type="button" id="agregar" className="boton-agregar btn btn-primary" onClick={()=> enviarDatos()}>
-                Agregar Producto
+                Actualizar Producto
               </button>
             </div>
         </form>

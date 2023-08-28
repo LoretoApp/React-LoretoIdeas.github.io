@@ -32,8 +32,8 @@
 
 @media (max-width: 768px){
   .img-tabla{
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   }
   th{
     font-size: 1.2rem;
@@ -56,16 +56,25 @@
   }
 }
 @media (min-width: 768px){
+  .cuerpo-formulario{
+    height: 100%;
+    overflow: auto;
+    
+  }
+  .cuerpo-formulario::-webkit-scrollbar {
+    visibility: hidden;
+    display: none;
+  }
   .img-tabla{
     padding: 2px;
     height: 100px;
     width: 100px;
     }
     th{
-      font-size: 30px;
+      font-size: 3vh;
     }
     td{
-    font-size: 20px;
+    font-size: 2vh;
     }
     .table > :not(caption) > * > * {
       padding: 0; 
