@@ -264,12 +264,13 @@ export default function AdminView() {
           {/* Boton 1 */}
           <button className="boton-admin" onClick={handleShow}>
             <div className="box">
+              
+              <section className="texto-admin">
               <img
                 className="img-admin"
                 src="icons/6372973_list_menu_navigation_option_setting_icon (1).png"
                 alt="Imagen 1"
               />
-              <section className="texto-admin">
                 <h3 className="titulo-admin">Ver Producto</h3>
               </section>
             </div>
@@ -284,12 +285,13 @@ export default function AdminView() {
           {/* Boton 2 */}
           <button className="boton-admin" onClick={handleShow2}>
             <div className="box">
+              
+              <section className="texto-admin">
               <img
                 className="img-admin"
                 src="icons/add-product.png"
                 alt="Imagen 2"
               />
-              <section className="texto-admin">
                 <h3 className="titulo-admin">Agregar Producto</h3>
               </section>
             </div>
@@ -304,12 +306,13 @@ export default function AdminView() {
           {/* Boton 3 */}
           <button className="boton-admin" onClick={handleShow3}>
             <div className="box">
+              
+              <section className="texto-admin">
               <img
                 className="img-admin"
                 src="icons/edit-product.png"
                 alt="Imagen 3"
               />
-              <section className="texto-admin">
                 <h3 className="titulo-admin">Editar Producto</h3>
               </section>
             </div>
@@ -324,12 +327,13 @@ export default function AdminView() {
           {/* Boton 4 */}
           <button className="boton-admin" onClick={handleShow4}>
             <div className="box">
+              
+              <section className="texto-admin">
               <img
                 className="img-admin"
                 src="icons/delete-product.png"
                 alt="Imagen 4"
               />
-              <section className="texto-admin">
                 <h3 className="titulo-admin">Desactivar Producto</h3>
               </section>
             </div>
