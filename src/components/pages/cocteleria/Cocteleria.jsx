@@ -2,8 +2,7 @@ import Footer from '../Footer/Footer';
 import NavBarPage from '../navbar/NavBarPage';
 import CarruselCocteleria from './Carrusel-cocteleria';
 import '../cocteleria/cocteleria.css';
-import { Link } from "react-router-dom"
-
+import BotonWsp from '../../Wsp/BotonWsp';
 
 
 
@@ -23,10 +22,8 @@ function Cocteleria() {
           </div>
       </div>
     </section>
-    <Link className="whatsapp-float" to="https://api.whatsapp.com/send?phone=56975688406&text=Hola%21%20Quisiera%20cotizar%20el%20servicio%20de%20cocteleria" target="_blank" rel="noopener noreferrer">
-        <img className="whatsapp" src="icons\wspp.png" alt="whatsapp"/>
-      </Link>
     <Footer/>
+    <BotonWsp/>
     </>
   )
 }

@@ -1,27 +1,4 @@
-  /* Ajustes para la sección de división */
-/* Agrega las reglas para el botón flotante de WhatsApp */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  background: rgb(70,226,111);
-  background: linear-gradient(94deg, rgba(70,226,111,1) 0%, rgba(158,209,89,1) 65%);  transition: transform 0.3s ease-in-out;
-}
 
-.whatsapp-float:hover {
-  transform: scale(1.1);
-}
-
-.whatsapp-float img {
-  width: 50%;
-  height: auto;
-}
 .carruselDesayuno{
   height: 500px;
 
@@ -29,25 +6,7 @@
 
 /* Agrega reglas de medios para hacerlo responsivo */
 @media (max-width: 768px) {
-  .whatsapp-float {
-    bottom: 15px;
-    right: 15px;
-  }
-  .whatsapp-float {
-    position: fixed;
-    bottom: 150px;
-    right: 20px;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    background: rgb(70,226,111);
-    background: linear-gradient(94deg, rgba(70,226,111,1) 0%, rgba(158,209,89,1) 65%);    border-radius: 50%;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.534);
-    transition: transform 0.3s ease-in-out;
-  }
+
   .text {
     color: #4B102D;
     }
@@ -81,25 +40,6 @@
   
 }
 @media (min-width: 768px) {
-  .whatsapp-float img {
-    width: 50%;
-    height: auto;
-  }
-  .whatsapp-float {
-    position: fixed;
-    bottom: 170px;
-    right: 20px;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
-    background: rgb(70,226,111);
-    background: linear-gradient(94deg, rgba(70,226,111,1) 0%, rgba(158,209,89,1) 65%);    border-radius: 50%;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.534);
-    transition: transform 0.3s ease-in-out;
-  }
   .text {
     color: #4B102D;
     }
@@ -135,25 +75,7 @@
   }
 }
 @media (min-width: 2560px) {
-  .whatsapp-float {
-    bottom: 15px;
-    right: 15px;
-  }
-  .whatsapp-float {
-    position: fixed;
-    bottom: 150px;
-    right: 20px;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 150px;
-background: rgb(70,226,111);
-background: linear-gradient(94deg, rgba(70,226,111,1) 0%, rgba(158,209,89,1) 65%);    border-radius: 50%;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.534);
-    transition: transform 0.3s ease-in-out;
-  }
+
   .text {
     color: #4B102D;
     }
