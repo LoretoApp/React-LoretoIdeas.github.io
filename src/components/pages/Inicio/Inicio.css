@@ -88,8 +88,10 @@
     visibility: hidden;
   }
   .inicio-fondo{
-    background-image: url('img/fondo-cupcakes.jfif');
-  }
+    background-image: url('public/img/pastelitos-inicio.png');
+background-repeat: repeat;
+
+}
 
   
 
@@ -183,6 +185,8 @@
     visibility: hidden;
   }
   .inicio-fondo{
-    background-image: url('img/fondo-cupcakes.jfif');
+  
+    background-image: url('public/img/pastelitos-inicio.png');
+background-repeat: repeat;
   }
 }
