@@ -16,10 +16,10 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-image: url('img/fondo-cupcakes.jfif');
     }
     .fondo-admin{
-        background-image: url('img/fondo-cupcakes.jfif');
+        background-color: #f3e4ee;
+
     }
     
     .container-admin {
@@ -64,7 +64,7 @@
     #Administrador {
         background-color: #b8226a; /* Color de fondo para el section "Administrador" */
         text-align: center; /* Centramos el contenido dentro del section */
-        color: #ffffff; /* Color del texto dentro del section "Salir X" */
+        color: #a53c3c; /* Color del texto dentro del section "Salir X" */
         font-size: 2em;
         text-size-adjust: 100% ;
     
@@ -111,9 +111,14 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        background-color: #f3e4ee;
+
+
     }
     .fondo-admin{
-        background-image: url('img/fondo-cupcakes.jfif');
+        background-image: url('/img/pastelitos-nuevo.png');
+        z-index: 1000;
+
         overflow-x: auto;
         -webkit-overflow-scrolling: touch
     }
@@ -131,14 +136,12 @@
         width: 60vh;
         max-height: 1000px;
         background-color: transparent;
-        background-color: #F8E5DF;
         border-right: 6px dotted #b8226a;
     }
     
     .funcionesAdmin{
         max-height: 1000px;
         width: 100%;
-        background-color: #F8E5DF;
     }
     .contenedorModalAdmin{
         display: none;

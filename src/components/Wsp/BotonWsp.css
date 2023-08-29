@@ -1,6 +1,5 @@
 .whatsapp-float {
     position: fixed;
-    bottom: 20px;
     right: 20px;
     z-index: 1000;
     display: flex;
@@ -12,6 +11,8 @@
     border-radius: 50%; /* Esto hace que el botón sea redondo */
     transition: transform 0.3s ease-in-out;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.534);
+    bottom: 18vh;
+
   }
   
   .whatsapp-float:hover {
@@ -21,26 +22,24 @@
   .whatsapp-float img {
     width: 50%;
     height: auto;
+
   }
   @media (max-width: 768px) {
     .whatsapp-float {
-      bottom: 22vh;
       right: 15px;
     }
 }
 @media (min-width: 768px) {
   .whatsapp-float {
-    bottom: 170px;
     width: 80px;
     height: 80px;
 
   }
 }
-@media (min-width: 2560px) {
+@media (min-width: 1920px) {
 
     .whatsapp-float {
-      bottom: 150px;
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
     }
 }
