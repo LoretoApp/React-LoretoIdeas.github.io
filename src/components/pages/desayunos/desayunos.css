@@ -3,27 +3,32 @@
   height: 500px;
 
 }
+.text {
+  color: #4B102D;
+  }
+.parrafoDesayuno{
+  text-align: center;
+  font-family: 'Hahmlet', serif;  
+  color: #4B102D;
+}
+.desayunos{
+  text-align: center;
+  color: #4B102D;
+  font-family: 'Italianno' ;
+} 
 
-/* Agrega reglas de medios para hacerlo responsivo */
 @media (max-width: 768px) {
 
-  .text {
-    color: #4B102D;
-    }
+
     .parrafoDesayuno{
-    text-align: center;
-    font-size: 20px;
+    font-size: 2.5vh;
     text-size-adjust: 100% ;
-    font-family: 'Hahmlet', serif;  
     line-height: 3vh;
-    color: #4B102D;
   }
       
   .desayunos{
-    text-align: center;
-    color: #4B102D;
+
     text-size-adjust: 100% ;
-    font-family: 'Italianno' ;
     font-size: 60px;
     line-height: 57.6px;
     padding-top: 50px;    
@@ -40,26 +45,18 @@
   
 }
 @media (min-width: 768px) {
-  .text {
-    color: #4B102D;
-    }
+
     .parrafoDesayuno{
-    text-align: center;
     font-size: 4.5vh;
     text-size-adjust: 100% ;
-    font-family: 'Hahmlet', serif;  
-    color: #4B102D;
-    /* ... tus estilos actuales ... */
-    width: 100%; /* Asegura que el texto ocupe todo el ancho disponible */
+    width: 100%;
     line-height: 57.6px;
 
   }
       
   .desayunos{
-    text-align: center;
-    color: #4B102D;
+
     text-size-adjust: 100% ;
-    font-family: 'Italianno' ;
     font-size: 10vh;
     padding-top: 70px;
     padding-bottom: 50px;
@@ -76,23 +73,14 @@
 }
 @media (min-width: 2560px) {
 
-  .text {
-    color: #4B102D;
-    }
     .parrafoDesayuno{
-    text-align: center;
     font-size: 100px;
     text-size-adjust: 100% ;
-    font-family: 'Hahmlet', serif;  
     line-height: 5vh;
-    color: #4B102D;
   }
       
   .desayunos{
-    text-align: center;
-    color: #4B102D;
     text-size-adjust: 100% ;
-    font-family: 'Italianno' ;
     font-size: 200px;
     padding-top: 50px;    
   } 
