@@ -5,7 +5,6 @@
   width: 100%;
 }
 
-
 @media (max-width: 768px) {
   
   .carrusel-inicio {
@@ -89,7 +88,7 @@
     visibility: hidden;
   }
   .inicio-fondo{
-    background-image: url('/img/pastelitos-inicio.png');
+    background-image: url('public/img/pastelitos-inicio.png');
 background-repeat: repeat;
 
 }
@@ -146,15 +145,15 @@ background-repeat: repeat;
     border-radius: 150px;
     box-shadow: 0px 6px 4px rgba(199, 48, 111, 0.705);
     box-shadow: #B8226A;
-    height: 20vh;
-    width: 20vh;
+    height: 210px;
+    width: 210px;
     margin: 10px auto;
     background-color: #B8226A;
     align-items: center;
   }
   .boton-inicio-img{
-    height: 18vh;
-    width: 18vh;
+    height: 180px;
+    width: 180px;
     justify-content: center;
     border: 3px dotted #FFA041;
     background-color: #B8226A;
@@ -187,7 +186,7 @@ background-repeat: repeat;
   }
   .inicio-fondo{
   
-    background-image: url('/img/pastelitos-inicio.png');
+    background-image: url('public/img/pastelitos-inicio.png');
 background-repeat: repeat;
   }
 }

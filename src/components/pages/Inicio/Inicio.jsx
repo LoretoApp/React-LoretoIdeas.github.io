@@ -2,10 +2,11 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import './Inicio.css'
-import DarkVariantExample from "./Carrusel-inicio";
 import Footer from "../Footer/Footer";
 import NavBarPage from "../navbar/NavBarPage";
 import { Link } from "react-router-dom";
+import CarruselBanner from "./CarruselBanner";
+import DarkVariantExample from "./Carrusel-inicio";
 
 
 
@@ -13,16 +14,11 @@ function ShapeExample() {
   return ( 
   <>
     <NavBarPage/>
-      <Image src="/img/bannerPrincipal.png" className="p-0 img-cuadricula" />
-      <img
-          className="delivery"
-          src="/img/delivery.png"
-          alt="banner delivery"
-        />
+  
         <div className="viewport inicio-fondo">
 
         <div className=" container-fluid contenedor-principal-texto w100">
-
+        <CarruselBanner/>
       <Row className="botones-inicio">
         <Col xs={4} md={4} className="contendor-boton">
           <Image
@@ -76,6 +72,7 @@ function ShapeExample() {
      <Link className="whatsapp-float" to="https://api.whatsapp.com/send?phone=56975688406&text=Hola%21%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20de%20Loreto%20Ideas" target="_blank" rel="noopener noreferrer">
     <img className="whatsapp" src="icons\wspp.png" alt="whatsapp"/>
   </Link>
+  
     <DarkVariantExample/>
     <Footer/>
     </div>

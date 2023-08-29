@@ -1,31 +1,39 @@
-import Carousel from 'react-bootstrap/Carousel';
+// import Carousel from 'react-bootstrap/Carousel';
+import "./carrusel-inicio.css"
 
 
 function DarkVariantExample() {
   return (
-    <Carousel data-bs-theme="light" className='contendor-carrusel-inicio'>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 carrusel-inicio"
-          src="img/carrusel1.png"
-          alt="First slide"
-        />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 carrusel-inicio"
-          src="img/carrusel2.png"
-          alt="Second slide"
-        />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 carrusel-inicio"
-          src="img/carrusel3.png"
-          alt="Third slide"
-        />
-      </Carousel.Item>
-    </Carousel>
+    <section>
+        <img src="img/banquete-mini.jpg" alt="" />
+        <img src="img/banqueteria3.png" alt="" />
+        <img src="img/cocteleriadulce.jpeg" alt="" />
+        <img src="img/principal2.jpg" alt="" />
+        <img src="img/torta1.jpg" alt="" />
+    </section>
+    // <Carousel data-bs-theme="light" className='contendor-carrusel-inicio'>
+    //   <Carousel.Item>
+    //     <img
+    //       className="d-block w-100 carrusel-inicio"
+    //       src="img/carrusel1.png"
+    //       alt="First slide"
+    //     />
+    //   </Carousel.Item>
+    //   <Carousel.Item>
+    //     <img
+    //       className="d-block w-100 carrusel-inicio"
+    //       src="img/carrusel2.png"
+    //       alt="Second slide"
+    //     />
+    //   </Carousel.Item>
+    //   <Carousel.Item>
+    //     <img
+    //       className="d-block w-100 carrusel-inicio"
+    //       src="img/carrusel3.png"
+    //       alt="Third slide"
+    //     />
+    //   </Carousel.Item>
+    // </Carousel>
   );
 }
 
