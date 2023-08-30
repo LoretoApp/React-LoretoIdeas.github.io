@@ -4,12 +4,12 @@ import "./carrusel-inicio.css"
 
 function DarkVariantExample() {
   return (
-    <section>
-        <img src="img/banquete-mini.jpg" alt="" />
-        <img src="img/banqueteria3.png" alt="" />
-        <img src="img/cocteleriadulce.jpeg" alt="" />
-        <img src="img/principal2.jpg" alt="" />
-        <img src="img/torta1.jpg" alt="" />
+    <section className="carruselInicioactual">
+        <img  className="img_carruInit" src="img/banquete-mini.jpg" alt="" />
+        <img className="img_carruInit"  src="img/banqueteria3.png" alt="" />
+        <img className="img_carruInit"  src="img/cocteleriadulce.jpeg" alt="" />
+        <img className="img_carruInit"  src="img/principal2.jpg" alt="" />
+        <img className="img_carruInit"  src="img/torta1.jpg" alt="" />
     </section>
     // <Carousel data-bs-theme="light" className='contendor-carrusel-inicio'>
     //   <Carousel.Item>
