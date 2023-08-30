@@ -10,12 +10,15 @@
   text-align: center;
   font-family: 'Hahmlet', serif;  
   color: #4B102D;
+  margin-top: 0px;
+  margin-bottom: 0rem;
 }
 .desayunos{
   text-align: center;
   color: #4B102D;
   font-family: 'Italianno' ;
 } 
+
 
 @media (max-width: 768px) {
 
@@ -33,11 +36,6 @@
     line-height: 57.6px;
     padding-top: 50px;    
   } 
-  .fondo{
-    background-image: url('img/fondo-cupcakes.jfif');
-    height: 400px;
-
-  }
   .carruselDesayuno{
     height: 200px;
 
@@ -62,10 +60,7 @@
     padding-bottom: 50px;
 
   } 
-  .fondo{
-    background-image: url('img/fondo-cupcakes.jfif');
-    height: 700px; 
-  }
+
   .carruselDesayuno{
     height: 500px;
 
@@ -84,10 +79,7 @@
     font-size: 15rem;
     padding-top: 50px;    
   } 
-  .fondo{
-    background-image: url('img/fondo-cupcakes.jfif');
-    height: 1200px;
-  }
+
   .carruselDesayuno{
     height: 800px;
 
