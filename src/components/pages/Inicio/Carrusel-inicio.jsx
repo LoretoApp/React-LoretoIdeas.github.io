@@ -7,7 +7,7 @@ function DarkVariantExample() {
     <section className="carruselInicioactual">
         <img  className="img_carruInit" src="img/banquete-mini.jpg" alt="" />
         <img className="img_carruInit"  src="img/banqueteria3.png" alt="" />
-        <img className="img_carruInit"  src="img/cocteleriadulce.jpeg" alt="" />
+        <img className="img_carruInit"  src="img/cocteleriadulce.png" alt="" />
         <img className="img_carruInit"  src="img/principal2.jpg" alt="" />
         <img className="img_carruInit"  src="img/torta1.jpg" alt="" />
     </section>
