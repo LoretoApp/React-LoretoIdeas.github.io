@@ -1,11 +1,11 @@
 @media (min-width: 768px) {
-    section{
+    .carruselInicioactual{
     display: flex;
     width: 100vw;
     height: 630px;
 }
 
-section img{
+ .img_carruInit{
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
@@ -13,7 +13,7 @@ section img{
     transition: .5s ease;
 }
 
-section img:hover{
+ .img_carruInit:hover{
     cursor:pointer; 
     cursor: hand   ;
      width: 400px;
@@ -24,13 +24,13 @@ section img:hover{
 
 
 @media (max-width: 768px) {
-    section{
+    .carruselInicioactual{
         display: flex;
         width: 100vw;
 
           height: 30vh;
 }
-section img{
+.img_carruInit{
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
@@ -38,7 +38,7 @@ section img{
     transition: .3s ease;
 }
 
-section img:hover{
+.img_carruInit:hover{
     cursor:pointer; 
     cursor: hand   ;
      width: 180px;

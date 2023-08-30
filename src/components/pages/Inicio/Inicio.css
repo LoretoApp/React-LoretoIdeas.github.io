@@ -88,7 +88,7 @@
     visibility: hidden;
   }
   .inicio-fondo{
-    background-image: url('public/img/pastelitos-inicio.png');
+    background-image: url('img/pastelitos-inicio.png');
 background-repeat: repeat;
 
 }
@@ -186,7 +186,7 @@ background-repeat: repeat;
   }
   .inicio-fondo{
   
-    background-image: url('public/img/pastelitos-inicio.png');
+    background-image: url('img/pastelitos-inicio.png');
 background-repeat: repeat;
   }
 }
