@@ -1,0 +1,16 @@
+.carruselNosotros {
+    display: flex;
+    width: 100vw;
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+  }
+  
+  .carruselNosotros img {
+    max-width: 100%; /* Ajusta el ancho de las imágenes */
+    height: auto;
+  }
+  
+  
+  
+  
+  
+  

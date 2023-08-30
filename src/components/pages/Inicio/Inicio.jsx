@@ -22,19 +22,19 @@ function ShapeExample() {
       <Row className="botones-inicio">
         <Col xs={4} md={4} className="contendor-boton">
           <Image
-            src="img\img-sinFondo\producto-inicio.png"
+            src=""
             className="boton-inicio-img"
           />
         </Col>
-        <Col xs={4} md={4} className="contendor-boton">
+        <Col xs={4} md={4} className="contendor-boton2">
           <Image
-            src="img\img-sinFondo\desayuno-inicio.png"
+            src=""
             className="boton-inicio-img"
           />
         </Col>
-        <Col xs={4} md={4}className="contendor-boton">
+        <Col xs={4} md={4}className="contendor-boton3">
           <Image
-            src="img\img-sinFondo\cocteleria-inicio.png"
+            src=""
             className="boton-inicio-img"
           />
         </Col>

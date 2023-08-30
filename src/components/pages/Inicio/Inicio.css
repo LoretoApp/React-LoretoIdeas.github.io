@@ -12,14 +12,21 @@
     height: auto;
   }
   .caja-texto-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color:#4B102D ;
-    padding: 0 20px 0 20px;
-    margin: 20px 0 20px 0;
+    padding: 40px 40px 40px 40px;
     text-align: center;
     font-family: 'Hahmlet', serif;
     font-size: 4vw;
     height: fit-content;
+    line-height:1.8;
   }
+ 
+
+ 
   .caja-texto {
     display: none;
     visibility: hidden;
@@ -30,10 +37,7 @@
   .contenedor-principal-texto{
     padding: 0;
   }
-  .img-cuadricula{
-    height: auto;
-    width: 100vw;
-  }
+  
   .botones-inicio{
     height: 55px;
     margin: 10px 0 5px 0;
@@ -44,24 +48,49 @@
   .contendor-boton{
     display: flex;
     justify-content: center;
-    border-radius: 50px;
-    box-shadow: 0px 6px 4px rgba(199, 48, 111, 0.705);
-    box-shadow: #B8226A;
     height: 50px;
     width: 50px;
-    margin: auto;
-    background-color: #B8226A;
-    align-items: center;
-  }
-  .boton-inicio-img{
-    height: 40px;
-    width: 40px;
-    justify-content: center;
-    border: 3px dotted #FFA041;
-    background-color: #B8226A;
     border-radius: 50px;
-    box-shadow: 0px 4px 4px #B8226A(0, 0, 0, 0.3);
+
+    margin: auto;
+    align-items: center;
+    background-image: url("img/kuchenmanzana.jpg");
+    background-position-x: center;
+    background-size: 95%;
+    background-position-y: 38%;
   }
+
+  .contendor-boton2{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+
+    margin: auto;
+    align-items: center;
+    background-image: url("img/desayuno.jpg");
+    background-position-x: center;
+    background-size: 90%;
+    background-position-y: 38%;
+  }
+
+  .contendor-boton3{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+
+    margin: auto;
+    align-items: center;
+    background-image: url("img/cocteleria.jpg");
+    background-position-x: center;
+    background-size: 95%;
+    background-position-y: 38%;
+  }
+
+
   .texto-botones-inicio{
     margin: auto;
   }
@@ -108,15 +137,20 @@ background-repeat: repeat;
     width: 100%;
     object-fit: cover;
   }
+
+  
   .caja-texto{
-    color:#4B102D ;
-    margin: 40px 0 60px 0;
-    padding: 0 50px 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    color:#4B102D ;
+    padding: 250px 250px 250px 250px;
     font-family: 'Hahmlet', serif;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 500;
     height: 200px;
+    line-height:1.8;
   }
   .caja-texto-mobile{
     display: none;
@@ -129,37 +163,51 @@ background-repeat: repeat;
     
     padding: 0;
   }
-  .img-cuadricula{
-    height: auto;
-    width: 100%;
-    display: none;
-    visibility: hidden;
-  }
+ 
   .botones-inicio{
     height: 100px;
     margin: 50px 0 5px 0;
   }
   .contendor-boton{
     display: flex;
-    justify-content: center;
     border-radius: 150px;
-    box-shadow: 0px 6px 4px rgba(199, 48, 111, 0.705);
-    box-shadow: #B8226A;
     height: 210px;
     width: 210px;
-    margin: 10px auto;
-    background-color: #B8226A;
-    align-items: center;
-  }
-  .boton-inicio-img{
-    height: 180px;
-    width: 180px;
-    justify-content: center;
-    border: 3px dotted #FFA041;
-    background-color: #B8226A;
-    border-radius: 100px;
-    box-shadow: 0px 4px 4px #B8226A(0, 0, 0, 0.3);
-  }
+    margin:  auto;
+    background-image: url("img/kuchenmanzana.jpg");
+    background-position-x: center;
+    background-size: 95%;
+    background-position-y: 38%;
+    
+}
+
+.contendor-boton2{
+  display: flex;
+  justify-content: center;
+  border-radius: 150px;
+  height: 210px;
+  width: 210px;
+  margin:  auto;
+  align-items: center;
+  background-image: url("img/desayuno.jpg");
+background-position-x: center;
+background-size: 100%;
+background-size: 95%;
+background-position-y: 38%;
+}
+.contendor-boton3{
+  display: flex;
+  justify-content: center;
+  border-radius: 150px;
+  height: 210px;
+  width: 210px;
+  margin:  auto;
+  align-items: center;
+  background-image: url("img/cocteleria.jpg");
+background-position-x: center;
+background-size: 100%;
+}
+
   .texto-botones-inicio{
     margin: auto;
   }
@@ -167,7 +215,7 @@ background-repeat: repeat;
     font-size: 7vh;
     text-align: center;
     font-family: 'Italianno';
-    font-weight: 600;
+    font-weight: 500;
     color: #4B102D;
     text-decoration: none;
   }

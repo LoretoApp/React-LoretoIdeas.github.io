@@ -10,7 +10,6 @@
     background-size: contain ;
   }
   .img-nosotros{
-    border:6px dashed #FFA041 ;
     padding: 6px;
     border-width: 10px;
 
@@ -18,7 +17,7 @@
     
   }
   .pasteles{
-    background-image: url('img/fondo-cupcakes.jfif');
+    background-image: url('img/pastelitos-inicio.png');
   }
   
   .img-nosotros{
@@ -91,13 +90,7 @@ color: #4B102D;
   border: 3px dotted #FFA041; /* Puedes ajustar el grosor y el color de la línea según tus preferencias */
 }
 @media (max-width: 768px) {
-  .carruselNosotros{
-    height: 200px;
-    width: auto;
-  }
-  .carruselNosotros2{
-    height: 200px;
-  }
+
   .abajo{
     padding-top: 15px;
     font-size: 4rem;
@@ -116,13 +109,7 @@ color: #4B102D;
 
 
 @media (min-width: 768px) {
-  .carruselNosotros{
-    height: 300px;
-    width: auto;
-  }
-  .carruselNosotros2{
-    height: 300px;
-  }
+
   .abajo{
     padding-top: 20px;
     font-size: 5rem;
@@ -144,12 +131,7 @@ color: #4B102D;
 
 
 @media (min-width: 1024px) {
-  .carruselNosotros{
-    height: 500px;
-  }
-  .carruselNosotros2{
-    height: 500px;
-  }
+
   .abajo{
     padding-top: 40px;
     padding-bottom: 40px;
