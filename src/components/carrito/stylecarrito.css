@@ -14,6 +14,10 @@
     --texto-parrafos: 18px;
     --texto-btn: 24px;
   }
+  .img-carrito-pequeña{
+    height: 50px;
+    width: 50px;
+  }
   
   /* Clases para el carrito */
   .contenedor-carrito{

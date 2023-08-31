@@ -5,6 +5,8 @@
   width: 100%;
 }
 
+
+
 @media (max-width: 768px) {
   
   .carrusel-inicio {
@@ -58,6 +60,7 @@
     background-position-x: center;
     background-size: 95%;
     background-position-y: 38%;
+    box-shadow: 5px 5px 10px #555;
   }
 
   .contendor-boton2{
@@ -73,6 +76,8 @@
     background-position-x: center;
     background-size: 90%;
     background-position-y: 38%;
+    box-shadow: 5px 5px 10px #555;
+
   }
 
   .contendor-boton3{
@@ -88,6 +93,8 @@
     background-position-x: center;
     background-size: 95%;
     background-position-y: 38%;
+    box-shadow: 5px 5px 10px #555;
+
   }
 
 
@@ -178,6 +185,8 @@ background-repeat: repeat;
     background-position-x: center;
     background-size: 95%;
     background-position-y: 38%;
+    box-shadow: 5px 5px 10px #555;
+
     
 }
 
@@ -194,6 +203,8 @@ background-position-x: center;
 background-size: 100%;
 background-size: 95%;
 background-position-y: 38%;
+box-shadow: 5px 5px 10px #555;
+
 }
 .contendor-boton3{
   display: flex;
@@ -206,6 +217,8 @@ background-position-y: 38%;
   background-image: url("img/cocteleria.jpg");
 background-position-x: center;
 background-size: 100%;
+box-shadow: 5px 5px 10px #555;
+
 }
 
   .texto-botones-inicio{

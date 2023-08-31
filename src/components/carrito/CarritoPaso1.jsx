@@ -2,16 +2,34 @@ import React, { useState } from 'react';
 import PasosCarrito from './PasosCarrito';
 import ElementoCarrito from './ElementoCarrito';
 import ResumenCarrito from './ResumenCarrito';
+import { useEffect } from 'react';
+import getTartaletasList from '../../controllers/getTartaletasList';
+import getTortasList from '../../controllers/getTortasList'
+
+
 
 function CarritoP1() {
   const [carrito, setCarrito] = useState([]);
+
+  const updateItems = async () => {
+    
+    const newTortasList = await getTortasList.getTortasList();
+    const newTartaletasList = await getTartaletasList.getTartaletasList();
+    const newCarrito = [...newTortasList, ...newTartaletasList]
+    setCarrito(newCarrito);
+  };
+  
+ 
+  useEffect(() => {
+    updateItems();
+  }, []);
 
   const agregarAlCarrito = (producto) => {
     setCarrito([...carrito, producto]);
   };
 
   const eliminarDelCarrito = (indice) => {
-    const nuevoCarrito = carrito.filter((_, index) => index !== indice);
+    const nuevoCarrito = carrito.filter((_id, index) => index !== indice);
     setCarrito(nuevoCarrito);
   };
 
@@ -26,13 +44,13 @@ function CarritoP1() {
             <h2 className="title-left">Pedido</h2>
             <button className="btn btn-transparent btn-delete" onClick={() => setCarrito([])}>Eliminar todo</button>
           </div>
-          {carrito.map((producto, index) => (
+          {carrito.map((producto) => (
             <ElementoCarrito
-              key={index}
-              {...producto}
+              key={producto._id}
+              data={producto}
               disminuirCantidad={() => {}}
               aumentarCantidad={() => {}}
-              eliminar={() => eliminarDelCarrito(index)}
+              eliminar={() => eliminarDelCarrito(producto._id)}
             />
           ))}
           <ResumenCarrito cantidadTotal={cantidadTotal} precioTotal={precioTotal} />

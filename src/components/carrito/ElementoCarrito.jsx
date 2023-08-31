@@ -1,15 +1,16 @@
 import React from 'react';
 //import CardTartaleta from '../pages/productos/CardTartaleta.jsx';
 
-function ElementoCarrito({ imagenSrc, titulo, precio, cantidad, disminuirCantidad, aumentarCantidad, eliminar }) {
+function ElementoCarrito({ data, cantidad, disminuirCantidad, aumentarCantidad, eliminar }) {
+  const src = 'img/'
   return (
     <div className="cart-item">
       <div className="item-image">
-        <img src={imagenSrc} alt={titulo} />
+        <img src={src+data.imagen} alt={data.img_descripcion} className='img-carrito-pequeña'/>
       </div>
       <div className="item-details">
-        <div className="item-title">{titulo}</div>
-        <div className="item-price">${precio}</div>
+        <div className="item-title">{data.nombre}</div>
+        <div className="item-price">${data.precio[2]}</div>
       </div>
       <div className="item-quantity">
         <button className="quantity-button" onClick={disminuirCantidad}>-</button>

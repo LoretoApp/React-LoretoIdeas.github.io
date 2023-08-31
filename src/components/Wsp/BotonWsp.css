@@ -7,8 +7,8 @@
     justify-content: center;
     width: 60px;
     height: 60px;
-    background: rgb(70, 226, 111);
-    border-radius: 50%; /* Esto hace que el botón sea redondo */
+    background: rgb(70,226,111);
+    background: linear-gradient(94deg, rgba(70,226,111,1) 0%, rgba(111,158,47,1) 65%);      border-radius: 50%; /* Esto hace que el botón sea redondo */
     transition: transform 0.3s ease-in-out;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.534);
     bottom: 18vh;

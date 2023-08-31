@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './stylecarrito.css'
 import { Link } from "react-router-dom"
 
-function CarritoP2({data}) {
+function AgendamientoTorta({nombre,porciones,precio}) {
   const [formData, setFormData] = useState({
     nombre2: '',
     apellido: '',
@@ -14,10 +14,10 @@ function CarritoP2({data}) {
   });
 
   const { nombre2, direccion, comuna, fechaEntrega, telefono,correo} = formData
-  const {nombre, diametro, precio} = data
+  
   const saludo= "Hola Loreto Ideas!"
   const saludo2= "Quisiera realizar el siguiente pedido:"
-  const pedido= `${nombre} de ${diametro} de precio: $ ${precio}`
+  const pedido= `${nombre} de ${porciones} porciones y de precio: $ ${precio}`
   const entrega= `Agendado para el día: ${fechaEntrega}`
   
 
@@ -127,4 +127,4 @@ function CarritoP2({data}) {
   );
 }
 
-export default CarritoP2;
+export default AgendamientoTorta;

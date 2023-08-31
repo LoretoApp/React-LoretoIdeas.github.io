@@ -10,9 +10,7 @@ function Desayunos() {
     <>
       <NavBarPage />
       <CarruselDesayunos />
-      <section id="fondo">
-        <div className="container-fluid text-center1 fondo">
-          <div className="container-fluid">
+      <section className="pasteles">
             <p className="desayunos">Desayunos</p>
             <p className="parrafoDesayuno">
               Damos servicios de banquetería para distintos eventos privados o familiares.<br />
@@ -20,8 +18,6 @@ function Desayunos() {
               Se debe hacer la solicitud con al menos 10 días de anticipación.<br />
               Puede escribirnos al WhatsApp para más consultas.
             </p>
-          </div>
-        </div>
       </section>
 
       {/* Botón flotante de WhatsApp con mensaje predeterminado */}
