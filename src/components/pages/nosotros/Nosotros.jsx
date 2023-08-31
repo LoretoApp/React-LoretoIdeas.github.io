@@ -35,11 +35,16 @@ function Nosotros() {
         </section>
 
         <div className="separator">
-          <img
-            className="mx-auto d-block"
-            src="icons/Logo-loretoideas.png"
-            alt=""
-          />
+        </div>
+
+        <div className="background">
+          <div className="circle borde">
+            <img
+              src="icons/Logo-loretoideas.png"
+              className="img-nosotros"
+              alt="Imagen receptiva"
+            />
+          </div>
         </div>
 
         <p className="abajo">Premios y Actividades</p>
