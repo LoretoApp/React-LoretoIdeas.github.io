@@ -11,13 +11,13 @@ function Cocteleria() {
     <NavBarPage/>
     <section className='pasteles'>
 <img id="imgMozos" src="img\cocteleriaybanqueteria.png" alt="img\cocteleriaybanqueteria.png" />
-          <h2 className='cocteleria'>Cocteleria y Banquetería</h2>
+          <h2 className='cocteleria '>Cocteleria y Banquetería</h2>
 
           <p className='parrafoCocteleria'>Damos servicios de banquetería para distintos eventos privados o familiares.<br/>
             Se pueden crear menús salados, dulces o mixtos, según lo que necesite el cliente.<br/>
-            Se debe hacer la solicitud con al menos 10 días de anticipación.
+            Se debe hacer la solicitud con al menos 10 días de anticipación.<br/>
             Puede escribirnos al WhatsApp para más consultas.</p>
-            <p className="cocteleria">Estos son nuestros servicios</p>
+            <p className="cocteleria">Nuestros servicios</p>
 
             <div className="image-container">
               <img src="img\cocteleria1.jfif"  />

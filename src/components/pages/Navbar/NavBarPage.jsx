@@ -27,7 +27,7 @@ const agregarAlCarrito = (producto) => {
     <>
       <Navbar expand="lg"  className='bg-navbar'>
         <Container className="contenedor">
-        <Link className="link" to="/admin">
+        <Link className="link" to="/">
                 
             <img
               className="LoretoIdeas"
