@@ -41,7 +41,7 @@ p.datos-contacto{
 
 @media (min-width: 992px){
   footer {
-    height: 24vh;
+    height: 20vh;
   }
   .alineacion{
     align-items: center;
@@ -85,7 +85,7 @@ p.datos-contacto{
   }
 
   p.datos-contacto{
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Khand', sans-serif;
     text-align: left;
     
@@ -93,7 +93,7 @@ p.datos-contacto{
 
   p.derechos{
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 25px;
   }
 
 }
