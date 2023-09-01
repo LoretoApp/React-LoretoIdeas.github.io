@@ -1,7 +1,7 @@
 import Footer from '../Footer/Footer';
-import NavBarPage from '../navbar/NavBarPage';
 import '../cocteleria/cocteleria.css';
 import BotonWsp from '../../Wsp/BotonWsp';
+import NavBarPage from "../Navbar/NavBarPage";
 
 
 
@@ -20,14 +20,12 @@ function Cocteleria() {
             <p className="cocteleria">Estos son nuestros servicios</p>
 
             <div className="image-container">
-              <img src="" alt="img\cocteleriaybanqueteria.png" />
-              <img src="" alt="img\cocteleriaybanqueteria.png" />
-              <img src="" alt="img\cocteleriaybanqueteria.png" />
-              <img src="" alt="img\cocteleriaybanqueteria.png" />
-              <img src="" alt="img\cocteleriaybanqueteria.png" />
-              <img src="" alt="img\cocteleriaybanqueteria.png" />
-              <img src="" alt="img\cocteleriaybanqueteria.png" />
-              <img src="" alt="img\cocteleriaybanqueteria.png" />
+              <img src="img\cocteleria1.jfif"  />
+              <img src="img\cocteleria2.jfif"  />
+              <img src="img\cocteleria3.jfif"  />
+              <img src="img\cocteleria4.jfif"  />
+              <img src="img\cocteleria5.jfif"  />
+              <img src="img\cocteleria6.jfif"  />
       </div>
 
     </section>

@@ -3,10 +3,10 @@ import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import './Inicio.css'
 import Footer from "../Footer/Footer";
-import NavBarPage from "../navbar/NavBarPage";
 import { Link } from "react-router-dom";
 import CarruselBanner from "./CarruselBanner";
 import DarkVariantExample from "./Carrusel-inicio";
+import NavBarPage from "../Navbar/NavBarPage";
 
 
 
@@ -56,9 +56,7 @@ function ShapeExample() {
         </Link>
         </div>
       </Row>
-      <p className="caja-texto-mobile">
-      Trabajamos con los mejores ingredientes del país para entregar la mejor calidad a nuestros clientes, porque todos los productos son creados con amor y se nota en el sabor.
-      </p>
+      
 
       <p className="caja-texto">
       

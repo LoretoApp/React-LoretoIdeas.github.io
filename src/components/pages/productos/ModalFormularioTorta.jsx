@@ -1,6 +1,5 @@
 
 import Modal from 'react-bootstrap/Modal';
-import CarritoP2 from '../../carrito/CarritoPaso2';
 import AgendamientoTorta from '../../carrito/AgendamientoTorta';
 
 const ModalFormularioTorta = ({show, handleClose, nombre, porciones, precio}) => {

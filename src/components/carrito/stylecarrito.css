@@ -18,7 +18,11 @@
     height: 50px;
     width: 50px;
   }
-  
+  .boton-agendar{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+  }
   /* Clases para el carrito */
   .contenedor-carrito{
     display: flex;
@@ -216,12 +220,64 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px;
   }
-  
+  .etiqueta-agendar{
+    font-size: 20px;
+    color: var(--color-segundo);
+  }
+  @media (max-width: 768px) {
+    .boton-agendar-carrito {
+      background-color: #B8226A ;
+      color: #F8E5DF;
+      font-weight: 500;
+      padding: 10px ;
+      display: flex;
+      align-items: center;
+      height: 35px;
+      font-size: 5vw;
+      border-radius: 30px;
+      margin: 20px auto;
+    }
+    .boton-agendar-carrito:hover {
+      background-color: #B8226A ;
+      color: #F8E5DF;
+      font-weight: 500;
+      margin: 20px auto;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      height: 35px;
+      font-size: 5;
+      border-radius: 30px;
+    }
+  }
+  @media (min-width: 768px) {
+    .boton-agendar-carrito {
+      background-color: #B8226A ;
+      color: #F8E5DF;
+      font-weight: 500;
+      padding: 10px ;
+      display: flex;
+      align-items: center;
+      height: 35px;
+      font-size: 1.7vw;
+      border-radius: 30px;
+      margin: 20px auto;
+    }
+    .boton-agendar-carrito:hover {
+      background-color: #B8226A ;
+      color: #F8E5DF;
+      font-weight: 500;
+      margin: 20px auto;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      height: 35px;
+      font-size: 1.2;
+      border-radius: 30px;
+    }
+  }
   .title-left {
     font-size: var(--texto-h2);
     margin: 0;

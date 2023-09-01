@@ -85,9 +85,10 @@
 .separator{
   display: inline-block;
   width: 100%;
-height: 30px;
-background-color: #a41f5f63;
-}
+height: 20px;
+background: rgb(184,34,106);
+background: linear-gradient(94deg, rgba(184,34,106,1) 13%, rgba(237,67,168,1) 38%);}
+
 
 .repostera{
   text-align: center;
@@ -111,7 +112,13 @@ background-color: #a41f5f63;
 
  
 @media (max-width: 768px) {
-
+  .separator{
+    display: inline-block;
+    width: 100%;
+  height: 10px;
+  background: rgb(184,34,106);
+  background: linear-gradient(94deg, rgba(184,34,106,1) 13%, rgba(237,67,168,1) 38%);}
+  
   .abajo{
     padding-top: 15px;
     font-size: 4rem;
@@ -182,6 +189,7 @@ background-color: #a41f5f63;
     margin-top: 10px;
   }
 
+ 
 }
 @media (min-width: 1920px) {
   .descripcionNosotros{
@@ -201,4 +209,5 @@ background-color: #a41f5f63;
   .img-fluid{
     width: 100%;
   }
+  
 }

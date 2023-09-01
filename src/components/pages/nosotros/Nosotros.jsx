@@ -1,9 +1,9 @@
 import CarruselNosotros1 from "./CarruselNosotros1";
 import CarruselNosotros2 from "./CarruselNosotros2";
 import Footer from "../Footer/Footer";
-import NavBarPage from "../navbar/NavBarPage";
-import "./nosotros.css";
+import "./Nosotros.css";
 import { Link } from "react-router-dom";
+import NavBarPage from "../Navbar/NavBarPage";
 
 function Nosotros() {
   return (
@@ -16,7 +16,7 @@ function Nosotros() {
             <img
               src="img/foto perfil.jpg"
               className="img-nosotros"
-              alt="Imagen receptiva"
+              alt=""
             />
           </div>
         </div>

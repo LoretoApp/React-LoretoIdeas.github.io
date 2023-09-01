@@ -25,13 +25,10 @@ footer {
   padding-top: 3px;
   position: relative;
   bottom: 0;
-  width: 100%;
-  height: 14vh;
+  max-width: 100%;
+  height: 30vh;
   font-family: 'Khand', sans-serif;
   overflow: hidden;
-
-
-
 }
 
 p.datos-contacto{
@@ -40,12 +37,12 @@ p.datos-contacto{
   font-size: 16px;
 }
 
-p.derechos {
-  font-size: 16px;
-}
+
 
 @media (min-width: 992px){
-
+  footer {
+    height: 20vh;
+  }
   .alineacion{
     align-items: center;
    
@@ -55,7 +52,7 @@ p.derechos {
 
   .cuerpo-footer{
     align-items: center;
-    padding: 0px;
+    padding-bottom: 40px;
     margin: 0 auto;
     
   
@@ -88,22 +85,25 @@ p.derechos {
   }
 
   p.datos-contacto{
-    font-size: 1.1rem;
+    font-size: 16px;
     font-family: 'Khand', sans-serif;
     text-align: left;
     
   }
 
   p.derechos{
-    margin-top: 0px;
-    font-size: 16px;
+    margin-bottom: 30px;
+    font-size: 25px;
   }
 
 }
 
 
 @media (min-width: 768px) and (max-width: 991px){
+  footer{
+    height: 20vh;
 
+}
   .alineacion{
     align-items: center;
     margin: 0 auto;
@@ -114,7 +114,7 @@ p.derechos {
   .cuerpo-footer{
     margin: 10px;
     align-items: center;
-    padding: 0px;
+    padding-bottom: 40px;
     margin: 0 auto;
     max-width: 800px;
   
@@ -149,19 +149,20 @@ p.derechos {
   }
 
   p.datos-contacto{
-    font-size: 13px;
+    font-size: 20px;
     font-family: 'Khand', sans-serif;
     text-align: left;
   }
 
   p.derechos{
-    font-size: 16px;
+    font-size: 17px;
+    margin-bottom: 30px;
   }
 }
 
 @media (max-width: 767px){
   footer{
-      height: 16vh;
+      height: 20vh;
 
   }
 
@@ -174,7 +175,7 @@ p.derechos {
   .cuerpo-footer{
     margin: 10px;
     align-items: center;
-    padding: 0px;
+    padding-bottom: 40px;
     margin: 0 auto;
   
   }
@@ -223,6 +224,10 @@ p.derechos {
     font-family: 'Khand', sans-serif;
     text-align: left;
   }
+  p.derechos{
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
 
   p.derechos{
     margin-bottom: 5px;
@@ -235,11 +240,9 @@ p.derechos {
 .text-center {
   font-size: 10px;
   text-align: center;
-  
-  
 }
 p.derechos{
   margin-bottom: 5px;
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Khand', sans-serif;
 }

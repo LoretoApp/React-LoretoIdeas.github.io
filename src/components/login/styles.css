@@ -9,7 +9,7 @@
   --texto-h1: 48px;
   --texto-h2: 30px;
   --texto-h3: 15px;
-  --texto-h4: 10px;
+  --texto-h4: 20px;
   --texto-parrafos: 18px;
   --texto-btn: 24px;
 }
@@ -46,9 +46,9 @@
   .sideA {
     background-color: #ffffff;
     border-radius: 10px 0 0 10px;
-    background: rgb(161,0,75);
-    background: linear-gradient(180deg, rgba(161,0,75,1) 60%, rgba(161,0,78,1) 100%);
-  }
+    background: rgb(184,34,106);
+    background: linear-gradient(94deg, rgba(184,34,106,1) 13%, rgba(237,67,168,1) 38%);}
+    
   
   .sideB {
     background-color: #f0f0f0;
@@ -82,9 +82,9 @@
   .button-login {
     border-radius: 25px;
     border-color: white;
-    background: rgb(161,0,75);
-    background: linear-gradient(180deg, rgba(161,0,75,1) 60%, rgba(161,0,78,1) 100%);
-  }
+    background: rgb(184,34,106);
+    background: linear-gradient(94deg, rgba(184,34,106,1) 13%, rgba(237,67,168,1) 38%);}
+
 
   .input-login {
     color:#000000

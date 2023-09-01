@@ -6,6 +6,7 @@ import CardProductos from "./CardTortas";
 import getTartaletasList from "../../../controllers/getTartaletasList";
 import CardTartaleta from "./CardTartaleta";
 import CarruselProducto from "./CarruselProducto"
+import CarruselProductoNuevo from "./Carrusel-producto-nuevo";
 
 export default function BotonesProductos() {
   const [tortasList, setTortasList] = useState([]);
