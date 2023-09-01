@@ -1,8 +1,7 @@
 import CarruselNosotros1 from "./CarruselNosotros1";
 import CarruselNosotros2 from "./CarruselNosotros2";
 import Footer from "../Footer/Footer";
-import NavBarPage from "../navbar/NavBarPage";
-import "./nosotros.css";
+import "./Nosotros.css";
 import { Link } from "react-router-dom";
 
 function Nosotros() {

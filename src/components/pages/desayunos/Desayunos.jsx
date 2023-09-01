@@ -1,5 +1,4 @@
 import Footer from '../Footer/Footer';
-import NavBarPage from '../navbar/NavBarPage';
 import './desayunos.css';
 import { Link } from "react-router-dom"
 
