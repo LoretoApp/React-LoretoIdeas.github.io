@@ -56,7 +56,7 @@
 
     margin: auto;
     align-items: center;
-    background-image: url("loretoideas.netlify.app/img/kuchenmanzana.jpg");
+    background-image: url("https://loretoideas.netlify.app/img/kuchenmanzana.jpg");
     background-position-x: center;
     background-size: 95%;
     background-position-y: 38%;
@@ -72,7 +72,7 @@
 
     margin: auto;
     align-items: center;
-    background-image: url("loretoideas.netlify.app/img/desayuno.jpg");
+    background-image: url("https://loretoideas.netlify.app/img/desayuno.jpg");
     background-position-x: center;
     background-size: 90%;
     background-position-y: 38%;
@@ -89,7 +89,7 @@
 
     margin: auto;
     align-items: center;
-    background-image: url("loretoideas.netlify.app/img/cocteleria.jpg");
+    background-image: url("https://loretoideas.netlify.app/img/cocteleria.jpg");
     background-position-x: center;
     background-size: 95%;
     background-position-y: 38%;
@@ -124,7 +124,7 @@
     visibility: hidden;
   }
   .inicio-fondo{
-    background-image: url("loretoideas.netlify.app/img/pastelitos-inicio.png");
+    background-image: url("https://loretoideas.netlify.app/img/pastelitos-inicio.png");
 background-repeat: repeat;
 
 }
@@ -181,7 +181,7 @@ background-repeat: repeat;
     height: 210px;
     width: 210px;
     margin:  auto;
-    background-image: url("loretoideas.netlify.app/img/kuchenmanzana.jpg");
+    background-image: url("https://loretoideas.netlify.app/img/kuchenmanzana.jpg");
     background-position-x: center;
     background-size: 95%;
     background-position-y: 38%;
@@ -198,7 +198,7 @@ background-repeat: repeat;
   width: 210px;
   margin:  auto;
   align-items: center;
-  background-image: url("loretoideas.netlify.app/img/desayuno.jpg");
+  background-image: url("https://loretoideas.netlify.app/img/desayuno.jpg");
 background-position-x: center;
 background-size: 100%;
 background-size: 95%;
@@ -214,7 +214,7 @@ box-shadow: 5px 5px 10px #555;
   width: 210px;
   margin:  auto;
   align-items: center;
-  background-image: url("loretoideas.netlify.app/img/cocteleria.jpg");
+  background-image: url("https://loretoideas.netlify.app/img/cocteleria.jpg");
 background-position-x: center;
 background-size: 100%;
 box-shadow: 5px 5px 10px #555;
@@ -247,7 +247,7 @@ box-shadow: 5px 5px 10px #555;
   }
   .inicio-fondo{
   
-    background-image: url("loretoideas.netlify.app/img/pastelitos-inicio.png");
+    background-image: url("https://loretoideas.netlify.app/img/pastelitos-inicio.png");
 background-repeat: repeat;
   }
 }
