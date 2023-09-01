@@ -72,13 +72,14 @@ span.navbar-toggler-icon{
     height: 40px;
     border-radius: 60px;
   }
-  .link{
+  .link-menu{
     color: white;
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 1.3rem;
   }
-  .link :hover{
+  .link-menu :hover{
     color:pink;
   }
   .contenedor{
@@ -105,7 +106,7 @@ span.navbar-toggler-icon{
 
     
   }
-  .link{
+  .link-menu{
     color: white;
     text-decoration: none;
     margin-top: 0px;
@@ -131,10 +132,11 @@ span.navbar-toggler-icon{
     margin-right: 110px;
     
   }
-  .link{
+  .link-menu{
     color: white;
     text-decoration: none;
-    margin-left: 3%;
+    margin-left: 1%;
+    font-size: 1.2rem;
   }
 
   .contenedor{

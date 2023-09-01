@@ -57,19 +57,19 @@ const agregarAlCarrito = (producto) => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Link className="link" to="/">
+              <Link className="link-menu" to="/">
                 Inicio
               </Link>
-              <Link className="link" to="/productos">
+              <Link className="link-menu" to="/productos">
                 Productos
               </Link>
-              <Link className="link" to="/cocteleria">
+              <Link className="link-menu" to="/cocteleria">
                 Coctelería
               </Link>
-              <Link className="link" to="/desayunos">
+              <Link className="link-menu" to="/desayunos">
                 Desayunos
               </Link>
-              <Link className="link" to="/nosotros">
+              <Link className="link-menu" to="/nosotros">
                 Nosotros
               </Link>
             </Nav>
