@@ -20,6 +20,14 @@ function Cocteleria() {
             <p className="cocteleria">Estos son nuestros servicios</p>
 
             <div className="image-container">
+              <img src="" alt="img\cocteleriaybanqueteria.png" />
+              <img src="" alt="img\cocteleriaybanqueteria.png" />
+              <img src="" alt="img\cocteleriaybanqueteria.png" />
+              <img src="" alt="img\cocteleriaybanqueteria.png" />
+              <img src="" alt="img\cocteleriaybanqueteria.png" />
+              <img src="" alt="img\cocteleriaybanqueteria.png" />
+              <img src="" alt="img\cocteleriaybanqueteria.png" />
+              <img src="" alt="img\cocteleriaybanqueteria.png" />
       </div>
 
     </section>
