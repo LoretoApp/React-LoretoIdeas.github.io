@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ModalFormularioTorta from "./ModalFormularioTorta";
 
 export default function CardTortas(props) {
-  const src = "img/";
+  const src = "/img/img-sinFondo/imagenes-productos/Tortas/";
   const [show, setShow] = useState(false);
   const [price, setPrice] = useState(props.precio[2]);
   const [porciones, setPorciones] = useState(props.porciones[2]);
@@ -28,6 +28,8 @@ export default function CardTortas(props) {
     handleClose()
     handleShow2()
   }
+  const imagen = props.imagen;
+  const rutaImg = imagen.toLowerCase();
 
   return (
     <div
@@ -37,7 +39,7 @@ export default function CardTortas(props) {
         <div className="img-container m-2">
           <div className="m-3 imagen-producto">
             <img
-              src={src + props.imagen}
+              src={src + rutaImg}
               id="imagen-card"
               className="card-img-top "
               alt={props.img_descripcion}
@@ -84,7 +86,7 @@ export default function CardTortas(props) {
             <a href="#">
               <img
                 className="kuchen"
-                src={src + props.imagen}
+                src={src + rutaImg}
                 alt={props.img_descripcion}
               />
             </a>
