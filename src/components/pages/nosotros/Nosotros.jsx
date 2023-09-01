@@ -16,7 +16,7 @@ function Nosotros() {
             <img
               src="img/foto perfil.jpg"
               className="img-nosotros"
-              alt="Imagen receptiva"
+              alt=""
             />
           </div>
         </div>

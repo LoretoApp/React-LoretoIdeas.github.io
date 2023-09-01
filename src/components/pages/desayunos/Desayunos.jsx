@@ -1,6 +1,5 @@
 import Footer from '../Footer/Footer';
 import NavBarPage from '../navbar/NavBarPage';
-import CarruselDesayunos from './CarruselDesayunos';
 import './desayunos.css';
 import { Link } from "react-router-dom"
 
@@ -10,7 +9,7 @@ function Desayunos() {
     <>
       <NavBarPage />
       <section className='pasteles'>
-<img id="imgMozos" src="img\cocteleriaybanqueteria.png" alt="img\cocteleriaybanqueteria.png" />
+<img id="imgMozos" src="img/bannerdesayunos.png" alt="img\cocteleriaybanqueteria.png" />
           <h2 className='desayunos'>Desayunos</h2>
 
           <p className='parrafoDesayunos'>Damos servicios de desayunos sorpresa para distintos eventos privados o familiares.<br/>
