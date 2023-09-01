@@ -7,7 +7,7 @@ import { useState } from "react";
 import ModalFormulario from "./ModalFormulario";
 
 export default function CardTartaleta(props) {
-  const src = "img/";
+  const src = "/img/img-sinFondo/imagenes-productos/Tartaletas-kuchen/";
   const [show, setShow] = useState(false);
   const [show2, setShow2] = useState(false);
 
@@ -19,7 +19,8 @@ export default function CardTartaleta(props) {
     handleClose()
     handleShow2()
   }
-  
+  const imagen = props.imagen;
+  const rutaImg = imagen.toLowerCase();
 
   return (
     <div className="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 col-producto">
@@ -27,7 +28,7 @@ export default function CardTartaleta(props) {
         <div className="img-container m-2">
           <div className="m-3">
             <img
-              src={src + props.imagen}
+              src={src + rutaImg}
               id="imagen-card"
               className="card-img-top img-tarta"
               alt={props.img_descripcion}
@@ -52,7 +53,7 @@ export default function CardTartaleta(props) {
               className="btn boton-agregar-carrito align-content-end"
               onClick={handleShow2}
             >
-              Agendar Pedido
+              Agendar
             </button>
           </div>
         </div>
@@ -70,7 +71,7 @@ export default function CardTartaleta(props) {
             <a href="#">
               <img
                 className="kuchen"
-                src={src + props.imagen}
+                src={src + rutaImg}
                 alt={props.img_descripcion}
               />
             </a>
@@ -96,7 +97,7 @@ export default function CardTartaleta(props) {
             <p className="descripcion p-2 mb-3">{props.descripcion}</p>
 
             <button
-              className="btn boton-agregar-carrito p-3"
+              className="btn boton-carrito mb-3"
               onClick={agendarPedido}
             >
               Agendar Pedido

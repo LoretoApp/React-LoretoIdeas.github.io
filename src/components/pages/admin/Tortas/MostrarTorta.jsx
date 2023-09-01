@@ -19,7 +19,8 @@ export default function MostrarTorta() {
     return numeros
   }
 
-  const url = 'img/'
+  const url = 'img/img-sinFondo/imagenes-productos/Tortas/'
+
   return (
     <>
     

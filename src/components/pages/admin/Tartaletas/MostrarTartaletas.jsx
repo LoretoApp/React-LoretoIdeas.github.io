@@ -14,7 +14,7 @@ export default function MostrarTartaletas() {
     updateTartaletas();
   }, []);
 
-  const url = 'img/'
+  const url = 'img/img-sinFondo/imagenes-productos/Tartaletas-kuchen/'
 
   return (
     <>
