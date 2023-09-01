@@ -16,17 +16,18 @@ function Desayunos() {
             Se pueden crear menús salados, dulces o mixtos, según lo que necesite el cliente.<br/>
             Se debe hacer la solicitud con al menos 10 días de anticipación.
             Puede escribirnos al WhatsApp para más consultas.</p>
-            <p className="desayunos">Estos son nuestros servicios</p>
 
             <div className="image-container">
-              <img src="" alt="img\cocteleriaybanqueteria.png" />
-              <img src="" alt="img\cocteleriaybanqueteria.png" />
-              <img src="" alt="img\cocteleriaybanqueteria.png" />
-              <img src="" alt="img\cocteleriaybanqueteria.png" />
-              <img src="" alt="img\cocteleriaybanqueteria.png" />
-              <img src="" alt="img\cocteleriaybanqueteria.png" />
-              <img src="" alt="img\cocteleriaybanqueteria.png" />
-              <img src="" alt="img\cocteleriaybanqueteria.png" />
+              <img src="img\sorpresa1.jfif" alt="" />
+              <img src="img\sorpresa2.jfif" alt="" />
+              <img src="img\sorpresa3.jfif" alt="" />
+              <img src="img\sorpresa4.jfif" alt="" />
+              <img src="img\sorpresa5.jfif" alt="" />
+              <img src="img\sorpresa6.jfif" alt="" />
+              <img src="img\sorpresa7.jfif" alt="" />
+              <img src="img\sorpresa8.jfif" alt="" />
+         
+            
       </div>
 
     </section>

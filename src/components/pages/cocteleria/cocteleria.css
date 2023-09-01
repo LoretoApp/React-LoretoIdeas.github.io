@@ -37,17 +37,19 @@
 }
 
 .image-container img{
-  border-radius: 8px;
+  border-radius: 20px;
   width: 100%;
   height: auto;
-  box-shadow: 0px 0px 30px #4B102D;
+  box-shadow: 0px 0px 20px #302d2e;
 
 }
 
 .image-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
   gap: 32px;
+  margin: 20px;
+
 }
 
 
@@ -74,6 +76,14 @@
 
   }
   
+
+  
+  .image-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 32px;
+    margin: 20px;
+  }
   
 }
 @media (min-width: 768px) {
