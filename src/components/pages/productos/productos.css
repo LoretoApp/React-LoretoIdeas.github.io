@@ -370,6 +370,12 @@
     }
     #contenedor-card{
       margin-bottom: 20px;
+      height: 840px;
+      overflow: auto;
+    }
+    #contenedor-card::-webkit-scrollbar {
+      visibility: hidden;
+      display: none;
     }
     .productos-fondo{
       background-image: url('img/fondo-cupcakes.jfif');
@@ -379,5 +385,9 @@
     }
 
    
+  }
+  body::-webkit-scrollbar {
+    visibility: hidden;
+    display: none;
   }
   
