@@ -26,7 +26,7 @@ footer {
   position: relative;
   bottom: 0;
   max-width: 100%;
-  height: 19vh;
+  height: 30vh;
   font-family: 'Khand', sans-serif;
   overflow: hidden;
 }
@@ -40,7 +40,9 @@ p.datos-contacto{
 
 
 @media (min-width: 992px){
-
+  footer {
+    height: 24vh;
+  }
   .alineacion{
     align-items: center;
    
@@ -98,7 +100,10 @@ p.datos-contacto{
 
 
 @media (min-width: 768px) and (max-width: 991px){
+  footer{
+    height: 20vh;
 
+}
   .alineacion{
     align-items: center;
     margin: 0 auto;
@@ -144,20 +149,20 @@ p.datos-contacto{
   }
 
   p.datos-contacto{
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Khand', sans-serif;
     text-align: left;
   }
 
   p.derechos{
-    font-size: 20px;
+    font-size: 17px;
     margin-bottom: 30px;
   }
 }
 
 @media (max-width: 767px){
   footer{
-      height: 16vh;
+      height: 20vh;
 
   }
 
@@ -220,7 +225,7 @@ p.datos-contacto{
     text-align: left;
   }
   p.derechos{
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 30px;
   }
 }
