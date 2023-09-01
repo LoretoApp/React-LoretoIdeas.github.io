@@ -152,8 +152,8 @@ button.btn.btn-medidas{
             font-size: 17px;
             padding-left: 40px;
         }
-        .btn-carrito{
-            background-color: var(--color-principal);
+        .boton-carrito{
+            background-color: whitesmoke;
             border-radius: 50px;
             width: 170px;
             height: 41px;
@@ -167,9 +167,10 @@ button.btn.btn-medidas{
             display: flex;        
             align-items: center;
             flex-wrap: nowrap;
+            margin: 0 auto;
            
         }
-        .btn-carrito:hover{
+        .boton-carrito:hover{
             background-color: var(--color-principal);
             border-radius: 50px;
             width: 170px;
@@ -184,12 +185,10 @@ button.btn.btn-medidas{
             display: flex;        
             align-items: center;
             flex-wrap: nowrap;
+            margin: 0 auto;
         }
 
-        .boton-agregar-carrito{
-            margin: 0 auto;
-            margin-bottom: 20px;
-        }
+        
         .porciones{
             display: flex;
             justify-content: flex-start;
@@ -322,11 +321,8 @@ button.btn.btn-medidas{
         font-size: 1rem;
     }
 
-    .boton-agregar-carrito{
-        margin: 0 auto;
-        margin-bottom: 20px;
-    }
-    .btn-carrito{
+    
+    .boton-carrito{
         background-color: var(--color-principal);
         border-radius: 50px;
         width: 150px;
@@ -341,7 +337,7 @@ button.btn.btn-medidas{
         flex-wrap: nowrap;
         margin: 20px auto;
     }
-    .btn-carrito:hover{
+    .boton-carrito:hover{
         background-color: var(--color-principal);
         border-radius: 50px;
         width: 150px;

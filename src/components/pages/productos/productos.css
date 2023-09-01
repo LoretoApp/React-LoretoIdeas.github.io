@@ -111,7 +111,7 @@
       border: 0;
     }
     .precio {
-      font-size: 15px;
+      font-size: 14px;
       margin: 0;
       font-weight: 600;
     }
@@ -150,7 +150,7 @@
       background-color: white;
     }
     .precio-agregar{
-      margin: 0 20px 0 20px;
+      margin: 0 0 0 20px;
     }
     .productos-fondo{
       background-image: url('./public/img/pastelitos-inicio.png');

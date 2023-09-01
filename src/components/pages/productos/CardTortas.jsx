@@ -64,10 +64,10 @@ export default function CardTortas(props) {
             <p className="card-text precio">$ {props.precio[2]}</p>
 
             <button
-              className="btn boton-agregar-carrito p-3"
+              className="btn boton-agregar-carrito"
               onClick={handleShow2}
             >
-              Agendar Pedido
+              Agendar
             </button>
           </div>
         </div>
@@ -168,7 +168,7 @@ export default function CardTortas(props) {
               </ul>
             </div>
             <button
-              className="btn boton-agregar-carrito p-3"
+              className="btn boton-carrito mb-3"
               onClick={agendarPedido}
             >
               Agendar Pedido

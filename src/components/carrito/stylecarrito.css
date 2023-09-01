@@ -18,7 +18,11 @@
     height: 50px;
     width: 50px;
   }
-  
+  .boton-agendar{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
   /* Clases para el carrito */
   .contenedor-carrito{
     display: flex;

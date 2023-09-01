@@ -111,7 +111,7 @@ function CarritoP2({data}) {
                 required
               />
             </div>
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn boton-agendar">
             <Link
               className="btn boton-agregar-carrito align-content-end"
               to={`https://api.whatsapp.com/send?phone=56975688406&text=${saludo}%0A${saludo2}%0A%0A${pedido}%0A%0A${entrega}%0AMis%20datos%20de%20contacto%20son:%0ANombre:%20${nombre2}%0Acelular:%20${telefono}%0AEmail:%20${correo}%0ADirección:%20${direccion},%20${comuna}%0A`}
