@@ -29,9 +29,6 @@ footer {
   height: 19vh;
   font-family: 'Khand', sans-serif;
   overflow: hidden;
-
-
-
 }
 
 p.datos-contacto{
@@ -53,7 +50,7 @@ p.datos-contacto{
 
   .cuerpo-footer{
     align-items: center;
-    padding: 0px;
+    padding-bottom: 40px;
     margin: 0 auto;
     
   
@@ -93,7 +90,7 @@ p.datos-contacto{
   }
 
   p.derechos{
-    margin-top: 0px;
+    margin-bottom: 30px;
     font-size: 30px;
   }
 
@@ -112,7 +109,7 @@ p.datos-contacto{
   .cuerpo-footer{
     margin: 10px;
     align-items: center;
-    padding: 0px;
+    padding-bottom: 40px;
     margin: 0 auto;
     max-width: 800px;
   
@@ -154,6 +151,7 @@ p.datos-contacto{
 
   p.derechos{
     font-size: 20px;
+    margin-bottom: 30px;
   }
 }
 
@@ -172,7 +170,7 @@ p.datos-contacto{
   .cuerpo-footer{
     margin: 10px;
     align-items: center;
-    padding: 0px;
+    padding-bottom: 40px;
     margin: 0 auto;
   
   }
@@ -220,6 +218,10 @@ p.datos-contacto{
     font-size: 0.9rem;
     font-family: 'Khand', sans-serif;
     text-align: left;
+  }
+  p.derechos{
+    font-size: 20px;
+    margin-bottom: 30px;
   }
 }
 
