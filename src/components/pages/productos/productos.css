@@ -159,9 +159,10 @@
       height: 300px;
     }
     .contenedor-carrusel-producto{
-      margin: 80px 0 80px 0;
+      margin: 122px 0;
       height: 300px;
     }
+
   }
 
   @media (min-width: 768px) {
