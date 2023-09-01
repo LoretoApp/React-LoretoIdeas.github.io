@@ -10,7 +10,7 @@ function Cocteleria() {
     <>
     <NavBarPage/>
     <section className='pasteles'>
-<img src="" alt="img\cocteleriaybanqueteria.png" />
+<img id="imgMozos" src="img\cocteleriaybanqueteria.png" alt="img\cocteleriaybanqueteria.png" />
           <h2 className='cocteleria'>Cocteleria y Banquetería</h2>
 
           <p className='parrafoCocteleria'>Damos servicios de banquetería para distintos eventos privados o familiares.<br/>

@@ -41,7 +41,7 @@ function Nosotros() {
           <div className="circle borde">
             <img
               src="icons/Logo-loretoideas.png"
-              className="img-nosotros"
+              className="img-nosotros2"
               alt="Imagen receptiva"
             />
           </div>

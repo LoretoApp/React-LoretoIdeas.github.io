@@ -6,27 +6,32 @@
 .text {
   color: #4B102D;
   }
-.parrafoDesayuno{
+.parrafoDesayunos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  font-family: 'Hahmlet', serif;  
-  color: #4B102D;
-  margin-top: 0px;
-  margin-bottom: 0rem;
+  color:#4B102D ;
+  font-family: 'Hahmlet', serif;
+  line-height:1.8;
 }
 .desayunos{
-  text-align: center;
   color: #4B102D;
   font-family: 'Italianno' ;
+  font-size: 24px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+
 } 
 
 
 @media (max-width: 768px) {
 
 
-    .parrafoDesayuno{
-    font-size: 2.5vh;
-    text-size-adjust: 100% ;
-    line-height: 3vh;
+    .parrafoDesayunos{
+      font-size: 2.5vh;
+      text-size-adjust: 100% ;
+      line-height: 3vh;
   }
       
   .desayunos{
@@ -44,11 +49,18 @@
 }
 @media (min-width: 768px) {
 
-    .parrafoDesayuno{
-    font-size: 4.5vh;
-    text-size-adjust: 100% ;
-    width: 100%;
-    line-height: 57.6px;
+  .parrafoDesayunos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:#4B102D ;
+    padding: 250px 250px 250px 250px;
+    font-family: 'Hahmlet', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    height: 200px;
+    line-height:1.5;
 
   }
       
@@ -68,10 +80,11 @@
 }
 @media (min-width: 2560px) {
 
-    .parrafoDesayuno{
-    font-size: 4rem;
-    text-size-adjust: 100% ;
-    line-height: 5vh;
+    .parrafoDesayunos{
+      padding-bottom: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 1.5rem;
   }
       
   .desayunos{
