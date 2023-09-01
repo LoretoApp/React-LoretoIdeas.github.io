@@ -6,6 +6,7 @@
     background-image: url("img\pastelitos-inicio.png");
   }
   
+  
   @media (max-width: 768px) {
     .delivery{
       height: auto;
