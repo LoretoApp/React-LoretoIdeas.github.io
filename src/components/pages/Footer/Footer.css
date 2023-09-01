@@ -85,7 +85,7 @@ p.datos-contacto{
   }
 
   p.datos-contacto{
-    font-size: 25px;
+    font-size: 16px;
     font-family: 'Khand', sans-serif;
     text-align: left;
     
@@ -220,7 +220,7 @@ p.datos-contacto{
   }
 
   p.datos-contacto{
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-family: 'Khand', sans-serif;
     text-align: left;
   }
@@ -228,10 +228,21 @@ p.datos-contacto{
     font-size: 15px;
     margin-bottom: 30px;
   }
+
+  p.derechos{
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    font-family: 'Khand', sans-serif;
+  }
 }
 
 /* Estilos para el texto de derechos de autor */
 .text-center {
   font-size: 10px;
   text-align: center;
+}
+p.derechos{
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-family: 'Khand', sans-serif;
 }

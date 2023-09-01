@@ -65,9 +65,11 @@
       display: flex;
       align-items: center;
       height: 25px;
-      font-size: 11px;
+      font-size: 0.9rem;
       border-radius: 30px;
       margin: 0;
+      margin-right: 5px;
+      width: 74px;
     }
     .boton-agregar-carrito:hover{
       background-color: #B8226A ;
@@ -78,9 +80,10 @@
       display: flex;
       align-items: center;
       height: 25px;
-      font-size: 12px;
+      font-size: 0.9rem;
       border-radius: 30px;
       margin: 0;
+      margin-right: 5px;
     }
     .card {
       font-family: 'Poppins', sans-serif;
@@ -92,7 +95,7 @@
     }
     .btn.detalle{
       display: flex;
-      font-size: 11px;
+      font-size: 1rem;
       font-weight: 600;
       margin: 0 0 0 10px;
       padding: 2px 8px 2px 8px;
@@ -100,9 +103,11 @@
       background-color: #FFA041;
       border-radius: 30px;
       border: 0;
+      height: 22px;
+      width: 83px;
     }
     .btn.detalle:hover {
-      font-size: 11px;
+      font-size: 1rem;
       font-weight: 700;
       margin: 0 0 0 10px;
       padding: 2px 12px 2px 12px;
@@ -110,9 +115,11 @@
       background-color: #FFA041;
       border-radius: 30px;
       border: 0;
+      height: 22px;
+      width: 83px;
     }
     .precio {
-      font-size: 14px;
+      font-size: 1.1rem;
       margin: 0;
       font-weight: 600;
     }
@@ -273,8 +280,8 @@
       padding: 10px;
       display: flex;
       align-items: center;
-      height: 35px;
-      font-size: 0.9vw;
+      height: 28px;
+      font-size: 0.9rem;
       border-radius: 30px;
       
     }
@@ -285,8 +292,8 @@
       padding: 10px;
       display: flex;
       align-items: center;
-      height: 35px;
-      font-size: 0.83vw;
+      height: 28px;
+      font-size: 0.9rem;
       border-radius: 30px;
       
 
@@ -309,25 +316,27 @@
       display: flex;
     }
     .btn.detalle {
-      font-size: 0.8vw;
+      font-size: 0.9rem;
       font-weight: 600;
-      margin: 0 0 5px 20px;
+      margin: 0 0 5px 18px;
       padding: 3px 9px;
       width: fit-content;
       background-color: #FFA041;
       border-radius: 30px;
+      height: 25px;
     }
     .btn.detalle:hover {
-      font-size: 0.75vw;
+      font-size: 0.9rem;
       font-weight: 900;
-      margin: 0 0 5px 20px;
-      padding: 3.8px 6px;
+      margin: 0 0 5px 18px;
+      padding: 3px 6px;
       width: fit-content;
       background-color: #FFA041;
       border-radius: 30px;
+      height: 25px;
     }
     .precio {
-      font-size: 1.2vw;
+      font-size: 1.1rem;
       margin: 0;
       font-weight: 600;
     }
@@ -378,7 +387,7 @@
       display: none;
     }
     .productos-fondo{
-      background-image: url('img/fondo-cupcakes.jfif');
+      background-image: url('./public/img/pastelitos-inicio.png');
     }
     .precio-agregar{
       margin: 0 20px 0 20px;
