@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 import CarruselBanner from "./CarruselBanner";
 import DarkVariantExample from "./Carrusel-inicio";
+import NavBarPage from "../Navbar/NavBarPage";
 
 
 

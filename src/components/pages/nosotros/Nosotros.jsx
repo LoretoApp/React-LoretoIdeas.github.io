@@ -3,6 +3,7 @@ import CarruselNosotros2 from "./CarruselNosotros2";
 import Footer from "../Footer/Footer";
 import "./Nosotros.css";
 import { Link } from "react-router-dom";
+import NavBarPage from "../Navbar/NavBarPage";
 
 function Nosotros() {
   return (

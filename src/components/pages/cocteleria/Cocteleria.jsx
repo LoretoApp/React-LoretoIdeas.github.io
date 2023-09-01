@@ -1,6 +1,7 @@
 import Footer from '../Footer/Footer';
 import '../cocteleria/cocteleria.css';
 import BotonWsp from '../../Wsp/BotonWsp';
+import NavBarPage from "../Navbar/NavBarPage";
 
 
 

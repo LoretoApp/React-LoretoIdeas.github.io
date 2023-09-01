@@ -1,7 +1,7 @@
 import Footer from '../Footer/Footer';
 import './desayunos.css';
 import { Link } from "react-router-dom"
-
+import NavBarPage from "../Navbar/NavBarPage";
 
 function Desayunos() {
   return (

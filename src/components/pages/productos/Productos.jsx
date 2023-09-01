@@ -4,6 +4,7 @@ import BotonesProductos from "./BotonesProductos"
 import BannerProductos from "./BannerProductos"
 import Footer from "../Footer/Footer"
 import { Link } from "react-router-dom"
+import NavBarPage from "../Navbar/NavBarPage"
 
 
 function Productos () {
