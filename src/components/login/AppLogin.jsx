@@ -63,7 +63,7 @@ export const AppLogin = ({view, handleSignup}) => {
               Entrar
             </button>
           </div>
-        )};
+        )}
  </div>
     
   )
