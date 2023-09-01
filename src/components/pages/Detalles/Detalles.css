@@ -55,6 +55,7 @@ button.btn.btn-medidas{
     height: 50%;
     background-color:var(--color-segundo); /* Color para la mitad arriba */
     border-radius: 0 0 40px 40px;
+    padding-bottom: 20px;
     }
     .boton-flecha {
         background-color:var(--color-segundo);
@@ -125,6 +126,7 @@ button.btn.btn-medidas{
         width: 100%;
         height: 50%;
         font-family: 'Hahmlet', serif;
+        padding-bottom: 20px;
         
         }
 
@@ -153,13 +155,13 @@ button.btn.btn-medidas{
             padding-left: 40px;
         }
         .boton-carrito{
-            background-color: whitesmoke;
+            background-color: var(--color-principal);
             border-radius: 50px;
             width: 170px;
             height: 41px;
             color: white;
             font-family: 'Jockey One', sans-serif;
-            font-size: 24px;
+            font-size: 20px;
             margin: 20px auto;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             text-align:left;
@@ -177,7 +179,7 @@ button.btn.btn-medidas{
             height: 41px;
             color: white;
             font-family: 'Jockey One', sans-serif;
-            font-size: 24px;
+            font-size: 20px;
             margin: 20px auto;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             text-align:left;
@@ -211,6 +213,7 @@ button.btn.btn-medidas{
         height: 50%;
         background-color:var(--color-segundo); /* Color para la mitad arriba */
         border-radius: 0 0 40px 40px;
+        padding-bottom: 20px;
     }
     .boton-flecha {
         background-color:var(--color-segundo);
@@ -294,6 +297,7 @@ button.btn.btn-medidas{
         text-align: center;
         display: flex;
         flex-direction: column;
+        padding-bottom: 20px;
         
     }
 
@@ -325,32 +329,32 @@ button.btn.btn-medidas{
     .boton-carrito{
         background-color: var(--color-principal);
         border-radius: 50px;
-        width: 150px;
+        width: 200px;
         height: 41px;
         color: white;
         font-family: 'Jockey One', sans-serif;
-        font-size: 14px;
+        font-size: 24px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
-        margin: 20px auto;
+        margin: 30px auto;
     }
     .boton-carrito:hover{
         background-color: var(--color-principal);
         border-radius: 50px;
-        width: 150px;
+        width: 200px;
         height: 41px;
         color: white;
         font-family: 'Jockey One', sans-serif;
-        font-size: 14px;
+        font-size: 24px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
-        margin: 20px auto;
+        margin: 30px auto;
     }
     
     img.carrito{

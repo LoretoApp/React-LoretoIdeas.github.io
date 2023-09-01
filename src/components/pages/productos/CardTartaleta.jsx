@@ -97,7 +97,7 @@ export default function CardTartaleta(props) {
             <p className="descripcion p-2 mb-3">{props.descripcion}</p>
 
             <button
-              className="btn boton-agregar-carrito mb-3"
+              className="btn boton-carrito mb-3"
               onClick={agendarPedido}
             >
               Agendar Pedido

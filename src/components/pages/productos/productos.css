@@ -274,6 +274,7 @@
       height: 35px;
       font-size: 0.9vw;
       border-radius: 30px;
+      
     }
     .boton-agregar-carrito:hover {
       background-color: #B8226A ;
@@ -285,6 +286,8 @@
       height: 35px;
       font-size: 0.83vw;
       border-radius: 30px;
+      
+
     }
     .card {
       border-radius: 10px;

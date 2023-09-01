@@ -40,7 +40,7 @@ function AgendamientoTorta({nombre,porciones,precio}) {
         <div className="cart-header t2">
           <form onSubmit={handleSubmit}>
             <div className="form-group">
-              <label htmlFor="nombre">Nombre y Apellido</label>
+              <label htmlFor="nombre" className='etiqueta-agendar'>Nombre y Apellido</label>
               <input
                 type="text"
                 className="form-control"
@@ -52,7 +52,7 @@ function AgendamientoTorta({nombre,porciones,precio}) {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="direccion">Dirección de Calle</label>
+              <label htmlFor="direccion" className='etiqueta-agendar'>Dirección de Calle</label>
               <input
                 type="text"
                 className="form-control"
@@ -64,7 +64,7 @@ function AgendamientoTorta({nombre,porciones,precio}) {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="comuna">Comuna</label>
+              <label htmlFor="comuna" className='etiqueta-agendar'>Comuna</label>
               <input
                 type="text"
                 className="form-control"
@@ -76,7 +76,7 @@ function AgendamientoTorta({nombre,porciones,precio}) {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="fechaEntrega">Fecha de Entrega</label>
+              <label htmlFor="fechaEntrega" className='etiqueta-agendar'>Fecha de Entrega</label>
               <input
                 type="date"
                 className="form-control"
@@ -88,7 +88,7 @@ function AgendamientoTorta({nombre,porciones,precio}) {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="telefono">Teléfono</label>
+              <label htmlFor="telefono" className='etiqueta-agendar'>Teléfono</label>
               <input
                 type="tel"
                 className="form-control"
@@ -100,7 +100,7 @@ function AgendamientoTorta({nombre,porciones,precio}) {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="correo">Correo Electrónico</label>
+              <label htmlFor="correo" className='etiqueta-agendar'>Correo Electrónico</label>
               <input
                 type="email"
                 className="form-control"
@@ -111,9 +111,9 @@ function AgendamientoTorta({nombre,porciones,precio}) {
                 required
               />
             </div>
-            <button type="submit" className="btn boton-agendar">
+            <button type="submit" className="btn boton-agendar-carrito">
             <Link
-              className="btn boton-agregar-carrito align-content-end"
+              className="btn boton-agendar-carrito align-content-end"
               to={`https://api.whatsapp.com/send?phone=56975688406&text=${saludo}%0A${saludo2}%0A%0A${pedido}%0A%0A${entrega}%0AMis%20datos%20de%20contacto%20son:%0ANombre:%20${nombre2}%0Acelular:%20${telefono}%0AEmail:%20${correo}%0ADirección:%20${direccion},%20${comuna}%0A`}
               target="_blank"
               rel="noopener noreferrer"
