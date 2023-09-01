@@ -13,8 +13,10 @@ function Desayunos() {
 
           <p className='parrafoDesayunos'>Damos servicios de desayunos sorpresa para distintos eventos privados o familiares.<br/>
             Se pueden crear menús salados, dulces o mixtos, según lo que necesite el cliente.<br/>
-            Se debe hacer la solicitud con al menos 10 días de anticipación.
+            Se debe hacer la solicitud con al menos 10 días de anticipación.<br/>
             Puede escribirnos al WhatsApp para más consultas.</p>
+
+            <h2 className='desayunos'>Nuestros Clientes</h2>
 
             <div className="image-container">
               <img src="img\sorpresa1.jfif" alt="" />
