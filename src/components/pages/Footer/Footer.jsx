@@ -32,7 +32,7 @@ function Footer(){
             <div className='row'>
             {/* !--Texto inferior de los derechos reservado */}
            </div>
-            <div className='text-center mt-4'>
+            <div className='text-center '>
                 <p className='derechos'>Loreto Ideas 2023® | Todos los derechos reservados</p>
             </div>
         </div>

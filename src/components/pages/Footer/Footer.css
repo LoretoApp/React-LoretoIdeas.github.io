@@ -40,9 +40,7 @@ p.datos-contacto{
   font-size: 16px;
 }
 
-p.derechos {
-  font-size: 16px;
-}
+
 
 @media (min-width: 992px){
 
@@ -88,7 +86,7 @@ p.derechos {
   }
 
   p.datos-contacto{
-    font-size: 16px;
+    font-size: 30px;
     font-family: 'Khand', sans-serif;
     text-align: left;
     
@@ -96,7 +94,7 @@ p.derechos {
 
   p.derechos{
     margin-top: 0px;
-    font-size: 16px;
+    font-size: 30px;
   }
 
 }
@@ -149,13 +147,13 @@ p.derechos {
   }
 
   p.datos-contacto{
-    font-size: 13px;
+    font-size: 30px;
     font-family: 'Khand', sans-serif;
     text-align: left;
   }
 
   p.derechos{
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -229,11 +227,4 @@ p.derechos {
 .text-center {
   font-size: 10px;
   text-align: center;
-  
-  
-}
-p.derechos{
-  margin-bottom: 5px;
-  font-size: 12px;
-  font-family: 'Khand', sans-serif;
 }

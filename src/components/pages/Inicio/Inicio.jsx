@@ -56,9 +56,7 @@ function ShapeExample() {
         </Link>
         </div>
       </Row>
-      <p className="caja-texto-mobile">
-      Trabajamos con los mejores ingredientes del país para entregar la mejor calidad a nuestros clientes, porque todos los productos son creados con amor y se nota en el sabor.
-      </p>
+      
 
       <p className="caja-texto">
       
