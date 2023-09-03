@@ -3,7 +3,7 @@
   body{
     width: 100%;
     height: 100%;
-    background-image: url("img\pastelitos-inicio.png");
+    background-image: url("img/pastelitos-inicio.png");
   }
   
   
@@ -161,7 +161,7 @@
       margin: 0 0 0 20px;
     }
     .productos-fondo{
-      background-image: url('./public/img/pastelitos-inicio.png');
+      background-image: url('/img/pastelitos-inicio.png');
     }
     .carrusel-producto{
       height: 300px;

@@ -43,7 +43,7 @@ li.item-lista{
 }
 
 button.btn.btn-medidas{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 @media (max-width: 768px) {
@@ -62,7 +62,7 @@ button.btn.btn-medidas{
         border: none;
     }
     .btn-medidas {
-        padding: 0;
+        padding: 2px;
     }
 
     img.kuchen{
@@ -96,14 +96,15 @@ button.btn.btn-medidas{
 
     .derecha {
     text-align: right; /* Alineación de contenido a la derecha */
+    
     }
 
     .medidas{
-    background-color: var(--color-tercero);
-    border-radius: 40px;
+        background: linear-gradient(94deg, rgba(184,34,106,1) 13%, rgba(237,67,168,1) 38%);    border-radius: 40px;
     padding: 4px;
     width: 120px;
-    height: 32px;  
+    height: 2rem;  
+    line-height: 60px;
     color: white;
     font-family: 'Kenia', cursive;
     text-align: center;
@@ -161,7 +162,7 @@ button.btn.btn-medidas{
             height: 41px;
             color: white;
             font-family: 'Jockey One', sans-serif;
-            font-size: 20px;
+            font-size: 1.1rem;
             margin: 20px auto;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             text-align:left;
@@ -268,15 +269,14 @@ button.btn.btn-medidas{
     }
 
     .medidas{
-        background-color: var(--color-tercero);
-        border-radius: 40px;
+        background: linear-gradient(94deg, rgba(184,34,106,1) 13%, rgba(237,67,168,1) 38%);        border-radius: 40px;
         width: 100px;
-        height: 28px;
+        height: 2rem;
         margin: 0 auto;
         color: white;
         font-family: 'Kenia', cursive;
         text-align: center;
-        font-size: 10px;
+        font-size: 20px;
     
     }
     img.corazon{
@@ -315,14 +315,13 @@ button.btn.btn-medidas{
         font-size: 25px;
     }
     .medidas-productos{
+        padding-top: 2rem;
         text-align: left;
-        font-size: 15px;
     }
 
     .item-lista{
         list-style-type: none;
-        font-size: 20px;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     
@@ -333,7 +332,7 @@ button.btn.btn-medidas{
         height: 41px;
         color: white;
         font-family: 'Jockey One', sans-serif;
-        font-size: 24px;
+        font-size: 1.3rem;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         display: flex;
         justify-content: center;
@@ -362,8 +361,5 @@ button.btn.btn-medidas{
         position: relative;
     }
 
-    /* .medidas-productos{
-        margin-left: 170px;
-    } */
-        
+
 }    

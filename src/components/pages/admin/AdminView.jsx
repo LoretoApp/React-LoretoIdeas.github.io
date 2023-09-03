@@ -398,7 +398,7 @@ export default function AdminView() {
       
       <button className="salir col-12 text-center">
         <Link className="banner-administrador " to="/">
-          Volver a la página principal
+         Página principal
         </Link>
       </button>
     </section>
