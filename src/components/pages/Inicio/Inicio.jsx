@@ -51,7 +51,7 @@ function ShapeExample() {
         </Link>
         </div>
         <div className="col-4 col-md-4 contenedor-texto">
-        <Link className="titulo-boton" to="/concteleria">
+        <Link className="titulo-boton" to="/cocteleria">
           Coctelería
         </Link>
         </div>
