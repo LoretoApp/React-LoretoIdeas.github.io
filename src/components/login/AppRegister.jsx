@@ -42,7 +42,7 @@ function AppRegister() {
         <div className="sideB">
           {view === "login" ? (
             <div>
-              <p className="parrafos-login">Crear cuenta</p>
+              <p className="titulo-login">Crear cuenta</p>
               <p className="parrafos-login">
                 Crea una cuenta para que puedas guardar tus pedidos y disfrutar.
               </p>

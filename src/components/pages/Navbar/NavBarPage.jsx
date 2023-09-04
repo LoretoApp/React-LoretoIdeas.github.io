@@ -46,14 +46,14 @@ const agregarAlCarrito = (producto) => {
             />
           </a>
           <div className="div-con-linea"></div>
-          <a className="link">
+          {/* <a className="link">
             <img
               className="carrito"
               src="icons/carrito.png"
               alt="carrito"
               onClick={handleCarrito}
             />
-          </a>
+          </a> */}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

@@ -32,8 +32,8 @@
 
 @media (max-width: 768px){
   .img-tabla{
-  height: 30px;
-  width: 30px;
+  height: 5rem;
+  width: 5rem;
   }
   th{
     font-size: 1.2rem;
@@ -67,8 +67,8 @@
   }
   .img-tabla{
     padding: 2px;
-    height: 100px;
-    width: 100px;
+    height: 12rem;
+    width: 12rem;
     }
     th{
       font-size: 4vh;

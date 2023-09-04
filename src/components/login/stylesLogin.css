@@ -27,7 +27,7 @@ font-size:1.5rem ;
   align-items: center;
   justify-content: center;
   background-color: #f1f1f1;
-  border-radius: 10px;
+  border-radius: 10px 10px 10px 10px;
   padding: 0px;
   max-width: 600px;
   margin: 0px auto;
@@ -40,24 +40,26 @@ font-size:1.5rem ;
   align-items: center;
   width: 100%;
   padding: 0%;
+  border-radius: 10px;
 }
 
 .sideA,
 .sideB {
   flex: 1;
   padding: 30px;
+
 }
 
 .sideA {
   background-color: #ffffff;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px 10px 10px 10px;
   background: rgb(184,34,106);
   background: linear-gradient(94deg, rgba(184,34,106,1) 13%, rgba(237,67,168,1) 38%);}
 
 
 .sideB {
   background-color: #f0f0f0;
-  border-radius: 0 10px 10px 0;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .titulos-login {
@@ -70,6 +72,15 @@ font-size:1.5rem ;
   text-align: center;
   margin-bottom: 10px;
   color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.titulo-login{
+  color: green;
+text-align: center;
+margin-bottom: 10px;
+font-size: 1.5rem;
+
 }
 
 .input-buton {
@@ -88,13 +99,8 @@ font-size:1.5rem ;
 .button-login {
   font-size: 1.8rem ;
   border-radius: 25px;
-  border-color: white;
-  background: rgb(161, 0, 75);
-  background: linear-gradient(
-    180deg,
-    rgba(161, 0, 75, 1) 60%,
-    rgba(161, 0, 78, 1) 100%
-  );
+background: linear-gradient(94deg, rgba(237,67,168,1) 13% ,rgb(232, 0, 112) 50%);
+filter: sepia(20%);
 }
 
 .input-login {
@@ -134,6 +140,6 @@ font-size:1.5rem ;
     border-top: 10p;
   }
   .sideA {
-    border-radius: 10px 10px 00px 00px;
+    border-radius: 10px 10px 10px 10px;
   }
 }

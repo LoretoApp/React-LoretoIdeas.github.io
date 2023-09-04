@@ -10,6 +10,8 @@
     --texto-parrafos:18px;
     --texto-btn:24px
   }
+  
+  
 
 @media (max-width: 768px) {
     body {
@@ -18,7 +20,7 @@
         padding: 0;
     }
     .fondo-admin{
-        background-color: #f3e4ee;
+        background-image: url('/img/pastelitos-nuevo.png');
 
     }
     
