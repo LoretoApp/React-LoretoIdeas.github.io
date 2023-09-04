@@ -38,6 +38,10 @@ function CarritoP2({data}) {
   return (
     
         <div className="cart-header t2">
+          <div className='mitad-arriba-modal'>
+            <img src="icons/Logo-loretoideas.png" alt="loretoideas" className='logo-loretoideas-pedido' />
+            <p className="agradecimiento-pedido"> Gracias por su Preferencia !</p>
+          </div>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="nombre" className='etiqueta-agendar'>Nombre y Apellido</label>
@@ -120,8 +124,10 @@ function CarritoP2({data}) {
             >
               Realizar Pedido
             </Link>
+            <img src="icons/whatsapp.png" alt="wsp" className='wsp-img-pedido'/>
             </button>
           </form>
+            
         </div>
   
   );

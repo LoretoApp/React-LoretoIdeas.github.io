@@ -26,22 +26,21 @@ footer {
   position: relative;
   bottom: 0;
   max-width: 100%;
-  height: 30vh;
   font-family: 'Khand', sans-serif;
   overflow: hidden;
 }
 
-p.datos-contacto{
+/* p.datos-contacto{
   margin-top: 10px;
   margin-left: 1%;
   font-size: 16px;
-}
+} */
 
 
 
-@media (min-width: 992px){
+@media (min-width: 991px){
   footer {
-    height: 20vh;
+    height: 16vh;
   }
   .alineacion{
     align-items: center;
@@ -85,7 +84,7 @@ p.datos-contacto{
   }
 
   p.datos-contacto{
-    font-size: 16px;
+    font-size: 2vh;
     font-family: 'Khand', sans-serif;
     text-align: left;
     
@@ -93,7 +92,7 @@ p.datos-contacto{
 
   p.derechos{
     margin-bottom: 30px;
-    font-size: 25px;
+    font-size: 1.8vh;
   }
 
 }
@@ -162,7 +161,7 @@ p.datos-contacto{
 
 @media (max-width: 767px){
   footer{
-      height: 20vh;
+      height: 16vh;
 
   }
 
@@ -175,7 +174,6 @@ p.datos-contacto{
   .cuerpo-footer{
     margin: 10px;
     align-items: center;
-    padding-bottom: 40px;
     margin: 0 auto;
   
   }
@@ -220,20 +218,15 @@ p.datos-contacto{
   }
 
   p.datos-contacto{
-    font-size: 1rem;
+    font-size: 1.5vh;
     font-family: 'Khand', sans-serif;
     text-align: left;
   }
   p.derechos{
-    font-size: 15px;
-    margin-bottom: 30px;
-  }
-
-  p.derechos{
-    margin-bottom: 5px;
-    font-size: 0.9rem;
+    font-size: 1.3vh;
     font-family: 'Khand', sans-serif;
   }
+
 }
 
 /* Estilos para el texto de derechos de autor */
@@ -241,8 +234,8 @@ p.datos-contacto{
   font-size: 10px;
   text-align: center;
 }
-p.derechos{
+/* p.derechos{
   margin-bottom: 5px;
   font-size: 12px;
   font-family: 'Khand', sans-serif;
-}
+} */
