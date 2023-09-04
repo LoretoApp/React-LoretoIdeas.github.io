@@ -13,6 +13,12 @@ function CarritoP2({data}) {
     correo: ''
   });
 
+  const [texto, setTexto] = useState(`Completa tus Datos:`)
+
+  const changeText = ()=> {
+    setTexto("Gracias por su Preferencia !")
+  }
+
   const { nombre2, direccion, comuna, fechaEntrega, telefono,correo} = formData
   const {nombre, diametro, precio} = data
   const saludo= "Hola Loreto Ideas!"
@@ -40,7 +46,7 @@ function CarritoP2({data}) {
         <div className="cart-header t2">
           <div className='mitad-arriba-modal'>
             <img src="icons/Logo-loretoideas.png" alt="loretoideas" className='logo-loretoideas-pedido' />
-            <p className="agradecimiento-pedido"> Gracias por su Preferencia !</p>
+            <p className="agradecimiento-pedido"> {texto}</p>
           </div>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
@@ -115,7 +121,7 @@ function CarritoP2({data}) {
                 required
               />
             </div>
-            <button type="submit" className="btn boton-agendar-carrito">
+            <button type="submit" className="btn boton-agendar-carrito" onClick={changeText}>
             <Link
               className="btn boton-agendar-carrito align-content-end"
               to={`https://api.whatsapp.com/send?phone=56975688406&text=${saludo}%0A${saludo2}%0A%0A${pedido}%0A%0A${entrega}%0AMis%20datos%20de%20contacto%20son:%0ANombre:%20${nombre2}%0Acelular:%20${telefono}%0AEmail:%20${correo}%0ADirección:%20${direccion},%20${comuna}%0A`}
