@@ -60,7 +60,7 @@ function Nosotros() {
       </section>
       <Link
         className="whatsapp-float"
-        to="https://api.whatsapp.com/send?phone=56975688406&text=Hola%21%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20de%20Loreto%20Ideas"
+        to="https://api.whatsapp.com/send?phone=56932939888&text=Hola%21%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20de%20Loreto%20Ideas"
         target="_blank"
         rel="noopener noreferrer"
       >
