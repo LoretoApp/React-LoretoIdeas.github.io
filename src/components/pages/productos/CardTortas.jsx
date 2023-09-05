@@ -14,6 +14,7 @@ export default function CardTortas(props) {
   const [porciones, setPorciones] = useState(props.porciones[2]);
   const [show2, setShow2] = useState(false);
 
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const handleClose2 = () => setShow2(false);
@@ -23,6 +24,7 @@ export default function CardTortas(props) {
     setPrice(props.precio[numero])
     setPorciones(props.porciones[numero])
   }
+  
   const nombreProducto = props.nombre
   const agendarPedido = ()=> {
     handleClose()
