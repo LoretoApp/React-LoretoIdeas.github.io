@@ -14,7 +14,7 @@ function Nosotros() {
         <div className="background">
           <div className="circle borde">
             <img
-              src="img/foto perfil.jpg"
+              src="img/foto perfil.jpeg"
               className="img-nosotros"
               alt=""
             />
